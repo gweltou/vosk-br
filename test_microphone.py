@@ -31,8 +31,9 @@ def post_proc(text):
     for sub in subs:
         text = text.replace(sub, subs[sub])
     
-    first, rest = text.split(maxsplit=1)
-    return first.capitalize() + ' ' + rest
+    splitted = text.split(maxsplit=1)
+    splitted[0] = splitted[0].capitalize()
+    return ' '.join(splitted)
 
 
 def int_or_str(text):

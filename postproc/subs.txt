@@ -1,0 +1,54 @@
+a bell	a-bell
+a benn	a-benn
+a berzh	a-berzh
+a bouez	a-bouez
+a dreñv	a-dreñv
+a us	a-us
+a wechoù	a-wechoù
+a walc'h	a-walc'h
+a ziwar	a-ziwar
+a gleiz	a-gleiz
+a zehoù	a-zehoù
+a raok	a-raok
+a ribl	a-ribl
+a ratozh	a-ratozh
+a ratozh kaer	a-ratozh-kaer
+e barzh	e-barzh
+e pad	e-pad
+e leizh	e-leizh
+e kreiz	e-kreiz
+e keit	e-keit
+e giz	e-giz
+da heul	da-heul
+diwar benn	diwar-benn
+daou ugent	daou-ugent
+#tri ugent	tri-ugent
+#pevar ugent	pevar-ugent
+warn ugent	warn-ugent
+war dro	war-dro
+war raok	war-raok
+war c'horre	war-c'horre
+kemend all	kemend-all
+tad kozh	tad-kozh
+mamm gozh	mamm-gozh
+fest noz	fest-noz
+skol veur	skol-veur
+marc'h houarn	marc'h-houarn
+marc'h du	marc'h-du
+
+penn ar bed	Penn-ar-Bed
+mor bihan	Mor-Bihan
+bro saoz	Bro Saoz
+le fur	Le Fur
+new York	New York
+sant Nazer	Sant Nazer
+rouantelezh unanet	Rouantelezh Unanet
+stadoù unanet	Stadoù Unanet
+su Afrikaned	Suafrikaned
+Breizh izel	Breizh-Izel
+Breizh uhel	Breizh-Uhel
+Kaledonia nevez	Kaledonia-Nevez
+il ha Gwilen	Il-ha-Gwilen
+su Azia	Su Azia
+
+deomp ta	deomp 'ta

@@ -6,34 +6,10 @@ import queue
 import sounddevice as sd
 import vosk
 import sys
+from postproc.postproc import *
 
 q = queue.Queue()
 
-
-joined_file = "postproc/subs.txt"
-with open(joined_file, 'r') as f:
-    #joined = [tuple(l.strip().replace('-', ' ').split()) for l in f.readlines() if l and not l.startswith('#')]
-    replace = dict()
-    for l in f.readlines():
-        l = l.split('#')[0].strip() # Remove comments
-        if not l: continue
-        old, new = l.strip().split('\t')
-        replace[old] = new
-
-
-def post_proc(text):
-    # web adresses    
-    if "HTTP" in text or "WWW" in text:
-        text = text.replace("pik", '.')
-        text = text.replace(' ', '')
-        return text.lower()
-    
-    for sub in subs:
-        text = text.replace(sub, subs[sub])
-    
-    splitted = text.split(maxsplit=1)
-    splitted[0] = splitted[0].capitalize()
-    return ' '.join(splitted)
 
 
 def int_or_str(text):
@@ -76,7 +52,7 @@ args = parser.parse_args(remaining)
 
 try:
     if args.model is None:
-        args.model = "model/bzg3"
+        args.model = "model/bzg4"
     if not os.path.exists(args.model):
         print ("Please download a model for your language from https://alphacephei.com/vosk/models")
         print ("and unpack as 'model' in the current folder.")

@@ -28,6 +28,7 @@ warn ugent	warn-ugent
 war dro	war-dro
 war raok	war-raok
 war c'horre	war-c'horre
+
 kemend all	kemend-all
 tad kozh	tad-kozh
 mamm gozh	mamm-gozh
@@ -35,6 +36,7 @@ fest noz	fest-noz
 skol veur	skol-veur
 marc'h houarn	marc'h-houarn
 marc'h du	marc'h-du
+tour tan	tour-tan
 
 penn ar bed	Penn-ar-Bed
 mor bihan	Mor-Bihan
@@ -50,5 +52,6 @@ Breizh uhel	Breizh-Uhel
 Kaledonia nevez	Kaledonia-Nevez
 il ha Gwilen	Il-ha-Gwilen
 su Azia	Su Azia
+Kerne veur	Kerne-Veur
 
 deomp ta	deomp 'ta

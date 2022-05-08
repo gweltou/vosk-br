@@ -4,34 +4,11 @@ from vosk import Model, KaldiRecognizer, SetLogLevel
 import sys
 import os
 import wave
+from postproc.postproc import *
 
 
-substitution_file = "postproc/subs.txt"
-subs = dict()
-with open(substitution_file, 'r') as f:
-    for l in f.readlines():
-        l = l.strip()
-        if l and not l.startswith('#'):
-            k, v = l.split('\t')
-            subs[k] = v
+SetLogLevel(0)
 
-
-def post_proc(text):
-    # web adresses    
-    if "HTTP" in text or "WWW" in text:
-        text = text.replace("pik", '.')
-        text = text.replace(' ', '')
-        return text.lower()
-    
-    for sub in subs:
-        text = text.replace(sub, subs[sub])
-    
-    splitted = text.split(maxsplit=1)
-    splitted[0] = splitted[0].capitalize()
-    return ' '.join(splitted)
-
-
-SetLogLevel(1)
 
 if not os.path.exists("model"):
     print ("Please download the model from https://alphacephei.com/vosk/models and unpack as 'model' in the current folder.")
@@ -45,7 +22,7 @@ if wf.getnchannels() != 1 or wf.getsampwidth() != 2 or wf.getcomptype() != "NONE
 if len(sys.argv) >= 3:
     model = Model(sys.argv[2])
 else:
-    model = Model("model/bzg3")
+    model = Model("model/bzg4")
     
 rec = KaldiRecognizer(model, wf.getframerate())
 rec.SetWords(True)
@@ -58,4 +35,4 @@ while True:
         r = eval(rec.Result())
         print(post_proc(r["text"]))
 
-#print(rec.FinalResult())
+print(post_proc(eval(rec.FinalResult())["text"]))

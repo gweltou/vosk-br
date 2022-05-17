@@ -2,22 +2,22 @@
 
 24-04-2022
 
-lexicon: 32 160 words with phonemes \
-corpus: 105 117 words
+lexicon: **32 160 words** with phonemes \
+corpus: **105 117 words**
 
-Test "Bali Breizh er Poc'hêr : Karaez 1" : 53.1% WER \
-Test Baleadenn1.wav : \
-"Gant ar sorserezh oa ur c'harr \
-Hag un taol uhel ha bras"
+Test "Bali Breizh er Poc'hêr : Karaez 1" : **53.1% WER** \
+Test Baleadenn1.wav :
+> "Gant ar sorserezh oa ur c'harr \
+> Hag un taol uhel ha bras"
 
 
 ## Train Datasets
 
 13 612 utterances
 
-Total audio length:	13 h 29'13'' \
-Male speakers:	10 h 24'31''    77% \
-Female speakers:	3 h 4'42''	    23%
+Total audio length:	**13 h 29'13''** \
+Male speakers: **10 h 24'31''**  (77%) \
+Female speakers: **3 h 4'42''**    (23%)
 
   * Dizale
     * Kabellig_Ruz
@@ -40,9 +40,9 @@ Female speakers:	3 h 4'42''	    23%
 
 2 053 utterances
 
-Total audio length:	1 h 55'49'' \
-Male speakers:	1 h 17'47''	67% \
-Female speakers:	0 h 38'2''	33%
+Total audio length:	**1 h 55'49''** \
+Male speakers:	**1 h 17'47''**	(67%) \
+Female speakers:	**0 h 38'2''**	(33%)
 
   * Common Voice 7.0 test set
 

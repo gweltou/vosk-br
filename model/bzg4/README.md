@@ -7,8 +7,8 @@ corpus: **105 117 words**
 
 Test "Bali Breizh er Poc'hêr : Karaez 1" : **53.1% WER** \
 Test Baleadenn1.wav :
-> "Gant ar sorserezh oa ur c'harr \
-> Hag un taol uhel ha bras"
+> "Gant ar sorserezh oa ur <del>c'harr</del> \
+> Hag un <del>taol</del> uhel ha bras"
 
 
 ## Train Datasets

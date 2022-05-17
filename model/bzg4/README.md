@@ -50,7 +50,7 @@ Female speakers:	**0 h 38'2''**	(33%)
 
 # Remarks
 
-This model has been improved over the last one by joining too short utterances (< 2 seconds) to form utterances of acceptable length. \
+This model has been improved over the last one by joining too short utterances together (< 2 seconds) to form utterances of acceptable length. \
 74 777 sentences from breton wikipedia added to the text corpus. \
 The vocabulary is now 3 times bigger than previous model (bzg3). \
 "Isabelle Caignard - Skampiola" radio interview (Radio Kreiz Breizh) added to training data. \

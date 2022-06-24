@@ -3,7 +3,7 @@
 24-04-2022
 
 lexicon: **32 160 words** with phonemes \
-corpus: **105 117 words**
+corpus: **1 143 670 words**
 
 Test "Bali Breizh er Poc'hêr : Karaez 1" : **53.1% WER** \
 Test Baleadenn1.wav :

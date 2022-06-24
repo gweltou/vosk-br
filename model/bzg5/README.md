@@ -1,14 +1,14 @@
 # Breton Vosk Model v5
 
-24-04-2022
+24-06-2022
 
 lexicon: **36 581 words** with phonemes \
 corpus: **1 693 532 words**
 
-Test "Bali Breizh er Poc'hêr : Karaez 1" : **53.1% WER** \
+Test "Bali Breizh er Poc'hêr : Karaez 1" : **48.5% WER** \
 Test Baleadenn1.wav :
 > "Gant ar sorserezh oa ur <del>c'harr</del> \
-> Hag un <del>taol</del> uhel ha bras"
+> Hag un <del>tammig</del> uhel ha bras"
 
 
 ## Train Datasets

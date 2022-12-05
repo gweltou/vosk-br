@@ -22,7 +22,7 @@ if wf.getnchannels() != 1 or wf.getsampwidth() != 2 or wf.getcomptype() != "NONE
 if len(sys.argv) >= 3:
     model = Model(sys.argv[2])
 else:
-    model = Model("model/bzg5")
+    model = Model("model/bzg6")
     
 rec = KaldiRecognizer(model, wf.getframerate())
 rec.SetWords(True)

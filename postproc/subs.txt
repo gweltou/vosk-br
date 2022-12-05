@@ -1,35 +1,75 @@
 a bell	a-bell
 a benn	a-benn
 a berzh	a-berzh
+a bezh	a-bezh
+a blom	a-blom
 a bouez	a-bouez
+a dal	a-dal
+a drek	a-drek
 a dreñv	a-dreñv
-a us	a-us
-a wechoù	a-wechoù
-a walc'h	a-walc'h
-a ziwar	a-ziwar
+a dreuz	a-dreuz
+a du	a-du
+a enep	a-enep
 a gleiz	a-gleiz
-a zehoù	a-zehoù
+a hed	a-hed
+a hend all	a-hend-all
+a is	a-is
+a oad	a-oad
 a raok	a-raok
 a ribl	a-ribl
 a ratozh	a-ratozh
 a ratozh kaer	a-ratozh-kaer
+a sav	a-sav
+a unan	a-unan
+a us	a-us
+a vent	a-vent
+a walc'h	a-walc'h
+a wechoù	a-wechoù
+a wel	a-wel
+a zehoù	a-zehoù
+a zirak	a-zirak
+a zivout	a-zivout
+a ziwar	a-ziwar
+
 e barzh	e-barzh
-e pad	e-pad
-e leizh	e-leizh
-e kreiz	e-kreiz
-e keit	e-keit
+e bleud	e-bleud
 e giz	e-giz
+e harz	e-harz
+e keñver	e-keñver
+e keit	e-keit
+e kerz	e-kerzh
+e kerzh	e-kerzh
+e kichenn	e-kichenn
+e kreiz	e-kreiz
+e kuzh	e-kuzh
+e leizh	e-leizh
+e pad	e-pad
+e tal	e-tal
+e touez	e-touez
+e unan	e-unan
+
+en dro	en-dro
+
 da heul	da-heul
+
 diwar benn	diwar-benn
+
+war dro	war-dro
+war c'horre	war-c'horre
+war lein	war-lein
+war lerc'h	war-lerc'h
+war raok	war-raok
+
 daou ugent	daou-ugent
 #tri ugent	tri-ugent
 #pevar ugent	pevar-ugent
 warn ugent	warn-ugent
-war dro	war-dro
-war raok	war-raok
-war c'horre	war-c'horre
 
+
+dreist holl	dreist-holl
 kemend all	kemend-all
+muioc'h mui	muioc'h-mui
+
 tad kozh	tad-kozh
 mamm gozh	mamm-gozh
 fest noz	fest-noz

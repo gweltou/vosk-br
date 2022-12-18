@@ -1,4 +1,4 @@
-# Vosk Bzg
+# Vosk e Brezhoneg
 
 Anaouder yezh e brezhoneg dre ar meziant [Vosk](https://github.com/alphacep/vosk-api).
 

@@ -17,7 +17,7 @@ Ar modeloù anaouder mouezh pleustret gant Kaldi n'int ket ar re efedusañ, e-ke
  * **Lec'hel**. Ezhomm ebet eus an Internet. Ho mouezh hag ho restroù son a chomo war ho benveg ha tretet e vint gant ho benveg nemetken. Kudenn surentez ebet liammet d'an treuzkas dre rouedad ha gwelloc'h a-fed ekologel !
  * **Digoust ha dieub**. Gellout a reoc'h azasaat ar meziant d'ho ezhommoù pe enframmañ anezhañ e meziantoù all.
 
-Dalc'hoù zo memes tra : re diefedus eo evit bezañ pleustrek c'hoazh. Emichañs e vo gwellaet efedusted an anaouder tamm-ha-tamm, gant ma vo kavet roadennoù mouezh adskrivet hag gant gwirioù dieub (doare [Creative Commons](https://creativecommons.org/licenses/))
+Dalc'hoù zo siwazh : re diefedus eo c'hoazh evit bezañ pleustrek. Emichañs e vo gwellaet efedusted an anaouder tamm-ha-tamm, gant ma vo kavet roadennoù mouezh adskrivet hag gant gwirioù dieub (doare [Creative Commons](https://creativecommons.org/licenses/))
 
 ## Staliañ
 
@@ -52,6 +52,7 @@ Ha gant an niverenn-se :
 
 ## Adskrivañ iztitloù evit ur video
 
+https://github.com/gweltou/Vosk-bzg/blob/main/res/nozvezh_digousk.mp4
 
 ### Dre an terminal
 

@@ -69,6 +69,8 @@ try:
     else:
         dump_fn = None
 
+    
+
     with sd.RawInputStream(samplerate=args.samplerate, blocksize = 1024, device=args.device, dtype='int16',
                             channels=1, latency='high', callback=callback):
             print('#' * 80)
@@ -76,6 +78,7 @@ try:
             print('#' * 80)
             
             rec = vosk.KaldiRecognizer(model, args.samplerate)
+            
             while True:
                 data = q.get()
                 if rec.AcceptWaveform(data):

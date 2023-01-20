@@ -7,7 +7,7 @@ import wave
 from postproc.postproc import *
 
 
-SetLogLevel(0)
+SetLogLevel(0) # set to -1 to ignore all log messages
 
 
 if not os.path.exists("model"):

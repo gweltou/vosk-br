@@ -52,7 +52,7 @@ Ha gant an niverenn-se :
 
 ## Adskrivañ iztitloù evit ur video
 
-https://user-images.githubusercontent.com/10166907/213804546-75152f68-08a0-49d1-8c27-9e887c331930.mp4
+https://user-images.githubusercontent.com/10166907/213805292-63becbe2-ffb5-492f-9bac-1330c4b2d07d.mp4
 
 *Setu disoc'h an iztitloù emgefre, hep cheñch netra. Gwelet vez e vez kollet buan pa vez sonnerez...*
 

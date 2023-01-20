@@ -54,7 +54,7 @@ Ha gant an niverenn-se :
 
 https://user-images.githubusercontent.com/10166907/213804546-75152f68-08a0-49d1-8c27-9e887c331930.mp4
 
-*Setu disoc'h an iztitloù emgefre. Gwelet vez e vez kollet buan pa vez sonnerez...*
+*Setu disoc'h an iztitloù emgefre, hep cheñch netra. Gwelet vez e vez kollet buan pa vez sonnerez...*
 
 ### Dre an terminal
 

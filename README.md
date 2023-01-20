@@ -2,7 +2,7 @@
 
 Anaouder vouezh e brezhoneg dre ar meziant [Vosk](https://github.com/alphacep/vosk-api).
 
-Un arload evit pellgomz hezoug (Android) a c'heller kavout [du-se](https://github.com/gweltou/Vosk-br-Android).
+Un arload prototip evit pellgomz hezoug (Android) a c'heller kavout [du-se](https://github.com/gweltou/Vosk-br-Android).
 
 ## Petra eo ?
 

@@ -1,16 +1,16 @@
 # Vosk e Brezhoneg
 
-Anaouder yezh e brezhoneg dre ar meziant [Vosk](https://github.com/alphacep/vosk-api).
+Anaouder vouezh e brezhoneg dre ar meziant [Vosk](https://github.com/alphacep/vosk-api).
 
 ## Petra eo ?
 
-Amañ e vez kinniget ur model anaouder mouezh da implij gant ar meziant [Vosk](https://github.com/alphacep/vosk-api).
+Amañ e vez kinniget ur model anaouder vouezh da implij gant ar meziant [Vosk](https://github.com/alphacep/vosk-api).
 
 Gantañ e c'heller adskrivañ komzoù e brezhoneg (**Son -> Skrid**) en un doare emgefre, dre ur mikro e amzer real pe diouzh restroù son.
 
 Pleustret eo bet gant un dek a eurvezh bennak nemetken (roadennoù son ha skrid linennet) dre ar "framework" [Kaldi](https://www.kaldi-asr.org/).
 
-Ar modeloù anaouder mouezh pleustret gant Kaldi n'int ket ar re efedusañ, e-keñver ar modeloù a vez kinniget gant embregerezhioù bras, evel Facebook (Wav2Vec 2.0) pe OpenAI (Whisper) met perzhioù dedennus o deus memes tra :
+Ar modeloù pleustret gant Kaldi n'int ket ar re efedusañ, e-keñver ar modeloù a vez kinniget gant embregerezhioù bras, evel Facebook (Wav2Vec 2.0) pe OpenAI (Whisper) met perzhioù dedennus o deus memes tra :
 
  * **Skañv**. Ar model e brezhoneg ne ra nemet 60 Mo ha treiñ a ra war ur bern mekanikoù : urzhiataerioù **hep GPU**, RaspberryPi, hezoug Android...
  * **Prim**. Gallout a reer adskrivañ ar son e **amzer real**, memes gant un urzhiataer kozh, pe primoc'h c'hoazh gant dafar dereat.

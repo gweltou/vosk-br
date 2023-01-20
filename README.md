@@ -6,15 +6,15 @@ Anaouder yezh e brezhoneg dre ar meziant [Vosk](https://github.com/alphacep/vosk
 
 Amañ e vez kinniget ur model anaouder mouezh da implij gant ar meziant [Vosk](https://github.com/alphacep/vosk-api).
 
-Gantañ e c'heller adskrivañ komzoù e brezhoneg (Son -> Skrid) en un doare emgefre, dre ur mikro e amzer real pe diouzh restroù son.
+Gantañ e c'heller adskrivañ komzoù e brezhoneg (**Son -> Skrid**) en un doare emgefre, dre ur mikro e amzer real pe diouzh restroù son.
 
 Pleustret eo bet gant un dek a eurvezh bennak nemetken (roadennoù son ha skrid linennet) dre ar "framework" [Kaldi](https://www.kaldi-asr.org/).
 
 Ar modeloù anaouder mouezh pleustret gant Kaldi n'int ket ar re efedusañ, e-keñver ar modeloù a vez kinniget gant embregerezhioù bras, evel Facebook (Wav2Vec 2.0) pe OpenAI (Whisper) met perzhioù dedennus o deus memes tra :
 
  * **Skañv**. Ar model e brezhoneg ne ra nemet 60 Mo ha treiñ a ra war ur bern mekanikoù : urzhiataerioù **hep GPU**, RaspberryPi, hezoug Android...
- * **Prim**. Gallout a reer adskrivañ ar son e amzer real, memes gant un urzhiataer kozh, pe primoc'h c'hoazh gant dafar dereat.
- * **Lec'hel**. Ezhomm ebet eus an Internet. Ho mouezh hag ho restroù son a chomo war ho benveg ha tretet e vint gant ho benveg nemetken. Kudenn surentez ebet liammet d'an treuzkas dre rouedad ha gwelloc'h a-fed ekologel !
+ * **Prim**. Gallout a reer adskrivañ ar son e **amzer real**, memes gant un urzhiataer kozh, pe primoc'h c'hoazh gant dafar dereat.
+ * **Lec'hel**. Ezhomm ebet eus an Internet. Ho mouezh hag **ho restroù son a chomo war ho benveg** ha tretet e vint gant ho benveg nemetken. Kudenn surentez ebet liammet d'an treuzkas dre rouedad ha gwelloc'h a-fed ekologel !
  * **Digoust ha dieub**. Gellout a reoc'h azasaat ar meziant d'ho ezhommoù pe enframmañ anezhañ e meziantoù all.
 
 Dalc'hoù zo siwazh : re diefedus eo c'hoazh evit bezañ pleustrek. Emichañs e vo gwellaet efedusted an anaouder tamm-ha-tamm, gant ma vo kavet roadennoù mouezh adskrivet hag gant gwirioù dieub (doare [Creative Commons](https://creativecommons.org/licenses/))

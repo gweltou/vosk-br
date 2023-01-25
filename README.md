@@ -1,16 +1,16 @@
 # Vosk e Brezhoneg
 
-Anaouder vouezh e brezhoneg dre ar meziant [Vosk](https://github.com/alphacep/vosk-api).
+Anaouder mouezh e brezhoneg dre ar meziant [Vosk](https://github.com/alphacep/vosk-api).
 
 Un arload prototip evit pellgomz hezoug (Android) a c'heller kavout [du-se](https://github.com/gweltou/Vosk-br-Android).
 
 ## Petra eo ?
 
-Amañ e vez kinniget ur model anaouder vouezh da implij gant ar meziant [Vosk](https://github.com/alphacep/vosk-api).
+Amañ e vez kinniget ur model anaouder mouezh da implijout gant ar meziant [Vosk](https://github.com/alphacep/vosk-api).
 
 Gantañ e c'heller adskrivañ komzoù e brezhoneg (**Son -> Skrid**) en un doare emgefre, dre ur mikro e amzer real pe diouzh restroù son.
 
-Pleustret eo bet gant un dek a eurvezh bennak nemetken (roadennoù son ha skrid linennet) dre ar "framework" [Kaldi](https://www.kaldi-asr.org/).
+Pleustret eo bet gant un dek a eurvezh bennak (roadennoù son ha skrid linennet) dre ar "framework" [Kaldi](https://www.kaldi-asr.org/).
 
 Ar modeloù pleustret gant Kaldi n'int ket ar re efedusañ, e-keñver ar modeloù a vez kinniget gant embregerezhioù bras, evel Facebook (Wav2Vec 2.0) pe OpenAI (Whisper) met perzhioù dedennus o deus memes tra :
 
@@ -42,7 +42,7 @@ Ha da c'houde :
 
 ``python3 test_wavefile.py ANV_RESTR.wav``
  
-## Implij gant ur mikro
+## Implijout gant ur mikro
 
 Evit gouzout niverenn an etrefas son :
 
@@ -62,7 +62,7 @@ https://user-images.githubusercontent.com/10166907/213805292-63becbe2-ffb5-492f-
 
 Gant vosk e c'hellit adskrivañ teuliadoù son ha filmoù evit kaout ur restr e stumm `srt`.
 
-Ezhomm ho po e vefe staliet ar meziant `ffmpeg` evit implij ar perzh-se (evit amdreiñ a restroù e stumm PCM 16bit, 16KHz).
+Ezhomm ho po e vefe staliet ar meziant `ffmpeg` evit implijout ar perzh-se (evit amdreiñ a restroù e stumm PCM 16bit, 16KHz).
 
 Da skouer:
 

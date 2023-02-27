@@ -1,3 +1,4 @@
+
 ## rkb/ar_spern_gwenn_gant_laurent_cf68d8d1-a454-428b-9336-bcfe21271192
 
 {% include embed-audio.html name="ar_spern_gwenn_gant_laurent_cf68d8d1-a454-428b-9336-bcfe21271192_seg006" src="utts/ar_spern_gwenn_gant_laurent_cf68d8d1-a454-428b-9336-bcfe21271192_seg006.mp3" %}
@@ -78,15 +79,9 @@
 
 ---
 
-{% include embed-audio.html name="ybd_nozvezh_kentañ_ma_eured_seg018" src="utts/ybd_nozvezh_kentañ_ma_eured_seg018.mp3" %}
-
-`Petra bremañ ma Doue na dilec'h m'oa bevet, me soñje din oan intañvez, ha {?}bout din daou bried`
-
----
-
 {% include embed-audio.html name="ybd_nozvezh_kentañ_ma_eured_seg019" src="utts/ybd_nozvezh_kentañ_ma_eured_seg019.mp3" %}
 
-`me soñje din oan intañvez, ha {?} bout din daou bried, ha bremañ ne oaran gant peseurt mont da gousket`
+`me soñje din oan intañvez, ha {?} bout din daou bried, ha bremañ ne goaran gant peseurt mont da gousket`
 
 ---
 
@@ -211,12 +206,6 @@
 {% include embed-audio.html name="rann4_seg163" src="utts/rann4_seg163.mp3" %}
 
 `Kerent hi oa parlanti na he ne parlante ket kar {?} me soñj din deus i gouel an eured`
-
----
-
-{% include embed-audio.html name="rann4_seg167" src="utts/rann4_seg167.mp3" %}
-
-`Petra bremañ ma Doue na dilec'h m'oa bevet, me soñje din oan intañvez, ha {?}bout din daou bried`
 
 ---
 

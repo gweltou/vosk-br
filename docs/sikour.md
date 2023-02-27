@@ -1,34 +1,3 @@
-## rkb/ar_bezv_gant_anne-laure_5967100d-bb10-498a-99a0-3e5e6d42891b
-
-{% include embed-audio.html name="seg006" src="utts/ar_bezv_gant_anne-laure_5967100d-bb10-498a-99a0-3e5e6d42891b_seg006.mp3" %}
-
-`Evaj buhez an nevezamzer. Dour ar plant-se a zo drenez{?} gorf, dieubiñ a ra pristinioù{?} ar c'horf bet berniet e-pad ar goañv`
-
----
-
-{% include embed-audio.html name="seg008" src="utts/ar_bezv_gant_anne-laure_5967100d-bb10-498a-99a0-3e5e6d42891b_seg008.mp3" %}
-
-`azasaat{?} a ra gweñvet{?} an askorn`
-
----
-
-{% include embed-audio.html name="seg009" src="utts/ar_bezv_gant_anne-laure_5967100d-bb10-498a-99a0-3e5e6d42891b_seg009.mp3" %}
-
-`ha skoazellañ a ra moanat{?} ar c'horf oc'h raskañ{?} al lard{?} marv{?}`
-
----
-
-{% include embed-audio.html name="seg016" src="utts/ar_bezv_gant_anne-laure_5967100d-bb10-498a-99a0-3e5e6d42891b_seg016.mp3" %}
-
-`labour a reomp gant ar C'hebekad, tud deus Kebek evit an teknikoù hag ar chimik{?}`
-
----
-
-{% include embed-audio.html name="seg025" src="utts/ar_bezv_gant_anne-laure_5967100d-bb10-498a-99a0-3e5e6d42891b_seg025.mp3" %}
-
-`krog da labour gant meur a labourva gouezeladel{?}`
-
----
 
 ## rkb/ar_spern_gwenn_gant_laurent_cf68d8d1-a454-428b-9336-bcfe21271192
 
@@ -161,12 +130,6 @@
 ---
 
 ## YBD/rann4
-
-{% include embed-audio.html name="seg027" src="utts/rann4_seg027.mp3" %}
-
-`{?}Beur amann kozh a n'eus euh pevar-ugent, unan ha pevar-ugent, bloaz ha pevar-ugent.`
-
----
 
 {% include embed-audio.html name="seg032" src="utts/rann4_seg032.mp3" %}
 

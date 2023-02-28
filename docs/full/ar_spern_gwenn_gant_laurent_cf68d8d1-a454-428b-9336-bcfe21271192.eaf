@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ANNOTATION_DOCUMENT AUTHOR="split2eaf (Gweltaz DG)" DATE="2023-02-28T21:16:45+01:00" FORMAT="3.0" VERSION="3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.mpi.nl/tools/elan/EAFv3.0.xsd">
+	<HEADER MEDIA_FILE="" TIME_UNITS="milliseconds">
+		<MEDIA_DESCRIPTOR MEDIA_URL="file:///home/gweltaz/Documents/STT/todo/RKB/ar_spern_gwenn_gant_laurent_cf68d8d1-a454-428b-9336-bcfe21271192.wav" MIME_TYPE="audio/x-wav" RELATIVE_MEDIA_URL="./ar_spern_gwenn_gant_laurent_cf68d8d1-a454-428b-9336-bcfe21271192.wav"/>
+	</HEADER>
+	<TIME_ORDER>
+		<TIME_SLOT TIME_SLOT_ID="ts1" TIME_VALUE="14980"/>
+		<TIME_SLOT TIME_SLOT_ID="ts2" TIME_VALUE="19480"/>
+		<TIME_SLOT TIME_SLOT_ID="ts3" TIME_VALUE="19480"/>
+		<TIME_SLOT TIME_SLOT_ID="ts4" TIME_VALUE="25500"/>
+		<TIME_SLOT TIME_SLOT_ID="ts5" TIME_VALUE="25540"/>
+		<TIME_SLOT TIME_SLOT_ID="ts6" TIME_VALUE="29700"/>
+		<TIME_SLOT TIME_SLOT_ID="ts7" TIME_VALUE="29720"/>
+		<TIME_SLOT TIME_SLOT_ID="ts8" TIME_VALUE="36580"/>
+		<TIME_SLOT TIME_SLOT_ID="ts9" TIME_VALUE="40020"/>
+		<TIME_SLOT TIME_SLOT_ID="ts10" TIME_VALUE="47880"/>
+		<TIME_SLOT TIME_SLOT_ID="ts11" TIME_VALUE="47900"/>
+		<TIME_SLOT TIME_SLOT_ID="ts12" TIME_VALUE="56420"/>
+		<TIME_SLOT TIME_SLOT_ID="ts13" TIME_VALUE="56420"/>
+		<TIME_SLOT TIME_SLOT_ID="ts14" TIME_VALUE="62220"/>
+		<TIME_SLOT TIME_SLOT_ID="ts15" TIME_VALUE="67040"/>
+		<TIME_SLOT TIME_SLOT_ID="ts16" TIME_VALUE="79300"/>
+		<TIME_SLOT TIME_SLOT_ID="ts17" TIME_VALUE="79520"/>
+		<TIME_SLOT TIME_SLOT_ID="ts18" TIME_VALUE="91520"/>
+		<TIME_SLOT TIME_SLOT_ID="ts19" TIME_VALUE="99120"/>
+		<TIME_SLOT TIME_SLOT_ID="ts20" TIME_VALUE="116440"/>
+		<TIME_SLOT TIME_SLOT_ID="ts21" TIME_VALUE="119920"/>
+		<TIME_SLOT TIME_SLOT_ID="ts22" TIME_VALUE="124600"/>
+		<TIME_SLOT TIME_SLOT_ID="ts23" TIME_VALUE="124600"/>
+		<TIME_SLOT TIME_SLOT_ID="ts24" TIME_VALUE="137060"/>
+		<TIME_SLOT TIME_SLOT_ID="ts25" TIME_VALUE="140420"/>
+		<TIME_SLOT TIME_SLOT_ID="ts26" TIME_VALUE="146160"/>
+		<TIME_SLOT TIME_SLOT_ID="ts27" TIME_VALUE="146220"/>
+		<TIME_SLOT TIME_SLOT_ID="ts28" TIME_VALUE="154580"/>
+		<TIME_SLOT TIME_SLOT_ID="ts29" TIME_VALUE="161220"/>
+		<TIME_SLOT TIME_SLOT_ID="ts30" TIME_VALUE="169400"/>
+		<TIME_SLOT TIME_SLOT_ID="ts31" TIME_VALUE="169420"/>
+		<TIME_SLOT TIME_SLOT_ID="ts32" TIME_VALUE="183340"/>
+		<TIME_SLOT TIME_SLOT_ID="ts33" TIME_VALUE="183400"/>
+		<TIME_SLOT TIME_SLOT_ID="ts34" TIME_VALUE="184600"/>
+	</TIME_ORDER>
+	<TIER LINGUISTIC_TYPE_REF="transcript" TIER_ID="Transcription">
+		<ANNOTATION>
+			<ALIGNABLE_ANNOTATION ANNOTATION_ID="a1" TIME_SLOT_REF1="ts1" TIME_SLOT_REF2="ts2">
+				<ANNOTATION_VALUE>Emaomp gant Laurent Gall deus bro Kallag. Un etnobotanist eo.</ANNOTATION_VALUE>
+			</ALIGNABLE_ANNOTATION>
+		</ANNOTATION>
+		<ANNOTATION>
+			<ALIGNABLE_ANNOTATION ANNOTATION_ID="a2" TIME_SLOT_REF1="ts3" TIME_SLOT_REF2="ts4">
+				<ANNOTATION_VALUE>Da lâret eo ez a da selaou tud deus pep lec'h e Breizh, tud kozh ha deus ar bed peizanted surtoud</ANNOTATION_VALUE>
+			</ALIGNABLE_ANNOTATION>
+		</ANNOTATION>
+		<ANNOTATION>
+			<ALIGNABLE_ANNOTATION ANNOTATION_ID="a3" TIME_SLOT_REF1="ts5" TIME_SLOT_REF2="ts6">
+				<ANNOTATION_VALUE>evit kompren peseurt mod vez implijet ha sellet ar plant bremañ ha gwechall</ANNOTATION_VALUE>
+			</ALIGNABLE_ANNOTATION>
+		</ANNOTATION>
+		<ANNOTATION>
+			<ALIGNABLE_ANNOTATION ANNOTATION_ID="a4" TIME_SLOT_REF1="ts7" TIME_SLOT_REF2="ts8">
+				<ANNOTATION_VALUE>hag hiriv, a vo rannañ ganeomp un nebeud istorioù diwar-benn unan deus ar plant kinniget ba' e levrig</ANNOTATION_VALUE>
+			</ALIGNABLE_ANNOTATION>
+		</ANNOTATION>
+		<ANNOTATION>
+			<ALIGNABLE_ANNOTATION ANNOTATION_ID="a5" TIME_SLOT_REF1="ts9" TIME_SLOT_REF2="ts10">
+				<ANNOTATION_VALUE>Ah un un a zo stank a-walc'h amañ bar' vro, met euh ne vez ket gwelet euh kement-se benn ar fin, eñ eo ar spern-gwenn</ANNOTATION_VALUE>
+			</ALIGNABLE_ANNOTATION>
+		</ANNOTATION>
+		<ANNOTATION>
+			<ALIGNABLE_ANNOTATION ANNOTATION_ID="a6" TIME_SLOT_REF1="ts11" TIME_SLOT_REF2="ts12">
+				<ANNOTATION_VALUE>Honnezh zo ur blantenn a vez gwelet surtoud ba ba miz Mae, pa ra en bleuñv, peogwir o ober a ra bleuñv gwenn</ANNOTATION_VALUE>
+			</ALIGNABLE_ANNOTATION>
+		</ANNOTATION>
+		<ANNOTATION>
+			<ALIGNABLE_ANNOTATION ANNOTATION_ID="a7" TIME_SLOT_REF1="ts13" TIME_SLOT_REF2="ts14">
+				<ANNOTATION_VALUE>ha a zo leun a gerjer{?} hag a zo un dra splann, gav din</ANNOTATION_VALUE>
+			</ALIGNABLE_ANNOTATION>
+		</ANNOTATION>
+		<ANNOTATION>
+			<ALIGNABLE_ANNOTATION ANNOTATION_ID="a8" TIME_SLOT_REF1="ts15" TIME_SLOT_REF2="ts16">
+				<ANNOTATION_VALUE>pa vez spern-du en he bleuñv euh a zo skorn c'hoazh pe ec'h eo diouzh beure a zo dañjerus evit euh, evit an ed, evit gwinizh ha traoù, ha evit ur bern traoù bar jardinoù</ANNOTATION_VALUE>
+			</ALIGNABLE_ANNOTATION>
+		</ANNOTATION>
+		<ANNOTATION>
+			<ALIGNABLE_ANNOTATION ANNOTATION_ID="a9" TIME_SLOT_REF1="ts17" TIME_SLOT_REF2="ts18">
+				<ANNOTATION_VALUE>hag euh pa vez... aze en bleuñv, euh en e bleuñv ar spern-gwenn echu gant ar goañv da vat, hag se zo sezon vrav o tont ha... ba miz Mae</ANNOTATION_VALUE>
+			</ALIGNABLE_ANNOTATION>
+		</ANNOTATION>
+		<ANNOTATION>
+			<ALIGNABLE_ANNOTATION ANNOTATION_ID="a10" TIME_SLOT_REF1="ts19" TIME_SLOT_REF2="ts20">
+				<ANNOTATION_VALUE>promesaoù zo en anezhi{?} kwa gant ar, gant ar blantenn-se. Arouezioù pe simbol, simbolioù euh peogwir ur blantenn euh a zo vont euh da vout da lakaat bar' deus deus da soanial pe an dud, pe an ti, pe euh... pe al loened.</ANNOTATION_VALUE>
+			</ALIGNABLE_ANNOTATION>
+		</ANNOTATION>
+		<ANNOTATION>
+			<ALIGNABLE_ANNOTATION ANNOTATION_ID="a11" TIME_SLOT_REF1="ts21" TIME_SLOT_REF2="ts22">
+				<ANNOTATION_VALUE>ba Lokmaria-Kaer euh lâret vez ul louzaouenn ar gurun</ANNOTATION_VALUE>
+			</ALIGNABLE_ANNOTATION>
+		</ANNOTATION>
+		<ANNOTATION>
+			<ALIGNABLE_ANNOTATION ANNOTATION_ID="a12" TIME_SLOT_REF1="ts23" TIME_SLOT_REF2="ts24">
+				<ANNOTATION_VALUE>da lâret eo mat eo evit harz ar gurun diwar un ti. Lakaet vez bar un deiz kentañ miz Mae, lakaet vez ur bod bod spern gwenn war kement a ti zo, ha evit euh evit harzañ kurun kwa.</ANNOTATION_VALUE>
+			</ALIGNABLE_ANNOTATION>
+		</ANNOTATION>
+		<ANNOTATION>
+			<ALIGNABLE_ANNOTATION ANNOTATION_ID="a13" TIME_SLOT_REF1="ts25" TIME_SLOT_REF2="ts26">
+				<ANNOTATION_VALUE>Ba Sant Laorañs, kichen Bear, zo bet lâret din a vije lakaet ar saout tremen dindan spern-gwenn</ANNOTATION_VALUE>
+			</ALIGNABLE_ANNOTATION>
+		</ANNOTATION>
+		<ANNOTATION>
+			<ALIGNABLE_ANNOTATION ANNOTATION_ID="a14" TIME_SLOT_REF1="ts27" TIME_SLOT_REF2="ts28">
+				<ANNOTATION_VALUE>evit evit evit ar harz euh, evit ar harz kleñved tont warne, hag ur bern traoù a seurt-se. Se zo ur blantenn a broteja an dud.</ANNOTATION_VALUE>
+			</ALIGNABLE_ANNOTATION>
+		</ANNOTATION>
+		<ANNOTATION>
+			<ALIGNABLE_ANNOTATION ANNOTATION_ID="a15" TIME_SLOT_REF1="ts29" TIME_SLOT_REF2="ts30">
+				<ANNOTATION_VALUE>Goaret e vez ar blantenn euh, fed euh fitoterapi, a zo ur blantenn louzoù mat</ANNOTATION_VALUE>
+			</ALIGNABLE_ANNOTATION>
+		</ANNOTATION>
+		<ANNOTATION>
+			<ALIGNABLE_ANNOTATION ANNOTATION_ID="a16" TIME_SLOT_REF1="ts31" TIME_SLOT_REF2="ts32">
+				<ANNOTATION_VALUE>deus euh poan galon. Mat a-enep an tañsion. Tañsion izel, tañsion uhel, hag euh se vez vez vez kavet kazimant pep lec'h ba bro Frañs gant an enklaskoù etnobotaniezh.</ANNOTATION_VALUE>
+			</ALIGNABLE_ANNOTATION>
+		</ANNOTATION>
+		<ANNOTATION>
+			<ALIGNABLE_ANNOTATION ANNOTATION_ID="a17" TIME_SLOT_REF1="ts33" TIME_SLOT_REF2="ts34">
+				<ANNOTATION_VALUE>nemet a ba' Breizh</ANNOTATION_VALUE>
+			</ALIGNABLE_ANNOTATION>
+		</ANNOTATION>
+	</TIER>
+	<LINGUISTIC_TYPE GRAPHIC_REFERENCES="false" LINGUISTIC_TYPE_ID="transcript" TIME_ALIGNABLE="true"/>
+	<LANGUAGE LANG_ID="bre" LANG_LABEL="Breton (bre)"/>
+	<CONSTRAINT DESCRIPTION="Time subdivision of parent annotation's time interval, no time gaps allowed within this interval" STEREOTYPE="Time_Subdivision"/>
+	<CONSTRAINT DESCRIPTION="Symbolic subdivision of a parent annotation. Annotations refering to the same parent are ordered" STEREOTYPE="Symbolic_Subdivision"/>
+	<CONSTRAINT DESCRIPTION="1-1 association with a parent annotation" STEREOTYPE="Symbolic_Association"/>
+	<CONSTRAINT DESCRIPTION="Time alignable annotations within the parent annotation's time interval, gaps are allowed" STEREOTYPE="Included_In"/>
+</ANNOTATION_DOCUMENT>

@@ -1,11 +1,19 @@
-# Reiñ sikour da treuzskrivañ
 
+# Reiñ sikour da treuzskrivañ
+ 
 Amañ e kavit tennadoù son diaes din da gompren e teuliadoù emaon o treuzskrivañ er mare-mañ.
-M'ho peus c'hoant reiñ un taol sikour, kasit ur ![postel](mailto:gweltou@hotmail.com) din gant ar frazenn klok ha difaziet, hervez ar pezh a gomprenoc'h.
-Na zisoñjit ket da skrivañ niverenn ar frazenn (da skouer: `YBD/rann4-192`).
+
+M'ho peus c'hoant reiñ un taol sikour, kasit ur [postel din](mailto:gweltou@hotmail.com) gant ar frazenn klok ha difaziet, hervez ar pezh a gomprenoc'h.
+Na zisoñjit ket da skrivañ niverenn ar frazenn (da skouer: `YBD/rann4, 192`).
+
 Gallout a rit implij ar skritur a glot ar muiañ d'ar yezh komzet evel-just.
 
-## rkb/ar_spern_gwenn_gant_laurent_cf68d8d1-a454-428b-9336-bcfe21271192
+
+## RKB/ar_spern_gwenn_gant_laurent_cf68d8d1-a454-428b-9336-bcfe21271192
+
+[Restr WAV](full/ar_spern_gwenn_gant_laurent_cf68d8d1-a454-428b-9336-bcfe21271192.wav)
+
+[Restr EAF](full/ar_spern_gwenn_gant_laurent_cf68d8d1-a454-428b-9336-bcfe21271192.eaf) (ELAN)
 
 {% include embed-audio.html name="7" src="utts/ar_spern_gwenn_gant_laurent_cf68d8d1-a454-428b-9336-bcfe21271192_seg109.mp3" %}
 
@@ -19,45 +27,11 @@ Gallout a rit implij ar skritur a glot ar muiañ d'ar yezh komzet evel-just.
 
 ---
 
-## YBD/ybd_boulanjer_a_laniscat
-
-{% include embed-audio.html name="3" src="utts/ybd_boulanjer_a_laniscat_seg105.mp3" %}
-
-`Kroget un tan ne ruilhadenn{?}, kroget un tan ne ruilhadenn,`
-
----
-
-{% include embed-audio.html name="5" src="utts/ybd_boulanjer_a_laniscat_seg107.mp3" %}
-
-`Ha yupeniar{?} benn il du kan{?} da supliañ e Gwerledan`
-
----
-
-{% include embed-audio.html name="7" src="utts/ybd_boulanjer_a_laniscat_seg109.mp3" %}
-
-`Ha me reiñ dezho meun devezh soñj, meun devezh soñj ha ma c'hazeg, ha meump bara tro{?} pa vo dorned`
-
----
-
-{% include embed-audio.html name="9" src="utts/ybd_boulanjer_a_laniscat_seg111.mp3" %}
-
-`Hag e lâren d'an dud all en ti, ne me trompet a vicher soari{?}`
-
----
-
-{% include embed-audio.html name="14" src="utts/ybd_boulanjer_a_laniscat_seg116.mp3" %}
-
-`Ha yupeniar{?} benn il du kan{?}, ha yupeniar{?} benn il du kan{?}`
-
----
-
-{% include embed-audio.html name="15" src="utts/ybd_boulanjer_a_laniscat_seg117.mp3" %}
-
-`Ha yupeniar{?} benn il du kan{?}, da supliañ er Gwerledan`
-
----
-
 ## YBD/rann2
+
+[Restr WAV](full/rann2.wav)
+
+[Restr EAF](full/rann2.eaf) (ELAN)
 
 {% include embed-audio.html name="7" src="utts/rann2_seg109.mp3" %}
 
@@ -66,6 +40,10 @@ Gallout a rit implij ar skritur a glot ar muiañ d'ar yezh komzet evel-just.
 ---
 
 ## YBD/ybd_nozvezh_kentañ_ma_eured
+
+[Restr WAV](full/ybd_nozvezh_kentañ_ma_eured.wav)
+
+[Restr EAF](full/ybd_nozvezh_kentañ_ma_eured.eaf) (ELAN)
 
 {% include embed-audio.html name="9" src="utts/ybd_nozvezh_kentañ_ma_eured_seg111.mp3" %}
 
@@ -97,7 +75,53 @@ Gallout a rit implij ar skritur a glot ar muiañ d'ar yezh komzet evel-just.
 
 ---
 
+## YBD/boulanjer_a_laniscat
+
+[Restr WAV](full/boulanjer_a_laniscat.wav)
+
+[Restr EAF](full/boulanjer_a_laniscat.eaf) (ELAN)
+
+{% include embed-audio.html name="3" src="utts/boulanjer_a_laniscat_seg105.mp3" %}
+
+`Kroget un tan ne ruilhadenn{?}, kroget un tan ne ruilhadenn,`
+
+---
+
+{% include embed-audio.html name="5" src="utts/boulanjer_a_laniscat_seg107.mp3" %}
+
+`Ha yupeniar{?} benn il du kan{?} da supliañ e Gwerledan`
+
+---
+
+{% include embed-audio.html name="7" src="utts/boulanjer_a_laniscat_seg109.mp3" %}
+
+`Ha me reiñ dezho meun devezh soñj, meun devezh soñj ha ma c'hazeg, ha meump bara tro{?} pa vo dorned`
+
+---
+
+{% include embed-audio.html name="9" src="utts/boulanjer_a_laniscat_seg111.mp3" %}
+
+`Hag e lâren d'an dud all en ti, ne me trompet a vicher soari{?}`
+
+---
+
+{% include embed-audio.html name="14" src="utts/boulanjer_a_laniscat_seg116.mp3" %}
+
+`Ha yupeniar{?} benn il du kan{?}, ha yupeniar{?} benn il du kan{?}`
+
+---
+
+{% include embed-audio.html name="15" src="utts/boulanjer_a_laniscat_seg117.mp3" %}
+
+`Ha yupeniar{?} benn il du kan{?}, da supliañ er Gwerledan`
+
+---
+
 ## YBD/rann3
+
+[Restr WAV](full/rann3.wav)
+
+[Restr EAF](full/rann3.eaf) (ELAN)
 
 {% include embed-audio.html name="1" src="utts/rann3_seg103.mp3" %}
 
@@ -136,6 +160,10 @@ Gallout a rit implij ar skritur a glot ar muiañ d'ar yezh komzet evel-just.
 ---
 
 ## YBD/rann4
+
+[Restr WAV](full/rann4.wav)
+
+[Restr EAF](full/rann4.eaf) (ELAN)
 
 {% include embed-audio.html name="33" src="utts/rann4_seg135.mp3" %}
 

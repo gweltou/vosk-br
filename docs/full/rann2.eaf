@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ANNOTATION_DOCUMENT AUTHOR="split2eaf (Gweltaz DG)" DATE="2023-02-28T21:16:47+01:00" FORMAT="3.0" VERSION="3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.mpi.nl/tools/elan/EAFv3.0.xsd">
+	<HEADER MEDIA_FILE="" TIME_UNITS="milliseconds">
+		<MEDIA_DESCRIPTOR MEDIA_URL="file:///home/gweltaz/Documents/STT/todo/YBD/rann2.wav" MIME_TYPE="audio/x-wav" RELATIVE_MEDIA_URL="./rann2.wav"/>
+	</HEADER>
+	<TIME_ORDER>
+		<TIME_SLOT TIME_SLOT_ID="ts1" TIME_VALUE="269095"/>
+		<TIME_SLOT TIME_SLOT_ID="ts2" TIME_VALUE="273638"/>
+		<TIME_SLOT TIME_SLOT_ID="ts3" TIME_VALUE="322052"/>
+		<TIME_SLOT TIME_SLOT_ID="ts4" TIME_VALUE="325836"/>
+		<TIME_SLOT TIME_SLOT_ID="ts5" TIME_VALUE="634429"/>
+		<TIME_SLOT TIME_SLOT_ID="ts6" TIME_VALUE="637859"/>
+		<TIME_SLOT TIME_SLOT_ID="ts7" TIME_VALUE="851281"/>
+		<TIME_SLOT TIME_SLOT_ID="ts8" TIME_VALUE="855378"/>
+		<TIME_SLOT TIME_SLOT_ID="ts9" TIME_VALUE="854988"/>
+		<TIME_SLOT TIME_SLOT_ID="ts10" TIME_VALUE="860576"/>
+		<TIME_SLOT TIME_SLOT_ID="ts11" TIME_VALUE="920756"/>
+		<TIME_SLOT TIME_SLOT_ID="ts12" TIME_VALUE="924165"/>
+		<TIME_SLOT TIME_SLOT_ID="ts13" TIME_VALUE="1393830"/>
+		<TIME_SLOT TIME_SLOT_ID="ts14" TIME_VALUE="1405712"/>
+	</TIME_ORDER>
+	<TIER LINGUISTIC_TYPE_REF="transcript" TIER_ID="Transcription">
+		<ANNOTATION>
+			<ALIGNABLE_ANNOTATION ANNOTATION_ID="a1" TIME_SLOT_REF1="ts1" TIME_SLOT_REF2="ts2">
+				<ANNOTATION_VALUE>Oh beñ, ma hini eo. Yec'hed mat deoc'h ! Yec'hed mat deoc'h !</ANNOTATION_VALUE>
+			</ALIGNABLE_ANNOTATION>
+		</ANNOTATION>
+		<ANNOTATION>
+			<ALIGNABLE_ANNOTATION ANNOTATION_ID="a2" TIME_SLOT_REF1="ts3" TIME_SLOT_REF2="ts4">
+				<ANNOTATION_VALUE>Hag ar bloaz-mañ e vo mat ar sistr pe ne vo ket ?</ANNOTATION_VALUE>
+			</ALIGNABLE_ANNOTATION>
+		</ANNOTATION>
+		<ANNOTATION>
+			<ALIGNABLE_ANNOTATION ANNOTATION_ID="a3" TIME_SLOT_REF1="ts5" TIME_SLOT_REF2="ts6">
+				<ANNOTATION_VALUE>Sant Veg, n'eus ket tud hag a oar brezhoneg war ar maez ?</ANNOTATION_VALUE>
+			</ALIGNABLE_ANNOTATION>
+		</ANNOTATION>
+		<ANNOTATION>
+			<ALIGNABLE_ANNOTATION ANNOTATION_ID="a4" TIME_SLOT_REF1="ts7" TIME_SLOT_REF2="ts8">
+				<ANNOTATION_VALUE>Hag euh, e pelec'h eo bet ganet ? E Korboulo eo bet ganet ? Korboulo, ya.</ANNOTATION_VALUE>
+			</ALIGNABLE_ANNOTATION>
+		</ANNOTATION>
+		<ANNOTATION>
+			<ALIGNABLE_ANNOTATION ANNOTATION_ID="a5" TIME_SLOT_REF1="ts9" TIME_SLOT_REF2="ts10">
+				<ANNOTATION_VALUE>Ha ya, ha goût ra mat ar brezhoneg ? Oh ya. E dud oa deus Korboulo ? Ya. Pe oad eo ?</ANNOTATION_VALUE>
+			</ALIGNABLE_ANNOTATION>
+		</ANNOTATION>
+		<ANNOTATION>
+			<ALIGNABLE_ANNOTATION ANNOTATION_ID="a6" TIME_SLOT_REF1="ts11" TIME_SLOT_REF2="ts12">
+				<ANNOTATION_VALUE>Ha n'oc'h ket evit euh kaozeal e brezhoneg diwar benn a dra se ?</ANNOTATION_VALUE>
+			</ALIGNABLE_ANNOTATION>
+		</ANNOTATION>
+		<ANNOTATION>
+			<ALIGNABLE_ANNOTATION ANNOTATION_ID="a7" TIME_SLOT_REF1="ts13" TIME_SLOT_REF2="ts14">
+				<ANNOTATION_VALUE>Aet eo ma yar e lein ur wezenn, met ne goaran ket penaos he diskenn {?}b'an {?}had {?}presion, bara dezhi hag {?}er ve ti peti peti peti peti</ANNOTATION_VALUE>
+			</ALIGNABLE_ANNOTATION>
+		</ANNOTATION>
+	</TIER>
+	<LINGUISTIC_TYPE GRAPHIC_REFERENCES="false" LINGUISTIC_TYPE_ID="transcript" TIME_ALIGNABLE="true"/>
+	<LANGUAGE LANG_ID="bre" LANG_LABEL="Breton (bre)"/>
+	<CONSTRAINT DESCRIPTION="Time subdivision of parent annotation's time interval, no time gaps allowed within this interval" STEREOTYPE="Time_Subdivision"/>
+	<CONSTRAINT DESCRIPTION="Symbolic subdivision of a parent annotation. Annotations refering to the same parent are ordered" STEREOTYPE="Symbolic_Subdivision"/>
+	<CONSTRAINT DESCRIPTION="1-1 association with a parent annotation" STEREOTYPE="Symbolic_Association"/>
+	<CONSTRAINT DESCRIPTION="Time alignable annotations within the parent annotation's time interval, gaps are allowed" STEREOTYPE="Included_In"/>
+</ANNOTATION_DOCUMENT>

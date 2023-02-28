@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ANNOTATION_DOCUMENT AUTHOR="split2eaf (Gweltaz DG)" DATE="2023-02-28T21:16:50+01:00" FORMAT="3.0" VERSION="3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.mpi.nl/tools/elan/EAFv3.0.xsd">
+	<HEADER MEDIA_FILE="" TIME_UNITS="milliseconds">
+		<MEDIA_DESCRIPTOR MEDIA_URL="file:///home/gweltaz/Documents/STT/todo/YBD/ybd_nozvezh_kentañ_ma_eured.wav" MIME_TYPE="audio/x-wav" RELATIVE_MEDIA_URL="./ybd_nozvezh_kentañ_ma_eured.wav"/>
+	</HEADER>
+	<TIME_ORDER>
+		<TIME_SLOT TIME_SLOT_ID="ts1" TIME_VALUE="408"/>
+		<TIME_SLOT TIME_SLOT_ID="ts2" TIME_VALUE="8012"/>
+		<TIME_SLOT TIME_SLOT_ID="ts3" TIME_VALUE="8011"/>
+		<TIME_SLOT TIME_SLOT_ID="ts4" TIME_VALUE="17001"/>
+		<TIME_SLOT TIME_SLOT_ID="ts5" TIME_VALUE="17959"/>
+		<TIME_SLOT TIME_SLOT_ID="ts6" TIME_VALUE="25809"/>
+		<TIME_SLOT TIME_SLOT_ID="ts7" TIME_VALUE="26191"/>
+		<TIME_SLOT TIME_SLOT_ID="ts8" TIME_VALUE="34504"/>
+		<TIME_SLOT TIME_SLOT_ID="ts9" TIME_VALUE="35073"/>
+		<TIME_SLOT TIME_SLOT_ID="ts10" TIME_VALUE="43525"/>
+		<TIME_SLOT TIME_SLOT_ID="ts11" TIME_VALUE="44286"/>
+		<TIME_SLOT TIME_SLOT_ID="ts12" TIME_VALUE="52440"/>
+		<TIME_SLOT TIME_SLOT_ID="ts13" TIME_VALUE="52993"/>
+		<TIME_SLOT TIME_SLOT_ID="ts14" TIME_VALUE="61294"/>
+		<TIME_SLOT TIME_SLOT_ID="ts15" TIME_VALUE="61829"/>
+		<TIME_SLOT TIME_SLOT_ID="ts16" TIME_VALUE="70223"/>
+		<TIME_SLOT TIME_SLOT_ID="ts17" TIME_VALUE="71055"/>
+		<TIME_SLOT TIME_SLOT_ID="ts18" TIME_VALUE="79731"/>
+		<TIME_SLOT TIME_SLOT_ID="ts19" TIME_VALUE="80199"/>
+		<TIME_SLOT TIME_SLOT_ID="ts20" TIME_VALUE="88168"/>
+		<TIME_SLOT TIME_SLOT_ID="ts21" TIME_VALUE="88883"/>
+		<TIME_SLOT TIME_SLOT_ID="ts22" TIME_VALUE="97090"/>
+		<TIME_SLOT TIME_SLOT_ID="ts23" TIME_VALUE="97789"/>
+		<TIME_SLOT TIME_SLOT_ID="ts24" TIME_VALUE="105899"/>
+		<TIME_SLOT TIME_SLOT_ID="ts25" TIME_VALUE="106660"/>
+		<TIME_SLOT TIME_SLOT_ID="ts26" TIME_VALUE="114691"/>
+		<TIME_SLOT TIME_SLOT_ID="ts27" TIME_VALUE="115389"/>
+		<TIME_SLOT TIME_SLOT_ID="ts28" TIME_VALUE="123344"/>
+		<TIME_SLOT TIME_SLOT_ID="ts29" TIME_VALUE="123986"/>
+		<TIME_SLOT TIME_SLOT_ID="ts30" TIME_VALUE="131826"/>
+		<TIME_SLOT TIME_SLOT_ID="ts31" TIME_VALUE="132545"/>
+		<TIME_SLOT TIME_SLOT_ID="ts32" TIME_VALUE="140261"/>
+		<TIME_SLOT TIME_SLOT_ID="ts33" TIME_VALUE="140757"/>
+		<TIME_SLOT TIME_SLOT_ID="ts34" TIME_VALUE="148327"/>
+		<TIME_SLOT TIME_SLOT_ID="ts35" TIME_VALUE="149017"/>
+		<TIME_SLOT TIME_SLOT_ID="ts36" TIME_VALUE="156909"/>
+		<TIME_SLOT TIME_SLOT_ID="ts37" TIME_VALUE="157494"/>
+		<TIME_SLOT TIME_SLOT_ID="ts38" TIME_VALUE="165050"/>
+		<TIME_SLOT TIME_SLOT_ID="ts39" TIME_VALUE="165674"/>
+		<TIME_SLOT TIME_SLOT_ID="ts40" TIME_VALUE="173625"/>
+		<TIME_SLOT TIME_SLOT_ID="ts41" TIME_VALUE="174316"/>
+		<TIME_SLOT TIME_SLOT_ID="ts42" TIME_VALUE="182037"/>
+		<TIME_SLOT TIME_SLOT_ID="ts43" TIME_VALUE="182822"/>
+		<TIME_SLOT TIME_SLOT_ID="ts44" TIME_VALUE="190748"/>
+		<TIME_SLOT TIME_SLOT_ID="ts45" TIME_VALUE="191240"/>
+		<TIME_SLOT TIME_SLOT_ID="ts46" TIME_VALUE="198663"/>
+	</TIME_ORDER>
+	<TIER LINGUISTIC_TYPE_REF="transcript" TIER_ID="Transcription">
+		<ANNOTATION>
+			<ALIGNABLE_ANNOTATION ANNOTATION_ID="a1" TIME_SLOT_REF1="ts1" TIME_SLOT_REF2="ts2">
+				<ANNOTATION_VALUE>Noz kentañ ma eured ha me m'oa komandamant, mont da servij ar Roue, ret eo bezañ kontant</ANNOTATION_VALUE>
+			</ALIGNABLE_ANNOTATION>
+		</ANNOTATION>
+		<ANNOTATION>
+			<ALIGNABLE_ANNOTATION ANNOTATION_ID="a2" TIME_SLOT_REF1="ts3" TIME_SLOT_REF2="ts4">
+				<ANNOTATION_VALUE>Mont da servij ar Roue, na ret eo obeisañ, na ma dousig Frañsizan ne rae ket met ouelañ</ANNOTATION_VALUE>
+			</ALIGNABLE_ANNOTATION>
+		</ANNOTATION>
+		<ANNOTATION>
+			<ALIGNABLE_ANNOTATION ANNOTATION_ID="a3" TIME_SLOT_REF1="ts5" TIME_SLOT_REF2="ts6">
+				<ANNOTATION_VALUE>Tavez, tavez Frañsizan, tavez na ouelez ket, a-benn un daou pe oh tri bloaz me teu c'hoazh d'ho kwelet</ANNOTATION_VALUE>
+			</ALIGNABLE_ANNOTATION>
+		</ANNOTATION>
+		<ANNOTATION>
+			<ALIGNABLE_ANNOTATION ANNOTATION_ID="a4" TIME_SLOT_REF1="ts7" TIME_SLOT_REF2="ts8">
+				<ANNOTATION_VALUE>A-benn un daou pe oh tri bloaz, pe oh pevar d'an hirañ oh me deuy c'hoazh d'ho kwelet ma dousig Frañsizan</ANNOTATION_VALUE>
+			</ALIGNABLE_ANNOTATION>
+		</ANNOTATION>
+		<ANNOTATION>
+			<ALIGNABLE_ANNOTATION ANNOTATION_ID="a5" TIME_SLOT_REF1="ts9" TIME_SLOT_REF2="ts10">
+				<ANNOTATION_VALUE>disoc'h oa an drivet bloaz, nag ar bevarvet ivez, nag ar martolod yaouank n'arive ket er gêr</ANNOTATION_VALUE>
+			</ALIGNABLE_ANNOTATION>
+		</ANNOTATION>
+		<ANNOTATION>
+			<ALIGNABLE_ANNOTATION ANNOTATION_ID="a6" TIME_SLOT_REF1="ts11" TIME_SLOT_REF2="ts12">
+				<ANNOTATION_VALUE>dimezet ha eureded oh diouzh an daol o koaniañ, arivas ar martolod ha na da c'houlenn lojañ</ANNOTATION_VALUE>
+			</ALIGNABLE_ANNOTATION>
+		</ANNOTATION>
+		<ANNOTATION>
+			<ALIGNABLE_ANNOTATION ANNOTATION_ID="a7" TIME_SLOT_REF1="ts13" TIME_SLOT_REF2="ts14">
+				<ANNOTATION_VALUE>boñsoar da c'hwi matezh vihan, na c'hwi ma lojfe, nag ur martolod yaouank etrezo deus an arme</ANNOTATION_VALUE>
+			</ALIGNABLE_ANNOTATION>
+		</ANNOTATION>
+		<ANNOTATION>
+			<ALIGNABLE_ANNOTATION ANNOTATION_ID="a8" TIME_SLOT_REF1="ts15" TIME_SLOT_REF2="ts16">
+				<ANNOTATION_VALUE>Oh vi ket c'hoazh met den yaouank amañ vi ket lojet, amañ zo talari a-walc'h en deiz noz an eured</ANNOTATION_VALUE>
+			</ALIGNABLE_ANNOTATION>
+		</ANNOTATION>
+		<ANNOTATION>
+			<ALIGNABLE_ANNOTATION ANNOTATION_ID="a9" TIME_SLOT_REF1="ts17" TIME_SLOT_REF2="ts18">
+				<ANNOTATION_VALUE>ar martolod voe ur paotr fin, ha han {?} d'un doare, na aet da gaout e voereb kozh oh barzh ur gambr a gostez</ANNOTATION_VALUE>
+			</ALIGNABLE_ANNOTATION>
+		</ANNOTATION>
+		<ANNOTATION>
+			<ALIGNABLE_ANNOTATION ANNOTATION_ID="a10" TIME_SLOT_REF1="ts19" TIME_SLOT_REF2="ts20">
+				<ANNOTATION_VALUE>boñsoar da c'hwi moereb kozh, oh na c'hwi ma lojfe, nag ur martolod yaouank distro deus an arme</ANNOTATION_VALUE>
+			</ALIGNABLE_ANNOTATION>
+		</ANNOTATION>
+		<ANNOTATION>
+			<ALIGNABLE_ANNOTATION ANNOTATION_ID="a11" TIME_SLOT_REF1="ts21" TIME_SLOT_REF2="ts22">
+				<ANNOTATION_VALUE>ya sur met an hini gozh, lojet sur e viot, barzh ur gwele mat a bluñv e vi lakaet da gousket</ANNOTATION_VALUE>
+			</ALIGNABLE_ANNOTATION>
+		</ANNOTATION>
+		<ANNOTATION>
+			<ALIGNABLE_ANNOTATION ANNOTATION_ID="a12" TIME_SLOT_REF1="ts23" TIME_SLOT_REF2="ts24">
+				<ANNOTATION_VALUE>barzh ur gwele mat a bluñv vi lakaet da gousket, asambles gant tud an eured o me meu c'hoazh kouignfe</ANNOTATION_VALUE>
+			</ALIGNABLE_ANNOTATION>
+		</ANNOTATION>
+		<ANNOTATION>
+			<ALIGNABLE_ANNOTATION ANNOTATION_ID="a13" TIME_SLOT_REF1="ts25" TIME_SLOT_REF2="ts26">
+				<ANNOTATION_VALUE>pe oa debret o c'houignoù gant ar re diwezhañ, na aet da c'houlenn ar c'hartoù evit an divertisañ</ANNOTATION_VALUE>
+			</ALIGNABLE_ANNOTATION>
+		</ANNOTATION>
+		<ANNOTATION>
+			<ALIGNABLE_ANNOTATION ANNOTATION_ID="a14" TIME_SLOT_REF1="ts27" TIME_SLOT_REF2="ts28">
+				<ANNOTATION_VALUE>salud kroaz met re yaouank ho kartennoù no ket c'hoariet, parlanti gant ar re yaouank o se n'eo ket difennet</ANNOTATION_VALUE>
+			</ALIGNABLE_ANNOTATION>
+		</ANNOTATION>
+		<ANNOTATION>
+			<ALIGNABLE_ANNOTATION ANNOTATION_ID="a15" TIME_SLOT_REF1="ts29" TIME_SLOT_REF2="ts30">
+				<ANNOTATION_VALUE>Kerent hi oa parlanti na he ne parlante ket kar {?} me soñj din deus i gouel an eured</ANNOTATION_VALUE>
+			</ALIGNABLE_ANNOTATION>
+		</ANNOTATION>
+		<ANNOTATION>
+			<ALIGNABLE_ANNOTATION ANNOTATION_ID="a16" TIME_SLOT_REF1="ts31" TIME_SLOT_REF2="ts32">
+				<ANNOTATION_VALUE>Na pelec'h emañ ma gwalenn aour hag na ma hini arc'hant, nag ar re m'oa roet deoc'h bar iliz sakramant</ANNOTATION_VALUE>
+			</ALIGNABLE_ANNOTATION>
+		</ANNOTATION>
+		<ANNOTATION>
+			<ALIGNABLE_ANNOTATION ANNOTATION_ID="a17" TIME_SLOT_REF1="ts33" TIME_SLOT_REF2="ts34">
+				<ANNOTATION_VALUE>na emañ ma gwalenn aour na ma sakramantoù, nag ar re m'oa roet deoc'h bremañ zo seizh vloaz zo</ANNOTATION_VALUE>
+			</ALIGNABLE_ANNOTATION>
+		</ANNOTATION>
+		<ANNOTATION>
+			<ALIGNABLE_ANNOTATION ANNOTATION_ID="a18" TIME_SLOT_REF1="ts35" TIME_SLOT_REF2="ts36">
+				<ANNOTATION_VALUE>Na hi da joeñtañ he daou dorn na da sell {?} petra bremañ ma Doue me m'oa bevet dilec'h</ANNOTATION_VALUE>
+			</ALIGNABLE_ANNOTATION>
+		</ANNOTATION>
+		<ANNOTATION>
+			<ALIGNABLE_ANNOTATION ANNOTATION_ID="a19" TIME_SLOT_REF1="ts37" TIME_SLOT_REF2="ts38">
+				<ANNOTATION_VALUE>Petra bremañ ma Doue na dilec'h m'oa bevet, me soñje din oan intañvez, ha bout din daou bried</ANNOTATION_VALUE>
+			</ALIGNABLE_ANNOTATION>
+		</ANNOTATION>
+		<ANNOTATION>
+			<ALIGNABLE_ANNOTATION ANNOTATION_ID="a20" TIME_SLOT_REF1="ts39" TIME_SLOT_REF2="ts40">
+				<ANNOTATION_VALUE>me soñje din oan intañvez, ha {?} bout din daou bried, ha bremañ ne goaran gant peseurt mont da gousket</ANNOTATION_VALUE>
+			</ALIGNABLE_ANNOTATION>
+		</ANNOTATION>
+		<ANNOTATION>
+			<ALIGNABLE_ANNOTATION ANNOTATION_ID="a21" TIME_SLOT_REF1="ts41" TIME_SLOT_REF2="ts42">
+				<ANNOTATION_VALUE>Met gant an hini kentañ c'hoant em eus da vonet, nag egile c'hay d'ar gêr oh ya evel ma deuet</ANNOTATION_VALUE>
+			</ALIGNABLE_ANNOTATION>
+		</ANNOTATION>
+		<ANNOTATION>
+			<ALIGNABLE_ANNOTATION ANNOTATION_ID="a22" TIME_SLOT_REF1="ts43" TIME_SLOT_REF2="ts44">
+				<ANNOTATION_VALUE>Dont a rez c'hwi kamalad c'heomp hon daou d'an hent pras {?} piv o varioneta</ANNOTATION_VALUE>
+			</ALIGNABLE_ANNOTATION>
+		</ANNOTATION>
+		<ANNOTATION>
+			<ALIGNABLE_ANNOTATION ANNOTATION_ID="a23" TIME_SLOT_REF1="ts45" TIME_SLOT_REF2="ts46">
+				<ANNOTATION_VALUE>Oh nag espesialamant o kroaziañ martoloded, met n'on ket da goll ma buhez abalamour d'ar merc'hed</ANNOTATION_VALUE>
+			</ALIGNABLE_ANNOTATION>
+		</ANNOTATION>
+	</TIER>
+	<LINGUISTIC_TYPE GRAPHIC_REFERENCES="false" LINGUISTIC_TYPE_ID="transcript" TIME_ALIGNABLE="true"/>
+	<LANGUAGE LANG_ID="bre" LANG_LABEL="Breton (bre)"/>
+	<CONSTRAINT DESCRIPTION="Time subdivision of parent annotation's time interval, no time gaps allowed within this interval" STEREOTYPE="Time_Subdivision"/>
+	<CONSTRAINT DESCRIPTION="Symbolic subdivision of a parent annotation. Annotations refering to the same parent are ordered" STEREOTYPE="Symbolic_Subdivision"/>
+	<CONSTRAINT DESCRIPTION="1-1 association with a parent annotation" STEREOTYPE="Symbolic_Association"/>
+	<CONSTRAINT DESCRIPTION="Time alignable annotations within the parent annotation's time interval, gaps are allowed" STEREOTYPE="Included_In"/>
+</ANNOTATION_DOCUMENT>

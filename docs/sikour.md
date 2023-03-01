@@ -17,10 +17,6 @@ Restroù : [WAV](full/ar_spern_gwenn_gant_laurent_cf68d8d1-a454-428b-9336-bcfe21
 
 > ha a zo leun a gerjer{?} hag a zo un dra splann, gav din
 
-{% include embed-audio.html name="10" src="utts/ar_spern_gwenn_gant_laurent_cf68d8d1-a454-428b-9336-bcfe21271192_seg010.mp3" %}
-
-> promesaoù zo en anezhi{?} kwa gant ar, gant ar blantenn-se. Arouezioù pe simbol, simbolioù euh peogwir ur blantenn euh a zo vont euh da vout da lakaat bar' deus deus da soanial pe an dud, pe an ti, pe euh... pe al loened.
-
 ## YBD/rann2
 
 Restroù : [WAV](full/rann2.wav) \| [TXT](full/rann2.txt) \| [EAF](full/rann2.eaf) (ELAN)

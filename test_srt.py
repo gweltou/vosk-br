@@ -9,7 +9,7 @@ SAMPLE_RATE = 16000
 
 SetLogLevel(-1)
 
-model = Model("model/vosk-model-br-0.6")
+model = Model("model/bzg7-short")
 rec = KaldiRecognizer(model, SAMPLE_RATE)
 rec.SetWords(True)
 

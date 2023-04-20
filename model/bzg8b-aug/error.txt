@@ -1,0 +1,1050 @@
+fstaddselfloops data/lang_nosp/phones/wdisambig_phones.int data/lang_nosp/phones/wdisambig_words.int 
+arpa2fst --max-arpa-warnings=-1 --disambig-symbol=#0 --read-symbol-table=data/lang_nosp/words.txt data/local/tmp/lm.arpa data/lang_nosp/G.fst 
+LOG (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:94) Reading \data\ section.
+LOG (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:149) Reading \1-grams: section.
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 8 [-5.077803	'	-0.4872431] skipped: word ''' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 419 [-6.191746	Da	-0.3009016] skipped: word 'Da' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 448 [-6.191746	Diouzh	-0.2905031] skipped: word 'Diouzh' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 496 [-6.191746	Embannadurioù	-0.3010289] skipped: word 'Embannadurioù' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 2518 [-6.191746	anis	-0.2835088] skipped: word 'anis' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 3467 [-6.191746	aviv	-0.3009628] skipped: word 'aviv' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 5538 [-6.191746	boomerang	-0.3009779] skipped: word 'boomerang' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 5608 [-6.191746	bou	-0.300078] skipped: word 'bou' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 6602 [-6.191746	bulbilles	-0.3009475] skipped: word 'bulbilles' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 9139 [-6.015655	checkpoint	-0.4596001] skipped: word 'checkpoint' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 9433 [-6.191746	dakord	-0.295876] skipped: word 'dakord' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 10027 [-6.191746	degajet	-0.3007098] skipped: word 'degajet' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 14799 [-6.191746	etnobotanist	-0.2969242] skipped: word 'etnobotanist' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 16358 [-6.191746	frustret	-0.3009805] skipped: word 'frustret' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 19437 [-6.191746	grignotañ	-0.2979765] skipped: word 'grignotañ' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 28421 [-6.191746	moein	-0.2972288] skipped: word 'moein' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 35435 [-6.191746	souet	-0.2942394] skipped: word 'souet' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 37024 [-6.191746	tel	-0.3010297] skipped: word 'tel' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 38074 [-6.191746	touar	-0.3009617] skipped: word 'touar' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 38992 [-6.191746	tzatziki	-0.2691956] skipped: word 'tzatziki' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 42243 [-6.191746	zec'hañ	-0.3007098] skipped: word 'zec'hañ' not in symbol table
+LOG (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:149) Reading \2-grams: section.
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 43659 [-0.9661418	' c'hoarzhin	-0.5269187] skipped: word ''' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 43660 [-1.568202	' c'hozh] skipped: word ''' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 43661 [-1.568202	' drese] skipped: word ''' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 43662 [-1.568202	' garrigell] skipped: word ''' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 43663 [-1.568202	' gouarnamant] skipped: word ''' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 43664 [-1.568202	' gwer] skipped: word ''' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 43665 [-1.267172	' ra] skipped: word ''' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 43666 [-1.568202	' raio] skipped: word ''' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 43667 [-1.568202	' ro] skipped: word ''' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 43668 [-1.267172	' ruilho] skipped: word ''' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 43669 [-0.6139592	' tresañ	-0.9666749] skipped: word ''' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 43670 [-1.568202	' vo] skipped: word ''' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 44166 [-0.9542425	'tresañ '] skipped: word ''' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 45514 [-5.36444	<s> anis] skipped: word 'anis' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 48776 [-5.36444	<s> frustret] skipped: word 'frustret' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 60731 [-0.30103	Da noz] skipped: word 'Da' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 61040 [-0.30103	Diouzh an] skipped: word 'Diouzh' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 61799 [-0.30103	Embannadurioù Goater] skipped: word 'Embannadurioù' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 66517 [-1.431364	Julien Embannadurioù] skipped: word 'Embannadurioù' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 85187 [-1.662758	abardaez Da] skipped: word 'Da' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 91495 [-3.323871	alies '] skipped: word ''' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 101714 [-0.30103	anis a] skipped: word 'anis' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 109066 [-5.099891	ar checkpoint] skipped: word 'checkpoint' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 122188 [-0.30103	aviv just] skipped: word 'aviv' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 137753 [-2.790285	bez '] skipped: word ''' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 146743 [-0.30103	boomerang aze] skipped: word 'boomerang' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 147085 [-0.30103	bou deus] skipped: word 'bou' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 157859 [-0.30103	bulbilles heñvel] skipped: word 'bulbilles' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 177377 [-0.1760913	checkpoint a] skipped: word 'checkpoint' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 187535 [-4.723324	da grignotañ] skipped: word 'grignotañ' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 189524 [-4.723324	da zec'hañ] skipped: word 'zec'hañ' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 190769 [-0.30103	dakord gant] skipped: word 'dakord' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 197466 [-1.531479	dañvadez '] skipped: word ''' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 198172 [-0.30103	degajet mat] skipped: word 'degajet' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 204091 [-3.890253	deus bou] skipped: word 'bou' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 269780 [-0.30103	etnobotanist eo] skipped: word 'etnobotanist' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 290644 [-0.30103	frustret on] skipped: word 'frustret' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 321959 [-0.30103	grignotañ war] skipped: word 'grignotañ' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 332916 [-4.786077	ha degajet] skipped: word 'degajet' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 352657 [-2.981365	ho touar] skipped: word 'touar' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 364508 [-0.6532125	jardiner '	-0.221379] skipped: word ''' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 382360 [-4.155731	ket dakord] skipped: word 'dakord' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 394239 [-2.951985	kozh '	-0.4810163] skipped: word ''' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 395487 [-2.836324	kreisteiz tel] skipped: word 'tel' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 401475 [-0.30103	labour' '] skipped: word ''' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 436848 [-3.945666	met moein] skipped: word 'moein' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 440336 [-1.944483	mintin Diouzh] skipped: word 'Diouzh' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 441784 [-0.30103	moein zo] skipped: word 'moein' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 464478 [-3.601408	ober tzatziki] skipped: word 'tzatziki' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 490582 [-1.892095	plantañ bulbilles] skipped: word 'bulbilles' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 501233 [-3.97174	ra '] skipped: word ''' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 511226 [-3.179839	reiñ '] skipped: word ''' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 521973 [-1.113943	ruilhañ '] skipped: word ''' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 532123 [-3.413132	seurt boomerang] skipped: word 'boomerang' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 546700 [-0.30103	souet da] skipped: word 'souet' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 565198 [-0.30103	tel aviv] skipped: word 'tel' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 573489 [-0.30103	touar dezhe] skipped: word 'touar' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 583550 [-0.30103	tzatziki </s>] skipped: word 'tzatziki' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 586568 [-4.44691	un etnobotanist] skipped: word 'etnobotanist' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 590189 [-4.646462	ur checkpoint] skipped: word 'checkpoint' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 618807 [-3.000434	vugale '] skipped: word ''' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 630464 [-0.30103	zec'hañ mat] skipped: word 'zec'hañ' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 635480 [-3.986921	zo '	-0.5523722] skipped: word ''' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 637277 [-4.464042	zo souet] skipped: word 'souet' not in symbol table
+LOG (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:149) Reading \3-grams: section.
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 639587 [-0.2632414	jardiner ' tresañ] skipped: word ''' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 639588 [-0.1249387	kozh ' tresañ] skipped: word ''' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 639589 [-0.1249387	zo ' c'hoarzhin] skipped: word ''' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 696936 [-2.59384	<s> bez '] skipped: word ''' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 706991 [-0.09691001	' c'hoarzhin </s>] skipped: word ''' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 802864 [-0.6863809	ar jardiner '] skipped: word ''' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 812027 [-0.8239087	jardiner kozh '] skipped: word ''' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 872713 [-0.04575749	' tresañ ar] skipped: word ''' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 901284 [-0.9378521	vihan zo '] skipped: word ''' not in symbol table
+LOG (arpa2fst[5.5.1060~1-ae8cb]:RemoveRedundantStates():arpa-lm-compiler.cc:359) Reduced num-states from 619792 to 131522
+arpa-to-const-arpa --bos-symbol=43832 --eos-symbol=43833 --unk-symbol=166 'gunzip -c data/local/lm/lm_tglarge.arpa.gz | utils/map_arpa_lm.pl data/lang_nosp_test_tglarge/words.txt|' data/lang_nosp_test_tglarge/G.carpa 
+LOG (arpa-to-const-arpa[5.5.1060~1-ae8cb]:BuildConstArpaLm():const-arpa-lm.cc:1078) Reading gunzip -c data/local/lm/lm_tglarge.arpa.gz | utils/map_arpa_lm.pl data/lang_nosp_test_tglarge/words.txt|
+utils/map_arpa_lm.pl: Processing "\data\"
+utils/map_arpa_lm.pl: Processing "\1-grams:\"
+utils/map_arpa_lm.pl: Warning: OOV line -5.077803	'	-0.4872431
+LOG (arpa-to-const-arpa[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:94) Reading \data\ section.
+LOG (arpa-to-const-arpa[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:149) Reading \1-grams: section.
+utils/map_arpa_lm.pl: Warning: OOV line -6.191746	Da	-0.3009016
+utils/map_arpa_lm.pl: Warning: OOV line -6.191746	Diouzh	-0.2905031
+utils/map_arpa_lm.pl: Warning: OOV line -6.191746	Embannadurioù	-0.3010289
+utils/map_arpa_lm.pl: Warning: OOV line -6.191746	anis	-0.2835088
+utils/map_arpa_lm.pl: Warning: OOV line -6.191746	aviv	-0.3009628
+utils/map_arpa_lm.pl: Warning: OOV line -6.191746	boomerang	-0.3009779
+utils/map_arpa_lm.pl: Warning: OOV line -6.191746	bou	-0.300078
+utils/map_arpa_lm.pl: Warning: OOV line -6.191746	bulbilles	-0.3009475
+utils/map_arpa_lm.pl: Warning: OOV line -6.015655	checkpoint	-0.4596001
+utils/map_arpa_lm.pl: Warning: OOV line -6.191746	dakord	-0.295876
+utils/map_arpa_lm.pl: Warning: OOV line -6.191746	degajet	-0.3007098
+utils/map_arpa_lm.pl: Warning: OOV line -6.191746	etnobotanist	-0.2969242
+utils/map_arpa_lm.pl: Warning: OOV line -6.191746	frustret	-0.3009805
+utils/map_arpa_lm.pl: Warning: OOV line -6.191746	grignotañ	-0.2979765
+utils/map_arpa_lm.pl: Warning: OOV line -6.191746	moein	-0.2972288
+utils/map_arpa_lm.pl: Warning: OOV line -6.191746	souet	-0.2942394
+utils/map_arpa_lm.pl: Warning: OOV line -6.191746	tel	-0.3010297
+utils/map_arpa_lm.pl: Warning: OOV line -6.191746	touar	-0.3009617
+utils/map_arpa_lm.pl: Processing "\2-grams:\"
+LOG (arpa-to-const-arpa[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:149) Reading \2-grams: section.
+utils/map_arpa_lm.pl: Processing "\3-grams:\"
+LOG (arpa-to-const-arpa[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:149) Reading \3-grams: section.
+utils/map_arpa_lm.pl: 94 lines of the Arpa file contained OOVs and were not printed.
+filter_scps.pl: warning: some input lines were output to multiple files [OK if splitting per utt] 
+tree-info exp/mono/tree 
+tree-info exp/mono/tree 
+fsttablecompose data/lang_nosp/L_disambig.fst data/lang_nosp/G.fst 
+fstminimizeencoded 
+fstpushspecial 
+fstdeterminizestar --use-log=true 
+fstisstochastic data/lang_nosp/tmp/LG.fst 
+fstcomposecontext --context-size=1 --central-position=0 --read-disambig-syms=data/lang_nosp/phones/disambig.int --write-disambig-syms=data/lang_nosp/tmp/disambig_ilabels_1_0.int data/lang_nosp/tmp/ilabels_1_0.323773 data/lang_nosp/tmp/LG.fst 
+fstisstochastic data/lang_nosp/tmp/CLG_1_0.fst 
+make-h-transducer --disambig-syms-out=exp/mono/graph/disambig_tid.int --transition-scale=1.0 data/lang_nosp/tmp/ilabels_1_0 exp/mono/tree exp/mono/final.mdl 
+fstrmepslocal 
+fsttablecompose exp/mono/graph/Ha.fst data/lang_nosp/tmp/CLG_1_0.fst 
+fstminimizeencoded 
+fstrmsymbols exp/mono/graph/disambig_tid.int 
+fstdeterminizestar --use-log=true 
+fstisstochastic exp/mono/graph/HCLGa.fst 
+add-self-loops --self-loop-scale=0.1 --reorder=true exp/mono/final.mdl exp/mono/graph/HCLGa.fst 
+tree-info exp/tri1/tree 
+tree-info exp/tri1/tree 
+fstcomposecontext --context-size=3 --central-position=1 --read-disambig-syms=data/lang_nosp/phones/disambig.int --write-disambig-syms=data/lang_nosp/tmp/disambig_ilabels_3_1.int data/lang_nosp/tmp/ilabels_3_1.327004 data/lang_nosp/tmp/LG.fst 
+fstisstochastic data/lang_nosp/tmp/CLG_3_1.fst 
+make-h-transducer --disambig-syms-out=exp/tri1/graph/disambig_tid.int --transition-scale=1.0 data/lang_nosp/tmp/ilabels_3_1 exp/tri1/tree exp/tri1/final.mdl 
+fstrmepslocal 
+fsttablecompose exp/tri1/graph/Ha.fst data/lang_nosp/tmp/CLG_3_1.fst 
+fstminimizeencoded 
+fstrmsymbols exp/tri1/graph/disambig_tid.int 
+fstdeterminizestar --use-log=true 
+fstisstochastic exp/tri1/graph/HCLGa.fst 
+add-self-loops --self-loop-scale=0.1 --reorder=true exp/tri1/final.mdl exp/tri1/graph/HCLGa.fst 
+fstaddselfloops data/lang/phones/wdisambig_phones.int data/lang/phones/wdisambig_words.int 
+arpa2fst --disambig-symbol=#0 --read-symbol-table=data/lang_test_tgsmall/words.txt data/local/tmp/lm.arpa data/lang_test_tgsmall/G.fst 
+LOG (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:94) Reading \data\ section.
+LOG (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:149) Reading \1-grams: section.
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 8 [-5.077803	'	-0.4872431] skipped: word ''' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 419 [-6.191746	Da	-0.3009016] skipped: word 'Da' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 448 [-6.191746	Diouzh	-0.2905031] skipped: word 'Diouzh' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 496 [-6.191746	Embannadurioù	-0.3010289] skipped: word 'Embannadurioù' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 2518 [-6.191746	anis	-0.2835088] skipped: word 'anis' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 3467 [-6.191746	aviv	-0.3009628] skipped: word 'aviv' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 5538 [-6.191746	boomerang	-0.3009779] skipped: word 'boomerang' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 5608 [-6.191746	bou	-0.300078] skipped: word 'bou' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 6602 [-6.191746	bulbilles	-0.3009475] skipped: word 'bulbilles' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 9139 [-6.015655	checkpoint	-0.4596001] skipped: word 'checkpoint' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 9433 [-6.191746	dakord	-0.295876] skipped: word 'dakord' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 10027 [-6.191746	degajet	-0.3007098] skipped: word 'degajet' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 14799 [-6.191746	etnobotanist	-0.2969242] skipped: word 'etnobotanist' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 16358 [-6.191746	frustret	-0.3009805] skipped: word 'frustret' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 19437 [-6.191746	grignotañ	-0.2979765] skipped: word 'grignotañ' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 28421 [-6.191746	moein	-0.2972288] skipped: word 'moein' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 35435 [-6.191746	souet	-0.2942394] skipped: word 'souet' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 37024 [-6.191746	tel	-0.3010297] skipped: word 'tel' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 38074 [-6.191746	touar	-0.3009617] skipped: word 'touar' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 38992 [-6.191746	tzatziki	-0.2691956] skipped: word 'tzatziki' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 42243 [-6.191746	zec'hañ	-0.3007098] skipped: word 'zec'hañ' not in symbol table
+LOG (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:149) Reading \2-grams: section.
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 43659 [-0.9661418	' c'hoarzhin	-0.5269187] skipped: word ''' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 43660 [-1.568202	' c'hozh] skipped: word ''' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 43661 [-1.568202	' drese] skipped: word ''' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 43662 [-1.568202	' garrigell] skipped: word ''' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 43663 [-1.568202	' gouarnamant] skipped: word ''' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 43664 [-1.568202	' gwer] skipped: word ''' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 43665 [-1.267172	' ra] skipped: word ''' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 43666 [-1.568202	' raio] skipped: word ''' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 43667 [-1.568202	' ro] skipped: word ''' not in symbol table
+LOG (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:149) Reading \3-grams: section.
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:259) Of 94 parse warnings, 30 were reported. Run program with --max-arpa-warnings=-1 to see all warnings
+LOG (arpa2fst[5.5.1060~1-ae8cb]:RemoveRedundantStates():arpa-lm-compiler.cc:359) Reduced num-states from 619792 to 131522
+arpa2fst --disambig-symbol=#0 --read-symbol-table=data/lang_test_tgmed/words.txt data/local/tmp/lm.arpa data/lang_test_tgmed/G.fst 
+LOG (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:94) Reading \data\ section.
+LOG (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:149) Reading \1-grams: section.
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 8 [-5.077803	'	-0.4872431] skipped: word ''' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 419 [-6.191746	Da	-0.3009016] skipped: word 'Da' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 448 [-6.191746	Diouzh	-0.2905031] skipped: word 'Diouzh' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 496 [-6.191746	Embannadurioù	-0.3010289] skipped: word 'Embannadurioù' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 2518 [-6.191746	anis	-0.2835088] skipped: word 'anis' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 3467 [-6.191746	aviv	-0.3009628] skipped: word 'aviv' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 5538 [-6.191746	boomerang	-0.3009779] skipped: word 'boomerang' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 5608 [-6.191746	bou	-0.300078] skipped: word 'bou' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 6602 [-6.191746	bulbilles	-0.3009475] skipped: word 'bulbilles' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 9139 [-6.015655	checkpoint	-0.4596001] skipped: word 'checkpoint' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 9433 [-6.191746	dakord	-0.295876] skipped: word 'dakord' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 10027 [-6.191746	degajet	-0.3007098] skipped: word 'degajet' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 14799 [-6.191746	etnobotanist	-0.2969242] skipped: word 'etnobotanist' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 16358 [-6.191746	frustret	-0.3009805] skipped: word 'frustret' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 19437 [-6.191746	grignotañ	-0.2979765] skipped: word 'grignotañ' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 28421 [-6.191746	moein	-0.2972288] skipped: word 'moein' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 35435 [-6.191746	souet	-0.2942394] skipped: word 'souet' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 37024 [-6.191746	tel	-0.3010297] skipped: word 'tel' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 38074 [-6.191746	touar	-0.3009617] skipped: word 'touar' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 38992 [-6.191746	tzatziki	-0.2691956] skipped: word 'tzatziki' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 42243 [-6.191746	zec'hañ	-0.3007098] skipped: word 'zec'hañ' not in symbol table
+LOG (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:149) Reading \2-grams: section.
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 43659 [-0.9661418	' c'hoarzhin	-0.5269187] skipped: word ''' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 43660 [-1.568202	' c'hozh] skipped: word ''' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 43661 [-1.568202	' drese] skipped: word ''' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 43662 [-1.568202	' garrigell] skipped: word ''' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 43663 [-1.568202	' gouarnamant] skipped: word ''' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 43664 [-1.568202	' gwer] skipped: word ''' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 43665 [-1.267172	' ra] skipped: word ''' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 43666 [-1.568202	' raio] skipped: word ''' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 43667 [-1.568202	' ro] skipped: word ''' not in symbol table
+LOG (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:149) Reading \3-grams: section.
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:259) Of 94 parse warnings, 30 were reported. Run program with --max-arpa-warnings=-1 to see all warnings
+LOG (arpa2fst[5.5.1060~1-ae8cb]:RemoveRedundantStates():arpa-lm-compiler.cc:359) Reduced num-states from 619792 to 131522
+arpa-to-const-arpa --bos-symbol=43832 --eos-symbol=43833 --unk-symbol=166 'gunzip -c data/local/lm/lm_tglarge.arpa.gz | utils/map_arpa_lm.pl data/lang_test_tglarge/words.txt|' data/lang_test_tglarge/G.carpa 
+LOG (arpa-to-const-arpa[5.5.1060~1-ae8cb]:BuildConstArpaLm():const-arpa-lm.cc:1078) Reading gunzip -c data/local/lm/lm_tglarge.arpa.gz | utils/map_arpa_lm.pl data/lang_test_tglarge/words.txt|
+utils/map_arpa_lm.pl: Processing "\data\"
+utils/map_arpa_lm.pl: Processing "\1-grams:\"
+utils/map_arpa_lm.pl: Warning: OOV line -5.077803	'	-0.4872431
+LOG (arpa-to-const-arpa[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:94) Reading \data\ section.
+LOG (arpa-to-const-arpa[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:149) Reading \1-grams: section.
+utils/map_arpa_lm.pl: Warning: OOV line -6.191746	Da	-0.3009016
+utils/map_arpa_lm.pl: Warning: OOV line -6.191746	Diouzh	-0.2905031
+utils/map_arpa_lm.pl: Warning: OOV line -6.191746	Embannadurioù	-0.3010289
+utils/map_arpa_lm.pl: Warning: OOV line -6.191746	anis	-0.2835088
+utils/map_arpa_lm.pl: Warning: OOV line -6.191746	aviv	-0.3009628
+utils/map_arpa_lm.pl: Warning: OOV line -6.191746	boomerang	-0.3009779
+utils/map_arpa_lm.pl: Warning: OOV line -6.191746	bou	-0.300078
+utils/map_arpa_lm.pl: Warning: OOV line -6.191746	bulbilles	-0.3009475
+utils/map_arpa_lm.pl: Warning: OOV line -6.015655	checkpoint	-0.4596001
+utils/map_arpa_lm.pl: Warning: OOV line -6.191746	dakord	-0.295876
+utils/map_arpa_lm.pl: Warning: OOV line -6.191746	degajet	-0.3007098
+utils/map_arpa_lm.pl: Warning: OOV line -6.191746	etnobotanist	-0.2969242
+utils/map_arpa_lm.pl: Warning: OOV line -6.191746	frustret	-0.3009805
+utils/map_arpa_lm.pl: Warning: OOV line -6.191746	grignotañ	-0.2979765
+utils/map_arpa_lm.pl: Warning: OOV line -6.191746	moein	-0.2972288
+utils/map_arpa_lm.pl: Warning: OOV line -6.191746	souet	-0.2942394
+utils/map_arpa_lm.pl: Warning: OOV line -6.191746	tel	-0.3010297
+utils/map_arpa_lm.pl: Warning: OOV line -6.191746	touar	-0.3009617
+utils/map_arpa_lm.pl: Processing "\2-grams:\"
+LOG (arpa-to-const-arpa[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:149) Reading \2-grams: section.
+utils/map_arpa_lm.pl: Processing "\3-grams:\"
+LOG (arpa-to-const-arpa[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:149) Reading \3-grams: section.
+utils/map_arpa_lm.pl: 94 lines of the Arpa file contained OOVs and were not printed.
+tree-info exp/tri3b/tree 
+tree-info exp/tri3b/tree 
+fsttablecompose data/lang_test_tgsmall/L_disambig.fst data/lang_test_tgsmall/G.fst 
+fstpushspecial 
+fstdeterminizestar --use-log=true 
+fstminimizeencoded 
+fstisstochastic data/lang_test_tgsmall/tmp/LG.fst 
+fstcomposecontext --context-size=3 --central-position=1 --read-disambig-syms=data/lang_test_tgsmall/phones/disambig.int --write-disambig-syms=data/lang_test_tgsmall/tmp/disambig_ilabels_3_1.int data/lang_test_tgsmall/tmp/ilabels_3_1.336400 data/lang_test_tgsmall/tmp/LG.fst 
+fstisstochastic data/lang_test_tgsmall/tmp/CLG_3_1.fst 
+make-h-transducer --disambig-syms-out=exp/tri3b/graph_tgsmall/disambig_tid.int --transition-scale=1.0 data/lang_test_tgsmall/tmp/ilabels_3_1 exp/tri3b/tree exp/tri3b/final.mdl 
+fsttablecompose exp/tri3b/graph_tgsmall/Ha.fst data/lang_test_tgsmall/tmp/CLG_3_1.fst 
+fstrmepslocal 
+fstminimizeencoded 
+fstrmsymbols exp/tri3b/graph_tgsmall/disambig_tid.int 
+fstdeterminizestar --use-log=true 
+fstisstochastic exp/tri3b/graph_tgsmall/HCLGa.fst 
+add-self-loops --self-loop-scale=0.1 --reorder=true exp/tri3b/final.mdl exp/tri3b/graph_tgsmall/HCLGa.fst 
+fstrmsymbols data/lang_test_tgmed/phones/disambig.int 
+fstdeterminizestar 
+filter_scps.pl: warning: some input lines were output to multiple files [OK if splitting per utt] 
+filter_scps.pl: warning: some input lines were output to multiple files [OK if splitting per utt] 
+tree-info exp/chain/tree_sp/tree 
+steps/nnet3/xconfig_to_configs.py --xconfig-file exp/chain/tdnn1j_sp/configs/network.xconfig --config-dir exp/chain/tdnn1j_sp/configs/
+nnet3-init exp/chain/tdnn1j_sp/configs//ref.config exp/chain/tdnn1j_sp/configs//ref.raw 
+LOG (nnet3-init[5.5.1060~1-ae8cb]:main():nnet3-init.cc:80) Initialized raw neural net and wrote it to exp/chain/tdnn1j_sp/configs//ref.raw
+nnet3-info exp/chain/tdnn1j_sp/configs//ref.raw 
+nnet3-init exp/chain/tdnn1j_sp/configs//ref.config exp/chain/tdnn1j_sp/configs//ref.raw 
+LOG (nnet3-init[5.5.1060~1-ae8cb]:main():nnet3-init.cc:80) Initialized raw neural net and wrote it to exp/chain/tdnn1j_sp/configs//ref.raw
+nnet3-info exp/chain/tdnn1j_sp/configs//ref.raw 
+2023-04-10 16:08:06,488 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:35 - <module> - INFO ] Starting chain model trainer (train.py)
+2023-04-10 16:08:06,492 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:284 - train - INFO ] Arguments for the experiment
+{'alignment_subsampling_factor': 3,
+ 'apply_deriv_weights': False,
+ 'backstitch_training_interval': 1,
+ 'backstitch_training_scale': 0.0,
+ 'chain_opts': '',
+ 'chunk_left_context': 0,
+ 'chunk_left_context_initial': -1,
+ 'chunk_right_context': 0,
+ 'chunk_right_context_final': -1,
+ 'chunk_width': '140,100,160',
+ 'cleanup': True,
+ 'cmvn_opts': '--norm-means=false --norm-vars=false',
+ 'combine_sum_to_one_penalty': 0.0,
+ 'command': 'run.pl --mem 4G',
+ 'compute_per_dim_accuracy': False,
+ 'deriv_truncate_margin': None,
+ 'dir': 'exp/chain/tdnn1j_sp',
+ 'do_final_combination': True,
+ 'dropout_schedule': None,
+ 'egs_command': None,
+ 'egs_dir': None,
+ 'egs_nj': 0,
+ 'egs_opts': '--frames-overlap-per-eg 0',
+ 'egs_stage': 0,
+ 'email': None,
+ 'exit_stage': None,
+ 'feat_dir': 'data/train_sp_hires',
+ 'final_effective_lrate': 0.0002,
+ 'frame_subsampling_factor': 3,
+ 'frames_per_iter': 3000000,
+ 'initial_effective_lrate': 0.002,
+ 'input_model': None,
+ 'l2_regularize': 0.0,
+ 'lat_dir': 'exp/chain/tri3b_train_sp_lats',
+ 'leaky_hmm_coefficient': 0.1,
+ 'left_deriv_truncate': None,
+ 'left_tolerance': 5,
+ 'lm_opts': '--num-extra-lm-states=2000',
+ 'max_lda_jobs': 10,
+ 'max_models_combine': 20,
+ 'max_objective_evaluations': 30,
+ 'max_param_change': 2.0,
+ 'momentum': 0.0,
+ 'num_chunk_per_minibatch': '128,64',
+ 'num_epochs': 20.0,
+ 'num_jobs_final': 1,
+ 'num_jobs_initial': 1,
+ 'num_jobs_step': 1,
+ 'online_ivector_dir': 'exp/nnet3/ivectors_train_sp_hires',
+ 'preserve_model_interval': 100,
+ 'presoftmax_prior_scale_power': -0.25,
+ 'proportional_shrink': 0.0,
+ 'rand_prune': 4.0,
+ 'remove_egs': True,
+ 'reporting_interval': 0.1,
+ 'right_tolerance': 5,
+ 'samples_per_iter': 400000,
+ 'shrink_saturation_threshold': 0.4,
+ 'shrink_value': 1.0,
+ 'shuffle_buffer_size': 5000,
+ 'srand': 0,
+ 'stage': -10,
+ 'train_opts': ['--optimization.memory-compression-level=2'],
+ 'tree_dir': 'exp/chain/tree_sp',
+ 'use_gpu': 'wait',
+ 'xent_regularize': 0.1}
+2023-04-10 16:08:07,734 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:341 - train - INFO ] Creating phone language-model
+2023-04-10 16:08:09,375 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:346 - train - INFO ] Creating denominator FST
+copy-transition-model exp/chain/tree_sp/final.mdl exp/chain/tdnn1j_sp/0.trans_mdl 
+LOG (copy-transition-model[5.5.1060~1-ae8cb]:main():copy-transition-model.cc:62) Copied transition model.
+2023-04-10 16:08:09,908 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:382 - train - INFO ] Generating egs
+filter_scps.pl: warning: some input lines were output to multiple files [OK if splitting per utt] 
+tree-info exp/chain/tdnn1j_sp/tree 
+feat-to-dim scp:exp/nnet3/ivectors_train_sp_hires/ivector_online.scp - 
+2023-04-10 16:10:30,817 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:431 - train - INFO ] Copying the properties from exp/chain/tdnn1j_sp/egs to exp/chain/tdnn1j_sp
+2023-04-10 16:10:30,940 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:454 - train - INFO ] Preparing the initial acoustic model.
+2023-04-10 16:10:31,244 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:487 - train - INFO ] Training will run for 20.0 epochs = 660 iterations
+2023-04-10 16:10:31,246 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 0/659   Jobs: 1   Epoch: 0.00/20.0 (0.0% complete)   lr: 0.002000   
+2023-04-10 16:11:38,282 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 1/659   Jobs: 1   Epoch: 0.03/20.0 (0.2% complete)   lr: 0.001993   
+2023-04-10 16:12:40,310 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 2/659   Jobs: 1   Epoch: 0.06/20.0 (0.3% complete)   lr: 0.001986   
+2023-04-10 16:13:43,815 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 3/659   Jobs: 1   Epoch: 0.09/20.0 (0.5% complete)   lr: 0.001979   
+2023-04-10 16:14:46,926 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 4/659   Jobs: 1   Epoch: 0.12/20.0 (0.6% complete)   lr: 0.001972   
+2023-04-10 16:15:50,754 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 5/659   Jobs: 1   Epoch: 0.15/20.0 (0.8% complete)   lr: 0.001965   
+2023-04-10 16:16:53,708 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 6/659   Jobs: 1   Epoch: 0.18/20.0 (0.9% complete)   lr: 0.001959   
+2023-04-10 16:17:57,131 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 7/659   Jobs: 1   Epoch: 0.21/20.0 (1.1% complete)   lr: 0.001952   
+2023-04-10 16:19:00,731 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 8/659   Jobs: 1   Epoch: 0.24/20.0 (1.2% complete)   lr: 0.001945   
+2023-04-10 16:20:04,328 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 9/659   Jobs: 1   Epoch: 0.27/20.0 (1.4% complete)   lr: 0.001938   
+2023-04-10 16:21:07,253 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 10/659   Jobs: 1   Epoch: 0.30/20.0 (1.5% complete)   lr: 0.001931   
+2023-04-10 16:22:10,379 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 11/659   Jobs: 1   Epoch: 0.33/20.0 (1.7% complete)   lr: 0.001925   
+2023-04-10 16:23:14,086 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 12/659   Jobs: 1   Epoch: 0.36/20.0 (1.8% complete)   lr: 0.001918   
+2023-04-10 16:24:16,458 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 13/659   Jobs: 1   Epoch: 0.39/20.0 (2.0% complete)   lr: 0.001911   
+2023-04-10 16:25:20,224 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 14/659   Jobs: 1   Epoch: 0.42/20.0 (2.1% complete)   lr: 0.001905   
+2023-04-10 16:26:23,407 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 15/659   Jobs: 1   Epoch: 0.45/20.0 (2.3% complete)   lr: 0.001898   
+2023-04-10 16:27:27,100 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 16/659   Jobs: 1   Epoch: 0.48/20.0 (2.4% complete)   lr: 0.001891   
+2023-04-10 16:28:30,251 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 17/659   Jobs: 1   Epoch: 0.52/20.0 (2.6% complete)   lr: 0.001885   
+2023-04-10 16:29:33,817 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 18/659   Jobs: 1   Epoch: 0.55/20.0 (2.7% complete)   lr: 0.001878   
+2023-04-10 16:30:37,564 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 19/659   Jobs: 1   Epoch: 0.58/20.0 (2.9% complete)   lr: 0.001872   
+2023-04-10 16:31:41,315 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 20/659   Jobs: 1   Epoch: 0.61/20.0 (3.0% complete)   lr: 0.001865   
+2023-04-10 16:32:50,138 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 21/659   Jobs: 1   Epoch: 0.64/20.0 (3.2% complete)   lr: 0.001859   
+2023-04-10 16:33:53,631 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 22/659   Jobs: 1   Epoch: 0.67/20.0 (3.3% complete)   lr: 0.001852   
+2023-04-10 16:34:57,576 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 23/659   Jobs: 1   Epoch: 0.70/20.0 (3.5% complete)   lr: 0.001846   
+2023-04-10 16:36:00,091 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 24/659   Jobs: 1   Epoch: 0.73/20.0 (3.6% complete)   lr: 0.001839   
+2023-04-10 16:37:03,679 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 25/659   Jobs: 1   Epoch: 0.76/20.0 (3.8% complete)   lr: 0.001833   
+2023-04-10 16:38:06,679 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 26/659   Jobs: 1   Epoch: 0.79/20.0 (3.9% complete)   lr: 0.001827   
+2023-04-10 16:39:10,471 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 27/659   Jobs: 1   Epoch: 0.82/20.0 (4.1% complete)   lr: 0.001820   
+2023-04-10 16:40:13,348 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 28/659   Jobs: 1   Epoch: 0.85/20.0 (4.2% complete)   lr: 0.001814   
+2023-04-10 16:41:16,784 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 29/659   Jobs: 1   Epoch: 0.88/20.0 (4.4% complete)   lr: 0.001808   
+2023-04-10 16:42:20,352 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 30/659   Jobs: 1   Epoch: 0.91/20.0 (4.5% complete)   lr: 0.001801   
+2023-04-10 16:43:24,075 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 31/659   Jobs: 1   Epoch: 0.94/20.0 (4.7% complete)   lr: 0.001795   
+2023-04-10 16:44:27,145 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 32/659   Jobs: 1   Epoch: 0.97/20.0 (4.8% complete)   lr: 0.001789   
+2023-04-10 16:45:30,542 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 33/659   Jobs: 1   Epoch: 1.00/20.0 (5.0% complete)   lr: 0.001783   
+2023-04-10 16:46:34,562 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 34/659   Jobs: 1   Epoch: 1.03/20.0 (5.2% complete)   lr: 0.001776   
+2023-04-10 16:47:37,089 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 35/659   Jobs: 1   Epoch: 1.06/20.0 (5.3% complete)   lr: 0.001770   
+2023-04-10 16:48:40,527 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 36/659   Jobs: 1   Epoch: 1.09/20.0 (5.5% complete)   lr: 0.001764   
+2023-04-10 16:49:43,650 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 37/659   Jobs: 1   Epoch: 1.12/20.0 (5.6% complete)   lr: 0.001758   
+2023-04-10 16:50:47,231 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 38/659   Jobs: 1   Epoch: 1.15/20.0 (5.8% complete)   lr: 0.001752   
+2023-04-10 16:51:50,341 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 39/659   Jobs: 1   Epoch: 1.18/20.0 (5.9% complete)   lr: 0.001746   
+2023-04-10 16:52:53,830 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 40/659   Jobs: 1   Epoch: 1.21/20.0 (6.1% complete)   lr: 0.001739   
+2023-04-10 16:54:03,219 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 41/659   Jobs: 1   Epoch: 1.24/20.0 (6.2% complete)   lr: 0.001733   
+2023-04-10 16:55:07,104 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 42/659   Jobs: 1   Epoch: 1.27/20.0 (6.4% complete)   lr: 0.001727   
+2023-04-10 16:56:10,142 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 43/659   Jobs: 1   Epoch: 1.30/20.0 (6.5% complete)   lr: 0.001721   
+2023-04-10 16:57:13,478 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 44/659   Jobs: 1   Epoch: 1.33/20.0 (6.7% complete)   lr: 0.001715   
+2023-04-10 16:58:17,427 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 45/659   Jobs: 1   Epoch: 1.36/20.0 (6.8% complete)   lr: 0.001709   
+2023-04-10 16:59:19,819 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 46/659   Jobs: 1   Epoch: 1.39/20.0 (7.0% complete)   lr: 0.001703   
+2023-04-10 17:00:23,400 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 47/659   Jobs: 1   Epoch: 1.42/20.0 (7.1% complete)   lr: 0.001698   
+2023-04-10 17:01:26,468 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 48/659   Jobs: 1   Epoch: 1.45/20.0 (7.3% complete)   lr: 0.001692   
+2023-04-10 17:02:30,235 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 49/659   Jobs: 1   Epoch: 1.48/20.0 (7.4% complete)   lr: 0.001686   
+2023-04-10 17:03:33,099 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 50/659   Jobs: 1   Epoch: 1.52/20.0 (7.6% complete)   lr: 0.001680   
+2023-04-10 17:04:36,570 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 51/659   Jobs: 1   Epoch: 1.55/20.0 (7.7% complete)   lr: 0.001674   
+2023-04-10 17:05:40,047 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 52/659   Jobs: 1   Epoch: 1.58/20.0 (7.9% complete)   lr: 0.001668   
+2023-04-10 17:06:43,884 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 53/659   Jobs: 1   Epoch: 1.61/20.0 (8.0% complete)   lr: 0.001662   
+2023-04-10 17:07:46,678 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 54/659   Jobs: 1   Epoch: 1.64/20.0 (8.2% complete)   lr: 0.001657   
+2023-04-10 17:08:49,966 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 55/659   Jobs: 1   Epoch: 1.67/20.0 (8.3% complete)   lr: 0.001651   
+2023-04-10 17:09:53,810 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 56/659   Jobs: 1   Epoch: 1.70/20.0 (8.5% complete)   lr: 0.001645   
+2023-04-10 17:10:56,283 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 57/659   Jobs: 1   Epoch: 1.73/20.0 (8.6% complete)   lr: 0.001639   
+2023-04-10 17:11:59,827 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 58/659   Jobs: 1   Epoch: 1.76/20.0 (8.8% complete)   lr: 0.001634   
+2023-04-10 17:13:02,955 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 59/659   Jobs: 1   Epoch: 1.79/20.0 (8.9% complete)   lr: 0.001628   
+2023-04-10 17:14:06,424 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 60/659   Jobs: 1   Epoch: 1.82/20.0 (9.1% complete)   lr: 0.001622   
+2023-04-10 17:15:15,049 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 61/659   Jobs: 1   Epoch: 1.85/20.0 (9.2% complete)   lr: 0.001617   
+2023-04-10 17:16:18,391 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 62/659   Jobs: 1   Epoch: 1.88/20.0 (9.4% complete)   lr: 0.001611   
+2023-04-10 17:17:21,903 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 63/659   Jobs: 1   Epoch: 1.91/20.0 (9.5% complete)   lr: 0.001605   
+2023-04-10 17:18:25,447 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 64/659   Jobs: 1   Epoch: 1.94/20.0 (9.7% complete)   lr: 0.001600   
+2023-04-10 17:19:28,455 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 65/659   Jobs: 1   Epoch: 1.97/20.0 (9.8% complete)   lr: 0.001594   
+2023-04-10 17:20:31,750 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 66/659   Jobs: 1   Epoch: 2.00/20.0 (10.0% complete)   lr: 0.001589   
+2023-04-10 17:21:35,735 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 67/659   Jobs: 1   Epoch: 2.03/20.0 (10.2% complete)   lr: 0.001583   
+2023-04-10 17:22:38,213 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 68/659   Jobs: 1   Epoch: 2.06/20.0 (10.3% complete)   lr: 0.001578   
+2023-04-10 17:23:42,009 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 69/659   Jobs: 1   Epoch: 2.09/20.0 (10.5% complete)   lr: 0.001572   
+2023-04-10 17:24:45,252 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 70/659   Jobs: 1   Epoch: 2.12/20.0 (10.6% complete)   lr: 0.001567   
+2023-04-10 17:25:48,931 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 71/659   Jobs: 1   Epoch: 2.15/20.0 (10.8% complete)   lr: 0.001561   
+2023-04-10 17:26:51,983 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 72/659   Jobs: 1   Epoch: 2.18/20.0 (10.9% complete)   lr: 0.001556   
+2023-04-10 17:27:55,343 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 73/659   Jobs: 1   Epoch: 2.21/20.0 (11.1% complete)   lr: 0.001550   
+2023-04-10 17:28:58,829 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 74/659   Jobs: 1   Epoch: 2.24/20.0 (11.2% complete)   lr: 0.001545   
+2023-04-10 17:30:02,565 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 75/659   Jobs: 1   Epoch: 2.27/20.0 (11.4% complete)   lr: 0.001540   
+2023-04-10 17:31:05,503 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 76/659   Jobs: 1   Epoch: 2.30/20.0 (11.5% complete)   lr: 0.001534   
+2023-04-10 17:32:09,011 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 77/659   Jobs: 1   Epoch: 2.33/20.0 (11.7% complete)   lr: 0.001529   
+2023-04-10 17:33:12,734 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 78/659   Jobs: 1   Epoch: 2.36/20.0 (11.8% complete)   lr: 0.001524   
+2023-04-10 17:34:15,203 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 79/659   Jobs: 1   Epoch: 2.39/20.0 (12.0% complete)   lr: 0.001518   
+2023-04-10 17:35:18,723 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 80/659   Jobs: 1   Epoch: 2.42/20.0 (12.1% complete)   lr: 0.001513   
+2023-04-10 17:36:28,279 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 81/659   Jobs: 1   Epoch: 2.45/20.0 (12.3% complete)   lr: 0.001508   
+2023-04-10 17:37:32,003 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 82/659   Jobs: 1   Epoch: 2.48/20.0 (12.4% complete)   lr: 0.001502   
+2023-04-10 17:38:34,911 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 83/659   Jobs: 1   Epoch: 2.52/20.0 (12.6% complete)   lr: 0.001497   
+2023-04-10 17:39:38,224 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 84/659   Jobs: 1   Epoch: 2.55/20.0 (12.7% complete)   lr: 0.001492   
+2023-04-10 17:40:41,855 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 85/659   Jobs: 1   Epoch: 2.58/20.0 (12.9% complete)   lr: 0.001487   
+2023-04-10 17:41:45,331 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 86/659   Jobs: 1   Epoch: 2.61/20.0 (13.0% complete)   lr: 0.001482   
+2023-04-10 17:42:48,414 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 87/659   Jobs: 1   Epoch: 2.64/20.0 (13.2% complete)   lr: 0.001476   
+2023-04-10 17:43:51,803 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 88/659   Jobs: 1   Epoch: 2.67/20.0 (13.3% complete)   lr: 0.001471   
+2023-04-10 17:44:55,682 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 89/659   Jobs: 1   Epoch: 2.70/20.0 (13.5% complete)   lr: 0.001466   
+2023-04-10 17:45:57,910 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 90/659   Jobs: 1   Epoch: 2.73/20.0 (13.6% complete)   lr: 0.001461   
+2023-04-10 17:47:01,566 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 91/659   Jobs: 1   Epoch: 2.76/20.0 (13.8% complete)   lr: 0.001456   
+2023-04-10 17:48:04,487 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 92/659   Jobs: 1   Epoch: 2.79/20.0 (13.9% complete)   lr: 0.001451   
+2023-04-10 17:49:08,390 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 93/659   Jobs: 1   Epoch: 2.82/20.0 (14.1% complete)   lr: 0.001446   
+2023-04-10 17:50:11,469 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 94/659   Jobs: 1   Epoch: 2.85/20.0 (14.2% complete)   lr: 0.001441   
+2023-04-10 17:51:14,948 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 95/659   Jobs: 1   Epoch: 2.88/20.0 (14.4% complete)   lr: 0.001436   
+2023-04-10 17:52:18,585 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 96/659   Jobs: 1   Epoch: 2.91/20.0 (14.5% complete)   lr: 0.001431   
+2023-04-10 17:53:22,361 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 97/659   Jobs: 1   Epoch: 2.94/20.0 (14.7% complete)   lr: 0.001426   
+2023-04-10 17:54:25,457 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 98/659   Jobs: 1   Epoch: 2.97/20.0 (14.8% complete)   lr: 0.001421   
+2023-04-10 17:55:28,816 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 99/659   Jobs: 1   Epoch: 3.00/20.0 (15.0% complete)   lr: 0.001416   
+2023-04-10 17:56:32,674 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 100/659   Jobs: 1   Epoch: 3.03/20.0 (15.2% complete)   lr: 0.001411   
+2023-04-10 17:57:40,791 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 101/659   Jobs: 1   Epoch: 3.06/20.0 (15.3% complete)   lr: 0.001406   
+2023-04-10 17:58:44,431 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 102/659   Jobs: 1   Epoch: 3.09/20.0 (15.5% complete)   lr: 0.001401   
+2023-04-10 17:59:47,516 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 103/659   Jobs: 1   Epoch: 3.12/20.0 (15.6% complete)   lr: 0.001396   
+2023-04-10 18:00:51,176 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 104/659   Jobs: 1   Epoch: 3.15/20.0 (15.8% complete)   lr: 0.001391   
+2023-04-10 18:01:54,124 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 105/659   Jobs: 1   Epoch: 3.18/20.0 (15.9% complete)   lr: 0.001387   
+2023-04-10 18:02:57,611 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 106/659   Jobs: 1   Epoch: 3.21/20.0 (16.1% complete)   lr: 0.001382   
+2023-04-10 18:04:01,236 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 107/659   Jobs: 1   Epoch: 3.24/20.0 (16.2% complete)   lr: 0.001377   
+2023-04-10 18:05:04,866 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 108/659   Jobs: 1   Epoch: 3.27/20.0 (16.4% complete)   lr: 0.001372   
+2023-04-10 18:06:07,807 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 109/659   Jobs: 1   Epoch: 3.30/20.0 (16.5% complete)   lr: 0.001367   
+2023-04-10 18:07:11,315 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 110/659   Jobs: 1   Epoch: 3.33/20.0 (16.7% complete)   lr: 0.001363   
+2023-04-10 18:08:15,320 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 111/659   Jobs: 1   Epoch: 3.36/20.0 (16.8% complete)   lr: 0.001358   
+2023-04-10 18:09:17,957 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 112/659   Jobs: 1   Epoch: 3.39/20.0 (17.0% complete)   lr: 0.001353   
+2023-04-10 18:10:21,597 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 113/659   Jobs: 1   Epoch: 3.42/20.0 (17.1% complete)   lr: 0.001348   
+2023-04-10 18:11:24,727 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 114/659   Jobs: 1   Epoch: 3.45/20.0 (17.3% complete)   lr: 0.001344   
+2023-04-10 18:12:28,362 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 115/659   Jobs: 1   Epoch: 3.48/20.0 (17.4% complete)   lr: 0.001339   
+2023-04-10 18:13:31,510 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 116/659   Jobs: 1   Epoch: 3.52/20.0 (17.6% complete)   lr: 0.001334   
+2023-04-10 18:14:34,885 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 117/659   Jobs: 1   Epoch: 3.55/20.0 (17.7% complete)   lr: 0.001330   
+2023-04-10 18:15:38,685 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 118/659   Jobs: 1   Epoch: 3.58/20.0 (17.9% complete)   lr: 0.001325   
+2023-04-10 18:16:42,528 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 119/659   Jobs: 1   Epoch: 3.61/20.0 (18.0% complete)   lr: 0.001320   
+2023-04-10 18:17:45,546 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 120/659   Jobs: 1   Epoch: 3.64/20.0 (18.2% complete)   lr: 0.001316   
+2023-04-10 18:18:54,536 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 121/659   Jobs: 1   Epoch: 3.67/20.0 (18.3% complete)   lr: 0.001311   
+2023-04-10 18:19:58,490 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 122/659   Jobs: 1   Epoch: 3.70/20.0 (18.5% complete)   lr: 0.001307   
+2023-04-10 18:21:01,046 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 123/659   Jobs: 1   Epoch: 3.73/20.0 (18.6% complete)   lr: 0.001302   
+2023-04-10 18:22:04,852 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 124/659   Jobs: 1   Epoch: 3.76/20.0 (18.8% complete)   lr: 0.001298   
+2023-04-10 18:23:07,899 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 125/659   Jobs: 1   Epoch: 3.79/20.0 (18.9% complete)   lr: 0.001293   
+2023-04-10 18:24:11,441 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 126/659   Jobs: 1   Epoch: 3.82/20.0 (19.1% complete)   lr: 0.001289   
+2023-04-10 18:25:14,416 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 127/659   Jobs: 1   Epoch: 3.85/20.0 (19.2% complete)   lr: 0.001284   
+2023-04-10 18:26:17,864 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 128/659   Jobs: 1   Epoch: 3.88/20.0 (19.4% complete)   lr: 0.001280   
+2023-04-10 18:27:21,580 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 129/659   Jobs: 1   Epoch: 3.91/20.0 (19.5% complete)   lr: 0.001275   
+2023-04-10 18:28:25,298 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 130/659   Jobs: 1   Epoch: 3.94/20.0 (19.7% complete)   lr: 0.001271   
+2023-04-10 18:29:28,321 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 131/659   Jobs: 1   Epoch: 3.97/20.0 (19.8% complete)   lr: 0.001266   
+2023-04-10 18:30:31,663 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 132/659   Jobs: 1   Epoch: 4.00/20.0 (20.0% complete)   lr: 0.001262   
+2023-04-10 18:31:35,519 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 133/659   Jobs: 1   Epoch: 4.03/20.0 (20.2% complete)   lr: 0.001258   
+2023-04-10 18:32:37,961 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 134/659   Jobs: 1   Epoch: 4.06/20.0 (20.3% complete)   lr: 0.001253   
+2023-04-10 18:33:41,539 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 135/659   Jobs: 1   Epoch: 4.09/20.0 (20.5% complete)   lr: 0.001249   
+2023-04-10 18:34:44,601 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 136/659   Jobs: 1   Epoch: 4.12/20.0 (20.6% complete)   lr: 0.001244   
+2023-04-10 18:35:48,246 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 137/659   Jobs: 1   Epoch: 4.15/20.0 (20.8% complete)   lr: 0.001240   
+2023-04-10 18:36:51,141 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 138/659   Jobs: 1   Epoch: 4.18/20.0 (20.9% complete)   lr: 0.001236   
+2023-04-10 18:37:54,475 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 139/659   Jobs: 1   Epoch: 4.21/20.0 (21.1% complete)   lr: 0.001231   
+2023-04-10 18:38:57,923 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 140/659   Jobs: 1   Epoch: 4.24/20.0 (21.2% complete)   lr: 0.001227   
+2023-04-10 18:40:07,487 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 141/659   Jobs: 1   Epoch: 4.27/20.0 (21.4% complete)   lr: 0.001223   
+2023-04-10 18:41:10,400 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 142/659   Jobs: 1   Epoch: 4.30/20.0 (21.5% complete)   lr: 0.001219   
+2023-04-10 18:42:13,727 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 143/659   Jobs: 1   Epoch: 4.33/20.0 (21.7% complete)   lr: 0.001214   
+2023-04-10 18:43:17,578 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 144/659   Jobs: 1   Epoch: 4.36/20.0 (21.8% complete)   lr: 0.001210   
+2023-04-10 18:44:20,172 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 145/659   Jobs: 1   Epoch: 4.39/20.0 (22.0% complete)   lr: 0.001206   
+2023-04-10 18:45:23,598 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 146/659   Jobs: 1   Epoch: 4.42/20.0 (22.1% complete)   lr: 0.001202   
+2023-04-10 18:46:26,690 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 147/659   Jobs: 1   Epoch: 4.45/20.0 (22.3% complete)   lr: 0.001198   
+2023-04-10 18:47:30,496 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 148/659   Jobs: 1   Epoch: 4.48/20.0 (22.4% complete)   lr: 0.001193   
+2023-04-10 18:48:33,396 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 149/659   Jobs: 1   Epoch: 4.52/20.0 (22.6% complete)   lr: 0.001189   
+2023-04-10 18:49:36,715 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 150/659   Jobs: 1   Epoch: 4.55/20.0 (22.7% complete)   lr: 0.001185   
+2023-04-10 18:50:40,576 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 151/659   Jobs: 1   Epoch: 4.58/20.0 (22.9% complete)   lr: 0.001181   
+2023-04-10 18:51:44,272 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 152/659   Jobs: 1   Epoch: 4.61/20.0 (23.0% complete)   lr: 0.001177   
+2023-04-10 18:52:47,286 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 153/659   Jobs: 1   Epoch: 4.64/20.0 (23.2% complete)   lr: 0.001173   
+2023-04-10 18:53:50,560 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 154/659   Jobs: 1   Epoch: 4.67/20.0 (23.3% complete)   lr: 0.001169   
+2023-04-10 18:54:54,433 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 155/659   Jobs: 1   Epoch: 4.70/20.0 (23.5% complete)   lr: 0.001165   
+2023-04-10 18:55:56,986 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 156/659   Jobs: 1   Epoch: 4.73/20.0 (23.6% complete)   lr: 0.001161   
+2023-04-10 18:57:00,655 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 157/659   Jobs: 1   Epoch: 4.76/20.0 (23.8% complete)   lr: 0.001157   
+2023-04-10 18:58:03,690 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 158/659   Jobs: 1   Epoch: 4.79/20.0 (23.9% complete)   lr: 0.001152   
+2023-04-10 18:59:07,358 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 159/659   Jobs: 1   Epoch: 4.82/20.0 (24.1% complete)   lr: 0.001148   
+2023-04-10 19:00:10,462 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 160/659   Jobs: 1   Epoch: 4.85/20.0 (24.2% complete)   lr: 0.001144   
+2023-04-10 19:01:19,528 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 161/659   Jobs: 1   Epoch: 4.88/20.0 (24.4% complete)   lr: 0.001140   
+2023-04-10 19:02:23,217 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 162/659   Jobs: 1   Epoch: 4.91/20.0 (24.5% complete)   lr: 0.001137   
+2023-04-10 19:03:26,965 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 163/659   Jobs: 1   Epoch: 4.94/20.0 (24.7% complete)   lr: 0.001133   
+2023-04-10 19:04:30,124 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 164/659   Jobs: 1   Epoch: 4.97/20.0 (24.8% complete)   lr: 0.001129   
+2023-04-10 19:05:33,426 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 165/659   Jobs: 1   Epoch: 5.00/20.0 (25.0% complete)   lr: 0.001125   
+2023-04-10 19:06:37,267 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 166/659   Jobs: 1   Epoch: 5.03/20.0 (25.2% complete)   lr: 0.001121   
+2023-04-10 19:07:39,775 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 167/659   Jobs: 1   Epoch: 5.06/20.0 (25.3% complete)   lr: 0.001117   
+2023-04-10 19:08:43,554 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 168/659   Jobs: 1   Epoch: 5.09/20.0 (25.5% complete)   lr: 0.001113   
+2023-04-10 19:09:46,608 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 169/659   Jobs: 1   Epoch: 5.12/20.0 (25.6% complete)   lr: 0.001109   
+2023-04-10 19:10:50,431 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 170/659   Jobs: 1   Epoch: 5.15/20.0 (25.8% complete)   lr: 0.001105   
+2023-04-10 19:11:53,767 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 171/659   Jobs: 1   Epoch: 5.18/20.0 (25.9% complete)   lr: 0.001101   
+2023-04-10 19:12:56,980 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 172/659   Jobs: 1   Epoch: 5.21/20.0 (26.1% complete)   lr: 0.001098   
+2023-04-10 19:14:00,579 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 173/659   Jobs: 1   Epoch: 5.24/20.0 (26.2% complete)   lr: 0.001094   
+2023-04-10 19:15:04,412 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 174/659   Jobs: 1   Epoch: 5.27/20.0 (26.4% complete)   lr: 0.001090   
+2023-04-10 19:16:07,396 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 175/659   Jobs: 1   Epoch: 5.30/20.0 (26.5% complete)   lr: 0.001086   
+2023-04-10 19:17:10,805 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 176/659   Jobs: 1   Epoch: 5.33/20.0 (26.7% complete)   lr: 0.001082   
+2023-04-10 19:18:14,749 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 177/659   Jobs: 1   Epoch: 5.36/20.0 (26.8% complete)   lr: 0.001079   
+2023-04-10 19:19:17,298 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 178/659   Jobs: 1   Epoch: 5.39/20.0 (27.0% complete)   lr: 0.001075   
+2023-04-10 19:20:20,770 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 179/659   Jobs: 1   Epoch: 5.42/20.0 (27.1% complete)   lr: 0.001071   
+2023-04-10 19:21:23,735 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 180/659   Jobs: 1   Epoch: 5.45/20.0 (27.3% complete)   lr: 0.001067   
+2023-04-10 19:22:33,202 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 181/659   Jobs: 1   Epoch: 5.48/20.0 (27.4% complete)   lr: 0.001064   
+2023-04-10 19:23:36,139 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 182/659   Jobs: 1   Epoch: 5.52/20.0 (27.6% complete)   lr: 0.001060   
+2023-04-10 19:24:39,373 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 183/659   Jobs: 1   Epoch: 5.55/20.0 (27.7% complete)   lr: 0.001056   
+2023-04-10 19:25:43,084 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 184/659   Jobs: 1   Epoch: 5.58/20.0 (27.9% complete)   lr: 0.001053   
+2023-04-10 19:26:46,844 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 185/659   Jobs: 1   Epoch: 5.61/20.0 (28.0% complete)   lr: 0.001049   
+2023-04-10 19:27:49,768 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 186/659   Jobs: 1   Epoch: 5.64/20.0 (28.2% complete)   lr: 0.001045   
+2023-04-10 19:28:53,190 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 187/659   Jobs: 1   Epoch: 5.67/20.0 (28.3% complete)   lr: 0.001042   
+2023-04-10 19:29:56,867 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 188/659   Jobs: 1   Epoch: 5.70/20.0 (28.5% complete)   lr: 0.001038   
+2023-04-10 19:30:59,306 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 189/659   Jobs: 1   Epoch: 5.73/20.0 (28.6% complete)   lr: 0.001034   
+2023-04-10 19:32:02,860 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 190/659   Jobs: 1   Epoch: 5.76/20.0 (28.8% complete)   lr: 0.001031   
+2023-04-10 19:33:05,927 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 191/659   Jobs: 1   Epoch: 5.79/20.0 (28.9% complete)   lr: 0.001027   
+2023-04-10 19:34:09,631 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 192/659   Jobs: 1   Epoch: 5.82/20.0 (29.1% complete)   lr: 0.001024   
+2023-04-10 19:35:12,593 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 193/659   Jobs: 1   Epoch: 5.85/20.0 (29.2% complete)   lr: 0.001020   
+2023-04-10 19:36:15,978 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 194/659   Jobs: 1   Epoch: 5.88/20.0 (29.4% complete)   lr: 0.001016   
+2023-04-10 19:37:19,615 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 195/659   Jobs: 1   Epoch: 5.91/20.0 (29.5% complete)   lr: 0.001013   
+2023-04-10 19:38:23,201 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 196/659   Jobs: 1   Epoch: 5.94/20.0 (29.7% complete)   lr: 0.001009   
+2023-04-10 19:39:26,214 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 197/659   Jobs: 1   Epoch: 5.97/20.0 (29.8% complete)   lr: 0.001006   
+2023-04-10 19:40:29,607 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 198/659   Jobs: 1   Epoch: 6.00/20.0 (30.0% complete)   lr: 0.001002   
+2023-04-10 19:41:33,630 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 199/659   Jobs: 1   Epoch: 6.03/20.0 (30.2% complete)   lr: 0.000999   
+2023-04-10 19:42:35,866 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 200/659   Jobs: 1   Epoch: 6.06/20.0 (30.3% complete)   lr: 0.000995   
+2023-04-10 19:43:47,101 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 201/659   Jobs: 1   Epoch: 6.09/20.0 (30.5% complete)   lr: 0.000992   
+2023-04-10 19:44:50,138 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 202/659   Jobs: 1   Epoch: 6.12/20.0 (30.6% complete)   lr: 0.000988   
+2023-04-10 19:45:53,940 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 203/659   Jobs: 1   Epoch: 6.15/20.0 (30.8% complete)   lr: 0.000985   
+2023-04-10 19:46:56,814 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 204/659   Jobs: 1   Epoch: 6.18/20.0 (30.9% complete)   lr: 0.000982   
+2023-04-10 19:48:00,262 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 205/659   Jobs: 1   Epoch: 6.21/20.0 (31.1% complete)   lr: 0.000978   
+2023-04-10 19:49:03,823 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 206/659   Jobs: 1   Epoch: 6.24/20.0 (31.2% complete)   lr: 0.000975   
+2023-04-10 19:50:07,538 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 207/659   Jobs: 1   Epoch: 6.27/20.0 (31.4% complete)   lr: 0.000971   
+2023-04-10 19:51:10,574 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 208/659   Jobs: 1   Epoch: 6.30/20.0 (31.5% complete)   lr: 0.000968   
+2023-04-10 19:52:13,782 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 209/659   Jobs: 1   Epoch: 6.33/20.0 (31.7% complete)   lr: 0.000965   
+2023-04-10 19:53:17,483 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 210/659   Jobs: 1   Epoch: 6.36/20.0 (31.8% complete)   lr: 0.000961   
+2023-04-10 19:54:19,966 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 211/659   Jobs: 1   Epoch: 6.39/20.0 (32.0% complete)   lr: 0.000958   
+2023-04-10 19:55:23,531 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 212/659   Jobs: 1   Epoch: 6.42/20.0 (32.1% complete)   lr: 0.000955   
+2023-04-10 19:56:26,543 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 213/659   Jobs: 1   Epoch: 6.45/20.0 (32.3% complete)   lr: 0.000951   
+2023-04-10 19:57:30,322 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 214/659   Jobs: 1   Epoch: 6.48/20.0 (32.4% complete)   lr: 0.000948   
+2023-04-10 19:58:33,427 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 215/659   Jobs: 1   Epoch: 6.52/20.0 (32.6% complete)   lr: 0.000945   
+2023-04-10 19:59:36,866 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 216/659   Jobs: 1   Epoch: 6.55/20.0 (32.7% complete)   lr: 0.000941   
+2023-04-10 20:00:40,353 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 217/659   Jobs: 1   Epoch: 6.58/20.0 (32.9% complete)   lr: 0.000938   
+2023-04-10 20:01:43,909 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 218/659   Jobs: 1   Epoch: 6.61/20.0 (33.0% complete)   lr: 0.000935   
+2023-04-10 20:02:46,817 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 219/659   Jobs: 1   Epoch: 6.64/20.0 (33.2% complete)   lr: 0.000932   
+2023-04-10 20:03:50,200 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 220/659   Jobs: 1   Epoch: 6.67/20.0 (33.3% complete)   lr: 0.000928   
+2023-04-10 20:04:59,927 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 221/659   Jobs: 1   Epoch: 6.70/20.0 (33.5% complete)   lr: 0.000925   
+2023-04-10 20:06:02,379 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 222/659   Jobs: 1   Epoch: 6.73/20.0 (33.6% complete)   lr: 0.000922   
+2023-04-10 20:07:05,894 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 223/659   Jobs: 1   Epoch: 6.76/20.0 (33.8% complete)   lr: 0.000919   
+2023-04-10 20:08:08,983 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 224/659   Jobs: 1   Epoch: 6.79/20.0 (33.9% complete)   lr: 0.000915   
+2023-04-10 20:09:12,704 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 225/659   Jobs: 1   Epoch: 6.82/20.0 (34.1% complete)   lr: 0.000912   
+2023-04-10 20:10:15,699 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 226/659   Jobs: 1   Epoch: 6.85/20.0 (34.2% complete)   lr: 0.000909   
+2023-04-10 20:11:18,938 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 227/659   Jobs: 1   Epoch: 6.88/20.0 (34.4% complete)   lr: 0.000906   
+2023-04-10 20:12:22,474 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 228/659   Jobs: 1   Epoch: 6.91/20.0 (34.5% complete)   lr: 0.000903   
+2023-04-10 20:13:26,031 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 229/659   Jobs: 1   Epoch: 6.94/20.0 (34.7% complete)   lr: 0.000900   
+2023-04-10 20:14:28,962 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 230/659   Jobs: 1   Epoch: 6.97/20.0 (34.8% complete)   lr: 0.000896   
+2023-04-10 20:15:32,329 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 231/659   Jobs: 1   Epoch: 7.00/20.0 (35.0% complete)   lr: 0.000893   
+2023-04-10 20:16:36,236 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 232/659   Jobs: 1   Epoch: 7.03/20.0 (35.2% complete)   lr: 0.000890   
+2023-04-10 20:17:38,666 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 233/659   Jobs: 1   Epoch: 7.06/20.0 (35.3% complete)   lr: 0.000887   
+2023-04-10 20:18:42,112 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 234/659   Jobs: 1   Epoch: 7.09/20.0 (35.5% complete)   lr: 0.000884   
+2023-04-10 20:19:45,071 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 235/659   Jobs: 1   Epoch: 7.12/20.0 (35.6% complete)   lr: 0.000881   
+2023-04-10 20:20:48,788 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 236/659   Jobs: 1   Epoch: 7.15/20.0 (35.8% complete)   lr: 0.000878   
+2023-04-10 20:21:51,839 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 237/659   Jobs: 1   Epoch: 7.18/20.0 (35.9% complete)   lr: 0.000875   
+2023-04-10 20:22:55,195 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 238/659   Jobs: 1   Epoch: 7.21/20.0 (36.1% complete)   lr: 0.000872   
+2023-04-10 20:23:58,766 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 239/659   Jobs: 1   Epoch: 7.24/20.0 (36.2% complete)   lr: 0.000869   
+2023-04-10 20:25:02,503 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 240/659   Jobs: 1   Epoch: 7.27/20.0 (36.4% complete)   lr: 0.000866   
+2023-04-10 20:26:11,182 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 241/659   Jobs: 1   Epoch: 7.30/20.0 (36.5% complete)   lr: 0.000863   
+2023-04-10 20:27:14,514 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 242/659   Jobs: 1   Epoch: 7.33/20.0 (36.7% complete)   lr: 0.000860   
+2023-04-10 20:28:18,368 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 243/659   Jobs: 1   Epoch: 7.36/20.0 (36.8% complete)   lr: 0.000857   
+2023-04-10 20:29:21,079 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 244/659   Jobs: 1   Epoch: 7.39/20.0 (37.0% complete)   lr: 0.000854   
+2023-04-10 20:30:24,775 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 245/659   Jobs: 1   Epoch: 7.42/20.0 (37.1% complete)   lr: 0.000851   
+2023-04-10 20:31:27,869 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 246/659   Jobs: 1   Epoch: 7.45/20.0 (37.3% complete)   lr: 0.000848   
+2023-04-10 20:32:31,552 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 247/659   Jobs: 1   Epoch: 7.48/20.0 (37.4% complete)   lr: 0.000845   
+2023-04-10 20:33:34,386 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 248/659   Jobs: 1   Epoch: 7.52/20.0 (37.6% complete)   lr: 0.000842   
+2023-04-10 20:34:37,778 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 249/659   Jobs: 1   Epoch: 7.55/20.0 (37.7% complete)   lr: 0.000839   
+2023-04-10 20:35:41,443 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 250/659   Jobs: 1   Epoch: 7.58/20.0 (37.9% complete)   lr: 0.000836   
+2023-04-10 20:36:45,263 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 251/659   Jobs: 1   Epoch: 7.61/20.0 (38.0% complete)   lr: 0.000833   
+2023-04-10 20:37:48,428 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 252/659   Jobs: 1   Epoch: 7.64/20.0 (38.2% complete)   lr: 0.000830   
+2023-04-10 20:38:51,745 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 253/659   Jobs: 1   Epoch: 7.67/20.0 (38.3% complete)   lr: 0.000827   
+2023-04-10 20:39:55,518 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 254/659   Jobs: 1   Epoch: 7.70/20.0 (38.5% complete)   lr: 0.000824   
+2023-04-10 20:40:58,017 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 255/659   Jobs: 1   Epoch: 7.73/20.0 (38.6% complete)   lr: 0.000822   
+2023-04-10 20:42:01,544 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 256/659   Jobs: 1   Epoch: 7.76/20.0 (38.8% complete)   lr: 0.000819   
+2023-04-10 20:43:04,581 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 257/659   Jobs: 1   Epoch: 7.79/20.0 (38.9% complete)   lr: 0.000816   
+2023-04-10 20:44:08,023 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 258/659   Jobs: 1   Epoch: 7.82/20.0 (39.1% complete)   lr: 0.000813   
+2023-04-10 20:45:10,941 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 259/659   Jobs: 1   Epoch: 7.85/20.0 (39.2% complete)   lr: 0.000810   
+2023-04-10 20:46:14,043 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 260/659   Jobs: 1   Epoch: 7.88/20.0 (39.4% complete)   lr: 0.000807   
+2023-04-10 20:47:23,371 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 261/659   Jobs: 1   Epoch: 7.91/20.0 (39.5% complete)   lr: 0.000805   
+2023-04-10 20:48:27,156 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 262/659   Jobs: 1   Epoch: 7.94/20.0 (39.7% complete)   lr: 0.000802   
+2023-04-10 20:49:30,170 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 263/659   Jobs: 1   Epoch: 7.97/20.0 (39.8% complete)   lr: 0.000799   
+2023-04-10 20:50:33,325 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 264/659   Jobs: 1   Epoch: 8.00/20.0 (40.0% complete)   lr: 0.000796   
+2023-04-10 20:51:37,287 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 265/659   Jobs: 1   Epoch: 8.03/20.0 (40.2% complete)   lr: 0.000793   
+2023-04-10 20:52:39,805 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 266/659   Jobs: 1   Epoch: 8.06/20.0 (40.3% complete)   lr: 0.000791   
+2023-04-10 20:53:43,498 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 267/659   Jobs: 1   Epoch: 8.09/20.0 (40.5% complete)   lr: 0.000788   
+2023-04-10 20:54:46,381 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 268/659   Jobs: 1   Epoch: 8.12/20.0 (40.6% complete)   lr: 0.000785   
+2023-04-10 20:55:50,139 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 269/659   Jobs: 1   Epoch: 8.15/20.0 (40.8% complete)   lr: 0.000782   
+2023-04-10 20:56:53,049 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 270/659   Jobs: 1   Epoch: 8.18/20.0 (40.9% complete)   lr: 0.000780   
+2023-04-10 20:57:56,380 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 271/659   Jobs: 1   Epoch: 8.21/20.0 (41.1% complete)   lr: 0.000777   
+2023-04-10 20:59:00,055 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 272/659   Jobs: 1   Epoch: 8.24/20.0 (41.2% complete)   lr: 0.000774   
+2023-04-10 21:00:03,716 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 273/659   Jobs: 1   Epoch: 8.27/20.0 (41.4% complete)   lr: 0.000772   
+2023-04-10 21:01:06,735 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 274/659   Jobs: 1   Epoch: 8.30/20.0 (41.5% complete)   lr: 0.000769   
+2023-04-10 21:02:10,204 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 275/659   Jobs: 1   Epoch: 8.33/20.0 (41.7% complete)   lr: 0.000766   
+2023-04-10 21:03:14,097 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 276/659   Jobs: 1   Epoch: 8.36/20.0 (41.8% complete)   lr: 0.000764   
+2023-04-10 21:04:16,678 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 277/659   Jobs: 1   Epoch: 8.39/20.0 (42.0% complete)   lr: 0.000761   
+2023-04-10 21:05:20,098 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 278/659   Jobs: 1   Epoch: 8.42/20.0 (42.1% complete)   lr: 0.000758   
+2023-04-10 21:06:23,108 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 279/659   Jobs: 1   Epoch: 8.45/20.0 (42.3% complete)   lr: 0.000756   
+2023-04-10 21:07:26,703 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 280/659   Jobs: 1   Epoch: 8.48/20.0 (42.4% complete)   lr: 0.000753   
+2023-04-10 21:08:35,479 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 281/659   Jobs: 1   Epoch: 8.52/20.0 (42.6% complete)   lr: 0.000750   
+2023-04-10 21:09:38,782 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 282/659   Jobs: 1   Epoch: 8.55/20.0 (42.7% complete)   lr: 0.000748   
+2023-04-10 21:10:42,476 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 283/659   Jobs: 1   Epoch: 8.58/20.0 (42.9% complete)   lr: 0.000745   
+2023-04-10 21:11:45,967 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 284/659   Jobs: 1   Epoch: 8.61/20.0 (43.0% complete)   lr: 0.000743   
+2023-04-10 21:12:48,910 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 285/659   Jobs: 1   Epoch: 8.64/20.0 (43.2% complete)   lr: 0.000740   
+2023-04-10 21:13:52,189 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 286/659   Jobs: 1   Epoch: 8.67/20.0 (43.3% complete)   lr: 0.000737   
+2023-04-10 21:14:56,093 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 287/659   Jobs: 1   Epoch: 8.70/20.0 (43.5% complete)   lr: 0.000735   
+2023-04-10 21:15:58,574 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 288/659   Jobs: 1   Epoch: 8.73/20.0 (43.6% complete)   lr: 0.000732   
+2023-04-10 21:17:02,130 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 289/659   Jobs: 1   Epoch: 8.76/20.0 (43.8% complete)   lr: 0.000730   
+2023-04-10 21:18:05,283 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 290/659   Jobs: 1   Epoch: 8.79/20.0 (43.9% complete)   lr: 0.000727   
+2023-04-10 21:19:08,938 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 291/659   Jobs: 1   Epoch: 8.82/20.0 (44.1% complete)   lr: 0.000725   
+2023-04-10 21:20:11,934 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 292/659   Jobs: 1   Epoch: 8.85/20.0 (44.2% complete)   lr: 0.000722   
+2023-04-10 21:21:15,350 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 293/659   Jobs: 1   Epoch: 8.88/20.0 (44.4% complete)   lr: 0.000720   
+2023-04-10 21:22:18,831 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 294/659   Jobs: 1   Epoch: 8.91/20.0 (44.5% complete)   lr: 0.000717   
+2023-04-10 21:23:22,660 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 295/659   Jobs: 1   Epoch: 8.94/20.0 (44.7% complete)   lr: 0.000715   
+2023-04-10 21:24:25,607 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 296/659   Jobs: 1   Epoch: 8.97/20.0 (44.8% complete)   lr: 0.000712   
+2023-04-10 21:25:28,874 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 297/659   Jobs: 1   Epoch: 9.00/20.0 (45.0% complete)   lr: 0.000710   
+2023-04-10 21:26:32,723 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 298/659   Jobs: 1   Epoch: 9.03/20.0 (45.2% complete)   lr: 0.000707   
+2023-04-10 21:27:35,129 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 299/659   Jobs: 1   Epoch: 9.06/20.0 (45.3% complete)   lr: 0.000705   
+2023-04-10 21:28:38,834 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 300/659   Jobs: 1   Epoch: 9.09/20.0 (45.5% complete)   lr: 0.000702   
+2023-04-10 21:29:47,945 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 301/659   Jobs: 1   Epoch: 9.12/20.0 (45.6% complete)   lr: 0.000700   
+2023-04-10 21:30:51,590 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 302/659   Jobs: 1   Epoch: 9.15/20.0 (45.8% complete)   lr: 0.000697   
+2023-04-10 21:31:54,524 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 303/659   Jobs: 1   Epoch: 9.18/20.0 (45.9% complete)   lr: 0.000695   
+2023-04-10 21:32:58,077 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 304/659   Jobs: 1   Epoch: 9.21/20.0 (46.1% complete)   lr: 0.000693   
+2023-04-10 21:34:01,682 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 305/659   Jobs: 1   Epoch: 9.24/20.0 (46.2% complete)   lr: 0.000690   
+2023-04-10 21:35:05,362 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 306/659   Jobs: 1   Epoch: 9.27/20.0 (46.4% complete)   lr: 0.000688   
+2023-04-10 21:36:08,305 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 307/659   Jobs: 1   Epoch: 9.30/20.0 (46.5% complete)   lr: 0.000685   
+2023-04-10 21:37:11,633 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 308/659   Jobs: 1   Epoch: 9.33/20.0 (46.7% complete)   lr: 0.000683   
+2023-04-10 21:38:15,692 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 309/659   Jobs: 1   Epoch: 9.36/20.0 (46.8% complete)   lr: 0.000681   
+2023-04-10 21:39:18,187 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 310/659   Jobs: 1   Epoch: 9.39/20.0 (47.0% complete)   lr: 0.000678   
+2023-04-10 21:40:21,799 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 311/659   Jobs: 1   Epoch: 9.42/20.0 (47.1% complete)   lr: 0.000676   
+2023-04-10 21:41:24,974 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 312/659   Jobs: 1   Epoch: 9.45/20.0 (47.3% complete)   lr: 0.000673   
+2023-04-10 21:42:28,759 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 313/659   Jobs: 1   Epoch: 9.48/20.0 (47.4% complete)   lr: 0.000671   
+2023-04-10 21:43:31,498 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 314/659   Jobs: 1   Epoch: 9.52/20.0 (47.6% complete)   lr: 0.000669   
+2023-04-10 21:44:34,901 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 315/659   Jobs: 1   Epoch: 9.55/20.0 (47.7% complete)   lr: 0.000666   
+2023-04-10 21:45:38,665 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 316/659   Jobs: 1   Epoch: 9.58/20.0 (47.9% complete)   lr: 0.000664   
+2023-04-10 21:46:42,258 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 317/659   Jobs: 1   Epoch: 9.61/20.0 (48.0% complete)   lr: 0.000662   
+2023-04-10 21:47:45,244 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 318/659   Jobs: 1   Epoch: 9.64/20.0 (48.2% complete)   lr: 0.000659   
+2023-04-10 21:48:48,603 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 319/659   Jobs: 1   Epoch: 9.67/20.0 (48.3% complete)   lr: 0.000657   
+2023-04-10 21:49:52,474 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 320/659   Jobs: 1   Epoch: 9.70/20.0 (48.5% complete)   lr: 0.000655   
+2023-04-10 21:51:00,494 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 321/659   Jobs: 1   Epoch: 9.73/20.0 (48.6% complete)   lr: 0.000653   
+2023-04-10 21:52:04,003 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 322/659   Jobs: 1   Epoch: 9.76/20.0 (48.8% complete)   lr: 0.000650   
+2023-04-10 21:53:07,175 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 323/659   Jobs: 1   Epoch: 9.79/20.0 (48.9% complete)   lr: 0.000648   
+2023-04-10 21:54:10,814 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 324/659   Jobs: 1   Epoch: 9.82/20.0 (49.1% complete)   lr: 0.000646   
+2023-04-10 21:55:13,826 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 325/659   Jobs: 1   Epoch: 9.85/20.0 (49.2% complete)   lr: 0.000644   
+2023-04-10 21:56:17,162 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 326/659   Jobs: 1   Epoch: 9.88/20.0 (49.4% complete)   lr: 0.000641   
+2023-04-10 21:57:20,655 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 327/659   Jobs: 1   Epoch: 9.91/20.0 (49.5% complete)   lr: 0.000639   
+2023-04-10 21:58:24,067 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 328/659   Jobs: 1   Epoch: 9.94/20.0 (49.7% complete)   lr: 0.000637   
+2023-04-10 21:59:27,023 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 329/659   Jobs: 1   Epoch: 9.97/20.0 (49.8% complete)   lr: 0.000635   
+2023-04-10 22:00:30,352 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 330/659   Jobs: 1   Epoch: 10.00/20.0 (50.0% complete)   lr: 0.000632   
+2023-04-10 22:01:34,231 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 331/659   Jobs: 1   Epoch: 10.03/20.0 (50.2% complete)   lr: 0.000630   
+2023-04-10 22:02:36,663 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 332/659   Jobs: 1   Epoch: 10.06/20.0 (50.3% complete)   lr: 0.000628   
+2023-04-10 22:03:40,223 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 333/659   Jobs: 1   Epoch: 10.09/20.0 (50.5% complete)   lr: 0.000626   
+2023-04-10 22:04:43,374 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 334/659   Jobs: 1   Epoch: 10.12/20.0 (50.6% complete)   lr: 0.000624   
+2023-04-10 22:05:47,190 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 335/659   Jobs: 1   Epoch: 10.15/20.0 (50.8% complete)   lr: 0.000622   
+2023-04-10 22:06:50,094 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 336/659   Jobs: 1   Epoch: 10.18/20.0 (50.9% complete)   lr: 0.000619   
+2023-04-10 22:07:53,589 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 337/659   Jobs: 1   Epoch: 10.21/20.0 (51.1% complete)   lr: 0.000617   
+2023-04-10 22:08:57,260 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 338/659   Jobs: 1   Epoch: 10.24/20.0 (51.2% complete)   lr: 0.000615   
+2023-04-10 22:10:00,975 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 339/659   Jobs: 1   Epoch: 10.27/20.0 (51.4% complete)   lr: 0.000613   
+2023-04-10 22:11:03,953 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 340/659   Jobs: 1   Epoch: 10.30/20.0 (51.5% complete)   lr: 0.000611   
+2023-04-10 22:12:12,972 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 341/659   Jobs: 1   Epoch: 10.33/20.0 (51.7% complete)   lr: 0.000609   
+2023-04-10 22:13:16,996 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 342/659   Jobs: 1   Epoch: 10.36/20.0 (51.8% complete)   lr: 0.000607   
+2023-04-10 22:14:19,538 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 343/659   Jobs: 1   Epoch: 10.39/20.0 (52.0% complete)   lr: 0.000604   
+2023-04-10 22:15:23,194 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 344/659   Jobs: 1   Epoch: 10.42/20.0 (52.1% complete)   lr: 0.000602   
+2023-04-10 22:16:26,321 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 345/659   Jobs: 1   Epoch: 10.45/20.0 (52.3% complete)   lr: 0.000600   
+2023-04-10 22:17:29,931 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 346/659   Jobs: 1   Epoch: 10.48/20.0 (52.4% complete)   lr: 0.000598   
+2023-04-10 22:18:32,915 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 347/659   Jobs: 1   Epoch: 10.52/20.0 (52.6% complete)   lr: 0.000596   
+2023-04-10 22:19:36,143 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 348/659   Jobs: 1   Epoch: 10.55/20.0 (52.7% complete)   lr: 0.000594   
+2023-04-10 22:20:39,831 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 349/659   Jobs: 1   Epoch: 10.58/20.0 (52.9% complete)   lr: 0.000592   
+2023-04-10 22:21:43,540 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 350/659   Jobs: 1   Epoch: 10.61/20.0 (53.0% complete)   lr: 0.000590   
+2023-04-10 22:22:46,504 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 351/659   Jobs: 1   Epoch: 10.64/20.0 (53.2% complete)   lr: 0.000588   
+2023-04-10 22:23:49,926 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 352/659   Jobs: 1   Epoch: 10.67/20.0 (53.3% complete)   lr: 0.000586   
+2023-04-10 22:24:53,757 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 353/659   Jobs: 1   Epoch: 10.70/20.0 (53.5% complete)   lr: 0.000584   
+2023-04-10 22:25:56,220 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 354/659   Jobs: 1   Epoch: 10.73/20.0 (53.6% complete)   lr: 0.000582   
+2023-04-10 22:26:59,782 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 355/659   Jobs: 1   Epoch: 10.76/20.0 (53.8% complete)   lr: 0.000580   
+2023-04-10 22:28:02,960 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 356/659   Jobs: 1   Epoch: 10.79/20.0 (53.9% complete)   lr: 0.000578   
+2023-04-10 22:29:06,778 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 357/659   Jobs: 1   Epoch: 10.82/20.0 (54.1% complete)   lr: 0.000576   
+2023-04-10 22:30:09,473 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 358/659   Jobs: 1   Epoch: 10.85/20.0 (54.2% complete)   lr: 0.000574   
+2023-04-10 22:31:12,695 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 359/659   Jobs: 1   Epoch: 10.88/20.0 (54.4% complete)   lr: 0.000572   
+2023-04-10 22:32:16,472 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 360/659   Jobs: 1   Epoch: 10.91/20.0 (54.5% complete)   lr: 0.000570   
+2023-04-10 22:33:25,948 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 361/659   Jobs: 1   Epoch: 10.94/20.0 (54.7% complete)   lr: 0.000568   
+2023-04-10 22:34:29,036 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 362/659   Jobs: 1   Epoch: 10.97/20.0 (54.8% complete)   lr: 0.000566   
+2023-04-10 22:35:32,414 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 363/659   Jobs: 1   Epoch: 11.00/20.0 (55.0% complete)   lr: 0.000564   
+2023-04-10 22:36:36,460 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 364/659   Jobs: 1   Epoch: 11.03/20.0 (55.2% complete)   lr: 0.000562   
+2023-04-10 22:37:39,037 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 365/659   Jobs: 1   Epoch: 11.06/20.0 (55.3% complete)   lr: 0.000560   
+2023-04-10 22:38:42,662 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 366/659   Jobs: 1   Epoch: 11.09/20.0 (55.5% complete)   lr: 0.000558   
+2023-04-10 22:39:45,702 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 367/659   Jobs: 1   Epoch: 11.12/20.0 (55.6% complete)   lr: 0.000556   
+2023-04-10 22:40:49,464 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 368/659   Jobs: 1   Epoch: 11.15/20.0 (55.8% complete)   lr: 0.000554   
+2023-04-10 22:41:52,417 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 369/659   Jobs: 1   Epoch: 11.18/20.0 (55.9% complete)   lr: 0.000552   
+2023-04-10 22:42:55,857 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 370/659   Jobs: 1   Epoch: 11.21/20.0 (56.1% complete)   lr: 0.000550   
+2023-04-10 22:43:59,458 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 371/659   Jobs: 1   Epoch: 11.24/20.0 (56.2% complete)   lr: 0.000548   
+2023-04-10 22:45:03,210 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 372/659   Jobs: 1   Epoch: 11.27/20.0 (56.4% complete)   lr: 0.000546   
+2023-04-10 22:46:06,293 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 373/659   Jobs: 1   Epoch: 11.30/20.0 (56.5% complete)   lr: 0.000544   
+2023-04-10 22:47:09,679 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 374/659   Jobs: 1   Epoch: 11.33/20.0 (56.7% complete)   lr: 0.000542   
+2023-04-10 22:48:13,519 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 375/659   Jobs: 1   Epoch: 11.36/20.0 (56.8% complete)   lr: 0.000541   
+2023-04-10 22:49:16,038 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 376/659   Jobs: 1   Epoch: 11.39/20.0 (57.0% complete)   lr: 0.000539   
+2023-04-10 22:50:19,529 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 377/659   Jobs: 1   Epoch: 11.42/20.0 (57.1% complete)   lr: 0.000537   
+2023-04-10 22:51:22,468 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 378/659   Jobs: 1   Epoch: 11.45/20.0 (57.3% complete)   lr: 0.000535   
+2023-04-10 22:52:26,297 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 379/659   Jobs: 1   Epoch: 11.48/20.0 (57.4% complete)   lr: 0.000533   
+2023-04-10 22:53:29,244 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 380/659   Jobs: 1   Epoch: 11.52/20.0 (57.6% complete)   lr: 0.000531   
+2023-04-10 22:54:38,470 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 381/659   Jobs: 1   Epoch: 11.55/20.0 (57.7% complete)   lr: 0.000529   
+2023-04-10 22:55:41,919 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 382/659   Jobs: 1   Epoch: 11.58/20.0 (57.9% complete)   lr: 0.000528   
+2023-04-10 22:56:45,648 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 383/659   Jobs: 1   Epoch: 11.61/20.0 (58.0% complete)   lr: 0.000526   
+2023-04-10 22:57:48,507 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 384/659   Jobs: 1   Epoch: 11.64/20.0 (58.2% complete)   lr: 0.000524   
+2023-04-10 22:58:51,831 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 385/659   Jobs: 1   Epoch: 11.67/20.0 (58.3% complete)   lr: 0.000522   
+2023-04-10 22:59:55,611 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 386/659   Jobs: 1   Epoch: 11.70/20.0 (58.5% complete)   lr: 0.000520   
+2023-04-10 23:00:58,209 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 387/659   Jobs: 1   Epoch: 11.73/20.0 (58.6% complete)   lr: 0.000518   
+2023-04-10 23:02:01,622 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 388/659   Jobs: 1   Epoch: 11.76/20.0 (58.8% complete)   lr: 0.000517   
+2023-04-10 23:03:04,695 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 389/659   Jobs: 1   Epoch: 11.79/20.0 (58.9% complete)   lr: 0.000515   
+2023-04-10 23:04:08,329 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 390/659   Jobs: 1   Epoch: 11.82/20.0 (59.1% complete)   lr: 0.000513   
+2023-04-10 23:05:11,302 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 391/659   Jobs: 1   Epoch: 11.85/20.0 (59.2% complete)   lr: 0.000511   
+2023-04-10 23:06:14,669 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 392/659   Jobs: 1   Epoch: 11.88/20.0 (59.4% complete)   lr: 0.000509   
+2023-04-10 23:07:18,391 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 393/659   Jobs: 1   Epoch: 11.91/20.0 (59.5% complete)   lr: 0.000508   
+2023-04-10 23:08:22,101 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 394/659   Jobs: 1   Epoch: 11.94/20.0 (59.7% complete)   lr: 0.000506   
+2023-04-10 23:09:24,858 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 395/659   Jobs: 1   Epoch: 11.97/20.0 (59.8% complete)   lr: 0.000504   
+2023-04-10 23:10:28,256 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 396/659   Jobs: 1   Epoch: 12.00/20.0 (60.0% complete)   lr: 0.000502   
+2023-04-10 23:11:32,131 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 397/659   Jobs: 1   Epoch: 12.03/20.0 (60.2% complete)   lr: 0.000501   
+2023-04-10 23:12:34,566 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 398/659   Jobs: 1   Epoch: 12.06/20.0 (60.3% complete)   lr: 0.000499   
+2023-04-10 23:13:38,241 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 399/659   Jobs: 1   Epoch: 12.09/20.0 (60.5% complete)   lr: 0.000497   
+2023-04-10 23:14:41,378 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 400/659   Jobs: 1   Epoch: 12.12/20.0 (60.6% complete)   lr: 0.000495   
+2023-04-10 23:15:50,790 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 401/659   Jobs: 1   Epoch: 12.15/20.0 (60.8% complete)   lr: 0.000494   
+2023-04-10 23:16:53,790 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 402/659   Jobs: 1   Epoch: 12.18/20.0 (60.9% complete)   lr: 0.000492   
+2023-04-10 23:17:57,109 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 403/659   Jobs: 1   Epoch: 12.21/20.0 (61.1% complete)   lr: 0.000490   
+2023-04-10 23:19:00,803 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 404/659   Jobs: 1   Epoch: 12.24/20.0 (61.2% complete)   lr: 0.000489   
+2023-04-10 23:20:04,346 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 405/659   Jobs: 1   Epoch: 12.27/20.0 (61.4% complete)   lr: 0.000487   
+2023-04-10 23:21:07,309 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 406/659   Jobs: 1   Epoch: 12.30/20.0 (61.5% complete)   lr: 0.000485   
+2023-04-10 23:22:10,714 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 407/659   Jobs: 1   Epoch: 12.33/20.0 (61.7% complete)   lr: 0.000483   
+2023-04-10 23:23:14,574 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 408/659   Jobs: 1   Epoch: 12.36/20.0 (61.8% complete)   lr: 0.000482   
+2023-04-10 23:24:16,942 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 409/659   Jobs: 1   Epoch: 12.39/20.0 (62.0% complete)   lr: 0.000480   
+2023-04-10 23:25:20,448 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 410/659   Jobs: 1   Epoch: 12.42/20.0 (62.1% complete)   lr: 0.000478   
+2023-04-10 23:26:23,398 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 411/659   Jobs: 1   Epoch: 12.45/20.0 (62.3% complete)   lr: 0.000477   
+2023-04-10 23:27:27,001 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 412/659   Jobs: 1   Epoch: 12.48/20.0 (62.4% complete)   lr: 0.000475   
+2023-04-10 23:28:29,799 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 413/659   Jobs: 1   Epoch: 12.52/20.0 (62.6% complete)   lr: 0.000473   
+2023-04-10 23:29:33,141 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 414/659   Jobs: 1   Epoch: 12.55/20.0 (62.7% complete)   lr: 0.000472   
+2023-04-10 23:30:36,640 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 415/659   Jobs: 1   Epoch: 12.58/20.0 (62.9% complete)   lr: 0.000470   
+2023-04-10 23:31:40,242 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 416/659   Jobs: 1   Epoch: 12.61/20.0 (63.0% complete)   lr: 0.000469   
+2023-04-10 23:32:43,241 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 417/659   Jobs: 1   Epoch: 12.64/20.0 (63.2% complete)   lr: 0.000467   
+2023-04-10 23:33:46,639 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 418/659   Jobs: 1   Epoch: 12.67/20.0 (63.3% complete)   lr: 0.000465   
+2023-04-10 23:34:50,407 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 419/659   Jobs: 1   Epoch: 12.70/20.0 (63.5% complete)   lr: 0.000464   
+2023-04-10 23:35:52,744 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 420/659   Jobs: 1   Epoch: 12.73/20.0 (63.6% complete)   lr: 0.000462   
+2023-04-10 23:37:02,052 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 421/659   Jobs: 1   Epoch: 12.76/20.0 (63.8% complete)   lr: 0.000460   
+2023-04-10 23:38:04,919 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 422/659   Jobs: 1   Epoch: 12.79/20.0 (63.9% complete)   lr: 0.000459   
+2023-04-10 23:39:08,730 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 423/659   Jobs: 1   Epoch: 12.82/20.0 (64.1% complete)   lr: 0.000457   
+2023-04-10 23:40:11,557 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 424/659   Jobs: 1   Epoch: 12.85/20.0 (64.2% complete)   lr: 0.000456   
+2023-04-10 23:41:15,018 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 425/659   Jobs: 1   Epoch: 12.88/20.0 (64.4% complete)   lr: 0.000454   
+2023-04-10 23:42:18,730 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 426/659   Jobs: 1   Epoch: 12.91/20.0 (64.5% complete)   lr: 0.000452   
+2023-04-10 23:43:22,446 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 427/659   Jobs: 1   Epoch: 12.94/20.0 (64.7% complete)   lr: 0.000451   
+2023-04-10 23:44:25,404 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 428/659   Jobs: 1   Epoch: 12.97/20.0 (64.8% complete)   lr: 0.000449   
+2023-04-10 23:45:28,651 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 429/659   Jobs: 1   Epoch: 13.00/20.0 (65.0% complete)   lr: 0.000448   
+2023-04-10 23:46:32,498 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 430/659   Jobs: 1   Epoch: 13.03/20.0 (65.2% complete)   lr: 0.000446   
+2023-04-10 23:47:34,921 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 431/659   Jobs: 1   Epoch: 13.06/20.0 (65.3% complete)   lr: 0.000445   
+2023-04-10 23:48:38,456 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 432/659   Jobs: 1   Epoch: 13.09/20.0 (65.5% complete)   lr: 0.000443   
+2023-04-10 23:49:41,489 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 433/659   Jobs: 1   Epoch: 13.12/20.0 (65.6% complete)   lr: 0.000442   
+2023-04-10 23:50:45,245 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 434/659   Jobs: 1   Epoch: 13.15/20.0 (65.8% complete)   lr: 0.000440   
+2023-04-10 23:51:48,228 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 435/659   Jobs: 1   Epoch: 13.18/20.0 (65.9% complete)   lr: 0.000438   
+2023-04-10 23:52:51,679 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 436/659   Jobs: 1   Epoch: 13.21/20.0 (66.1% complete)   lr: 0.000437   
+2023-04-10 23:53:55,331 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 437/659   Jobs: 1   Epoch: 13.24/20.0 (66.2% complete)   lr: 0.000435   
+2023-04-10 23:54:58,876 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 438/659   Jobs: 1   Epoch: 13.27/20.0 (66.4% complete)   lr: 0.000434   
+2023-04-10 23:56:01,757 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 439/659   Jobs: 1   Epoch: 13.30/20.0 (66.5% complete)   lr: 0.000432   
+2023-04-10 23:57:04,920 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 440/659   Jobs: 1   Epoch: 13.33/20.0 (66.7% complete)   lr: 0.000431   
+2023-04-10 23:58:14,591 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 441/659   Jobs: 1   Epoch: 13.36/20.0 (66.8% complete)   lr: 0.000429   
+2023-04-10 23:59:17,107 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 442/659   Jobs: 1   Epoch: 13.39/20.0 (67.0% complete)   lr: 0.000428   
+2023-04-11 00:00:20,717 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 443/659   Jobs: 1   Epoch: 13.42/20.0 (67.1% complete)   lr: 0.000426   
+2023-04-11 00:01:23,828 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 444/659   Jobs: 1   Epoch: 13.45/20.0 (67.3% complete)   lr: 0.000425   
+2023-04-11 00:02:27,410 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 445/659   Jobs: 1   Epoch: 13.48/20.0 (67.4% complete)   lr: 0.000423   
+2023-04-11 00:03:30,254 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 446/659   Jobs: 1   Epoch: 13.52/20.0 (67.6% complete)   lr: 0.000422   
+2023-04-11 00:04:33,431 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 447/659   Jobs: 1   Epoch: 13.55/20.0 (67.7% complete)   lr: 0.000420   
+2023-04-11 00:05:37,074 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 448/659   Jobs: 1   Epoch: 13.58/20.0 (67.9% complete)   lr: 0.000419   
+2023-04-11 00:06:40,652 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 449/659   Jobs: 1   Epoch: 13.61/20.0 (68.0% complete)   lr: 0.000418   
+2023-04-11 00:07:43,512 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 450/659   Jobs: 1   Epoch: 13.64/20.0 (68.2% complete)   lr: 0.000416   
+2023-04-11 00:08:46,750 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 451/659   Jobs: 1   Epoch: 13.67/20.0 (68.3% complete)   lr: 0.000415   
+2023-04-11 00:09:50,478 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 452/659   Jobs: 1   Epoch: 13.70/20.0 (68.5% complete)   lr: 0.000413   
+2023-04-11 00:10:52,868 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 453/659   Jobs: 1   Epoch: 13.73/20.0 (68.6% complete)   lr: 0.000412   
+2023-04-11 00:11:56,423 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 454/659   Jobs: 1   Epoch: 13.76/20.0 (68.8% complete)   lr: 0.000410   
+2023-04-11 00:12:59,490 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 455/659   Jobs: 1   Epoch: 13.79/20.0 (68.9% complete)   lr: 0.000409   
+2023-04-11 00:14:02,950 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 456/659   Jobs: 1   Epoch: 13.82/20.0 (69.1% complete)   lr: 0.000407   
+2023-04-11 00:15:05,804 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 457/659   Jobs: 1   Epoch: 13.85/20.0 (69.2% complete)   lr: 0.000406   
+2023-04-11 00:16:08,871 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 458/659   Jobs: 1   Epoch: 13.88/20.0 (69.4% complete)   lr: 0.000405   
+2023-04-11 00:17:12,387 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 459/659   Jobs: 1   Epoch: 13.91/20.0 (69.5% complete)   lr: 0.000403   
+2023-04-11 00:18:15,933 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 460/659   Jobs: 1   Epoch: 13.94/20.0 (69.7% complete)   lr: 0.000402   
+2023-04-11 00:19:24,491 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 461/659   Jobs: 1   Epoch: 13.97/20.0 (69.8% complete)   lr: 0.000400   
+2023-04-11 00:20:27,797 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 462/659   Jobs: 1   Epoch: 14.00/20.0 (70.0% complete)   lr: 0.000399   
+2023-04-11 00:21:31,578 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 463/659   Jobs: 1   Epoch: 14.03/20.0 (70.2% complete)   lr: 0.000398   
+2023-04-11 00:22:33,848 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 464/659   Jobs: 1   Epoch: 14.06/20.0 (70.3% complete)   lr: 0.000396   
+2023-04-11 00:23:37,442 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 465/659   Jobs: 1   Epoch: 14.09/20.0 (70.5% complete)   lr: 0.000395   
+2023-04-11 00:24:40,350 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 466/659   Jobs: 1   Epoch: 14.12/20.0 (70.6% complete)   lr: 0.000394   
+2023-04-11 00:25:44,101 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 467/659   Jobs: 1   Epoch: 14.15/20.0 (70.8% complete)   lr: 0.000392   
+2023-04-11 00:26:46,983 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 468/659   Jobs: 1   Epoch: 14.18/20.0 (70.9% complete)   lr: 0.000391   
+2023-04-11 00:27:50,146 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 469/659   Jobs: 1   Epoch: 14.21/20.0 (71.1% complete)   lr: 0.000389   
+2023-04-11 00:28:53,459 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 470/659   Jobs: 1   Epoch: 14.24/20.0 (71.2% complete)   lr: 0.000388   
+2023-04-11 00:29:57,060 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 471/659   Jobs: 1   Epoch: 14.27/20.0 (71.4% complete)   lr: 0.000387   
+2023-04-11 00:30:59,957 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 472/659   Jobs: 1   Epoch: 14.30/20.0 (71.5% complete)   lr: 0.000385   
+2023-04-11 00:32:03,207 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 473/659   Jobs: 1   Epoch: 14.33/20.0 (71.7% complete)   lr: 0.000384   
+2023-04-11 00:33:06,890 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 474/659   Jobs: 1   Epoch: 14.36/20.0 (71.8% complete)   lr: 0.000383   
+2023-04-11 00:34:09,254 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 475/659   Jobs: 1   Epoch: 14.39/20.0 (72.0% complete)   lr: 0.000381   
+2023-04-11 00:35:12,629 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 476/659   Jobs: 1   Epoch: 14.42/20.0 (72.1% complete)   lr: 0.000380   
+2023-04-11 00:36:15,496 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 477/659   Jobs: 1   Epoch: 14.45/20.0 (72.3% complete)   lr: 0.000379   
+2023-04-11 00:37:19,116 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 478/659   Jobs: 1   Epoch: 14.48/20.0 (72.4% complete)   lr: 0.000377   
+2023-04-11 00:38:21,928 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 479/659   Jobs: 1   Epoch: 14.52/20.0 (72.6% complete)   lr: 0.000376   
+2023-04-11 00:39:25,209 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 480/659   Jobs: 1   Epoch: 14.55/20.0 (72.7% complete)   lr: 0.000375   
+2023-04-11 00:40:35,663 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 481/659   Jobs: 1   Epoch: 14.58/20.0 (72.9% complete)   lr: 0.000373   
+2023-04-11 00:41:39,248 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 482/659   Jobs: 1   Epoch: 14.61/20.0 (73.0% complete)   lr: 0.000372   
+2023-04-11 00:42:42,196 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 483/659   Jobs: 1   Epoch: 14.64/20.0 (73.2% complete)   lr: 0.000371   
+2023-04-11 00:43:45,233 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 484/659   Jobs: 1   Epoch: 14.67/20.0 (73.3% complete)   lr: 0.000370   
+2023-04-11 00:44:49,075 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 485/659   Jobs: 1   Epoch: 14.70/20.0 (73.5% complete)   lr: 0.000368   
+2023-04-11 00:45:51,384 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 486/659   Jobs: 1   Epoch: 14.73/20.0 (73.6% complete)   lr: 0.000367   
+2023-04-11 00:46:54,822 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 487/659   Jobs: 1   Epoch: 14.76/20.0 (73.8% complete)   lr: 0.000366   
+2023-04-11 00:47:57,618 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 488/659   Jobs: 1   Epoch: 14.79/20.0 (73.9% complete)   lr: 0.000364   
+2023-04-11 00:49:01,218 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 489/659   Jobs: 1   Epoch: 14.82/20.0 (74.1% complete)   lr: 0.000363   
+2023-04-11 00:50:04,054 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 490/659   Jobs: 1   Epoch: 14.85/20.0 (74.2% complete)   lr: 0.000362   
+2023-04-11 00:51:07,322 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 491/659   Jobs: 1   Epoch: 14.88/20.0 (74.4% complete)   lr: 0.000361   
+2023-04-11 00:52:10,803 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 492/659   Jobs: 1   Epoch: 14.91/20.0 (74.5% complete)   lr: 0.000359   
+2023-04-11 00:53:14,367 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 493/659   Jobs: 1   Epoch: 14.94/20.0 (74.7% complete)   lr: 0.000358   
+2023-04-11 00:54:17,214 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 494/659   Jobs: 1   Epoch: 14.97/20.0 (74.8% complete)   lr: 0.000357   
+2023-04-11 00:55:20,448 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 495/659   Jobs: 1   Epoch: 15.00/20.0 (75.0% complete)   lr: 0.000356   
+2023-04-11 00:56:24,172 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 496/659   Jobs: 1   Epoch: 15.03/20.0 (75.2% complete)   lr: 0.000354   
+2023-04-11 00:57:26,534 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 497/659   Jobs: 1   Epoch: 15.06/20.0 (75.3% complete)   lr: 0.000353   
+2023-04-11 00:58:29,918 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 498/659   Jobs: 1   Epoch: 15.09/20.0 (75.5% complete)   lr: 0.000352   
+2023-04-11 00:59:32,822 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 499/659   Jobs: 1   Epoch: 15.12/20.0 (75.6% complete)   lr: 0.000351   
+2023-04-11 01:00:36,341 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 500/659   Jobs: 1   Epoch: 15.15/20.0 (75.8% complete)   lr: 0.000350   
+2023-04-11 01:01:47,826 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 501/659   Jobs: 1   Epoch: 15.18/20.0 (75.9% complete)   lr: 0.000348   
+2023-04-11 01:02:51,164 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 502/659   Jobs: 1   Epoch: 15.21/20.0 (76.1% complete)   lr: 0.000347   
+2023-04-11 01:03:54,626 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 503/659   Jobs: 1   Epoch: 15.24/20.0 (76.2% complete)   lr: 0.000346   
+2023-04-11 01:04:58,129 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 504/659   Jobs: 1   Epoch: 15.27/20.0 (76.4% complete)   lr: 0.000345   
+2023-04-11 01:06:00,905 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 505/659   Jobs: 1   Epoch: 15.30/20.0 (76.5% complete)   lr: 0.000343   
+2023-04-11 01:07:04,050 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 506/659   Jobs: 1   Epoch: 15.33/20.0 (76.7% complete)   lr: 0.000342   
+2023-04-11 01:08:07,825 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 507/659   Jobs: 1   Epoch: 15.36/20.0 (76.8% complete)   lr: 0.000341   
+2023-04-11 01:09:10,321 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 508/659   Jobs: 1   Epoch: 15.39/20.0 (77.0% complete)   lr: 0.000340   
+2023-04-11 01:10:13,758 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 509/659   Jobs: 1   Epoch: 15.42/20.0 (77.1% complete)   lr: 0.000339   
+2023-04-11 01:11:16,602 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 510/659   Jobs: 1   Epoch: 15.45/20.0 (77.3% complete)   lr: 0.000338   
+2023-04-11 01:12:20,322 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 511/659   Jobs: 1   Epoch: 15.48/20.0 (77.4% complete)   lr: 0.000336   
+2023-04-11 01:13:23,091 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 512/659   Jobs: 1   Epoch: 15.52/20.0 (77.6% complete)   lr: 0.000335   
+2023-04-11 01:14:26,422 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 513/659   Jobs: 1   Epoch: 15.55/20.0 (77.7% complete)   lr: 0.000334   
+2023-04-11 01:15:29,923 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 514/659   Jobs: 1   Epoch: 15.58/20.0 (77.9% complete)   lr: 0.000333   
+2023-04-11 01:16:33,492 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 515/659   Jobs: 1   Epoch: 15.61/20.0 (78.0% complete)   lr: 0.000332   
+2023-04-11 01:17:36,191 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 516/659   Jobs: 1   Epoch: 15.64/20.0 (78.2% complete)   lr: 0.000331   
+2023-04-11 01:18:39,358 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 517/659   Jobs: 1   Epoch: 15.67/20.0 (78.3% complete)   lr: 0.000329   
+2023-04-11 01:19:43,038 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 518/659   Jobs: 1   Epoch: 15.70/20.0 (78.5% complete)   lr: 0.000328   
+2023-04-11 01:20:45,314 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 519/659   Jobs: 1   Epoch: 15.73/20.0 (78.6% complete)   lr: 0.000327   
+2023-04-11 01:21:48,470 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 520/659   Jobs: 1   Epoch: 15.76/20.0 (78.8% complete)   lr: 0.000326   
+2023-04-11 01:22:56,958 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 521/659   Jobs: 1   Epoch: 15.79/20.0 (78.9% complete)   lr: 0.000325   
+2023-04-11 01:24:00,374 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 522/659   Jobs: 1   Epoch: 15.82/20.0 (79.1% complete)   lr: 0.000324   
+2023-04-11 01:25:03,223 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 523/659   Jobs: 1   Epoch: 15.85/20.0 (79.2% complete)   lr: 0.000323   
+2023-04-11 01:26:06,464 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 524/659   Jobs: 1   Epoch: 15.88/20.0 (79.4% complete)   lr: 0.000321   
+2023-04-11 01:27:09,966 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 525/659   Jobs: 1   Epoch: 15.91/20.0 (79.5% complete)   lr: 0.000320   
+2023-04-11 01:28:13,489 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 526/659   Jobs: 1   Epoch: 15.94/20.0 (79.7% complete)   lr: 0.000319   
+2023-04-11 01:29:16,226 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 527/659   Jobs: 1   Epoch: 15.97/20.0 (79.8% complete)   lr: 0.000318   
+2023-04-11 01:30:19,460 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 528/659   Jobs: 1   Epoch: 16.00/20.0 (80.0% complete)   lr: 0.000317   
+2023-04-11 01:31:23,202 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 529/659   Jobs: 1   Epoch: 16.03/20.0 (80.2% complete)   lr: 0.000316   
+2023-04-11 01:32:25,575 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 530/659   Jobs: 1   Epoch: 16.06/20.0 (80.3% complete)   lr: 0.000315   
+2023-04-11 01:33:29,070 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 531/659   Jobs: 1   Epoch: 16.09/20.0 (80.5% complete)   lr: 0.000314   
+2023-04-11 01:34:32,005 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 532/659   Jobs: 1   Epoch: 16.12/20.0 (80.6% complete)   lr: 0.000313   
+2023-04-11 01:35:35,657 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 533/659   Jobs: 1   Epoch: 16.15/20.0 (80.8% complete)   lr: 0.000311   
+2023-04-11 01:36:38,426 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 534/659   Jobs: 1   Epoch: 16.18/20.0 (80.9% complete)   lr: 0.000310   
+2023-04-11 01:37:41,567 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 535/659   Jobs: 1   Epoch: 16.21/20.0 (81.1% complete)   lr: 0.000309   
+2023-04-11 01:38:44,831 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 536/659   Jobs: 1   Epoch: 16.24/20.0 (81.2% complete)   lr: 0.000308   
+2023-04-11 01:39:48,383 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 537/659   Jobs: 1   Epoch: 16.27/20.0 (81.4% complete)   lr: 0.000307   
+2023-04-11 01:40:51,034 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 538/659   Jobs: 1   Epoch: 16.30/20.0 (81.5% complete)   lr: 0.000306   
+2023-04-11 01:41:54,141 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 539/659   Jobs: 1   Epoch: 16.33/20.0 (81.7% complete)   lr: 0.000305   
+2023-04-11 01:42:57,818 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 540/659   Jobs: 1   Epoch: 16.36/20.0 (81.8% complete)   lr: 0.000304   
+2023-04-11 01:44:07,747 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 541/659   Jobs: 1   Epoch: 16.39/20.0 (82.0% complete)   lr: 0.000303   
+2023-04-11 01:45:11,036 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 542/659   Jobs: 1   Epoch: 16.42/20.0 (82.1% complete)   lr: 0.000302   
+2023-04-11 01:46:13,979 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 543/659   Jobs: 1   Epoch: 16.45/20.0 (82.3% complete)   lr: 0.000301   
+2023-04-11 01:47:17,509 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 544/659   Jobs: 1   Epoch: 16.48/20.0 (82.4% complete)   lr: 0.000300   
+2023-04-11 01:48:20,333 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 545/659   Jobs: 1   Epoch: 16.52/20.0 (82.6% complete)   lr: 0.000299   
+2023-04-11 01:49:23,517 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 546/659   Jobs: 1   Epoch: 16.55/20.0 (82.7% complete)   lr: 0.000298   
+2023-04-11 01:50:27,019 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 547/659   Jobs: 1   Epoch: 16.58/20.0 (82.9% complete)   lr: 0.000297   
+2023-04-11 01:51:30,535 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 548/659   Jobs: 1   Epoch: 16.61/20.0 (83.0% complete)   lr: 0.000296   
+2023-04-11 01:52:33,400 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 549/659   Jobs: 1   Epoch: 16.64/20.0 (83.2% complete)   lr: 0.000295   
+2023-04-11 01:53:36,434 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 550/659   Jobs: 1   Epoch: 16.67/20.0 (83.3% complete)   lr: 0.000294   
+2023-04-11 01:54:40,139 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 551/659   Jobs: 1   Epoch: 16.70/20.0 (83.5% complete)   lr: 0.000293   
+2023-04-11 01:55:42,397 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 552/659   Jobs: 1   Epoch: 16.73/20.0 (83.6% complete)   lr: 0.000292   
+2023-04-11 01:56:45,873 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 553/659   Jobs: 1   Epoch: 16.76/20.0 (83.8% complete)   lr: 0.000291   
+2023-04-11 01:57:48,878 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 554/659   Jobs: 1   Epoch: 16.79/20.0 (83.9% complete)   lr: 0.000289   
+2023-04-11 01:58:52,368 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 555/659   Jobs: 1   Epoch: 16.82/20.0 (84.1% complete)   lr: 0.000288   
+2023-04-11 01:59:55,150 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 556/659   Jobs: 1   Epoch: 16.85/20.0 (84.2% complete)   lr: 0.000287   
+2023-04-11 02:00:58,359 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 557/659   Jobs: 1   Epoch: 16.88/20.0 (84.4% complete)   lr: 0.000286   
+2023-04-11 02:02:01,922 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 558/659   Jobs: 1   Epoch: 16.91/20.0 (84.5% complete)   lr: 0.000285   
+2023-04-11 02:03:05,510 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 559/659   Jobs: 1   Epoch: 16.94/20.0 (84.7% complete)   lr: 0.000284   
+2023-04-11 02:04:08,266 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 560/659   Jobs: 1   Epoch: 16.97/20.0 (84.8% complete)   lr: 0.000283   
+2023-04-11 02:05:17,034 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 561/659   Jobs: 1   Epoch: 17.00/20.0 (85.0% complete)   lr: 0.000283   
+2023-04-11 02:06:20,694 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 562/659   Jobs: 1   Epoch: 17.03/20.0 (85.2% complete)   lr: 0.000282   
+2023-04-11 02:07:22,992 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 563/659   Jobs: 1   Epoch: 17.06/20.0 (85.3% complete)   lr: 0.000281   
+2023-04-11 02:08:26,385 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 564/659   Jobs: 1   Epoch: 17.09/20.0 (85.5% complete)   lr: 0.000280   
+2023-04-11 02:09:29,346 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 565/659   Jobs: 1   Epoch: 17.12/20.0 (85.6% complete)   lr: 0.000279   
+2023-04-11 02:10:32,899 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 566/659   Jobs: 1   Epoch: 17.15/20.0 (85.8% complete)   lr: 0.000278   
+2023-04-11 02:11:35,815 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 567/659   Jobs: 1   Epoch: 17.18/20.0 (85.9% complete)   lr: 0.000277   
+2023-04-11 02:12:38,954 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 568/659   Jobs: 1   Epoch: 17.21/20.0 (86.1% complete)   lr: 0.000276   
+2023-04-11 02:13:42,374 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 569/659   Jobs: 1   Epoch: 17.24/20.0 (86.2% complete)   lr: 0.000275   
+2023-04-11 02:14:45,907 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 570/659   Jobs: 1   Epoch: 17.27/20.0 (86.4% complete)   lr: 0.000274   
+2023-04-11 02:15:48,755 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 571/659   Jobs: 1   Epoch: 17.30/20.0 (86.5% complete)   lr: 0.000273   
+2023-04-11 02:16:52,041 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 572/659   Jobs: 1   Epoch: 17.33/20.0 (86.7% complete)   lr: 0.000272   
+2023-04-11 02:17:55,773 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 573/659   Jobs: 1   Epoch: 17.36/20.0 (86.8% complete)   lr: 0.000271   
+2023-04-11 02:18:58,057 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 574/659   Jobs: 1   Epoch: 17.39/20.0 (87.0% complete)   lr: 0.000270   
+2023-04-11 02:20:01,517 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 575/659   Jobs: 1   Epoch: 17.42/20.0 (87.1% complete)   lr: 0.000269   
+2023-04-11 02:21:04,483 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 576/659   Jobs: 1   Epoch: 17.45/20.0 (87.3% complete)   lr: 0.000268   
+2023-04-11 02:22:08,057 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 577/659   Jobs: 1   Epoch: 17.48/20.0 (87.4% complete)   lr: 0.000267   
+2023-04-11 02:23:10,739 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 578/659   Jobs: 1   Epoch: 17.52/20.0 (87.6% complete)   lr: 0.000266   
+2023-04-11 02:24:13,948 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 579/659   Jobs: 1   Epoch: 17.55/20.0 (87.7% complete)   lr: 0.000265   
+2023-04-11 02:25:17,405 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 580/659   Jobs: 1   Epoch: 17.58/20.0 (87.9% complete)   lr: 0.000264   
+2023-04-11 02:26:27,121 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 581/659   Jobs: 1   Epoch: 17.61/20.0 (88.0% complete)   lr: 0.000263   
+2023-04-11 02:27:29,935 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 582/659   Jobs: 1   Epoch: 17.64/20.0 (88.2% complete)   lr: 0.000263   
+2023-04-11 02:28:33,081 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 583/659   Jobs: 1   Epoch: 17.67/20.0 (88.3% complete)   lr: 0.000262   
+2023-04-11 02:29:36,800 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 584/659   Jobs: 1   Epoch: 17.70/20.0 (88.5% complete)   lr: 0.000261   
+2023-04-11 02:30:39,165 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 585/659   Jobs: 1   Epoch: 17.73/20.0 (88.6% complete)   lr: 0.000260   
+2023-04-11 02:31:42,529 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 586/659   Jobs: 1   Epoch: 17.76/20.0 (88.8% complete)   lr: 0.000259   
+2023-04-11 02:32:45,437 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 587/659   Jobs: 1   Epoch: 17.79/20.0 (88.9% complete)   lr: 0.000258   
+2023-04-11 02:33:48,885 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 588/659   Jobs: 1   Epoch: 17.82/20.0 (89.1% complete)   lr: 0.000257   
+2023-04-11 02:34:51,782 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 589/659   Jobs: 1   Epoch: 17.85/20.0 (89.2% complete)   lr: 0.000256   
+2023-04-11 02:35:55,045 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 590/659   Jobs: 1   Epoch: 17.88/20.0 (89.4% complete)   lr: 0.000255   
+2023-04-11 02:36:58,512 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 591/659   Jobs: 1   Epoch: 17.91/20.0 (89.5% complete)   lr: 0.000254   
+2023-04-11 02:38:02,052 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 592/659   Jobs: 1   Epoch: 17.94/20.0 (89.7% complete)   lr: 0.000254   
+2023-04-11 02:39:04,902 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 593/659   Jobs: 1   Epoch: 17.97/20.0 (89.8% complete)   lr: 0.000253   
+2023-04-11 02:40:07,882 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 594/659   Jobs: 1   Epoch: 18.00/20.0 (90.0% complete)   lr: 0.000252   
+2023-04-11 02:41:11,622 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 595/659   Jobs: 1   Epoch: 18.03/20.0 (90.2% complete)   lr: 0.000251   
+2023-04-11 02:42:13,887 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 596/659   Jobs: 1   Epoch: 18.06/20.0 (90.3% complete)   lr: 0.000250   
+2023-04-11 02:43:17,274 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 597/659   Jobs: 1   Epoch: 18.09/20.0 (90.5% complete)   lr: 0.000249   
+2023-04-11 02:44:20,203 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 598/659   Jobs: 1   Epoch: 18.12/20.0 (90.6% complete)   lr: 0.000248   
+2023-04-11 02:45:23,741 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 599/659   Jobs: 1   Epoch: 18.15/20.0 (90.8% complete)   lr: 0.000247   
+2023-04-11 02:46:26,329 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 600/659   Jobs: 1   Epoch: 18.18/20.0 (90.9% complete)   lr: 0.000247   
+2023-04-11 02:47:35,271 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 601/659   Jobs: 1   Epoch: 18.21/20.0 (91.1% complete)   lr: 0.000246   
+2023-04-11 02:48:38,780 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 602/659   Jobs: 1   Epoch: 18.24/20.0 (91.2% complete)   lr: 0.000245   
+2023-04-11 02:49:42,361 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 603/659   Jobs: 1   Epoch: 18.27/20.0 (91.4% complete)   lr: 0.000244   
+2023-04-11 02:50:45,162 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 604/659   Jobs: 1   Epoch: 18.30/20.0 (91.5% complete)   lr: 0.000243   
+2023-04-11 02:51:48,399 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 605/659   Jobs: 1   Epoch: 18.33/20.0 (91.7% complete)   lr: 0.000242   
+2023-04-11 02:52:52,086 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 606/659   Jobs: 1   Epoch: 18.36/20.0 (91.8% complete)   lr: 0.000241   
+2023-04-11 02:53:54,467 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 607/659   Jobs: 1   Epoch: 18.39/20.0 (92.0% complete)   lr: 0.000241   
+2023-04-11 02:54:57,853 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 608/659   Jobs: 1   Epoch: 18.42/20.0 (92.1% complete)   lr: 0.000240   
+2023-04-11 02:56:00,818 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 609/659   Jobs: 1   Epoch: 18.45/20.0 (92.3% complete)   lr: 0.000239   
+2023-04-11 02:57:04,262 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 610/659   Jobs: 1   Epoch: 18.48/20.0 (92.4% complete)   lr: 0.000238   
+2023-04-11 02:58:07,034 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 611/659   Jobs: 1   Epoch: 18.52/20.0 (92.6% complete)   lr: 0.000237   
+2023-04-11 02:59:10,341 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 612/659   Jobs: 1   Epoch: 18.55/20.0 (92.7% complete)   lr: 0.000236   
+2023-04-11 03:00:13,766 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 613/659   Jobs: 1   Epoch: 18.58/20.0 (92.9% complete)   lr: 0.000236   
+2023-04-11 03:01:17,269 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 614/659   Jobs: 1   Epoch: 18.61/20.0 (93.0% complete)   lr: 0.000235   
+2023-04-11 03:02:20,038 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 615/659   Jobs: 1   Epoch: 18.64/20.0 (93.2% complete)   lr: 0.000234   
+2023-04-11 03:03:23,266 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 616/659   Jobs: 1   Epoch: 18.67/20.0 (93.3% complete)   lr: 0.000233   
+2023-04-11 03:04:26,938 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 617/659   Jobs: 1   Epoch: 18.70/20.0 (93.5% complete)   lr: 0.000232   
+2023-04-11 03:05:29,222 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 618/659   Jobs: 1   Epoch: 18.73/20.0 (93.6% complete)   lr: 0.000232   
+2023-04-11 03:06:32,634 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 619/659   Jobs: 1   Epoch: 18.76/20.0 (93.8% complete)   lr: 0.000231   
+2023-04-11 03:07:35,506 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 620/659   Jobs: 1   Epoch: 18.79/20.0 (93.9% complete)   lr: 0.000230   
+2023-04-11 03:08:45,044 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 621/659   Jobs: 1   Epoch: 18.82/20.0 (94.1% complete)   lr: 0.000229   
+2023-04-11 03:09:47,790 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 622/659   Jobs: 1   Epoch: 18.85/20.0 (94.2% complete)   lr: 0.000228   
+2023-04-11 03:10:50,990 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 623/659   Jobs: 1   Epoch: 18.88/20.0 (94.4% complete)   lr: 0.000228   
+2023-04-11 03:11:54,459 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 624/659   Jobs: 1   Epoch: 18.91/20.0 (94.5% complete)   lr: 0.000227   
+2023-04-11 03:12:58,027 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 625/659   Jobs: 1   Epoch: 18.94/20.0 (94.7% complete)   lr: 0.000226   
+2023-04-11 03:14:00,767 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 626/659   Jobs: 1   Epoch: 18.97/20.0 (94.8% complete)   lr: 0.000225   
+2023-04-11 03:15:03,955 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 627/659   Jobs: 1   Epoch: 19.00/20.0 (95.0% complete)   lr: 0.000224   
+2023-04-11 03:16:07,517 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 628/659   Jobs: 1   Epoch: 19.03/20.0 (95.2% complete)   lr: 0.000224   
+2023-04-11 03:17:09,785 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 629/659   Jobs: 1   Epoch: 19.06/20.0 (95.3% complete)   lr: 0.000223   
+2023-04-11 03:18:13,192 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 630/659   Jobs: 1   Epoch: 19.09/20.0 (95.5% complete)   lr: 0.000222   
+2023-04-11 03:19:16,067 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 631/659   Jobs: 1   Epoch: 19.12/20.0 (95.6% complete)   lr: 0.000221   
+2023-04-11 03:20:19,616 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 632/659   Jobs: 1   Epoch: 19.15/20.0 (95.8% complete)   lr: 0.000221   
+2023-04-11 03:21:22,499 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 633/659   Jobs: 1   Epoch: 19.18/20.0 (95.9% complete)   lr: 0.000220   
+2023-04-11 03:22:25,650 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 634/659   Jobs: 1   Epoch: 19.21/20.0 (96.1% complete)   lr: 0.000219   
+2023-04-11 03:23:29,194 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 635/659   Jobs: 1   Epoch: 19.24/20.0 (96.2% complete)   lr: 0.000218   
+2023-04-11 03:24:32,866 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 636/659   Jobs: 1   Epoch: 19.27/20.0 (96.4% complete)   lr: 0.000217   
+2023-04-11 03:25:35,647 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 637/659   Jobs: 1   Epoch: 19.30/20.0 (96.5% complete)   lr: 0.000217   
+2023-04-11 03:26:38,701 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 638/659   Jobs: 1   Epoch: 19.33/20.0 (96.7% complete)   lr: 0.000216   
+2023-04-11 03:27:42,430 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 639/659   Jobs: 1   Epoch: 19.36/20.0 (96.8% complete)   lr: 0.000215   
+2023-04-11 03:28:44,680 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 640/659   Jobs: 1   Epoch: 19.39/20.0 (97.0% complete)   lr: 0.000214   
+2023-04-11 03:29:53,816 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 641/659   Jobs: 1   Epoch: 19.42/20.0 (97.1% complete)   lr: 0.000214   
+2023-04-11 03:30:56,587 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 642/659   Jobs: 1   Epoch: 19.45/20.0 (97.3% complete)   lr: 0.000213   
+2023-04-11 03:32:00,150 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 643/659   Jobs: 1   Epoch: 19.48/20.0 (97.4% complete)   lr: 0.000212   
+2023-04-11 03:33:02,925 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 644/659   Jobs: 1   Epoch: 19.52/20.0 (97.6% complete)   lr: 0.000211   
+2023-04-11 03:34:06,078 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 645/659   Jobs: 1   Epoch: 19.55/20.0 (97.7% complete)   lr: 0.000211   
+2023-04-11 03:35:09,439 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 646/659   Jobs: 1   Epoch: 19.58/20.0 (97.9% complete)   lr: 0.000210   
+2023-04-11 03:36:12,940 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 647/659   Jobs: 1   Epoch: 19.61/20.0 (98.0% complete)   lr: 0.000209   
+2023-04-11 03:37:15,716 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 648/659   Jobs: 1   Epoch: 19.64/20.0 (98.2% complete)   lr: 0.000209   
+2023-04-11 03:38:18,923 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 649/659   Jobs: 1   Epoch: 19.67/20.0 (98.3% complete)   lr: 0.000208   
+2023-04-11 03:39:22,505 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 650/659   Jobs: 1   Epoch: 19.70/20.0 (98.5% complete)   lr: 0.000207   
+2023-04-11 03:40:24,956 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 651/659   Jobs: 1   Epoch: 19.73/20.0 (98.6% complete)   lr: 0.000206   
+2023-04-11 03:41:28,422 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 652/659   Jobs: 1   Epoch: 19.76/20.0 (98.8% complete)   lr: 0.000206   
+2023-04-11 03:42:31,433 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 653/659   Jobs: 1   Epoch: 19.79/20.0 (98.9% complete)   lr: 0.000205   
+2023-04-11 03:43:34,944 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 654/659   Jobs: 1   Epoch: 19.82/20.0 (99.1% complete)   lr: 0.000204   
+2023-04-11 03:44:37,807 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 655/659   Jobs: 1   Epoch: 19.85/20.0 (99.2% complete)   lr: 0.000204   
+2023-04-11 03:45:41,076 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 656/659   Jobs: 1   Epoch: 19.88/20.0 (99.4% complete)   lr: 0.000203   
+2023-04-11 03:46:44,551 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 657/659   Jobs: 1   Epoch: 19.91/20.0 (99.5% complete)   lr: 0.000202   
+2023-04-11 03:47:47,967 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 658/659   Jobs: 1   Epoch: 19.94/20.0 (99.7% complete)   lr: 0.000201   
+2023-04-11 03:48:50,835 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 659/659   Jobs: 1   Epoch: 19.97/20.0 (99.8% complete)   lr: 0.000200   
+2023-04-11 03:49:54,051 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:592 - train - INFO ] Doing final combination to produce final.mdl
+2023-04-11 03:49:54,052 [/home/gweltaz/STT/kaldi/egs/bzg/steps/libs/nnet3/train/chain_objf/acoustic_model.py:571 - combine_models - INFO ] Combining {641, 642, 643, 644, 645, 646, 647, 648, 649, 650, 651, 652, 653, 654, 655, 656, 657, 658, 659, 660} models.
+2023-04-11 03:50:15,531 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:620 - train - INFO ] Cleaning up the experiment directory exp/chain/tdnn1j_sp
+tree-info exp/chain/tree_sp/tree 
+tree-info exp/chain/tree_sp/tree 
+fstcomposecontext --context-size=2 --central-position=1 --read-disambig-syms=data/lang_test_tgsmall/phones/disambig.int --write-disambig-syms=data/lang_test_tgsmall/tmp/disambig_ilabels_2_1.int data/lang_test_tgsmall/tmp/ilabels_2_1.1100929 data/lang_test_tgsmall/tmp/LG.fst 
+fstisstochastic data/lang_test_tgsmall/tmp/CLG_2_1.fst 
+make-h-transducer --disambig-syms-out=exp/chain/tree_sp/graph_tgsmall/disambig_tid.int --transition-scale=1.0 data/lang_test_tgsmall/tmp/ilabels_2_1 exp/chain/tree_sp/tree exp/chain/tree_sp/final.mdl 
+fstrmepslocal 
+fstminimizeencoded 
+fstrmsymbols exp/chain/tree_sp/graph_tgsmall/disambig_tid.int 
+fstdeterminizestar --use-log=true 
+fsttablecompose exp/chain/tree_sp/graph_tgsmall/Ha.fst data/lang_test_tgsmall/tmp/CLG_2_1.fst 
+fstisstochastic exp/chain/tree_sp/graph_tgsmall/HCLGa.fst 
+add-self-loops --self-loop-scale=1.0 --reorder=true exp/chain/tree_sp/final.mdl exp/chain/tree_sp/graph_tgsmall/HCLGa.fst 
+fstisstochastic exp/chain/tree_sp/graph_tgsmall/HCLG.fst 

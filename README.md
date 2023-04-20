@@ -18,9 +18,10 @@ Ar modeloù pleustret gant Kaldi n'int ket ar re efedusañ, e-keñver modeloù n
  * **Digoust ha dieub**. Gellout a reoc'h azasaat ar meziant d'hoc'h ezhommoù pe enframmañ anezhañ e meziantoù all.
 
 Dalc'hoù zo siwazh :
- * Kizidig d'an trouzioù endro
- * Fall war ur bern pouezioù-mouez c'hoazh
- * Ret eo komz sklaer ha goustadig
+ * Poentadur ebet.
+ * Kizidig d'an trouzioù endro.
+ * Fall war ur bern pouezioù-mouez c'hoazh.
+ * Ret eo komz sklaer ha goustadig.
 
 Emichañs e vo gwellaet efedusted an anaouder tamm-ha-tamm, gant ma vo kavet roadennoù mouezh adskrivet.\
 Ul lisañs dieub (doare [Creative Commons](https://creativecommons.org/licenses/)) a aotre da eskemm ar roadennoù en un doare aes.

@@ -1,15 +1,13 @@
-# Vosk e Brezhoneg
+# Anaouder mouezh e brezhoneg
 
-Anaouder mouezh e brezhoneg dre ar meziant [Vosk](https://github.com/alphacep/vosk-api).
+M'ho peus c'hoant sikour ar raktres gant un donezon :
 
-
+[![Liberapay](https://liberapay.com/assets/widgets/donate.svg)](https://liberapay.com/gweltou/donate)
 
 ## Petra eo ?
 
-Amañ e vez kinniget ur model anaouder mouezh da implijout gant ar meziant [Vosk](https://github.com/alphacep/vosk-api).
-
-Gantañ e c'heller adskrivañ komzoù e brezhoneg (**Son -> Skrid**) en un doare emgefre, dre ur mikro e amzer real pe diouzh restroù son.
-
+Amañ e vez kinniget ur model anaouder mouezh da implijout gant ar meziant [Vosk](https://github.com/alphacep/vosk-api).\
+Gantañ e c'heller adskrivañ komzoù e brezhoneg (**Son -> Skrid**) en un doare emgefre, dre ur mikro e amzer real pe diouzh restroù son.\
 Pleustret eo bet gant un dek a eurvezh bennak (roadennoù son ha skrid linennet), dre ar "framework" [Kaldi](https://www.kaldi-asr.org/).
 
 Ar modeloù pleustret gant Kaldi n'int ket ar re efedusañ, e-keñver modeloù nevesoc'h, met perzhioù dedennus o deus memes tra :
@@ -24,7 +22,7 @@ Dalc'hoù zo siwazh :
  * Fall war ur bern pouezioù-mouez c'hoazh
  * Ret eo komz sklaer ha goustadig
 
-Emichañs e vo gwellaet efedusted an anaouder tamm-ha-tamm, gant ma vo kavet roadennoù mouezh adskrivet.
+Emichañs e vo gwellaet efedusted an anaouder tamm-ha-tamm, gant ma vo kavet roadennoù mouezh adskrivet.\
 Ul lisañs dieub (doare [Creative Commons](https://creativecommons.org/licenses/)) a aotre da eskemm ar roadennoù en un doare aes.
 
 ## Staliañ
@@ -65,14 +63,9 @@ Ha gant an niverenn-se :
 
 ## Adskrivañ iztitloù evit ur video
 
-https://user-images.githubusercontent.com/10166907/213805292-63becbe2-ffb5-492f-9bac-1330c4b2d07d.mp4
-
-*Setu disoc'h an iztitloù emgefre, hep cheñch netra. Gwelet vez e vez kollet buan pa vez sonnerez...*
-
 ### Dre an terminal (ar gwellañ)
 
-Gant vosk e c'hellit adskrivañ teuliadoù son ha filmoù evit kaout ur restr e stumm `srt`.
-
+Gant vosk e c'hellit adskrivañ teuliadoù son ha filmoù evit kaout ur restr e stumm `srt`.\
 Ezhomm ho po e vefe staliet ar meziant `ffmpeg` evit implijout ar perzh-se (evit amdreiñ a restroù e stumm PCM 16bit, 16KHz).
 
 Da skouer:
@@ -81,6 +74,10 @@ Da skouer:
 
 An oberiadur-se a gemero kalzig a amzer (hervez padelezh an teuliad son). Klaskit gant ur film berr da gentañ !
 
+https://user-images.githubusercontent.com/10166907/213805292-63becbe2-ffb5-492f-9bac-1330c4b2d07d.mp4
+
+*Setu disoc'h an iztitloù emgefre, hep cheñch netra. Gwelet vez e vez kollet buan pa vez sonnerez...*
+
 
 ## Implij gant meziantoù all
 
@@ -88,8 +85,6 @@ An oberiadur-se a gemero kalzig a amzer (hervez padelezh an teuliad son). Klaski
 
 (N'eo ket aliet dre ma vez kollet un nebeut perzhioù e-keñver ar pezh vez graet gant ar skript `isitlan.py`)
 
-Gant ar meziant frammañ videoioù [Kdenlive](https://kdenlive.org/) e c'heller adskrivañ istitloù en un doare emgefre ivez.
-
-Ar mod-implij a c'heller kavout [amañ](https://docs.kdenlive.org/en/effects_and_compositions/speech_to_text.html).
-
+Gant ar meziant frammañ videoioù [Kdenlive](https://kdenlive.org/) e c'heller adskrivañ istitloù en un doare emgefre ivez.\
+Ar mod-implij a c'heller kavout [amañ](https://docs.kdenlive.org/en/effects_and_compositions/speech_to_text.html).\
 Kentoc'h eget pell-kargañ ur model war lec'hienn ofisiel vosk, implijit ar model diwezhañ a vo kavet gant al liamm "[releases](https://github.com/gweltou/Vosk-bzg/releases)".

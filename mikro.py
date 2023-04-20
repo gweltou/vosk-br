@@ -6,7 +6,8 @@ import queue
 import sounddevice as sd
 import vosk
 import sys
-from postproc.postproc import *
+from ostilhou.asr.post_processing import post_process_text
+
 
 q = queue.Queue()
 
@@ -24,6 +25,14 @@ def callback(indata, frames, time, status):
     if status:
         print(status, file=sys.stderr)
     q.put(bytes(indata))
+
+
+
+def format_output(result, normalize=False):
+    sentence = eval(result)["text"]
+    sentence = post_process_text(sentence, normalize)
+    return sentence
+
 
 parser = argparse.ArgumentParser(add_help=False)
 parser.add_argument(
@@ -48,11 +57,12 @@ parser.add_argument(
     help='input device (numeric ID or substring)')
 parser.add_argument(
     '-r', '--samplerate', type=int, help='sampling rate')
+parser.add_argument('-n', '--normalize', action="store_true", help="Normalize numbers")
 args = parser.parse_args(remaining)
 
 try:
     if args.model is None:
-        args.model = "model/vosk-model-br-0.6"
+        args.model = "model/vosk-model-br-0.7"
     if not os.path.exists(args.model):
         print ("Please download a model for your language from https://alphacephei.com/vosk/models")
         print ("and unpack as 'model' in the current folder.")
@@ -82,12 +92,9 @@ try:
             while True:
                 data = q.get()
                 if rec.AcceptWaveform(data):
-                    r = eval(rec.Result())
-                    t = r["text"]
-                    if t:
-                        print(post_proc(t))
-                        if dump_fn is not None and len(t) > 5:
-                            dump_fn.write(t+'\n')
+                    print(format_output(rec.Result(), normalize=args.normalize))
+                    if dump_fn is not None and len(t) > 5:
+                        dump_fn.write(format_output(t)+'\n')
 
 except KeyboardInterrupt:
     print('\nDone')

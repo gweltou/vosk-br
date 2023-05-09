@@ -7,6 +7,8 @@ import sounddevice as sd
 import vosk
 import sys
 from ostilhou.asr.post_processing import post_process_text
+from ostilhou.text import tokenize, detokenize, load_translation_dict, translate
+
 
 
 q = queue.Queue()
@@ -31,6 +33,8 @@ def callback(indata, frames, time, status):
 def format_output(result, normalize=False):
     sentence = eval(result)["text"]
     sentence = post_process_text(sentence, normalize)
+    for td in translation_dicts:
+        sentence = detokenize( translate(tokenize(sentence), td) )
     return sentence
 
 
@@ -47,17 +51,13 @@ parser = argparse.ArgumentParser(
     formatter_class=argparse.RawDescriptionHelpFormatter,
     parents=[parser])
 parser.add_argument(
-    '-f', '--filename', type=str, metavar='FILENAME',
-    help='text file to store transcriptions')
+    '-f', '--filename', type=str, metavar='FILENAME', help='text file to store transcriptions')
+parser.add_argument('-m', '--model', type=str, metavar='MODEL_PATH', help='Path to the model')
 parser.add_argument(
-    '-m', '--model', type=str, metavar='MODEL_PATH',
-    help='Path to the model')
-parser.add_argument(
-    '-d', '--device', type=int_or_str,
-    help='input device (numeric ID or substring)')
-parser.add_argument(
-    '-r', '--samplerate', type=int, help='sampling rate')
+    '-d', '--device', type=int_or_str, help='input device (numeric ID or substring)')
+parser.add_argument('-r', '--samplerate', type=int, help='sampling rate')
 parser.add_argument('-n', '--normalize', action="store_true", help="Normalize numbers")
+parser.add_argument("-t", "--translate", nargs='+', help="Use additional translation dictionaries")
 args = parser.parse_args(remaining)
 
 try:
@@ -73,6 +73,10 @@ try:
         args.samplerate = int(device_info['default_samplerate'])
 
     model = vosk.Model(args.model)
+
+    translation_dicts = []
+    if args.translate:
+        translation_dicts = [ load_translation_dict(path) for path in args.translate ]
 
     if args.filename:
         dump_fn = open(args.filename, "a")

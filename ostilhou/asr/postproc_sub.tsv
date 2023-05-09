@@ -14,7 +14,6 @@ a enep	a-enep
 a gleiz	a-gleiz
 a hed	a-hed
 a hend all	a-hend-all
-hend all	a-hend-all
 a is	a-is
 a oad	a-oad
 a raok	a-raok
@@ -41,7 +40,9 @@ bro spagn	Bro Spagn
 da heul	da-heul
 daou ugent	daou-ugent
 deomp ta	deomp 'ta
+deuit ta	deuit 'ta
 di embann	di-embann
+din me	din-me
 diwar benn	diwar-benn
 dreist holl	dreist-holl
 e barzh	e-barzh
@@ -62,19 +63,20 @@ e pad	e-pad
 e tal	e-tal
 e touez	e-touez
 e unan	e-unan
-fest noz	fest-noz
-frañs tri	France 3
-goude se	goude-se
-goude merenn	goude-merenn
-ouzhpenn se	ouzhpenn-se
-evel se	evel-se
-evel just	evel-just
 evel henn	evel-henn
 evel hont	evel-hont
+evel just	evel-just
+evel se	evel-se
+fest noz	fest-noz
+frañs tri	France 3
+ger mell	ger-mell
+goude merenn	goude-merenn
+goude se	goude-se
+hend all	a-hend-all
 il ha Gwilen	Il-ha-Gwilen
+jean françois	Jean-François
 jean mari	Jean-Mari
 jean pierre	Jean-Pierre
-jean françois	Jean-François
 Kaledonia nevez	Kaledonia-Nevez
 kemend all	kemend-all
 Kerne veur	Kerne-Veur
@@ -88,11 +90,10 @@ miz du	miz Du
 mor bihan	Mor-Bihan
 muioc'h mui	muioc'h-mui
 new York	New York
+ouzhpenn se	ouzhpenn-se
 penn ar bed	Penn-ar-Bed
 pevar ugent	pevar-ugent
 roazhon daou	Roazhon 2
-tro dro	tro-dro
-tro war dro	tro-war-dro
 rouantelezh unanet	Rouantelezh Unanet
 sant maloù	Sant-Maloù
 sant Nazer	Sant-Nazer
@@ -102,12 +103,14 @@ stadoù unanet	Stadoù Unanet
 su Afrikaned	Suafrikaned
 su Azia	Su Azia
 tad kozh	tad-kozh
-tamm pe damm	tamm-pe-damm
 tamm ha tamm	tamm-ha-tamm
+tamm pe damm	tamm-pe-damm
 ti embann	ti-embann
 torr penn	torr-penn
 tour tan	tour-tan
 tri ugent	tri-ugent
+tro dro	tro-dro
+tro war dro	tro-war-dro
 war c'horre	war-c'horre
 war dro	war-dro
 war lein	war-lein

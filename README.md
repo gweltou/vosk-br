@@ -54,8 +54,8 @@ https://www.python.org/downloads/
 Da c'houde ho po da staliañ ar moduloù da-heul, dre ar meziant `pip3` (staliet gant python3).
 
 ```bash
-pip3 install sounddevice
-pip3 install vosk
+pip install sounddevice
+pip install vosk
 ```
 
 Muioc'h a ditouroù a c'heller kavout evit staliañ `vosk` war al [lec'hienn ofisiel](https://alphacephei.com/vosk/install#python-installation-from-pypi).

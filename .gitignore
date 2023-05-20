@@ -1,7 +1,0 @@
-**/__pycache__/
-/*.txt
-/*.srt
-build/
-dist/
-test.py
-anaouder.egg-info/

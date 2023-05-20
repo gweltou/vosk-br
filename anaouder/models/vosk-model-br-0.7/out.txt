@@ -1,0 +1,1944 @@
+running path.sh
+running cmd.sh
+
+===== VALIDATING DATA =====
+
+
+utils/validate_data_dir.sh: file data/train/utt2spk is not sorted or has duplicates
+utils/validate_data_dir.sh: file data/test/utt2spk is not sorted or has duplicates
+utils/fix_data_dir.sh: file data/train/utt2spk is not in sorted order or not unique, sorting it
+utils/fix_data_dir.sh: file data/train/spk2utt is not in sorted order or not unique, sorting it
+utils/fix_data_dir.sh: file data/train/text is not in sorted order or not unique, sorting it
+utils/fix_data_dir.sh: file data/train/segments is not in sorted order or not unique, sorting it
+utils/fix_data_dir.sh: file data/train/wav.scp is not in sorted order or not unique, sorting it
+fix_data_dir.sh: kept all 10647 utterances.
+fix_data_dir.sh: old files are kept in data/train/.backup
+utils/fix_data_dir.sh: file data/test/utt2spk is not in sorted order or not unique, sorting it
+utils/fix_data_dir.sh: file data/test/spk2utt is not in sorted order or not unique, sorting it
+utils/fix_data_dir.sh: file data/test/text is not in sorted order or not unique, sorting it
+utils/fix_data_dir.sh: file data/test/segments is not in sorted order or not unique, sorting it
+utils/fix_data_dir.sh: file data/test/wav.scp is not in sorted order or not unique, sorting it
+fix_data_dir.sh: kept all 2101 utterances.
+fix_data_dir.sh: old files are kept in data/test/.backup
+utils/prepare_lang.sh data/local/dict_nosp <UNK> data/local/lang_tmp_nosp data/lang_nosp
+Checking data/local/dict_nosp/silence_phones.txt ...
+--> reading data/local/dict_nosp/silence_phones.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dict_nosp/silence_phones.txt is OK
+
+Checking data/local/dict_nosp/optional_silence.txt ...
+--> reading data/local/dict_nosp/optional_silence.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dict_nosp/optional_silence.txt is OK
+
+Checking data/local/dict_nosp/nonsilence_phones.txt ...
+--> reading data/local/dict_nosp/nonsilence_phones.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dict_nosp/nonsilence_phones.txt is OK
+
+Checking disjoint: silence_phones.txt, nonsilence_phones.txt
+--> disjoint property is OK.
+
+Checking data/local/dict_nosp/lexicon.txt
+--> reading data/local/dict_nosp/lexicon.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dict_nosp/lexicon.txt is OK
+
+Checking data/local/dict_nosp/extra_questions.txt ...
+--> data/local/dict_nosp/extra_questions.txt is empty (this is OK)
+--> SUCCESS [validating dictionary directory data/local/dict_nosp]
+
+**Creating data/local/dict_nosp/lexiconp.txt from data/local/dict_nosp/lexicon.txt
+prepare_lang.sh: validating output directory
+utils/validate_lang.pl data/lang_nosp
+Checking existence of separator file
+separator file data/lang_nosp/subword_separator.txt is empty or does not exist, deal in word case.
+Checking data/lang_nosp/phones.txt ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/lang_nosp/phones.txt is OK
+
+Checking words.txt: #0 ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/lang_nosp/words.txt is OK
+
+Checking disjoint: silence.txt, nonsilence.txt, disambig.txt ...
+--> silence.txt and nonsilence.txt are disjoint
+--> silence.txt and disambig.txt are disjoint
+--> disambig.txt and nonsilence.txt are disjoint
+--> disjoint property is OK
+
+Checking sumation: silence.txt, nonsilence.txt, disambig.txt ...
+--> found no unexplainable phones in phones.txt
+
+Checking data/lang_nosp/phones/context_indep.{txt, int, csl} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 15 entry/entries in data/lang_nosp/phones/context_indep.txt
+--> data/lang_nosp/phones/context_indep.int corresponds to data/lang_nosp/phones/context_indep.txt
+--> data/lang_nosp/phones/context_indep.csl corresponds to data/lang_nosp/phones/context_indep.txt
+--> data/lang_nosp/phones/context_indep.{txt, int, csl} are OK
+
+Checking data/lang_nosp/phones/nonsilence.{txt, int, csl} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 160 entry/entries in data/lang_nosp/phones/nonsilence.txt
+--> data/lang_nosp/phones/nonsilence.int corresponds to data/lang_nosp/phones/nonsilence.txt
+--> data/lang_nosp/phones/nonsilence.csl corresponds to data/lang_nosp/phones/nonsilence.txt
+--> data/lang_nosp/phones/nonsilence.{txt, int, csl} are OK
+
+Checking data/lang_nosp/phones/silence.{txt, int, csl} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 15 entry/entries in data/lang_nosp/phones/silence.txt
+--> data/lang_nosp/phones/silence.int corresponds to data/lang_nosp/phones/silence.txt
+--> data/lang_nosp/phones/silence.csl corresponds to data/lang_nosp/phones/silence.txt
+--> data/lang_nosp/phones/silence.{txt, int, csl} are OK
+
+Checking data/lang_nosp/phones/optional_silence.{txt, int, csl} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 1 entry/entries in data/lang_nosp/phones/optional_silence.txt
+--> data/lang_nosp/phones/optional_silence.int corresponds to data/lang_nosp/phones/optional_silence.txt
+--> data/lang_nosp/phones/optional_silence.csl corresponds to data/lang_nosp/phones/optional_silence.txt
+--> data/lang_nosp/phones/optional_silence.{txt, int, csl} are OK
+
+Checking data/lang_nosp/phones/disambig.{txt, int, csl} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 6 entry/entries in data/lang_nosp/phones/disambig.txt
+--> data/lang_nosp/phones/disambig.int corresponds to data/lang_nosp/phones/disambig.txt
+--> data/lang_nosp/phones/disambig.csl corresponds to data/lang_nosp/phones/disambig.txt
+--> data/lang_nosp/phones/disambig.{txt, int, csl} are OK
+
+Checking data/lang_nosp/phones/roots.{txt, int} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 43 entry/entries in data/lang_nosp/phones/roots.txt
+--> data/lang_nosp/phones/roots.int corresponds to data/lang_nosp/phones/roots.txt
+--> data/lang_nosp/phones/roots.{txt, int} are OK
+
+Checking data/lang_nosp/phones/sets.{txt, int} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 43 entry/entries in data/lang_nosp/phones/sets.txt
+--> data/lang_nosp/phones/sets.int corresponds to data/lang_nosp/phones/sets.txt
+--> data/lang_nosp/phones/sets.{txt, int} are OK
+
+Checking data/lang_nosp/phones/extra_questions.{txt, int} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 9 entry/entries in data/lang_nosp/phones/extra_questions.txt
+--> data/lang_nosp/phones/extra_questions.int corresponds to data/lang_nosp/phones/extra_questions.txt
+--> data/lang_nosp/phones/extra_questions.{txt, int} are OK
+
+Checking data/lang_nosp/phones/word_boundary.{txt, int} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 175 entry/entries in data/lang_nosp/phones/word_boundary.txt
+--> data/lang_nosp/phones/word_boundary.int corresponds to data/lang_nosp/phones/word_boundary.txt
+--> data/lang_nosp/phones/word_boundary.{txt, int} are OK
+
+Checking optional_silence.txt ...
+--> reading data/lang_nosp/phones/optional_silence.txt
+--> data/lang_nosp/phones/optional_silence.txt is OK
+
+Checking disambiguation symbols: #0 and #1
+--> data/lang_nosp/phones/disambig.txt has "#0" and "#1"
+--> data/lang_nosp/phones/disambig.txt is OK
+
+Checking topo ...
+
+Checking word_boundary.txt: silence.txt, nonsilence.txt, disambig.txt ...
+--> data/lang_nosp/phones/word_boundary.txt doesn't include disambiguation symbols
+--> data/lang_nosp/phones/word_boundary.txt is the union of nonsilence.txt and silence.txt
+--> data/lang_nosp/phones/word_boundary.txt is OK
+
+Checking word-level disambiguation symbols...
+--> data/lang_nosp/phones/wdisambig.txt exists (newer prepare_lang.sh)
+Checking word_boundary.int and disambig.int
+--> generating a 5 word/subword sequence
+--> resulting phone sequence from L.fst corresponds to the word sequence
+--> L.fst is OK
+--> generating a 92 word/subword sequence
+--> resulting phone sequence from L_disambig.fst corresponds to the word sequence
+--> L_disambig.fst is OK
+
+Checking data/lang_nosp/oov.{txt, int} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 1 entry/entries in data/lang_nosp/oov.txt
+--> data/lang_nosp/oov.int corresponds to data/lang_nosp/oov.txt
+--> data/lang_nosp/oov.{txt, int} are OK
+
+--> data/lang_nosp/L.fst is olabel sorted
+--> data/lang_nosp/L_disambig.fst is olabel sorted
+--> SUCCESS [validating lang directory data/lang_nosp]
+utils/validate_lang.pl data/lang_nosp
+Checking existence of separator file
+separator file data/lang_nosp/subword_separator.txt is empty or does not exist, deal in word case.
+Checking data/lang_nosp/phones.txt ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/lang_nosp/phones.txt is OK
+
+Checking words.txt: #0 ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/lang_nosp/words.txt is OK
+
+Checking disjoint: silence.txt, nonsilence.txt, disambig.txt ...
+--> silence.txt and nonsilence.txt are disjoint
+--> silence.txt and disambig.txt are disjoint
+--> disambig.txt and nonsilence.txt are disjoint
+--> disjoint property is OK
+
+Checking sumation: silence.txt, nonsilence.txt, disambig.txt ...
+--> found no unexplainable phones in phones.txt
+
+Checking data/lang_nosp/phones/context_indep.{txt, int, csl} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 15 entry/entries in data/lang_nosp/phones/context_indep.txt
+--> data/lang_nosp/phones/context_indep.int corresponds to data/lang_nosp/phones/context_indep.txt
+--> data/lang_nosp/phones/context_indep.csl corresponds to data/lang_nosp/phones/context_indep.txt
+--> data/lang_nosp/phones/context_indep.{txt, int, csl} are OK
+
+Checking data/lang_nosp/phones/nonsilence.{txt, int, csl} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 160 entry/entries in data/lang_nosp/phones/nonsilence.txt
+--> data/lang_nosp/phones/nonsilence.int corresponds to data/lang_nosp/phones/nonsilence.txt
+--> data/lang_nosp/phones/nonsilence.csl corresponds to data/lang_nosp/phones/nonsilence.txt
+--> data/lang_nosp/phones/nonsilence.{txt, int, csl} are OK
+
+Checking data/lang_nosp/phones/silence.{txt, int, csl} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 15 entry/entries in data/lang_nosp/phones/silence.txt
+--> data/lang_nosp/phones/silence.int corresponds to data/lang_nosp/phones/silence.txt
+--> data/lang_nosp/phones/silence.csl corresponds to data/lang_nosp/phones/silence.txt
+--> data/lang_nosp/phones/silence.{txt, int, csl} are OK
+
+Checking data/lang_nosp/phones/optional_silence.{txt, int, csl} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 1 entry/entries in data/lang_nosp/phones/optional_silence.txt
+--> data/lang_nosp/phones/optional_silence.int corresponds to data/lang_nosp/phones/optional_silence.txt
+--> data/lang_nosp/phones/optional_silence.csl corresponds to data/lang_nosp/phones/optional_silence.txt
+--> data/lang_nosp/phones/optional_silence.{txt, int, csl} are OK
+
+Checking data/lang_nosp/phones/disambig.{txt, int, csl} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 6 entry/entries in data/lang_nosp/phones/disambig.txt
+--> data/lang_nosp/phones/disambig.int corresponds to data/lang_nosp/phones/disambig.txt
+--> data/lang_nosp/phones/disambig.csl corresponds to data/lang_nosp/phones/disambig.txt
+--> data/lang_nosp/phones/disambig.{txt, int, csl} are OK
+
+Checking data/lang_nosp/phones/roots.{txt, int} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 43 entry/entries in data/lang_nosp/phones/roots.txt
+--> data/lang_nosp/phones/roots.int corresponds to data/lang_nosp/phones/roots.txt
+--> data/lang_nosp/phones/roots.{txt, int} are OK
+
+Checking data/lang_nosp/phones/sets.{txt, int} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 43 entry/entries in data/lang_nosp/phones/sets.txt
+--> data/lang_nosp/phones/sets.int corresponds to data/lang_nosp/phones/sets.txt
+--> data/lang_nosp/phones/sets.{txt, int} are OK
+
+Checking data/lang_nosp/phones/extra_questions.{txt, int} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 9 entry/entries in data/lang_nosp/phones/extra_questions.txt
+--> data/lang_nosp/phones/extra_questions.int corresponds to data/lang_nosp/phones/extra_questions.txt
+--> data/lang_nosp/phones/extra_questions.{txt, int} are OK
+
+Checking data/lang_nosp/phones/word_boundary.{txt, int} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 175 entry/entries in data/lang_nosp/phones/word_boundary.txt
+--> data/lang_nosp/phones/word_boundary.int corresponds to data/lang_nosp/phones/word_boundary.txt
+--> data/lang_nosp/phones/word_boundary.{txt, int} are OK
+
+Checking optional_silence.txt ...
+--> reading data/lang_nosp/phones/optional_silence.txt
+--> data/lang_nosp/phones/optional_silence.txt is OK
+
+Checking disambiguation symbols: #0 and #1
+--> data/lang_nosp/phones/disambig.txt has "#0" and "#1"
+--> data/lang_nosp/phones/disambig.txt is OK
+
+Checking topo ...
+
+Checking word_boundary.txt: silence.txt, nonsilence.txt, disambig.txt ...
+--> data/lang_nosp/phones/word_boundary.txt doesn't include disambiguation symbols
+--> data/lang_nosp/phones/word_boundary.txt is the union of nonsilence.txt and silence.txt
+--> data/lang_nosp/phones/word_boundary.txt is OK
+
+Checking word-level disambiguation symbols...
+--> data/lang_nosp/phones/wdisambig.txt exists (newer prepare_lang.sh)
+Checking word_boundary.int and disambig.int
+--> generating a 28 word/subword sequence
+--> resulting phone sequence from L.fst corresponds to the word sequence
+--> L.fst is OK
+--> generating a 99 word/subword sequence
+--> resulting phone sequence from L_disambig.fst corresponds to the word sequence
+--> L_disambig.fst is OK
+
+Checking data/lang_nosp/oov.{txt, int} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 1 entry/entries in data/lang_nosp/oov.txt
+--> data/lang_nosp/oov.int corresponds to data/lang_nosp/oov.txt
+--> data/lang_nosp/oov.{txt, int} are OK
+
+--> data/lang_nosp/L.fst is olabel sorted
+--> data/lang_nosp/L_disambig.fst is olabel sorted
+--> SUCCESS [validating lang directory data/lang_nosp]
+Checking data/local/dict_nosp/silence_phones.txt ...
+--> reading data/local/dict_nosp/silence_phones.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dict_nosp/silence_phones.txt is OK
+
+Checking data/local/dict_nosp/optional_silence.txt ...
+--> reading data/local/dict_nosp/optional_silence.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dict_nosp/optional_silence.txt is OK
+
+Checking data/local/dict_nosp/nonsilence_phones.txt ...
+--> reading data/local/dict_nosp/nonsilence_phones.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dict_nosp/nonsilence_phones.txt is OK
+
+Checking disjoint: silence_phones.txt, nonsilence_phones.txt
+--> disjoint property is OK.
+
+Checking data/local/dict_nosp/lexicon.txt
+--> reading data/local/dict_nosp/lexicon.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dict_nosp/lexicon.txt is OK
+
+Checking data/local/dict_nosp/lexiconp.txt
+--> reading data/local/dict_nosp/lexiconp.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dict_nosp/lexiconp.txt is OK
+
+Checking lexicon pair data/local/dict_nosp/lexicon.txt and data/local/dict_nosp/lexiconp.txt
+--> lexicon pair data/local/dict_nosp/lexicon.txt and data/local/dict_nosp/lexiconp.txt match
+
+Checking data/local/dict_nosp/extra_questions.txt ...
+--> data/local/dict_nosp/extra_questions.txt is empty (this is OK)
+--> SUCCESS [validating dictionary directory data/local/dict_nosp]
+
+done
+
+===== FEATURES EXTRACTION =====
+
+steps/make_mfcc.sh --nj 3 --cmd run.pl --mem 2G data/train exp/make_mfcc/train mfcc
+utils/validate_data_dir.sh: Successfully validated data-directory data/train
+steps/make_mfcc.sh [info]: segments file exists: using that.
+steps/make_mfcc.sh: Succeeded creating MFCC features for train
+steps/make_mfcc.sh --nj 3 --cmd run.pl --mem 2G data/test exp/make_mfcc/test mfcc
+utils/validate_data_dir.sh: Successfully validated data-directory data/test
+steps/make_mfcc.sh [info]: segments file exists: using that.
+steps/make_mfcc.sh: Succeeded creating MFCC features for test
+steps/compute_cmvn_stats.sh data/train exp/make_mfcc/train mfcc
+Succeeded creating CMVN stats for train
+steps/compute_cmvn_stats.sh data/test exp/make_mfcc/test mfcc
+Succeeded creating CMVN stats for test
+
+===== LANGUAGE MODEL CREATION =====
+==== MAKING lm.arpa ====
+
+done
+
+==== MAKING G.fst ====
+
+data/local/tmp/lm.arpa
+
+===== MONO TRAINING =====
+
+steps/train_mono.sh --boost-silence 1.25 --nj 3 --cmd run.pl --mem 2G data/train data/lang_nosp exp/mono
+steps/train_mono.sh: Initializing monophone system.
+steps/train_mono.sh: Compiling training graphs
+steps/train_mono.sh: Aligning data equally (pass 0)
+steps/train_mono.sh: Pass 1
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 2
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 3
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 4
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 5
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 6
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 7
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 8
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 9
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 10
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 11
+steps/train_mono.sh: Pass 12
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 13
+steps/train_mono.sh: Pass 14
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 15
+steps/train_mono.sh: Pass 16
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 17
+steps/train_mono.sh: Pass 18
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 19
+steps/train_mono.sh: Pass 20
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 21
+steps/train_mono.sh: Pass 22
+steps/train_mono.sh: Pass 23
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 24
+steps/train_mono.sh: Pass 25
+steps/train_mono.sh: Pass 26
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 27
+steps/train_mono.sh: Pass 28
+steps/train_mono.sh: Pass 29
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 30
+steps/train_mono.sh: Pass 31
+steps/train_mono.sh: Pass 32
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 33
+steps/train_mono.sh: Pass 34
+steps/train_mono.sh: Pass 35
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 36
+steps/train_mono.sh: Pass 37
+steps/train_mono.sh: Pass 38
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 39
+steps/diagnostic/analyze_alignments.sh --cmd run.pl --mem 2G data/lang_nosp exp/mono
+steps/diagnostic/analyze_alignments.sh: see stats in exp/mono/log/analyze_alignments.log
+3315 warnings in exp/mono/log/acc.*.*.log
+13526 warnings in exp/mono/log/align.*.*.log
+200 warnings in exp/mono/log/update.*.log
+exp/mono: nj=3 align prob=-100.19 over 13.20h [retry=2.7%, fail=0.6%] states=135 gauss=976
+steps/train_mono.sh: Done training monophone system in exp/mono
+
+===== MONO DECODING =====
+
+WARNING: the --mono, --left-biphone and --quinphone options are now deprecated and ignored.
+-0.0747975 -0.0754266
+[info]: LG not stochastic.
+-0.0747975 -0.0754266
+[info]: CLG not stochastic.
+0.000348064 -0.14873
+HCLGa is not stochastic
+
+===== MONO ALIGNMENT =====
+
+steps/align_si.sh --boost-silence 1.25 --nj 3 --cmd run.pl --mem 2G data/train data/lang_nosp exp/mono exp/mono_ali_train
+steps/align_si.sh: feature type is delta
+steps/align_si.sh: aligning data in data/train using model from exp/mono, putting alignments in exp/mono_ali_train
+steps/diagnostic/analyze_alignments.sh --cmd run.pl --mem 2G data/lang_nosp exp/mono_ali_train
+steps/diagnostic/analyze_alignments.sh: see stats in exp/mono_ali_train/log/analyze_alignments.log
+steps/align_si.sh: done aligning data.
+
+===== TRI1 (first triphone pass) TRAINING =====
+
+steps/train_deltas.sh --boost-silence 1.25 --cmd run.pl --mem 2G 2000 10000 data/train data/lang_nosp exp/mono_ali_train exp/tri1
+steps/train_deltas.sh: accumulating tree stats
+steps/train_deltas.sh: getting questions for tree-building, via clustering
+steps/train_deltas.sh: building the tree
+WARNING (gmm-init-model[5.5.1060~1-ae8cb]:InitAmGmm():gmm-init-model.cc:55) Tree has pdf-id 1 with no stats; corresponding phone list: 6 7 8 9 10 
+** The warnings above about 'no stats' generally mean you have phones **
+** (or groups of phones) in your phone set that had no corresponding data. **
+** You should probably figure out whether something went wrong, **
+** or whether your data just doesn't happen to have examples of those **
+** phones. **
+steps/train_deltas.sh: converting alignments from exp/mono_ali_train to use current tree
+steps/train_deltas.sh: compiling graphs of transcripts
+steps/train_deltas.sh: training pass 1
+steps/train_deltas.sh: training pass 2
+steps/train_deltas.sh: training pass 3
+steps/train_deltas.sh: training pass 4
+steps/train_deltas.sh: training pass 5
+steps/train_deltas.sh: training pass 6
+steps/train_deltas.sh: training pass 7
+steps/train_deltas.sh: training pass 8
+steps/train_deltas.sh: training pass 9
+steps/train_deltas.sh: training pass 10
+steps/train_deltas.sh: aligning data
+steps/train_deltas.sh: training pass 11
+steps/train_deltas.sh: training pass 12
+steps/train_deltas.sh: training pass 13
+steps/train_deltas.sh: training pass 14
+steps/train_deltas.sh: training pass 15
+steps/train_deltas.sh: training pass 16
+steps/train_deltas.sh: training pass 17
+steps/train_deltas.sh: training pass 18
+steps/train_deltas.sh: training pass 19
+steps/train_deltas.sh: training pass 20
+steps/train_deltas.sh: aligning data
+steps/train_deltas.sh: training pass 21
+steps/train_deltas.sh: training pass 22
+steps/train_deltas.sh: training pass 23
+steps/train_deltas.sh: training pass 24
+steps/train_deltas.sh: training pass 25
+steps/train_deltas.sh: training pass 26
+steps/train_deltas.sh: training pass 27
+steps/train_deltas.sh: training pass 28
+steps/train_deltas.sh: training pass 29
+steps/train_deltas.sh: training pass 30
+steps/train_deltas.sh: aligning data
+steps/train_deltas.sh: training pass 31
+steps/train_deltas.sh: training pass 32
+steps/train_deltas.sh: training pass 33
+steps/train_deltas.sh: training pass 34
+steps/diagnostic/analyze_alignments.sh --cmd run.pl --mem 2G data/lang_nosp exp/tri1
+steps/diagnostic/analyze_alignments.sh: see stats in exp/tri1/log/analyze_alignments.log
+2723 warnings in exp/tri1/log/acc.*.*.log
+1 warnings in exp/tri1/log/build_tree.log
+34 warnings in exp/tri1/log/update.*.log
+1 warnings in exp/tri1/log/questions.log
+1187 warnings in exp/tri1/log/align.*.*.log
+2 warnings in exp/tri1/log/init_model.log
+exp/tri1: nj=3 align prob=-98.18 over 13.17h [retry=2.7%, fail=0.8%] states=1592 gauss=10025 tree-impr=3.52
+steps/train_deltas.sh: Done training system with delta+delta-delta features in exp/tri1
+
+===== TRI1 (first triphone pass) DECODING =====
+
+0 -0.0754266
+[info]: CLG not stochastic.
+0.5776 -0.204193
+HCLGa is not stochastic
+
+===== TRI1 ALIGNMENT =====
+
+steps/align_si.sh --nj 3 --cmd run.pl --mem 2G data/train data/lang_nosp exp/tri1 exp/tri1_ali_train
+steps/align_si.sh: feature type is delta
+steps/align_si.sh: aligning data in data/train using model from exp/tri1, putting alignments in exp/tri1_ali_train
+steps/diagnostic/analyze_alignments.sh --cmd run.pl --mem 2G data/lang_nosp exp/tri1_ali_train
+steps/diagnostic/analyze_alignments.sh: see stats in exp/tri1_ali_train/log/analyze_alignments.log
+steps/align_si.sh: done aligning data.
+
+===== train an LDA+MLLT system =====
+
+steps/train_lda_mllt.sh --cmd run.pl --mem 2G --splice-opts --left-context=3 --right-context=3 2500 15000 data/train data/lang_nosp exp/tri1_ali_train exp/tri2b
+steps/train_lda_mllt.sh: Accumulating LDA statistics.
+steps/train_lda_mllt.sh: Accumulating tree stats
+steps/train_lda_mllt.sh: Getting questions for tree clustering.
+steps/train_lda_mllt.sh: Building the tree
+steps/train_lda_mllt.sh: Initializing the model
+WARNING (gmm-init-model[5.5.1060~1-ae8cb]:InitAmGmm():gmm-init-model.cc:55) Tree has pdf-id 1 with no stats; corresponding phone list: 6 7 8 9 10 
+This is a bad warning.
+steps/train_lda_mllt.sh: Converting alignments from exp/tri1_ali_train to use current tree
+steps/train_lda_mllt.sh: Compiling graphs of transcripts
+Training pass 1
+Training pass 2
+steps/train_lda_mllt.sh: Estimating MLLT
+Training pass 3
+Training pass 4
+steps/train_lda_mllt.sh: Estimating MLLT
+Training pass 5
+Training pass 6
+steps/train_lda_mllt.sh: Estimating MLLT
+Training pass 7
+Training pass 8
+Training pass 9
+Training pass 10
+Aligning data
+Training pass 11
+Training pass 12
+steps/train_lda_mllt.sh: Estimating MLLT
+Training pass 13
+Training pass 14
+Training pass 15
+Training pass 16
+Training pass 17
+Training pass 18
+Training pass 19
+Training pass 20
+Aligning data
+Training pass 21
+Training pass 22
+Training pass 23
+Training pass 24
+Training pass 25
+Training pass 26
+Training pass 27
+Training pass 28
+Training pass 29
+Training pass 30
+Aligning data
+Training pass 31
+Training pass 32
+Training pass 33
+Training pass 34
+steps/diagnostic/analyze_alignments.sh --cmd run.pl --mem 2G data/lang_nosp exp/tri2b
+steps/diagnostic/analyze_alignments.sh: see stats in exp/tri2b/log/analyze_alignments.log
+34 warnings in exp/tri2b/log/update.*.log
+3231 warnings in exp/tri2b/log/acc.*.*.log
+1194 warnings in exp/tri2b/log/align.*.*.log
+1 warnings in exp/tri2b/log/build_tree.log
+79 warnings in exp/tri2b/log/lda_acc.*.log
+9 warnings in exp/tri2b/log/init_model.log
+1 warnings in exp/tri2b/log/questions.log
+exp/tri2b: nj=3 align prob=-48.54 over 13.16h [retry=2.4%, fail=0.9%] states=1944 gauss=15027 tree-impr=3.89 lda-sum=15.80 mllt:impr,logdet=0.98,1.47
+steps/train_lda_mllt.sh: Done training system with LDA+MLLT features in exp/tri2b
+
+===== Align utts using the tri2b model =====
+
+steps/align_si.sh --nj 3 --cmd run.pl --mem 2G --use-graphs true data/train data/lang_nosp exp/tri2b exp/tri2b_ali_train
+steps/align_si.sh: feature type is lda
+steps/align_si.sh: aligning data in data/train using model from exp/tri2b, putting alignments in exp/tri2b_ali_train
+steps/diagnostic/analyze_alignments.sh --cmd run.pl --mem 2G data/lang_nosp exp/tri2b_ali_train
+steps/diagnostic/analyze_alignments.sh: see stats in exp/tri2b_ali_train/log/analyze_alignments.log
+steps/align_si.sh: done aligning data.
+
+===== Train tri3b, which is LDA+MLLT+SAT =====
+
+steps/train_sat.sh --cmd run.pl --mem 2G 2500 15000 data/train data/lang_nosp exp/tri2b_ali_train exp/tri3b
+steps/train_sat.sh: feature type is lda
+steps/train_sat.sh: obtaining initial fMLLR transforms since not present in exp/tri2b_ali_train
+steps/train_sat.sh: Accumulating tree stats
+steps/train_sat.sh: Getting questions for tree clustering.
+steps/train_sat.sh: Building the tree
+steps/train_sat.sh: Initializing the model
+WARNING (gmm-init-model[5.5.1060~1-ae8cb]:InitAmGmm():gmm-init-model.cc:55) Tree has pdf-id 1 with no stats; corresponding phone list: 6 7 8 9 10 
+This is a bad warning.
+steps/train_sat.sh: Converting alignments from exp/tri2b_ali_train to use current tree
+steps/train_sat.sh: Compiling graphs of transcripts
+Pass 1
+Pass 2
+Estimating fMLLR transforms
+Pass 3
+Pass 4
+Estimating fMLLR transforms
+Pass 5
+Pass 6
+Estimating fMLLR transforms
+Pass 7
+Pass 8
+Pass 9
+Pass 10
+Aligning data
+Pass 11
+Pass 12
+Estimating fMLLR transforms
+Pass 13
+Pass 14
+Pass 15
+Pass 16
+Pass 17
+Pass 18
+Pass 19
+Pass 20
+Aligning data
+Pass 21
+Pass 22
+Pass 23
+Pass 24
+Pass 25
+Pass 26
+Pass 27
+Pass 28
+Pass 29
+Pass 30
+Aligning data
+Pass 31
+Pass 32
+Pass 33
+Pass 34
+steps/diagnostic/analyze_alignments.sh --cmd run.pl --mem 2G data/lang_nosp exp/tri3b
+steps/diagnostic/analyze_alignments.sh: see stats in exp/tri3b/log/analyze_alignments.log
+1 warnings in exp/tri3b/log/build_tree.log
+1 warnings in exp/tri3b/log/questions.log
+446 warnings in exp/tri3b/log/fmllr.*.*.log
+3 warnings in exp/tri3b/log/est_alimdl.log
+507 warnings in exp/tri3b/log/align.*.*.log
+5 warnings in exp/tri3b/log/init_model.log
+56 warnings in exp/tri3b/log/update.*.log
+1156 warnings in exp/tri3b/log/acc.*.*.log
+steps/train_sat.sh: Likelihood evolution:
+-51.0209 -50.7623 -50.5801 -50.2915 -49.4398 -48.8264 -48.5046 -48.266 -48.0496 -47.4596 -47.2318 -47.0404 -46.8976 -46.7857 -46.6792 -46.5809 -46.4908 -46.4151 -46.3406 -46.1813 -46.0752 -46.0089 -45.9487 -45.8954 -45.8486 -45.8039 -45.7591 -45.7148 -45.6732 -45.5879 -45.5246 -45.4979 -45.4815 -45.4701 
+exp/tri3b: nj=3 align prob=-48.38 over 13.27h [retry=1.1%, fail=0.1%] states=2040 gauss=15018 fmllr-impr=2.51 over 9.92h tree-impr=5.85
+steps/train_sat.sh: done training SAT system in exp/tri3b
+
+===== compute the pronunciation and silence probabilities =====
+
+steps/get_prons.sh --cmd run.pl --mem 2G data/train data/lang_nosp exp/tri3b
+steps/get_prons.sh: exp/tri3b/ali.1.gz exists, so starting from alignments.
+steps/get_prons.sh: done writing prons to exp/tri3b/prons.*.gz, silence counts in 
+steps/get_prons.sh: exp/tri3b/sil_counts_nowb.txt and pronunciation counts in 
+steps/get_prons.sh: exp/tri3b/pron_counts.{int,txt}
+steps/get_prons.sh: ... and also in exp/tri3b/pron_counts_nowb.txt
+Checking data/local/dict_nosp/silence_phones.txt ...
+--> reading data/local/dict_nosp/silence_phones.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dict_nosp/silence_phones.txt is OK
+
+Checking data/local/dict_nosp/optional_silence.txt ...
+--> reading data/local/dict_nosp/optional_silence.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dict_nosp/optional_silence.txt is OK
+
+Checking data/local/dict_nosp/nonsilence_phones.txt ...
+--> reading data/local/dict_nosp/nonsilence_phones.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dict_nosp/nonsilence_phones.txt is OK
+
+Checking disjoint: silence_phones.txt, nonsilence_phones.txt
+--> disjoint property is OK.
+
+Checking data/local/dict_nosp/lexicon.txt
+--> reading data/local/dict_nosp/lexicon.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dict_nosp/lexicon.txt is OK
+
+Checking data/local/dict_nosp/lexiconp.txt
+--> reading data/local/dict_nosp/lexiconp.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dict_nosp/lexiconp.txt is OK
+
+Checking lexicon pair data/local/dict_nosp/lexicon.txt and data/local/dict_nosp/lexiconp.txt
+--> lexicon pair data/local/dict_nosp/lexicon.txt and data/local/dict_nosp/lexiconp.txt match
+
+Checking data/local/dict_nosp/extra_questions.txt ...
+--> data/local/dict_nosp/extra_questions.txt is empty (this is OK)
+--> SUCCESS [validating dictionary directory data/local/dict_nosp]
+
+utils/dict_dir_add_pronprobs.sh: normalizing pronprobs so maximum is 1 for each word.
+utils/dict_dir_add_pronprobs.sh: produced dictionary directory with probabilities in data/local/dict/
+utils/dict_dir_add_pronprobs.sh: validating data/local/dict ..
+Checking data/local/dict/silence_phones.txt ...
+--> reading data/local/dict/silence_phones.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dict/silence_phones.txt is OK
+
+Checking data/local/dict/optional_silence.txt ...
+--> reading data/local/dict/optional_silence.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dict/optional_silence.txt is OK
+
+Checking data/local/dict/nonsilence_phones.txt ...
+--> reading data/local/dict/nonsilence_phones.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dict/nonsilence_phones.txt is OK
+
+Checking disjoint: silence_phones.txt, nonsilence_phones.txt
+--> disjoint property is OK.
+
+Checking data/local/dict/lexicon.txt
+--> reading data/local/dict/lexicon.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dict/lexicon.txt is OK
+
+Checking data/local/dict/lexiconp.txt
+--> reading data/local/dict/lexiconp.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dict/lexiconp.txt is OK
+
+Checking data/local/dict/lexiconp_silprob.txt
+--> reading data/local/dict/lexiconp_silprob.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dict/lexiconp_silprob.txt is OK
+
+Checking lexicon pair data/local/dict/lexicon.txt and data/local/dict/lexiconp.txt
+--> lexicon pair data/local/dict/lexicon.txt and data/local/dict/lexiconp.txt match
+
+Checking lexicon pair data/local/dict/lexiconp.txt and data/local/dict/lexiconp_silprob.txt
+--> lexicon pair data/local/dict/lexiconp.txt and data/local/dict/lexiconp_silprob.txt match
+
+Checking data/local/dict/extra_questions.txt ...
+--> data/local/dict/extra_questions.txt is empty (this is OK)
+--> SUCCESS [validating dictionary directory data/local/dict]
+
+Some low-probability prons include: 
+# sort -k2,2 -n data/local/dict/lexiconp.txt  | head -n 8
+anezho 0.019802 N EH
+neuze 0.0277777 N EN N
+petra 0.0434782 P E R
+evit 0.045994 E W I T
+petra 0.0521739 P E R A
+marteze 0.054054 M A R S EH
+ivez 0.0569395 I V E Z
+anezho 0.059406 N EU
+utils/prepare_lang.sh data/local/dict <UNK> data/local/lang_tmp data/lang
+Checking data/local/dict/silence_phones.txt ...
+--> reading data/local/dict/silence_phones.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dict/silence_phones.txt is OK
+
+Checking data/local/dict/optional_silence.txt ...
+--> reading data/local/dict/optional_silence.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dict/optional_silence.txt is OK
+
+Checking data/local/dict/nonsilence_phones.txt ...
+--> reading data/local/dict/nonsilence_phones.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dict/nonsilence_phones.txt is OK
+
+Checking disjoint: silence_phones.txt, nonsilence_phones.txt
+--> disjoint property is OK.
+
+Checking data/local/dict/lexicon.txt
+--> reading data/local/dict/lexicon.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dict/lexicon.txt is OK
+
+Checking data/local/dict/lexiconp.txt
+--> reading data/local/dict/lexiconp.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dict/lexiconp.txt is OK
+
+Checking data/local/dict/lexiconp_silprob.txt
+--> reading data/local/dict/lexiconp_silprob.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dict/lexiconp_silprob.txt is OK
+
+Checking lexicon pair data/local/dict/lexicon.txt and data/local/dict/lexiconp.txt
+--> lexicon pair data/local/dict/lexicon.txt and data/local/dict/lexiconp.txt match
+
+Checking lexicon pair data/local/dict/lexiconp.txt and data/local/dict/lexiconp_silprob.txt
+--> lexicon pair data/local/dict/lexiconp.txt and data/local/dict/lexiconp_silprob.txt match
+
+Checking data/local/dict/extra_questions.txt ...
+--> data/local/dict/extra_questions.txt is empty (this is OK)
+--> SUCCESS [validating dictionary directory data/local/dict]
+
+prepare_lang.sh: validating output directory
+utils/validate_lang.pl data/lang
+Checking existence of separator file
+separator file data/lang/subword_separator.txt is empty or does not exist, deal in word case.
+Checking data/lang/phones.txt ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/lang/phones.txt is OK
+
+Checking words.txt: #0 ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/lang/words.txt is OK
+
+Checking disjoint: silence.txt, nonsilence.txt, disambig.txt ...
+--> silence.txt and nonsilence.txt are disjoint
+--> silence.txt and disambig.txt are disjoint
+--> disambig.txt and nonsilence.txt are disjoint
+--> disjoint property is OK
+
+Checking sumation: silence.txt, nonsilence.txt, disambig.txt ...
+--> found no unexplainable phones in phones.txt
+
+Checking data/lang/phones/context_indep.{txt, int, csl} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 15 entry/entries in data/lang/phones/context_indep.txt
+--> data/lang/phones/context_indep.int corresponds to data/lang/phones/context_indep.txt
+--> data/lang/phones/context_indep.csl corresponds to data/lang/phones/context_indep.txt
+--> data/lang/phones/context_indep.{txt, int, csl} are OK
+
+Checking data/lang/phones/nonsilence.{txt, int, csl} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 160 entry/entries in data/lang/phones/nonsilence.txt
+--> data/lang/phones/nonsilence.int corresponds to data/lang/phones/nonsilence.txt
+--> data/lang/phones/nonsilence.csl corresponds to data/lang/phones/nonsilence.txt
+--> data/lang/phones/nonsilence.{txt, int, csl} are OK
+
+Checking data/lang/phones/silence.{txt, int, csl} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 15 entry/entries in data/lang/phones/silence.txt
+--> data/lang/phones/silence.int corresponds to data/lang/phones/silence.txt
+--> data/lang/phones/silence.csl corresponds to data/lang/phones/silence.txt
+--> data/lang/phones/silence.{txt, int, csl} are OK
+
+Checking data/lang/phones/optional_silence.{txt, int, csl} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 1 entry/entries in data/lang/phones/optional_silence.txt
+--> data/lang/phones/optional_silence.int corresponds to data/lang/phones/optional_silence.txt
+--> data/lang/phones/optional_silence.csl corresponds to data/lang/phones/optional_silence.txt
+--> data/lang/phones/optional_silence.{txt, int, csl} are OK
+
+Checking data/lang/phones/disambig.{txt, int, csl} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 6 entry/entries in data/lang/phones/disambig.txt
+--> data/lang/phones/disambig.int corresponds to data/lang/phones/disambig.txt
+--> data/lang/phones/disambig.csl corresponds to data/lang/phones/disambig.txt
+--> data/lang/phones/disambig.{txt, int, csl} are OK
+
+Checking data/lang/phones/roots.{txt, int} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 43 entry/entries in data/lang/phones/roots.txt
+--> data/lang/phones/roots.int corresponds to data/lang/phones/roots.txt
+--> data/lang/phones/roots.{txt, int} are OK
+
+Checking data/lang/phones/sets.{txt, int} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 43 entry/entries in data/lang/phones/sets.txt
+--> data/lang/phones/sets.int corresponds to data/lang/phones/sets.txt
+--> data/lang/phones/sets.{txt, int} are OK
+
+Checking data/lang/phones/extra_questions.{txt, int} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 9 entry/entries in data/lang/phones/extra_questions.txt
+--> data/lang/phones/extra_questions.int corresponds to data/lang/phones/extra_questions.txt
+--> data/lang/phones/extra_questions.{txt, int} are OK
+
+Checking data/lang/phones/word_boundary.{txt, int} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 175 entry/entries in data/lang/phones/word_boundary.txt
+--> data/lang/phones/word_boundary.int corresponds to data/lang/phones/word_boundary.txt
+--> data/lang/phones/word_boundary.{txt, int} are OK
+
+Checking optional_silence.txt ...
+--> reading data/lang/phones/optional_silence.txt
+--> data/lang/phones/optional_silence.txt is OK
+
+Checking disambiguation symbols: #0 and #1
+--> data/lang/phones/disambig.txt has "#0" and "#1"
+--> data/lang/phones/disambig.txt is OK
+
+Checking topo ...
+
+Checking word_boundary.txt: silence.txt, nonsilence.txt, disambig.txt ...
+--> data/lang/phones/word_boundary.txt doesn't include disambiguation symbols
+--> data/lang/phones/word_boundary.txt is the union of nonsilence.txt and silence.txt
+--> data/lang/phones/word_boundary.txt is OK
+
+Checking word-level disambiguation symbols...
+--> data/lang/phones/wdisambig.txt exists (newer prepare_lang.sh)
+Checking word_boundary.int and disambig.int
+--> generating a 78 word/subword sequence
+--> resulting phone sequence from L.fst corresponds to the word sequence
+--> L.fst is OK
+--> generating a 20 word/subword sequence
+--> resulting phone sequence from L_disambig.fst corresponds to the word sequence
+--> L_disambig.fst is OK
+
+Checking data/lang/oov.{txt, int} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 1 entry/entries in data/lang/oov.txt
+--> data/lang/oov.int corresponds to data/lang/oov.txt
+--> data/lang/oov.{txt, int} are OK
+
+--> data/lang/L.fst is olabel sorted
+--> data/lang/L_disambig.fst is olabel sorted
+--> SUCCESS [validating lang directory data/lang]
+utils/validate_lang.pl data/lang
+Checking existence of separator file
+separator file data/lang/subword_separator.txt is empty or does not exist, deal in word case.
+Checking data/lang/phones.txt ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/lang/phones.txt is OK
+
+Checking words.txt: #0 ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/lang/words.txt is OK
+
+Checking disjoint: silence.txt, nonsilence.txt, disambig.txt ...
+--> silence.txt and nonsilence.txt are disjoint
+--> silence.txt and disambig.txt are disjoint
+--> disambig.txt and nonsilence.txt are disjoint
+--> disjoint property is OK
+
+Checking sumation: silence.txt, nonsilence.txt, disambig.txt ...
+--> found no unexplainable phones in phones.txt
+
+Checking data/lang/phones/context_indep.{txt, int, csl} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 15 entry/entries in data/lang/phones/context_indep.txt
+--> data/lang/phones/context_indep.int corresponds to data/lang/phones/context_indep.txt
+--> data/lang/phones/context_indep.csl corresponds to data/lang/phones/context_indep.txt
+--> data/lang/phones/context_indep.{txt, int, csl} are OK
+
+Checking data/lang/phones/nonsilence.{txt, int, csl} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 160 entry/entries in data/lang/phones/nonsilence.txt
+--> data/lang/phones/nonsilence.int corresponds to data/lang/phones/nonsilence.txt
+--> data/lang/phones/nonsilence.csl corresponds to data/lang/phones/nonsilence.txt
+--> data/lang/phones/nonsilence.{txt, int, csl} are OK
+
+Checking data/lang/phones/silence.{txt, int, csl} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 15 entry/entries in data/lang/phones/silence.txt
+--> data/lang/phones/silence.int corresponds to data/lang/phones/silence.txt
+--> data/lang/phones/silence.csl corresponds to data/lang/phones/silence.txt
+--> data/lang/phones/silence.{txt, int, csl} are OK
+
+Checking data/lang/phones/optional_silence.{txt, int, csl} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 1 entry/entries in data/lang/phones/optional_silence.txt
+--> data/lang/phones/optional_silence.int corresponds to data/lang/phones/optional_silence.txt
+--> data/lang/phones/optional_silence.csl corresponds to data/lang/phones/optional_silence.txt
+--> data/lang/phones/optional_silence.{txt, int, csl} are OK
+
+Checking data/lang/phones/disambig.{txt, int, csl} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 6 entry/entries in data/lang/phones/disambig.txt
+--> data/lang/phones/disambig.int corresponds to data/lang/phones/disambig.txt
+--> data/lang/phones/disambig.csl corresponds to data/lang/phones/disambig.txt
+--> data/lang/phones/disambig.{txt, int, csl} are OK
+
+Checking data/lang/phones/roots.{txt, int} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 43 entry/entries in data/lang/phones/roots.txt
+--> data/lang/phones/roots.int corresponds to data/lang/phones/roots.txt
+--> data/lang/phones/roots.{txt, int} are OK
+
+Checking data/lang/phones/sets.{txt, int} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 43 entry/entries in data/lang/phones/sets.txt
+--> data/lang/phones/sets.int corresponds to data/lang/phones/sets.txt
+--> data/lang/phones/sets.{txt, int} are OK
+
+Checking data/lang/phones/extra_questions.{txt, int} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 9 entry/entries in data/lang/phones/extra_questions.txt
+--> data/lang/phones/extra_questions.int corresponds to data/lang/phones/extra_questions.txt
+--> data/lang/phones/extra_questions.{txt, int} are OK
+
+Checking data/lang/phones/word_boundary.{txt, int} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 175 entry/entries in data/lang/phones/word_boundary.txt
+--> data/lang/phones/word_boundary.int corresponds to data/lang/phones/word_boundary.txt
+--> data/lang/phones/word_boundary.{txt, int} are OK
+
+Checking optional_silence.txt ...
+--> reading data/lang/phones/optional_silence.txt
+--> data/lang/phones/optional_silence.txt is OK
+
+Checking disambiguation symbols: #0 and #1
+--> data/lang/phones/disambig.txt has "#0" and "#1"
+--> data/lang/phones/disambig.txt is OK
+
+Checking topo ...
+
+Checking word_boundary.txt: silence.txt, nonsilence.txt, disambig.txt ...
+--> data/lang/phones/word_boundary.txt doesn't include disambiguation symbols
+--> data/lang/phones/word_boundary.txt is the union of nonsilence.txt and silence.txt
+--> data/lang/phones/word_boundary.txt is OK
+
+Checking word-level disambiguation symbols...
+--> data/lang/phones/wdisambig.txt exists (newer prepare_lang.sh)
+Checking word_boundary.int and disambig.int
+--> generating a 35 word/subword sequence
+--> resulting phone sequence from L.fst corresponds to the word sequence
+--> L.fst is OK
+--> generating a 52 word/subword sequence
+--> resulting phone sequence from L_disambig.fst corresponds to the word sequence
+--> L_disambig.fst is OK
+
+Checking data/lang/oov.{txt, int} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 1 entry/entries in data/lang/oov.txt
+--> data/lang/oov.int corresponds to data/lang/oov.txt
+--> data/lang/oov.{txt, int} are OK
+
+--> data/lang/L.fst is olabel sorted
+--> data/lang/L_disambig.fst is olabel sorted
+--> SUCCESS [validating lang directory data/lang]
+Checking data/local/dict/silence_phones.txt ...
+--> reading data/local/dict/silence_phones.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dict/silence_phones.txt is OK
+
+Checking data/local/dict/optional_silence.txt ...
+--> reading data/local/dict/optional_silence.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dict/optional_silence.txt is OK
+
+Checking data/local/dict/nonsilence_phones.txt ...
+--> reading data/local/dict/nonsilence_phones.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dict/nonsilence_phones.txt is OK
+
+Checking disjoint: silence_phones.txt, nonsilence_phones.txt
+--> disjoint property is OK.
+
+Checking data/local/dict/lexicon.txt
+--> reading data/local/dict/lexicon.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dict/lexicon.txt is OK
+
+Checking data/local/dict/lexiconp.txt
+--> reading data/local/dict/lexiconp.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dict/lexiconp.txt is OK
+
+Checking data/local/dict/lexiconp_silprob.txt
+--> reading data/local/dict/lexiconp_silprob.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dict/lexiconp_silprob.txt is OK
+
+Checking lexicon pair data/local/dict/lexicon.txt and data/local/dict/lexiconp.txt
+--> lexicon pair data/local/dict/lexicon.txt and data/local/dict/lexiconp.txt match
+
+Checking lexicon pair data/local/dict/lexiconp.txt and data/local/dict/lexiconp_silprob.txt
+--> lexicon pair data/local/dict/lexiconp.txt and data/local/dict/lexiconp_silprob.txt match
+
+Checking data/local/dict/extra_questions.txt ...
+--> data/local/dict/extra_questions.txt is empty (this is OK)
+--> SUCCESS [validating dictionary directory data/local/dict]
+
+******* format_lms **********
+utils/validate_lang.pl data/lang_test_tgsmall
+Checking existence of separator file
+separator file data/lang_test_tgsmall/subword_separator.txt is empty or does not exist, deal in word case.
+Checking data/lang_test_tgsmall/phones.txt ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/lang_test_tgsmall/phones.txt is OK
+
+Checking words.txt: #0 ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/lang_test_tgsmall/words.txt is OK
+
+Checking disjoint: silence.txt, nonsilence.txt, disambig.txt ...
+--> silence.txt and nonsilence.txt are disjoint
+--> silence.txt and disambig.txt are disjoint
+--> disambig.txt and nonsilence.txt are disjoint
+--> disjoint property is OK
+
+Checking sumation: silence.txt, nonsilence.txt, disambig.txt ...
+--> found no unexplainable phones in phones.txt
+
+Checking data/lang_test_tgsmall/phones/context_indep.{txt, int, csl} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 15 entry/entries in data/lang_test_tgsmall/phones/context_indep.txt
+--> data/lang_test_tgsmall/phones/context_indep.int corresponds to data/lang_test_tgsmall/phones/context_indep.txt
+--> data/lang_test_tgsmall/phones/context_indep.csl corresponds to data/lang_test_tgsmall/phones/context_indep.txt
+--> data/lang_test_tgsmall/phones/context_indep.{txt, int, csl} are OK
+
+Checking data/lang_test_tgsmall/phones/nonsilence.{txt, int, csl} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 160 entry/entries in data/lang_test_tgsmall/phones/nonsilence.txt
+--> data/lang_test_tgsmall/phones/nonsilence.int corresponds to data/lang_test_tgsmall/phones/nonsilence.txt
+--> data/lang_test_tgsmall/phones/nonsilence.csl corresponds to data/lang_test_tgsmall/phones/nonsilence.txt
+--> data/lang_test_tgsmall/phones/nonsilence.{txt, int, csl} are OK
+
+Checking data/lang_test_tgsmall/phones/silence.{txt, int, csl} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 15 entry/entries in data/lang_test_tgsmall/phones/silence.txt
+--> data/lang_test_tgsmall/phones/silence.int corresponds to data/lang_test_tgsmall/phones/silence.txt
+--> data/lang_test_tgsmall/phones/silence.csl corresponds to data/lang_test_tgsmall/phones/silence.txt
+--> data/lang_test_tgsmall/phones/silence.{txt, int, csl} are OK
+
+Checking data/lang_test_tgsmall/phones/optional_silence.{txt, int, csl} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 1 entry/entries in data/lang_test_tgsmall/phones/optional_silence.txt
+--> data/lang_test_tgsmall/phones/optional_silence.int corresponds to data/lang_test_tgsmall/phones/optional_silence.txt
+--> data/lang_test_tgsmall/phones/optional_silence.csl corresponds to data/lang_test_tgsmall/phones/optional_silence.txt
+--> data/lang_test_tgsmall/phones/optional_silence.{txt, int, csl} are OK
+
+Checking data/lang_test_tgsmall/phones/disambig.{txt, int, csl} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 6 entry/entries in data/lang_test_tgsmall/phones/disambig.txt
+--> data/lang_test_tgsmall/phones/disambig.int corresponds to data/lang_test_tgsmall/phones/disambig.txt
+--> data/lang_test_tgsmall/phones/disambig.csl corresponds to data/lang_test_tgsmall/phones/disambig.txt
+--> data/lang_test_tgsmall/phones/disambig.{txt, int, csl} are OK
+
+Checking data/lang_test_tgsmall/phones/roots.{txt, int} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 43 entry/entries in data/lang_test_tgsmall/phones/roots.txt
+--> data/lang_test_tgsmall/phones/roots.int corresponds to data/lang_test_tgsmall/phones/roots.txt
+--> data/lang_test_tgsmall/phones/roots.{txt, int} are OK
+
+Checking data/lang_test_tgsmall/phones/sets.{txt, int} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 43 entry/entries in data/lang_test_tgsmall/phones/sets.txt
+--> data/lang_test_tgsmall/phones/sets.int corresponds to data/lang_test_tgsmall/phones/sets.txt
+--> data/lang_test_tgsmall/phones/sets.{txt, int} are OK
+
+Checking data/lang_test_tgsmall/phones/extra_questions.{txt, int} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 9 entry/entries in data/lang_test_tgsmall/phones/extra_questions.txt
+--> data/lang_test_tgsmall/phones/extra_questions.int corresponds to data/lang_test_tgsmall/phones/extra_questions.txt
+--> data/lang_test_tgsmall/phones/extra_questions.{txt, int} are OK
+
+Checking data/lang_test_tgsmall/phones/word_boundary.{txt, int} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 175 entry/entries in data/lang_test_tgsmall/phones/word_boundary.txt
+--> data/lang_test_tgsmall/phones/word_boundary.int corresponds to data/lang_test_tgsmall/phones/word_boundary.txt
+--> data/lang_test_tgsmall/phones/word_boundary.{txt, int} are OK
+
+Checking optional_silence.txt ...
+--> reading data/lang_test_tgsmall/phones/optional_silence.txt
+--> data/lang_test_tgsmall/phones/optional_silence.txt is OK
+
+Checking disambiguation symbols: #0 and #1
+--> data/lang_test_tgsmall/phones/disambig.txt has "#0" and "#1"
+--> data/lang_test_tgsmall/phones/disambig.txt is OK
+
+Checking topo ...
+
+Checking word_boundary.txt: silence.txt, nonsilence.txt, disambig.txt ...
+--> data/lang_test_tgsmall/phones/word_boundary.txt doesn't include disambiguation symbols
+--> data/lang_test_tgsmall/phones/word_boundary.txt is the union of nonsilence.txt and silence.txt
+--> data/lang_test_tgsmall/phones/word_boundary.txt is OK
+
+Checking word-level disambiguation symbols...
+--> data/lang_test_tgsmall/phones/wdisambig.txt exists (newer prepare_lang.sh)
+Checking word_boundary.int and disambig.int
+--> generating a 66 word/subword sequence
+--> resulting phone sequence from L.fst corresponds to the word sequence
+--> L.fst is OK
+--> generating a 87 word/subword sequence
+--> resulting phone sequence from L_disambig.fst corresponds to the word sequence
+--> L_disambig.fst is OK
+
+Checking data/lang_test_tgsmall/oov.{txt, int} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 1 entry/entries in data/lang_test_tgsmall/oov.txt
+--> data/lang_test_tgsmall/oov.int corresponds to data/lang_test_tgsmall/oov.txt
+--> data/lang_test_tgsmall/oov.{txt, int} are OK
+
+--> data/lang_test_tgsmall/L.fst is olabel sorted
+--> data/lang_test_tgsmall/L_disambig.fst is olabel sorted
+--> data/lang_test_tgsmall/G.fst is ilabel sorted
+--> data/lang_test_tgsmall/G.fst has 131820 states
+--> utils/lang/check_g_properties.pl successfully validated data/lang_test_tgsmall/G.fst
+--> utils/lang/check_g_properties.pl succeeded.
+--> SUCCESS [validating lang directory data/lang_test_tgsmall]
+utils/validate_lang.pl data/lang_test_tgmed
+Checking existence of separator file
+separator file data/lang_test_tgmed/subword_separator.txt is empty or does not exist, deal in word case.
+Checking data/lang_test_tgmed/phones.txt ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/lang_test_tgmed/phones.txt is OK
+
+Checking words.txt: #0 ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/lang_test_tgmed/words.txt is OK
+
+Checking disjoint: silence.txt, nonsilence.txt, disambig.txt ...
+--> silence.txt and nonsilence.txt are disjoint
+--> silence.txt and disambig.txt are disjoint
+--> disambig.txt and nonsilence.txt are disjoint
+--> disjoint property is OK
+
+Checking sumation: silence.txt, nonsilence.txt, disambig.txt ...
+--> found no unexplainable phones in phones.txt
+
+Checking data/lang_test_tgmed/phones/context_indep.{txt, int, csl} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 15 entry/entries in data/lang_test_tgmed/phones/context_indep.txt
+--> data/lang_test_tgmed/phones/context_indep.int corresponds to data/lang_test_tgmed/phones/context_indep.txt
+--> data/lang_test_tgmed/phones/context_indep.csl corresponds to data/lang_test_tgmed/phones/context_indep.txt
+--> data/lang_test_tgmed/phones/context_indep.{txt, int, csl} are OK
+
+Checking data/lang_test_tgmed/phones/nonsilence.{txt, int, csl} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 160 entry/entries in data/lang_test_tgmed/phones/nonsilence.txt
+--> data/lang_test_tgmed/phones/nonsilence.int corresponds to data/lang_test_tgmed/phones/nonsilence.txt
+--> data/lang_test_tgmed/phones/nonsilence.csl corresponds to data/lang_test_tgmed/phones/nonsilence.txt
+--> data/lang_test_tgmed/phones/nonsilence.{txt, int, csl} are OK
+
+Checking data/lang_test_tgmed/phones/silence.{txt, int, csl} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 15 entry/entries in data/lang_test_tgmed/phones/silence.txt
+--> data/lang_test_tgmed/phones/silence.int corresponds to data/lang_test_tgmed/phones/silence.txt
+--> data/lang_test_tgmed/phones/silence.csl corresponds to data/lang_test_tgmed/phones/silence.txt
+--> data/lang_test_tgmed/phones/silence.{txt, int, csl} are OK
+
+Checking data/lang_test_tgmed/phones/optional_silence.{txt, int, csl} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 1 entry/entries in data/lang_test_tgmed/phones/optional_silence.txt
+--> data/lang_test_tgmed/phones/optional_silence.int corresponds to data/lang_test_tgmed/phones/optional_silence.txt
+--> data/lang_test_tgmed/phones/optional_silence.csl corresponds to data/lang_test_tgmed/phones/optional_silence.txt
+--> data/lang_test_tgmed/phones/optional_silence.{txt, int, csl} are OK
+
+Checking data/lang_test_tgmed/phones/disambig.{txt, int, csl} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 6 entry/entries in data/lang_test_tgmed/phones/disambig.txt
+--> data/lang_test_tgmed/phones/disambig.int corresponds to data/lang_test_tgmed/phones/disambig.txt
+--> data/lang_test_tgmed/phones/disambig.csl corresponds to data/lang_test_tgmed/phones/disambig.txt
+--> data/lang_test_tgmed/phones/disambig.{txt, int, csl} are OK
+
+Checking data/lang_test_tgmed/phones/roots.{txt, int} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 43 entry/entries in data/lang_test_tgmed/phones/roots.txt
+--> data/lang_test_tgmed/phones/roots.int corresponds to data/lang_test_tgmed/phones/roots.txt
+--> data/lang_test_tgmed/phones/roots.{txt, int} are OK
+
+Checking data/lang_test_tgmed/phones/sets.{txt, int} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 43 entry/entries in data/lang_test_tgmed/phones/sets.txt
+--> data/lang_test_tgmed/phones/sets.int corresponds to data/lang_test_tgmed/phones/sets.txt
+--> data/lang_test_tgmed/phones/sets.{txt, int} are OK
+
+Checking data/lang_test_tgmed/phones/extra_questions.{txt, int} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 9 entry/entries in data/lang_test_tgmed/phones/extra_questions.txt
+--> data/lang_test_tgmed/phones/extra_questions.int corresponds to data/lang_test_tgmed/phones/extra_questions.txt
+--> data/lang_test_tgmed/phones/extra_questions.{txt, int} are OK
+
+Checking data/lang_test_tgmed/phones/word_boundary.{txt, int} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 175 entry/entries in data/lang_test_tgmed/phones/word_boundary.txt
+--> data/lang_test_tgmed/phones/word_boundary.int corresponds to data/lang_test_tgmed/phones/word_boundary.txt
+--> data/lang_test_tgmed/phones/word_boundary.{txt, int} are OK
+
+Checking optional_silence.txt ...
+--> reading data/lang_test_tgmed/phones/optional_silence.txt
+--> data/lang_test_tgmed/phones/optional_silence.txt is OK
+
+Checking disambiguation symbols: #0 and #1
+--> data/lang_test_tgmed/phones/disambig.txt has "#0" and "#1"
+--> data/lang_test_tgmed/phones/disambig.txt is OK
+
+Checking topo ...
+
+Checking word_boundary.txt: silence.txt, nonsilence.txt, disambig.txt ...
+--> data/lang_test_tgmed/phones/word_boundary.txt doesn't include disambiguation symbols
+--> data/lang_test_tgmed/phones/word_boundary.txt is the union of nonsilence.txt and silence.txt
+--> data/lang_test_tgmed/phones/word_boundary.txt is OK
+
+Checking word-level disambiguation symbols...
+--> data/lang_test_tgmed/phones/wdisambig.txt exists (newer prepare_lang.sh)
+Checking word_boundary.int and disambig.int
+--> generating a 20 word/subword sequence
+--> resulting phone sequence from L.fst corresponds to the word sequence
+--> L.fst is OK
+--> generating a 10 word/subword sequence
+--> resulting phone sequence from L_disambig.fst corresponds to the word sequence
+--> L_disambig.fst is OK
+
+Checking data/lang_test_tgmed/oov.{txt, int} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 1 entry/entries in data/lang_test_tgmed/oov.txt
+--> data/lang_test_tgmed/oov.int corresponds to data/lang_test_tgmed/oov.txt
+--> data/lang_test_tgmed/oov.{txt, int} are OK
+
+--> data/lang_test_tgmed/L.fst is olabel sorted
+--> data/lang_test_tgmed/L_disambig.fst is olabel sorted
+--> data/lang_test_tgmed/G.fst is ilabel sorted
+--> data/lang_test_tgmed/G.fst has 131820 states
+--> utils/lang/check_g_properties.pl successfully validated data/lang_test_tgmed/G.fst
+--> utils/lang/check_g_properties.pl succeeded.
+--> SUCCESS [validating lang directory data/lang_test_tgmed]
+******* build_const_arpa *****
+****** align_fmllr ********
+steps/align_fmllr.sh --nj 3 --cmd run.pl --mem 2G data/train data/lang exp/tri3b exp/tri3b_ali_train
+steps/align_fmllr.sh: feature type is lda
+steps/align_fmllr.sh: compiling training graphs
+steps/align_fmllr.sh: aligning data in data/train using exp/tri3b/final.alimdl and speaker-independent features.
+steps/align_fmllr.sh: computing fMLLR transforms
+steps/align_fmllr.sh: doing final alignment.
+steps/align_fmllr.sh: done aligning data.
+steps/diagnostic/analyze_alignments.sh --cmd run.pl --mem 2G data/lang exp/tri3b_ali_train
+steps/diagnostic/analyze_alignments.sh: see stats in exp/tri3b_ali_train/log/analyze_alignments.log
+15 warnings in exp/tri3b_ali_train/log/fmllr.*.log
+127 warnings in exp/tri3b_ali_train/log/align_pass1.*.log
+119 warnings in exp/tri3b_ali_train/log/align_pass2.*.log
+
+===== STAGE 9 =====
+==== Test the tri3b system with the silprobs and pron-probs ====
+
+-0.0633072 -0.0641278
+[info]: LG not stochastic.
+0 -0.0641278
+[info]: CLG not stochastic.
+0.649718 -0.194716
+HCLGa is not stochastic
+****** decode_fmllr.sh ******
+steps/decode_fmllr.sh --nj 3 --cmd run.pl --mem 4G exp/tri3b/graph_tgsmall data/test exp/tri3b/decode_tgsmall_test
+steps/decode.sh --scoring-opts  --num-threads 1 --skip-scoring false --acwt 0.083333 --nj 3 --cmd run.pl --mem 4G --beam 10.0 --model exp/tri3b/final.alimdl --max-active 2000 exp/tri3b/graph_tgsmall data/test exp/tri3b/decode_tgsmall_test.si
+decode.sh: feature type is lda
+steps/diagnostic/analyze_lats.sh --cmd run.pl --mem 4G exp/tri3b/graph_tgsmall exp/tri3b/decode_tgsmall_test.si
+steps/diagnostic/analyze_lats.sh: see stats in exp/tri3b/decode_tgsmall_test.si/log/analyze_alignments.log
+Overall, lattice depth (10,50,90-percentile)=(1,9,41) and mean=16.7
+steps/diagnostic/analyze_lats.sh: see stats in exp/tri3b/decode_tgsmall_test.si/log/analyze_lattice_depth_stats.log
+exp/tri3b/decode_tgsmall_test.si/wer_10
+%WER 61.62 [ 6615 / 10735, 1069 ins, 872 del, 4674 sub ]
+%SER 86.58 [ 1819 / 2101 ]
+exp/tri3b/decode_tgsmall_test.si/wer_11
+%WER 60.43 [ 6487 / 10735, 969 ins, 943 del, 4575 sub ]
+%SER 86.20 [ 1811 / 2101 ]
+exp/tri3b/decode_tgsmall_test.si/wer_12
+%WER 59.40 [ 6377 / 10735, 856 ins, 999 del, 4522 sub ]
+%SER 85.63 [ 1799 / 2101 ]
+exp/tri3b/decode_tgsmall_test.si/wer_13
+%WER 59.04 [ 6338 / 10735, 775 ins, 1081 del, 4482 sub ]
+%SER 85.15 [ 1789 / 2101 ]
+exp/tri3b/decode_tgsmall_test.si/wer_14
+%WER 58.30 [ 6258 / 10735, 715 ins, 1104 del, 4439 sub ]
+%SER 84.91 [ 1784 / 2101 ]
+exp/tri3b/decode_tgsmall_test.si/wer_15
+%WER 58.19 [ 6247 / 10735, 653 ins, 1174 del, 4420 sub ]
+%SER 84.72 [ 1780 / 2101 ]
+exp/tri3b/decode_tgsmall_test.si/wer_16
+%WER 58.21 [ 6249 / 10735, 618 ins, 1228 del, 4403 sub ]
+%SER 84.77 [ 1781 / 2101 ]
+exp/tri3b/decode_tgsmall_test.si/wer_17
+%WER 58.32 [ 6261 / 10735, 601 ins, 1280 del, 4380 sub ]
+%SER 84.77 [ 1781 / 2101 ]
+exp/tri3b/decode_tgsmall_test.si/wer_7
+%WER 67.38 [ 7233 / 10735, 1569 ins, 655 del, 5009 sub ]
+%SER 89.39 [ 1878 / 2101 ]
+exp/tri3b/decode_tgsmall_test.si/wer_8
+%WER 64.96 [ 6973 / 10735, 1382 ins, 719 del, 4872 sub ]
+%SER 88.58 [ 1861 / 2101 ]
+exp/tri3b/decode_tgsmall_test.si/wer_9
+%WER 63.17 [ 6781 / 10735, 1216 ins, 787 del, 4778 sub ]
+%SER 87.48 [ 1838 / 2101 ]
+steps/decode_fmllr.sh: feature type is lda
+steps/decode_fmllr.sh: getting first-pass fMLLR transforms.
+steps/decode_fmllr.sh: doing main lattice generation phase
+steps/decode_fmllr.sh: estimating fMLLR transforms a second time.
+steps/decode_fmllr.sh: doing a final pass of acoustic rescoring.
+steps/diagnostic/analyze_lats.sh --cmd run.pl --mem 4G exp/tri3b/graph_tgsmall exp/tri3b/decode_tgsmall_test
+steps/diagnostic/analyze_lats.sh: see stats in exp/tri3b/decode_tgsmall_test/log/analyze_alignments.log
+Overall, lattice depth (10,50,90-percentile)=(1,6,35) and mean=13.6
+steps/diagnostic/analyze_lats.sh: see stats in exp/tri3b/decode_tgsmall_test/log/analyze_lattice_depth_stats.log
+exp/tri3b/decode_tgsmall_test/wer_10
+%WER 50.19 [ 5388 / 10735, 922 ins, 697 del, 3769 sub ]
+%SER 80.58 [ 1693 / 2101 ]
+exp/tri3b/decode_tgsmall_test/wer_11
+%WER 49.19 [ 5281 / 10735, 849 ins, 717 del, 3715 sub ]
+%SER 80.15 [ 1684 / 2101 ]
+exp/tri3b/decode_tgsmall_test/wer_12
+%WER 48.51 [ 5208 / 10735, 782 ins, 744 del, 3682 sub ]
+%SER 79.68 [ 1674 / 2101 ]
+exp/tri3b/decode_tgsmall_test/wer_13
+%WER 47.81 [ 5132 / 10735, 714 ins, 776 del, 3642 sub ]
+%SER 79.06 [ 1661 / 2101 ]
+exp/tri3b/decode_tgsmall_test/wer_14
+%WER 47.76 [ 5127 / 10735, 674 ins, 820 del, 3633 sub ]
+%SER 78.82 [ 1656 / 2101 ]
+exp/tri3b/decode_tgsmall_test/wer_15
+%WER 47.54 [ 5103 / 10735, 636 ins, 855 del, 3612 sub ]
+%SER 78.91 [ 1658 / 2101 ]
+exp/tri3b/decode_tgsmall_test/wer_16
+%WER 47.51 [ 5100 / 10735, 583 ins, 904 del, 3613 sub ]
+%SER 78.77 [ 1655 / 2101 ]
+exp/tri3b/decode_tgsmall_test/wer_17
+%WER 47.76 [ 5127 / 10735, 558 ins, 938 del, 3631 sub ]
+%SER 78.91 [ 1658 / 2101 ]
+exp/tri3b/decode_tgsmall_test/wer_7
+%WER 54.87 [ 5890 / 10735, 1276 ins, 579 del, 4035 sub ]
+%SER 82.91 [ 1742 / 2101 ]
+exp/tri3b/decode_tgsmall_test/wer_8
+%WER 53.08 [ 5698 / 10735, 1136 ins, 611 del, 3951 sub ]
+%SER 82.01 [ 1723 / 2101 ]
+exp/tri3b/decode_tgsmall_test/wer_9
+%WER 51.48 [ 5526 / 10735, 1006 ins, 660 del, 3860 sub ]
+%SER 81.20 [ 1706 / 2101 ]
+****** lmrescore.sh ******
+steps/lmrescore.sh --cmd run.pl --mem 4G data/lang_test_tgsmall data/lang_test_tgmed data/test exp/tri3b/decode_tgsmall_test exp/tri3b/decode_tgmed_test
+exp/tri3b/decode_tgmed_test/wer_10
+%WER 49.41 [ 5297 / 10720, 837 ins, 724 del, 3736 sub ] [PARTIAL]
+%SER 79.69 [ 1671 / 2097 ]
+exp/tri3b/decode_tgmed_test/wer_11
+%WER 48.64 [ 5214 / 10720, 769 ins, 744 del, 3701 sub ] [PARTIAL]
+%SER 79.54 [ 1668 / 2097 ]
+exp/tri3b/decode_tgmed_test/wer_12
+%WER 48.01 [ 5147 / 10720, 714 ins, 783 del, 3650 sub ] [PARTIAL]
+%SER 79.21 [ 1661 / 2097 ]
+exp/tri3b/decode_tgmed_test/wer_13
+%WER 47.71 [ 5115 / 10720, 659 ins, 812 del, 3644 sub ] [PARTIAL]
+%SER 78.87 [ 1654 / 2097 ]
+exp/tri3b/decode_tgmed_test/wer_14
+%WER 47.60 [ 5103 / 10720, 619 ins, 849 del, 3635 sub ] [PARTIAL]
+%SER 78.78 [ 1652 / 2097 ]
+exp/tri3b/decode_tgmed_test/wer_15
+%WER 47.41 [ 5082 / 10720, 589 ins, 885 del, 3608 sub ] [PARTIAL]
+%SER 78.87 [ 1654 / 2097 ]
+exp/tri3b/decode_tgmed_test/wer_16
+%WER 47.52 [ 5094 / 10720, 556 ins, 951 del, 3587 sub ] [PARTIAL]
+%SER 78.73 [ 1651 / 2097 ]
+exp/tri3b/decode_tgmed_test/wer_17
+%WER 47.76 [ 5120 / 10720, 535 ins, 982 del, 3603 sub ] [PARTIAL]
+%SER 78.83 [ 1653 / 2097 ]
+exp/tri3b/decode_tgmed_test/wer_7
+%WER 53.89 [ 5777 / 10720, 1157 ins, 603 del, 4017 sub ] [PARTIAL]
+%SER 82.31 [ 1726 / 2097 ]
+exp/tri3b/decode_tgmed_test/wer_8
+%WER 52.20 [ 5596 / 10720, 1028 ins, 637 del, 3931 sub ] [PARTIAL]
+%SER 81.50 [ 1709 / 2097 ]
+exp/tri3b/decode_tgmed_test/wer_9
+%WER 50.58 [ 5422 / 10720, 906 ins, 676 del, 3840 sub ] [PARTIAL]
+%SER 80.40 [ 1686 / 2097 ]
+****** lmrescore_const_arpa.sh ******
+steps/lmrescore_const_arpa.sh --cmd run.pl --mem 4G data/lang_test_tgsmall data/lang_test_tglarge data/test exp/tri3b/decode_tgsmall_test exp/tri3b/decode_tglarge_test
+exp/tri3b/decode_tglarge_test/wer_10
+%WER 49.42 [ 5305 / 10735, 837 ins, 726 del, 3742 sub ]
+%SER 79.68 [ 1674 / 2101 ]
+exp/tri3b/decode_tglarge_test/wer_11
+%WER 48.64 [ 5221 / 10735, 767 ins, 745 del, 3709 sub ]
+%SER 79.53 [ 1671 / 2101 ]
+exp/tri3b/decode_tglarge_test/wer_12
+%WER 48.06 [ 5159 / 10735, 717 ins, 784 del, 3658 sub ]
+%SER 79.20 [ 1664 / 2101 ]
+exp/tri3b/decode_tglarge_test/wer_13
+%WER 47.73 [ 5124 / 10735, 661 ins, 812 del, 3651 sub ]
+%SER 78.87 [ 1657 / 2101 ]
+exp/tri3b/decode_tglarge_test/wer_14
+%WER 47.63 [ 5113 / 10735, 623 ins, 849 del, 3641 sub ]
+%SER 78.72 [ 1654 / 2101 ]
+exp/tri3b/decode_tglarge_test/wer_15
+%WER 47.45 [ 5094 / 10735, 590 ins, 886 del, 3618 sub ]
+%SER 78.91 [ 1658 / 2101 ]
+exp/tri3b/decode_tglarge_test/wer_16
+%WER 47.52 [ 5101 / 10735, 555 ins, 955 del, 3591 sub ]
+%SER 78.77 [ 1655 / 2101 ]
+exp/tri3b/decode_tglarge_test/wer_17
+%WER 47.76 [ 5127 / 10735, 533 ins, 983 del, 3611 sub ]
+%SER 78.87 [ 1657 / 2101 ]
+exp/tri3b/decode_tglarge_test/wer_7
+%WER 53.94 [ 5790 / 10735, 1159 ins, 605 del, 4026 sub ]
+%SER 82.29 [ 1729 / 2101 ]
+exp/tri3b/decode_tglarge_test/wer_8
+%WER 52.24 [ 5608 / 10735, 1029 ins, 639 del, 3940 sub ]
+%SER 81.49 [ 1712 / 2101 ]
+exp/tri3b/decode_tglarge_test/wer_9
+%WER 50.61 [ 5433 / 10735, 908 ins, 684 del, 3841 sub ]
+%SER 80.39 [ 1689 / 2101 ]
+
+===== STAGE 10 =====
+==== Train a chain model ====
+
+local/chain/run_tdnn_1j_short.sh 
+local/nnet3/run_ivector_common.sh: preparing directory for low-resolution speed-perturbed data (for alignment)
+fix_data_dir.sh: kept all 10647 utterances.
+fix_data_dir.sh: old files are kept in data/train/.backup
+utils/data/perturb_data_dir_speed_3way.sh: making sure the utt2dur and the reco2dur files are present
+... in data/train, because obtaining it after speed-perturbing
+... would be very slow, and you might need them.
+utils/data/get_utt2dur.sh: data/train/utt2dur already exists with the expected length.  We won't recompute it.
+utils/data/get_reco2dur.sh: obtaining durations from recordings
+utils/data/get_reco2dur.sh: could not get recording lengths from sphere-file headers, using wav-to-duration
+utils/data/get_reco2dur.sh: computed data/train/reco2dur
+utils/data/perturb_data_dir_speed.sh: generated speed-perturbed version of data in data/train, in data/train_sp_speed0.9
+fix_data_dir.sh: kept all 10647 utterances.
+fix_data_dir.sh: old files are kept in data/train_sp_speed0.9/.backup
+utils/validate_data_dir.sh: Successfully validated data-directory data/train_sp_speed0.9
+utils/data/perturb_data_dir_speed.sh: generated speed-perturbed version of data in data/train, in data/train_sp_speed1.1
+fix_data_dir.sh: kept all 10647 utterances.
+fix_data_dir.sh: old files are kept in data/train_sp_speed1.1/.backup
+utils/validate_data_dir.sh: Successfully validated data-directory data/train_sp_speed1.1
+utils/data/combine_data.sh data/train_sp data/train data/train_sp_speed0.9 data/train_sp_speed1.1
+utils/data/combine_data.sh: combined utt2uniq
+utils/data/combine_data.sh: combined segments
+utils/data/combine_data.sh: combined utt2spk
+utils/data/combine_data.sh [info]: not combining utt2lang as it does not exist
+utils/data/combine_data.sh: combined utt2dur
+utils/data/combine_data.sh [info]: **not combining utt2num_frames as it does not exist everywhere**
+utils/data/combine_data.sh: combined reco2dur
+utils/data/combine_data.sh [info]: **not combining feats.scp as it does not exist everywhere**
+utils/data/combine_data.sh: combined text
+utils/data/combine_data.sh [info]: **not combining cmvn.scp as it does not exist everywhere**
+utils/data/combine_data.sh [info]: not combining vad.scp as it does not exist
+utils/data/combine_data.sh [info]: not combining reco2file_and_channel as it does not exist
+utils/data/combine_data.sh: combined wav.scp
+utils/data/combine_data.sh: combined spk2gender
+fix_data_dir.sh: kept all 31941 utterances.
+fix_data_dir.sh: old files are kept in data/train_sp/.backup
+utils/data/perturb_data_dir_speed_3way.sh: generated 3-way speed-perturbed version of data in data/train, in data/train_sp
+utils/validate_data_dir.sh: Successfully validated data-directory data/train_sp
+local/nnet3/run_ivector_common.sh: making MFCC features for low-resolution speed-perturbed data
+steps/make_mfcc.sh --cmd run.pl --mem 2G --nj 1 data/train_sp
+utils/validate_data_dir.sh: Successfully validated data-directory data/train_sp
+steps/make_mfcc.sh [info]: segments file exists: using that.
+steps/make_mfcc.sh: Succeeded creating MFCC features for train_sp
+steps/compute_cmvn_stats.sh data/train_sp
+Succeeded creating CMVN stats for train_sp
+fix_data_dir.sh: kept all 31941 utterances.
+fix_data_dir.sh: old files are kept in data/train_sp/.backup
+local/nnet3/run_ivector_common.sh: aligning with the perturbed low-resolution data
+steps/align_fmllr.sh --nj 1 --cmd run.pl --mem 2G data/train_sp data/lang exp/tri3b exp/tri3b_ali_train_sp
+steps/align_fmllr.sh: feature type is lda
+steps/align_fmllr.sh: compiling training graphs
+steps/align_fmllr.sh: aligning data in data/train_sp using exp/tri3b/final.alimdl and speaker-independent features.
+steps/align_fmllr.sh: computing fMLLR transforms
+steps/align_fmllr.sh: doing final alignment.
+steps/align_fmllr.sh: done aligning data.
+steps/diagnostic/analyze_alignments.sh --cmd run.pl --mem 2G data/lang exp/tri3b_ali_train_sp
+steps/diagnostic/analyze_alignments.sh: see stats in exp/tri3b_ali_train_sp/log/analyze_alignments.log
+61 warnings in exp/tri3b_ali_train_sp/log/fmllr.*.log
+535 warnings in exp/tri3b_ali_train_sp/log/align_pass1.*.log
+381 warnings in exp/tri3b_ali_train_sp/log/align_pass2.*.log
+local/nnet3/run_ivector_common.sh: creating high-resolution MFCC features
+utils/copy_data_dir.sh: copied data from data/train_sp to data/train_sp_hires
+utils/validate_data_dir.sh: Successfully validated data-directory data/train_sp_hires
+utils/copy_data_dir.sh: copied data from data/test to data/test_hires
+utils/validate_data_dir.sh: Successfully validated data-directory data/test_hires
+utils/data/perturb_data_dir_volume.sh: data/train_sp_hires/feats.scp exists; moving it to data/train_sp_hires/.backup/ as it wouldn't be valid any more.
+utils/data/perturb_data_dir_volume.sh: added volume perturbation to the data in data/train_sp_hires
+steps/make_mfcc.sh --nj 1 --mfcc-config conf/mfcc_hires.conf --cmd run.pl --mem 2G data/train_sp_hires
+utils/validate_data_dir.sh: Successfully validated data-directory data/train_sp_hires
+steps/make_mfcc.sh [info]: segments file exists: using that.
+steps/make_mfcc.sh: Succeeded creating MFCC features for train_sp_hires
+steps/compute_cmvn_stats.sh data/train_sp_hires
+Succeeded creating CMVN stats for train_sp_hires
+fix_data_dir.sh: kept all 31941 utterances.
+fix_data_dir.sh: old files are kept in data/train_sp_hires/.backup
+steps/make_mfcc.sh --nj 1 --mfcc-config conf/mfcc_hires.conf --cmd run.pl --mem 2G data/test_hires
+steps/make_mfcc.sh: moving data/test_hires/feats.scp to data/test_hires/.backup
+utils/validate_data_dir.sh: Successfully validated data-directory data/test_hires
+steps/make_mfcc.sh [info]: segments file exists: using that.
+steps/make_mfcc.sh: Succeeded creating MFCC features for test_hires
+steps/compute_cmvn_stats.sh data/test_hires
+Succeeded creating CMVN stats for test_hires
+fix_data_dir.sh: kept all 2101 utterances.
+fix_data_dir.sh: old files are kept in data/test_hires/.backup
+local/nnet3/run_ivector_common.sh: computing a subset of data to train the diagonal UBM.
+utils/data/subset_data_dir.sh: reducing #utt from 31941 to 7985
+local/nnet3/run_ivector_common.sh: computing a PCA transform from the hires data.
+steps/online/nnet2/get_pca_transform.sh --cmd run.pl --mem 2G --splice-opts --left-context=3 --right-context=3 --max-utts 10000 --subsample 2 exp/nnet3/diag_ubm/train_sp_hires_subset exp/nnet3/pca_transform
+Done estimating PCA transform in exp/nnet3/pca_transform
+local/nnet3/run_ivector_common.sh: training the diagonal UBM.
+steps/online/nnet2/train_diag_ubm.sh --cmd run.pl --mem 2G --nj 1 --num-frames 700000 --num-threads 8 exp/nnet3/diag_ubm/train_sp_hires_subset 512 exp/nnet3/pca_transform exp/nnet3/diag_ubm
+steps/online/nnet2/train_diag_ubm.sh: Directory exp/nnet3/diag_ubm already exists. Backing up diagonal UBM in exp/nnet3/diag_ubm/backup.bmM
+steps/online/nnet2/train_diag_ubm.sh: initializing model from E-M in memory, 
+steps/online/nnet2/train_diag_ubm.sh: starting from 256 Gaussians, reaching 512;
+steps/online/nnet2/train_diag_ubm.sh: for 20 iterations, using at most 700000 frames of data
+Getting Gaussian-selection info
+steps/online/nnet2/train_diag_ubm.sh: will train for 4 iterations, in parallel over
+steps/online/nnet2/train_diag_ubm.sh: 1 machines, parallelized with 'run.pl --mem 2G'
+steps/online/nnet2/train_diag_ubm.sh: Training pass 0
+steps/online/nnet2/train_diag_ubm.sh: Training pass 1
+steps/online/nnet2/train_diag_ubm.sh: Training pass 2
+steps/online/nnet2/train_diag_ubm.sh: Training pass 3
+local/nnet3/run_ivector_common.sh: training the iVector extractor
+steps/online/nnet2/train_ivector_extractor.sh --cmd run.pl --mem 2G --nj 1 --num-threads 4 --num-processes 2 --online-cmvn-iextractor false data/train_sp_hires exp/nnet3/diag_ubm exp/nnet3/extractor
+steps/online/nnet2/train_ivector_extractor.sh: doing Gaussian selection and posterior computation
+Accumulating stats (pass 0)
+Summing accs (pass 0)
+Updating model (pass 0)
+Accumulating stats (pass 1)
+Summing accs (pass 1)
+Updating model (pass 1)
+Accumulating stats (pass 2)
+Summing accs (pass 2)
+Updating model (pass 2)
+Accumulating stats (pass 3)
+Summing accs (pass 3)
+Updating model (pass 3)
+Accumulating stats (pass 4)
+Summing accs (pass 4)
+Updating model (pass 4)
+Accumulating stats (pass 5)
+Summing accs (pass 5)
+Updating model (pass 5)
+Accumulating stats (pass 6)
+Summing accs (pass 6)
+Updating model (pass 6)
+Accumulating stats (pass 7)
+Summing accs (pass 7)
+Updating model (pass 7)
+Accumulating stats (pass 8)
+Summing accs (pass 8)
+Updating model (pass 8)
+Accumulating stats (pass 9)
+Summing accs (pass 9)
+Updating model (pass 9)
+utils/data/modify_speaker_info.sh: copied data from data/train_sp_hires to exp/nnet3/ivectors_train_sp_hires/train_sp_hires_max2, number of speakers changed from 423 to 16092
+utils/validate_data_dir.sh: Successfully validated data-directory exp/nnet3/ivectors_train_sp_hires/train_sp_hires_max2
+steps/online/nnet2/extract_ivectors_online.sh --cmd run.pl --mem 2G --nj 1 exp/nnet3/ivectors_train_sp_hires/train_sp_hires_max2 exp/nnet3/extractor exp/nnet3/ivectors_train_sp_hires
+steps/online/nnet2/extract_ivectors_online.sh: extracting iVectors
+steps/online/nnet2/extract_ivectors_online.sh: combining iVectors across jobs
+steps/online/nnet2/extract_ivectors_online.sh: done extracting (online) iVectors to exp/nnet3/ivectors_train_sp_hires using the extractor in exp/nnet3/extractor.
+steps/online/nnet2/extract_ivectors_online.sh --cmd run.pl --mem 2G --nj 1 data/test_hires exp/nnet3/extractor exp/nnet3/ivectors_test_hires
+steps/online/nnet2/extract_ivectors_online.sh: extracting iVectors
+steps/online/nnet2/extract_ivectors_online.sh: combining iVectors across jobs
+steps/online/nnet2/extract_ivectors_online.sh: done extracting (online) iVectors to exp/nnet3/ivectors_test_hires using the extractor in exp/nnet3/extractor.
+local/chain/run_tdnn_1j_short.sh: creating lang directory data/lang_chain with chain-type topology
+
+====== STAGE 11 ======
+steps/align_fmllr_lats.sh --nj 4 --cmd run.pl --mem 2G data/train_sp data/lang exp/tri3b exp/chain/tri3b_train_sp_lats
+steps/align_fmllr_lats.sh: feature type is lda
+steps/align_fmllr_lats.sh: compiling training graphs
+steps/align_fmllr_lats.sh: aligning data in data/train_sp using exp/tri3b/final.alimdl and speaker-independent features.
+steps/align_fmllr_lats.sh: computing fMLLR transforms
+steps/align_fmllr_lats.sh: generating lattices containing alternate pronunciations.
+steps/align_fmllr_lats.sh: done generating lattices from training transcripts.
+62 warnings in exp/chain/tri3b_train_sp_lats/log/fmllr.*.log
+31 warnings in exp/chain/tri3b_train_sp_lats/log/generate_lattices.*.log
+553 warnings in exp/chain/tri3b_train_sp_lats/log/align_pass1.*.log
+
+====== STAGE 12 ======
+steps/nnet3/chain/build_tree.sh --frame-subsampling-factor 3 --context-opts --context-width=2 --central-position=1 --cmd run.pl --mem 2G 3500 data/train_sp data/lang_chain exp/tri3b_ali_train_sp exp/chain/tree_sp
+steps/nnet3/chain/build_tree.sh: feature type is lda
+steps/nnet3/chain/build_tree.sh: Using transforms from exp/tri3b_ali_train_sp
+steps/nnet3/chain/build_tree.sh: Initializing monophone model (for alignment conversion, in case topology changed)
+steps/nnet3/chain/build_tree.sh: Accumulating tree stats
+steps/nnet3/chain/build_tree.sh: Getting questions for tree clustering.
+steps/nnet3/chain/build_tree.sh: Building the tree
+steps/nnet3/chain/build_tree.sh: Initializing the model
+WARNING (gmm-init-model[5.5.1060~1-ae8cb]:InitAmGmm():gmm-init-model.cc:55) Tree has pdf-id 1 with no stats; corresponding phone list: 6 7 8 9 10 
+This is a bad warning.
+steps/nnet3/chain/build_tree.sh: Converting alignments from exp/tri3b_ali_train_sp to use current tree
+steps/nnet3/chain/build_tree.sh: Done building tree
+
+====== STAGE 13 ======
+local/chain/run_tdnn_1j_short.sh: creating neural net configs using the xconfig parser
+
+====== STAGE 14 ======
+steps/nnet3/chain/get_egs.sh --frames-overlap-per-eg 0 --cmd run.pl --mem 4G --cmvn-opts --norm-means=false --norm-vars=false --online-ivector-dir exp/nnet3/ivectors_train_sp_hires --left-context 24 --right-context 24 --left-context-initial -1 --right-context-final -1 --left-tolerance 5 --right-tolerance 5 --frame-subsampling-factor 3 --alignment-subsampling-factor 3 --stage 0 --frames-per-iter 3000000 --frames-per-eg 140,100,160 --srand 0 data/train_sp_hires exp/chain/tdnn1j_sp exp/chain/tri3b_train_sp_lats exp/chain/tdnn1j_sp/egs
+steps/nnet3/chain/get_egs.sh: File data/train_sp_hires/utt2uniq exists, so ensuring the hold-out set includes all perturbed versions of the same source utterance.
+steps/nnet3/chain/get_egs.sh: Holding out 300 utterances in validation set and 300 in training diagnostic set, out of total 31941.
+steps/nnet3/chain/get_egs.sh: creating egs.  To ensure they are not deleted later you can do:  touch exp/chain/tdnn1j_sp/egs/.nodelete
+steps/nnet3/chain/get_egs.sh: feature type is raw, with 'apply-cmvn'
+steps/nnet3/chain/get_egs.sh: working out number of frames of training data
+steps/nnet3/chain/get_egs.sh: working out feature dim
+steps/nnet3/chain/get_egs.sh: creating 5 archives, each with 18149 egs, with
+steps/nnet3/chain/get_egs.sh:   140,100,160 labels per example, and (left,right) context = (24,24)
+steps/nnet3/chain/get_egs.sh: Getting validation and training subset examples in background.
+steps/nnet3/chain/get_egs.sh: Generating training examples on disk
+steps/nnet3/chain/get_egs.sh: Getting subsets of validation examples for diagnostics and combination.
+steps/nnet3/chain/get_egs.sh: recombining and shuffling order of archives on disk
+steps/nnet3/chain/get_egs.sh: Removing temporary archives, alignments and lattices
+steps/nnet3/chain/get_egs.sh: Finished preparing training examples
+steps/nnet2/remove_egs.sh: Finished deleting examples in exp/chain/tdnn1j_sp/egs
+exp/chain/tdnn1j_sp: num-iters=150 nj=2..2 num-params=4.7M dim=40+100->2536 combine=-0.151->-0.142 (over 5) xent:train/valid[99,149]=(-2.64,-2.47/-2.59,-2.45) logprob:train/valid[99,149]=(-0.157,-0.143/-0.155,-0.142)
+steps/nnet3/chain/train.py --stage=-10 --cmd=run.pl --mem 4G --feat.online-ivector-dir=exp/nnet3/ivectors_train_sp_hires --feat.cmvn-opts=--norm-means=false --norm-vars=false --chain.xent-regularize 0.1 --chain.leaky-hmm-coefficient=0.1 --chain.l2-regularize=0.0 --chain.apply-deriv-weights=false --chain.lm-opts=--num-extra-lm-states=2000 --trainer.add-option=--optimization.memory-compression-level=2 --trainer.srand=0 --trainer.max-param-change=2.0 --trainer.num-epochs=20 --trainer.frames-per-iter=3000000 --trainer.optimization.num-jobs-initial=2 --trainer.optimization.num-jobs-final=2 --trainer.optimization.initial-effective-lrate=0.002 --trainer.optimization.final-effective-lrate=0.0002 --trainer.num-chunk-per-minibatch=128,64 --egs.chunk-width=140,100,160 --egs.dir= --egs.opts=--frames-overlap-per-eg 0 --cleanup.remove-egs=true --use-gpu=wait --reporting.email= --feat-dir=data/train_sp_hires --tree-dir=exp/chain/tree_sp --lat-dir=exp/chain/tri3b_train_sp_lats --dir=exp/chain/tdnn1j_sp
+['steps/nnet3/chain/train.py', '--stage=-10', '--cmd=run.pl --mem 4G', '--feat.online-ivector-dir=exp/nnet3/ivectors_train_sp_hires', '--feat.cmvn-opts=--norm-means=false --norm-vars=false', '--chain.xent-regularize', '0.1', '--chain.leaky-hmm-coefficient=0.1', '--chain.l2-regularize=0.0', '--chain.apply-deriv-weights=false', '--chain.lm-opts=--num-extra-lm-states=2000', '--trainer.add-option=--optimization.memory-compression-level=2', '--trainer.srand=0', '--trainer.max-param-change=2.0', '--trainer.num-epochs=20', '--trainer.frames-per-iter=3000000', '--trainer.optimization.num-jobs-initial=2', '--trainer.optimization.num-jobs-final=2', '--trainer.optimization.initial-effective-lrate=0.002', '--trainer.optimization.final-effective-lrate=0.0002', '--trainer.num-chunk-per-minibatch=128,64', '--egs.chunk-width=140,100,160', '--egs.dir=', '--egs.opts=--frames-overlap-per-eg 0', '--cleanup.remove-egs=true', '--use-gpu=wait', '--reporting.email=', '--feat-dir=data/train_sp_hires', '--tree-dir=exp/chain/tree_sp', '--lat-dir=exp/chain/tri3b_train_sp_lats', '--dir=exp/chain/tdnn1j_sp']
+
+====== STAGE 15 ======
+-0.0633072 -0.0641278
+[info]: CLG not stochastic.
+0.56177 -0.244337
+HCLGa is not stochastic
+0.478711 -0.186665
+[info]: final HCLG is not stochastic.
+
+====== STAGE 16 ======
+steps/nnet3/decode.sh --acwt 1.0 --post-decode-acwt 10.0 --frames-per-chunk 140 --nj 108 --cmd run.pl --mem 4G --num-threads 4 --online-ivector-dir exp/nnet3/ivectors_test_hires exp/chain/tree_sp/graph_tgsmall data/test_hires exp/chain/tdnn1j_sp/decode_tgsmall_test
+steps/nnet3/decode.sh: feature type is raw
+steps/diagnostic/analyze_lats.sh --cmd run.pl --mem 4G --iter final exp/chain/tree_sp/graph_tgsmall exp/chain/tdnn1j_sp/decode_tgsmall_test
+steps/diagnostic/analyze_lats.sh: see stats in exp/chain/tdnn1j_sp/decode_tgsmall_test/log/analyze_alignments.log
+Overall, lattice depth (10,50,90-percentile)=(2,19,202) and mean=76.3
+steps/diagnostic/analyze_lats.sh: see stats in exp/chain/tdnn1j_sp/decode_tgsmall_test/log/analyze_lattice_depth_stats.log
+score best paths
+exp/chain/tdnn1j_sp/decode_tgsmall_test/wer_10
+%WER 34.40 [ 3693 / 10735, 307 ins, 641 del, 2745 sub ]
+%SER 68.25 [ 1434 / 2101 ]
+exp/chain/tdnn1j_sp/decode_tgsmall_test/wer_11
+%WER 34.76 [ 3732 / 10735, 280 ins, 688 del, 2764 sub ]
+%SER 68.78 [ 1445 / 2101 ]
+exp/chain/tdnn1j_sp/decode_tgsmall_test/wer_12
+%WER 35.77 [ 3840 / 10735, 274 ins, 744 del, 2822 sub ]
+%SER 69.87 [ 1468 / 2101 ]
+exp/chain/tdnn1j_sp/decode_tgsmall_test/wer_13
+%WER 36.32 [ 3899 / 10735, 260 ins, 779 del, 2860 sub ]
+%SER 71.11 [ 1494 / 2101 ]
+exp/chain/tdnn1j_sp/decode_tgsmall_test/wer_14
+%WER 37.08 [ 3981 / 10735, 246 ins, 830 del, 2905 sub ]
+%SER 71.78 [ 1508 / 2101 ]
+exp/chain/tdnn1j_sp/decode_tgsmall_test/wer_15
+%WER 38.12 [ 4092 / 10735, 241 ins, 882 del, 2969 sub ]
+%SER 72.82 [ 1530 / 2101 ]
+exp/chain/tdnn1j_sp/decode_tgsmall_test/wer_16
+%WER 39.12 [ 4199 / 10735, 229 ins, 946 del, 3024 sub ]
+%SER 73.87 [ 1552 / 2101 ]
+exp/chain/tdnn1j_sp/decode_tgsmall_test/wer_17
+%WER 39.79 [ 4271 / 10735, 220 ins, 975 del, 3076 sub ]
+%SER 74.68 [ 1569 / 2101 ]
+exp/chain/tdnn1j_sp/decode_tgsmall_test/wer_7
+%WER 35.15 [ 3773 / 10735, 399 ins, 555 del, 2819 sub ]
+%SER 68.11 [ 1431 / 2101 ]
+exp/chain/tdnn1j_sp/decode_tgsmall_test/wer_8
+%WER 34.46 [ 3699 / 10735, 354 ins, 584 del, 2761 sub ]
+%SER 67.78 [ 1424 / 2101 ]
+exp/chain/tdnn1j_sp/decode_tgsmall_test/wer_9
+%WER 34.31 [ 3683 / 10735, 331 ins, 629 del, 2723 sub ]
+%SER 68.06 [ 1430 / 2101 ]
+score confidence and timing with sclite
+Decoding done.
+steps/lmrescore_const_arpa.sh --cmd run.pl --mem 4G data/lang_test_tgsmall data/lang_test_tglarge data/test_hires exp/chain/tdnn1j_sp/decode_tgsmall_test exp/chain/tdnn1j_sp/decode_tglarge_test
+exp/chain/tdnn1j_sp/decode_tglarge_test/wer_10
+%WER 34.49 [ 3703 / 10735, 279 ins, 673 del, 2751 sub ]
+%SER 68.40 [ 1437 / 2101 ]
+exp/chain/tdnn1j_sp/decode_tglarge_test/wer_11
+%WER 34.69 [ 3724 / 10735, 258 ins, 714 del, 2752 sub ]
+%SER 68.97 [ 1449 / 2101 ]
+exp/chain/tdnn1j_sp/decode_tglarge_test/wer_12
+%WER 35.57 [ 3818 / 10735, 254 ins, 769 del, 2795 sub ]
+%SER 69.87 [ 1468 / 2101 ]
+exp/chain/tdnn1j_sp/decode_tglarge_test/wer_13
+%WER 36.39 [ 3907 / 10735, 243 ins, 813 del, 2851 sub ]
+%SER 70.97 [ 1491 / 2101 ]
+exp/chain/tdnn1j_sp/decode_tglarge_test/wer_14
+%WER 37.35 [ 4010 / 10735, 234 ins, 882 del, 2894 sub ]
+%SER 71.87 [ 1510 / 2101 ]
+exp/chain/tdnn1j_sp/decode_tglarge_test/wer_15
+%WER 38.43 [ 4125 / 10735, 225 ins, 940 del, 2960 sub ]
+%SER 73.01 [ 1534 / 2101 ]
+exp/chain/tdnn1j_sp/decode_tglarge_test/wer_16
+%WER 39.52 [ 4242 / 10735, 221 ins, 996 del, 3025 sub ]
+%SER 74.11 [ 1557 / 2101 ]
+exp/chain/tdnn1j_sp/decode_tglarge_test/wer_17
+%WER 39.96 [ 4290 / 10735, 215 ins, 1031 del, 3044 sub ]
+%SER 74.63 [ 1568 / 2101 ]
+exp/chain/tdnn1j_sp/decode_tglarge_test/wer_7
+%WER 34.91 [ 3748 / 10735, 370 ins, 578 del, 2800 sub ]
+%SER 68.02 [ 1429 / 2101 ]
+exp/chain/tdnn1j_sp/decode_tglarge_test/wer_8
+%WER 34.36 [ 3689 / 10735, 324 ins, 621 del, 2744 sub ]
+%SER 67.82 [ 1425 / 2101 ]
+exp/chain/tdnn1j_sp/decode_tglarge_test/wer_9
+%WER 34.32 [ 3684 / 10735, 302 ins, 654 del, 2728 sub ]
+%SER 68.11 [ 1431 / 2101 ]
+
+====== STAGE 17 ======
+steps/online/nnet3/prepare_online_decoding.sh --mfcc-config conf/mfcc_hires.conf data/lang_chain exp/nnet3/extractor exp/chain/tdnn1j_sp exp/chain/tdnn1j_sp_online
+steps/online/nnet3/prepare_online_decoding.sh: preparing configuration files in /home/gweltaz/STT/kaldi/egs/bzg/exp/chain/tdnn1j_sp_online/conf
+steps/online/nnet3/prepare_online_decoding.sh: created config file /home/gweltaz/STT/kaldi/egs/bzg/exp/chain/tdnn1j_sp_online/conf/online.conf
+steps/online/nnet3/decode.sh --acwt 1.0 --post-decode-acwt 10.0 --nj 108 --cmd run.pl --mem 4G exp/chain/tree_sp/graph_tgsmall data/test exp/chain/tdnn1j_sp_online/decode_tgsmall_test
+exp/chain/tdnn1j_sp_online/decode_tgsmall_test/wer_10
+%WER 34.34 [ 3686 / 10735, 301 ins, 656 del, 2729 sub ]
+%SER 68.54 [ 1440 / 2101 ]
+exp/chain/tdnn1j_sp_online/decode_tgsmall_test/wer_11
+%WER 34.72 [ 3727 / 10735, 273 ins, 700 del, 2754 sub ]
+%SER 68.78 [ 1445 / 2101 ]
+exp/chain/tdnn1j_sp_online/decode_tgsmall_test/wer_12
+%WER 35.55 [ 3816 / 10735, 274 ins, 741 del, 2801 sub ]
+%SER 69.87 [ 1468 / 2101 ]
+exp/chain/tdnn1j_sp_online/decode_tgsmall_test/wer_13
+%WER 36.13 [ 3879 / 10735, 257 ins, 787 del, 2835 sub ]
+%SER 71.06 [ 1493 / 2101 ]
+exp/chain/tdnn1j_sp_online/decode_tgsmall_test/wer_14
+%WER 37.07 [ 3979 / 10735, 253 ins, 831 del, 2895 sub ]
+%SER 71.73 [ 1507 / 2101 ]
+exp/chain/tdnn1j_sp_online/decode_tgsmall_test/wer_15
+%WER 37.81 [ 4059 / 10735, 233 ins, 863 del, 2963 sub ]
+%SER 72.73 [ 1528 / 2101 ]
+exp/chain/tdnn1j_sp_online/decode_tgsmall_test/wer_16
+%WER 38.79 [ 4164 / 10735, 234 ins, 910 del, 3020 sub ]
+%SER 73.63 [ 1547 / 2101 ]
+exp/chain/tdnn1j_sp_online/decode_tgsmall_test/wer_17
+%WER 39.52 [ 4243 / 10735, 234 ins, 943 del, 3066 sub ]
+%SER 74.63 [ 1568 / 2101 ]
+exp/chain/tdnn1j_sp_online/decode_tgsmall_test/wer_7
+%WER 35.08 [ 3766 / 10735, 387 ins, 554 del, 2825 sub ]
+%SER 68.16 [ 1432 / 2101 ]
+exp/chain/tdnn1j_sp_online/decode_tgsmall_test/wer_8
+%WER 34.40 [ 3693 / 10735, 342 ins, 586 del, 2765 sub ]
+%SER 67.68 [ 1422 / 2101 ]
+exp/chain/tdnn1j_sp_online/decode_tgsmall_test/wer_9
+%WER 34.13 [ 3664 / 10735, 322 ins, 624 del, 2718 sub ]
+%SER 67.97 [ 1428 / 2101 ]
+steps/lmrescore_const_arpa.sh --cmd run.pl --mem 4G data/lang_test_tgsmall data/lang_test_tglarge data/test_hires exp/chain/tdnn1j_sp_online/decode_tgsmall_test exp/chain/tdnn1j_sp_online/decode_tglarge_test
+exp/chain/tdnn1j_sp_online/decode_tglarge_test/wer_10
+%WER 34.39 [ 3692 / 10735, 278 ins, 685 del, 2729 sub ]
+%SER 68.54 [ 1440 / 2101 ]
+exp/chain/tdnn1j_sp_online/decode_tglarge_test/wer_11
+%WER 34.75 [ 3730 / 10735, 257 ins, 727 del, 2746 sub ]
+%SER 69.01 [ 1450 / 2101 ]
+exp/chain/tdnn1j_sp_online/decode_tglarge_test/wer_12
+%WER 35.56 [ 3817 / 10735, 259 ins, 771 del, 2787 sub ]
+%SER 69.92 [ 1469 / 2101 ]
+exp/chain/tdnn1j_sp_online/decode_tglarge_test/wer_13
+%WER 36.17 [ 3883 / 10735, 247 ins, 813 del, 2823 sub ]
+%SER 70.82 [ 1488 / 2101 ]
+exp/chain/tdnn1j_sp_online/decode_tglarge_test/wer_14
+%WER 37.26 [ 4000 / 10735, 237 ins, 872 del, 2891 sub ]
+%SER 71.63 [ 1505 / 2101 ]
+exp/chain/tdnn1j_sp_online/decode_tglarge_test/wer_15
+%WER 38.03 [ 4083 / 10735, 225 ins, 907 del, 2951 sub ]
+%SER 72.68 [ 1527 / 2101 ]
+exp/chain/tdnn1j_sp_online/decode_tglarge_test/wer_16
+%WER 38.96 [ 4182 / 10735, 227 ins, 951 del, 3004 sub ]
+%SER 73.73 [ 1549 / 2101 ]
+exp/chain/tdnn1j_sp_online/decode_tglarge_test/wer_17
+%WER 39.62 [ 4253 / 10735, 229 ins, 984 del, 3040 sub ]
+%SER 74.49 [ 1565 / 2101 ]
+exp/chain/tdnn1j_sp_online/decode_tglarge_test/wer_7
+%WER 34.90 [ 3747 / 10735, 365 ins, 580 del, 2802 sub ]
+%SER 68.02 [ 1429 / 2101 ]
+exp/chain/tdnn1j_sp_online/decode_tglarge_test/wer_8
+%WER 34.48 [ 3701 / 10735, 319 ins, 627 del, 2755 sub ]
+%SER 67.68 [ 1422 / 2101 ]
+exp/chain/tdnn1j_sp_online/decode_tglarge_test/wer_9
+%WER 34.33 [ 3685 / 10735, 307 ins, 651 del, 2727 sub ]
+%SER 68.16 [ 1432 / 2101 ]
+
+===== run.sh script is finished =====
+

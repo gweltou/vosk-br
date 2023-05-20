@@ -2,7 +2,7 @@
 
 # Anaouder mouezh e brezhoneg gant Vosk
 
-[Version française](https://github.com/gweltou/vosk-br/README-fr.md)
+[Version française](./README-fr.md)
 
 ## Petra eo ?
 
@@ -94,7 +94,7 @@ https://user-images.githubusercontent.com/10166907/213805292-63becbe2-ffb5-492f-
 
 *N'eo ket aliet dre ma vez kollet un nebeut perzhioù e-keñver ar pezh vez graet gant ar modul `anaouder` : adlakaat ar varennigoù-stag hag amdreiñ an niverennoù da skouer.*
 
-Ar model noazh a c'hellit kavout en dosser `anaouder/models` pe dre al liamm "[releases](https://github.com/gweltou/vosk-br/releases)".
+Ar model noazh a c'hellit kavout en dosser `anaouder/models` pe dre al liamm [releases](https://github.com/gweltou/vosk-br/releases).
 
 ### Kdenlive
 

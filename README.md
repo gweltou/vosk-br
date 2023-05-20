@@ -1,121 +1,102 @@
-# Anaouder mouezh e brezhoneg
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](./LICENSE)
 
-M'ho peus c'hoant sikour ar raktres gant un donezon :
+# Anaouder mouezh e brezhoneg gant Vosk
 
-[![Liberapay](https://liberapay.com/assets/widgets/donate.svg)](https://liberapay.com/gweltou/donate)
-
+[Version française](https://github.com/gweltou/vosk-br/README-fr.md)
 
 ## Petra eo ?
 
-Amañ e vez kinniget ur model anaouder mouezh da implijout gant ar meziant [Vosk](https://github.com/alphacep/vosk-api).\
+Un anaouder mouezh emgefre, graet gant ar meziantoù [Kaldi](https://www.kaldi-asr.org/) ha [Vosk](https://github.com/alphacep/vosk-api).\
 Gantañ e c'heller adskrivañ komzoù e brezhoneg (**Son -> Skrid**) en un doare emgefre, dre ur mikro e amzer real pe diouzh restroù son.\
-Pleustret eo bet gant un dek a eurvezh bennak (roadennoù son ha skrid linennet), dre ar "framework" [Kaldi](https://www.kaldi-asr.org/).
+Pleustret eo bet gant un dek eurvezh bennak a deulioù son ha skrid linennet.
 
-Ar modeloù pleustret gant Kaldi n'int ket ar re efedusañ, e-keñver modeloù nevesoc'h, met perzhioù dedennus o deus memes tra :
+Un nebeut perzhioù dedennus :
 
- * **Skañv**. Ar model e brezhoneg ne ra nemet 60 Mo ha treiñ a ra war ur bern mekanikoù : urzhiataerioù **hep GPU**, RaspberryPi, hezoug Android...
- * **Prim**. Gallout a reer adskrivañ ar son e **amzer real**, memes gant un urzhiataer kozh, pe primoc'h c'hoazh gant dafar dereat.
- * **Lec'hel**. Ezhomm ebet eus an Internet. Ho mouezh hag **ho restroù son a chomo war ho penveg** ha tretet e vint gant ho penveg nemetken. Kudenn surentez ebet liammet d'an treuzkas dre rouedad ha gwelloc'h a-fed ekologel.
+ * **Skañv**. Pouezh ar model a zo dindan 100 Mo ha treiñ a ra war ur bern mekanikoù : urzhiataerioù **hep GPU**, RaspberryPi, hezoug Android...
+ * **Prim**. Gallout a reer adskrivañ ar son e **amzer real**, memes gant un urzhiataer kozh, pe primoc'h c'hoazh gant dafar nevesoc'h.
+ * **Lec'hel**. Ezhomm ebet eus an Internet. Ho mouezh hag **ho data a chomo war ho penveg**, ha tretet e vint gant ho penveg nemetken. Kudenn surentez ebet liammet d'an treuzkas dre rouedad ha gwelloc'h a-fed ekologel.
  * **Digoust ha dieub**. Gellout a reoc'h azasaat ar meziant d'hoc'h ezhommoù pe enframmañ anezhañ e meziantoù all.
 
-Dalc'hoù zo siwazh :
+Dalc'hoù 'zo siwazh :
+
  * Poentadur ebet.
  * Kizidig d'an trouzioù endro.
- * Fall war ur bern pouezioù-mouez c'hoazh.
- * Ret eo komz sklaer ha goustadig.
+ * Fall war ur bern pouezioù-mouezh c'hoazh.
+ * Ret eo komz sklaer ha goustadik.
 
 Emichañs e vo gwellaet efedusted an anaouder tamm-ha-tamm, gant ma vo kavet roadennoù mouezh adskrivet.\
-Ul lisañs dieub (doare [Creative Commons](https://creativecommons.org/licenses/)) a aotre da eskemm ar roadennoù en un doare aes.
+Ul lisañs dieub (doare [Creative Commons](https://creativecommons.org/licenses/)) a aotrefe eskemm ar roadennoù-se en un doare aes.
 
+Sikour ar raktres gant un donezon :
+[![Liberapay](https://liberapay.com/assets/widgets/donate.svg)](https://liberapay.com/gweltou/donate)
 
 ## Staliañ
 
-An doare da staliañ a cheñch hervez ho sistem oberiant (Linux, Windows pe MacOS). Deoc'h da furchal evit gouzout penaos ober evit ho hini.
-
-
-### ffmpeg
-
-Ezhomm ho po ar meziant `ffmpeg` evit ma c'hellfe an anaouder digeriñ ar restroù son pe video e stumm-mañ-stumm.
-
-https://ffmpeg.org/download.html
-
-Ur wech staliet e ranker bezañ gouest da zigeriñ un terminal ha peurgas an urzh-mañ hep fazi :
+Goude bezañ bet staliet [Python3](https://www.python.org/downloads/) e c'heller staliañ an anaouder dre an terminal :
 
 ```bash
-ffmpeg -version
+pip install anaouder
 ```
-
-### Python3
-
-Ezhomm ho po staliañ ar yezh programiñ `python3` (alies eo staliet dre ziwer war ar sistemoù Linux, met ket war Windows pe MacOS)
-
-https://www.python.org/downloads/
-
-Da c'houde ho po da staliañ ar moduloù da-heul, dre ar meziant `pip3` (staliet gant python3).
-
-```bash
-pip install sounddevice
-pip install vosk
-```
-
-Muioc'h a ditouroù a c'heller kavout evit staliañ `vosk` war al [lec'hienn ofisiel](https://alphacephei.com/vosk/install#python-installation-from-pypi).
-
-
-### Anaouder
-
-Ur wech bezañ bet staliet `ffmpeg` ha `python3` e c'heller pellkargañ an anaouder, o klikañ war ar bouton "code" gwer ha dibab "Download ZIP". Diwaskit an teuliad en un lec'h bennak war ho urzhiataer.
-
 
 ## Adskrivañ ur restr son
 
-Gant ar skript `adskrivan_ffmpeg.py` e vo adskrivet ar pezh e vez komprenet gant an anaouder diouzh ur restr son.
+Gant an urzh `adskrivan` en un terminal, e vo adskrivet ar pezh e vez komprenet gant an anaouder diouzh ur restr son. Ar wech kentañ ma vo peurgaset an urzh-se e vo ret deoc'h gortoz ur pennadig ma vefe pellkarget ha staliet ar modul `static_ffmpeg` (evit amdreiñ restroù son ha video).
 
-``python3 adskrivan_ffmpeg.py ANV_RESTR.mp4``
+```bash
+adskrivan RESTR_SON_PE_VIDEO
+```
 
+## Implijout gant ur mikro
+
+Dre an an urzh `mikro` e c'heller implij an anaouder gant ho vouezh e amzer real.
+
+Ma n'ez eus skrid ebet o tont, klaskit niverenn an etrefas son gant :
+
+```bash
+mikro -l
+```
+
+Ha gant an niverenn-se :
+
+```bash
+mikro -d NIVERENN_ETREFAS
+```
 
 ## Linennañ ur teul skrid gant un teul son
 
 M'ho peus un teul skrid adskrivet dre dorn (e stumm `.txt`) e c'heller linennañ ar skrid gant ar son, evit krouiñ ur restr istitloù (e stumm `srt`).
 
-``python3 linennan.py SON.mp3 SKRID.txt``
+```bash
+linennan RESTR_SON_PE_VIDEO RESTR_SKRID
+```
 
 Gant an option `-o` ez eus tu reiñ anv ur restr e lerc'h ma vo skrivet an istitloù, da skouer :
 
-``python3 linennan.py SON.mp3 SKRID.txt -o istitloù.srt``
-
-
-## Implijout gant ur mikro
-
-Evit gouzout niverenn an etrefas son :
-
-``python3 mikro.py -l``
-
-Ha gant an niverenn-se :
-
-``python3 mikro.py -d NIVERENN_ETREFAS``
-
+```bash
+linennan son.mp3 skrid.txt -o istitloù.srt
+```
 
 ## Adskrivañ istitloù evit ur video
 
-Gant vosk e c'heller adskrivañ teuliadoù son ha filmoù evit kaout ur restr e stumm `srt`.
+Gallout a rit adskrivañ istitloù diouzh teuliadoù son pe video, e stumm `srt` (Subrip).
 
-Da skouer:
+```bash
+istitlan RESTR_SON_PE_VIDEO
+```
 
-``python3 istitlan.py Nozhvez_Digousk.mp4``
-
-An oberiadur-se a gemero kalzig a amzer (hervez padelezh an teuliad son). Klaskit gant ur film berr da gentañ !
+An oberiadur-se a gemero kalzig a amzer (hervez padelezh an teuliad son). Klaskit gant un teul film berr da gentañ !
 
 https://user-images.githubusercontent.com/10166907/213805292-63becbe2-ffb5-492f-9bac-1330c4b2d07d.mp4
 
-*Setu disoc'h an iztitloù emgefre, hep cheñch netra. Gwelet vez e vez kollet buan pa vez sonnerez...*
+*Setu disoc'h an istitloù emgefre, hep cheñch netra. Kollet eo buan pa vez sonnerez...*
 
+## Implijout e diabarzh meziantoù all
 
-## Implij gant meziantoù all
+*N'eo ket aliet dre ma vez kollet un nebeut perzhioù e-keñver ar pezh vez graet gant ar modul `anaouder` : adlakaat ar varennigoù-stag hag amdreiñ an niverennoù da skouer.*
 
-### Istitloù emgefre gant Kdenlive
+Ar model noazh a c'hellit kavout en dosser `anaouder/models` pe dre al liamm "[releases](https://github.com/gweltou/vosk-br/releases)".
 
-(N'eo ket aliet dre ma vez kollet un nebeut perzhioù e-keñver ar pezh vez graet gant ar skript `isitlan.py`)
+### Kdenlive
 
 Gant ar meziant frammañ videoioù [Kdenlive](https://kdenlive.org/) e c'heller adskrivañ istitloù en un doare emgefre ivez.\
-Ar mod-implij a c'heller kavout [amañ](https://docs.kdenlive.org/en/effects_and_compositions/speech_to_text.html).\
-Kentoc'h eget pell-kargañ ur model war lec'hienn ofisiel vosk, implijit ar model diwezhañ a vo kavet gant al liamm "[releases](https://github.com/gweltou/Vosk-bzg/releases)".
+Ar mod-implij a c'heller kavout [amañ](https://docs.kdenlive.org/en/effects_and_compositions/speech_to_text.html).

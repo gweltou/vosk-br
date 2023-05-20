@@ -1,0 +1,997 @@
+fstaddselfloops data/lang_nosp/phones/wdisambig_phones.int data/lang_nosp/phones/wdisambig_words.int 
+arpa2fst --max-arpa-warnings=-1 --disambig-symbol=#0 --read-symbol-table=data/lang_nosp/words.txt data/local/tmp/lm.arpa data/lang_nosp/G.fst 
+LOG (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:94) Reading \data\ section.
+LOG (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:149) Reading \1-grams: section.
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 8923 [-4.57671	d	-0.3206502] skipped: word 'd' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 16043 [-4.739913	g	-0.3469693] skipped: word 'g' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 19922 [-4.86232	h	-0.4294489] skipped: word 'h' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 21331 [-5.265339	j	-0.3394354] skipped: word 'j' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 24954 [-4.939486	l	-0.3555623] skipped: word 'l' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 29534 [-4.893728	p	-0.3451632] skipped: word 'p' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 33118 [-4.771512	s	-0.401821] skipped: word 's' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 33848 [-5.796818	sida	-0.3128306] skipped: word 'sida' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 35939 [-4.883004	t	-0.3405406] skipped: word 't' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 38646 [-4.990638	v	-0.284664] skipped: word 'v' not in symbol table
+LOG (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:149) Reading \2-grams: section.
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 45487 [-4.532754	<s> d	-0.05027428] skipped: word 'd' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 47539 [-5.377852	<s> g] skipped: word 'g' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 48769 [-4.900731	<s> j] skipped: word 'j' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 50181 [-5.377852	<s> l] skipped: word 'l' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 51910 [-5.076822	<s> p] skipped: word 'p' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 53224 [-5.076822	<s> s] skipped: word 's' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 54094 [-5.076822	<s> t] skipped: word 't' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 59686 [-1.462398	D d	-0.4313638] skipped: word 'd' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 62041 [-1.78533	G d] skipped: word 'd' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 62046 [-1.4843	G g	-0.4670209] skipped: word 'g' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 63325 [-1.511883	H h	-0.4621441] skipped: word 'h' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 64749 [-1.908485	J j	-0.4423591] skipped: word 'j' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 67042 [-1.39794	L l	-0.4610344] skipped: word 'l' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 70315 [-1.361728	P p	-0.4626434] skipped: word 'p' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 72629 [-1.535716	S s	-0.2101104] skipped: word 's' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 75121 [-1.562293	T t	-0.4628808] skipped: word 't' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 75997 [-2.305351	V v] skipped: word 'v' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 78589 [-5.115028	a d] skipped: word 'd' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 79432 [-4.512968	a g] skipped: word 'g' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 80210 [-4.637907	a h	-0.2068716] skipped: word 'h' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 81867 [-4.813998	a v] skipped: word 'v' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 83595 [-2.891537	abalamour d	-0.1760913] skipped: word 'd' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 91752 [-1.69897	aluzen d] skipped: word 'd' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 92383 [-1.041393	amestez p] skipped: word 'p' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 94337 [-4.60193	an d] skipped: word 'd' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 96095 [-4.3009	an h] skipped: word 'h' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 96621 [-4.90296	an j] skipped: word 'j' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 96634 [-4.90296	an l] skipped: word 'l' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 97059 [-4.124808	an s	-0.07541177] skipped: word 's' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 97087 [-4.60193	an t] skipped: word 't' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 102467 [-3.498862	anvet s] skipped: word 's' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 111577 [-4.804348	ar sida] skipped: word 'sida' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 112389 [-4.804348	ar v] skipped: word 'v' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 116885 [-2.880814	arouez l] skipped: word 'l' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 116995 [-1.959041	arouezenn v] skipped: word 'v' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 126838 [-1.939519	bazenn sida] skipped: word 'sida' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 137512 [-1.230449	bezet d	-0.469822] skipped: word 'd' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 138428 [-3.431525	bihan h] skipped: word 'h' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 142232 [-1.146128	bloc'h d] skipped: word 'd' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 142234 [-0.6690068	bloc'h p	-0.1420405] skipped: word 'p' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 142236 [-1.447158	bloc'h s] skipped: word 's' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 142303 [-1.431364	bloc'hoù s] skipped: word 's' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 157292 [-1.977724	c'hallje t] skipped: word 't' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 158417 [-4.004278	c'hant g] skipped: word 'g' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 162416 [-2.11059	c'hensonennoù d] skipped: word 'd' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 162440 [-2.11059	c'hensonennoù p] skipped: word 'p' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 164905 [-1.491362	c'hleuz d] skipped: word 'd' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 168294 [-0.30103	c'hompezer d] skipped: word 'd' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 173032 [-3.514946	c'hwec'h g] skipped: word 'g' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 173585 [-3.209515	c'hwezek p] skipped: word 'p' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 173717 [-1.78533	c'hwezhañ h] skipped: word 'h' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 176799 [-1.234083	d </s>] skipped: word 'd' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 176800 [-2.079181	d ANC] skipped: word 'd' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 176801 [-2.079181	d Texas] skipped: word 'd' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 176802 [-1.477121	d a] skipped: word 'd' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 176803 [-1.778151	d al] skipped: word 'd' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 176804 [-1.176091	d an] skipped: word 'd' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 176805 [-2.079181	d ar] skipped: word 'd' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 176806 [-1.477121	d avat	-0.1402267] skipped: word 'd' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 176807 [-2.079181	d bihan] skipped: word 'd' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 176808 [-1.778151	d diaz] skipped: word 'd' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 176809 [-2.079181	d dirak] skipped: word 'd' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 176810 [-1	d e	-0.0863657] skipped: word 'd' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 176811 [-2.079181	d ec'h] skipped: word 'd' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 176812 [-1.60206	d en	-0.1956005] skipped: word 'd' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 176813 [-1.778151	d eo] skipped: word 'd' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 176814 [-2.079181	d gant] skipped: word 'd' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 176815 [-1.778151	d h	-0.4305451] skipped: word 'd' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 176816 [-2.079181	d ha] skipped: word 'd' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 176817 [-1.778151	d hag] skipped: word 'd' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 176818 [-2.079181	d he] skipped: word 'd' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 176819 [-2.079181	d hep] skipped: word 'd' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 176820 [-2.079181	d hervez] skipped: word 'd' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 176821 [-2.079181	d ivez] skipped: word 'd' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 176822 [-2.079181	d kemer] skipped: word 'd' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 176823 [-2.079181	d kentoc'h] skipped: word 'd' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 176824 [-1.30103	d l	-0.3020159] skipped: word 'd' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 176825 [-2.079181	d lakaat] skipped: word 'd' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 176826 [-1.778151	d o] skipped: word 'd' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 176827 [-2.079181	d ober] skipped: word 'd' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 176828 [-2.079181	d orin] skipped: word 'd' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 176829 [-2.079181	d ouzh] skipped: word 'd' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 176830 [-2.079181	d tamacheg] skipped: word 'd' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 176831 [-2.079181	d tepot] skipped: word 'd' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 176832 [-2.079181	d titaned] skipped: word 'd' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 176833 [-2.079181	d turked] skipped: word 'd' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 176834 [-1.778151	d un] skipped: word 'd' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 176835 [-2.079181	d ur] skipped: word 'd' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 176836 [-2.079181	d war] skipped: word 'd' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 177236 [-3.590898	d'an d] skipped: word 'd' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 177933 [-3.891927	d'an t] skipped: word 't' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 179590 [-4.0566	d'ar sida] skipped: word 'sida' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 180455 [-3.366796	d'e v] skipped: word 'v' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 183931 [-4.420723	da d] skipped: word 'd' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 184552 [-3.575625	da g	-0.0939045] skipped: word 'g' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 185091 [-4.721753	da h] skipped: word 'h' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 185259 [-4.721753	da j] skipped: word 'j' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 185317 [-4.721753	da l] skipped: word 'l' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 186329 [-3.545662	da v	-0.01552207] skipped: word 'v' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 191800 [-4.227527	daou p] skipped: word 'p' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 191851 [-4.227527	daou s] skipped: word 's' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 192416 [-3.243286	daoust d] skipped: word 'd' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 192560 [-3.2266	daouzek g] skipped: word 'g' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 196964 [-3.54108	dek g] skipped: word 'g' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 197577 [-1.770852	delta v] skipped: word 'v' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 206871 [-2.992553	dibenn d] skipped: word 'd' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 206922 [-2.992553	dibenn t] skipped: word 't' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 208643 [-2.552668	difennet d] skipped: word 'd' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 214023 [-2.936514	dirak t] skipped: word 't' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 217475 [-2.09575	distaget d] skipped: word 'd' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 217499 [-2.271842	distaget g] skipped: word 'g' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 217505 [-2.271842	distaget h] skipped: word 'h' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 217516 [-2.572872	distaget j] skipped: word 'j' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 217526 [-2.572872	distaget p] skipped: word 'p' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 217535 [-2.09575	distaget s] skipped: word 's' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 217537 [-1.970812	distaget t	-0.05270636] skipped: word 't' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 217791 [-2.604226	distreiñ d] skipped: word 'd' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 217954 [-2.522444	distro h] skipped: word 'h' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 218150 [-2.690196	distrujet d] skipped: word 'd' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 219845 [-1.880814	divouezh p] skipped: word 'p' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 219848 [-1.880814	divouezh s] skipped: word 's' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 223716 [-3.609381	doare d] skipped: word 'd' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 224110 [-3.609381	doare l] skipped: word 'l' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 226501 [-1.869232	dostaat l] skipped: word 'l' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 233094 [-3.73767	dro d] skipped: word 'd' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 234531 [-2.684845	drugarez d] skipped: word 'd' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 239267 [-4.886612	e h	-0.4621441] skipped: word 'h' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 254842 [-4.613218	en s] skipped: word 's' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 255614 [-2.38739	enebet p] skipped: word 'p' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 256014 [-3.053463	enep d] skipped: word 'd' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 260273 [-4.208482	eo d] skipped: word 'd' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 260791 [-4.208482	eo g	-0.4566801] skipped: word 'g' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 260953 [-4.509511	eo h] skipped: word 'h' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 261079 [-4.509511	eo j] skipped: word 'j' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 261376 [-4.509511	eo l] skipped: word 'l' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 261776 [-4.509511	eo p] skipped: word 'p' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 262074 [-4.032391	eo s	-0.1980458] skipped: word 's' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 263696 [-4.280965	er h] skipped: word 'h' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 265476 [-1.690196	esae d] skipped: word 'd' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 266916 [-3.789581	etre d] skipped: word 'd' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 267426 [-3.789581	etre s] skipped: word 's' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 273754 [-4.037825	evel v] skipped: word 'v' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 276032 [-4.276898	evit v] skipped: word 'v' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 286524 [-0.30103	frou d] skipped: word 'd' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 287389 [-0.9852768	g </s>] skipped: word 'g' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 287390 [-1.638489	g H	-0.4635485] skipped: word 'g' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 287391 [-1.939519	g Karaez] skipped: word 'g' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 287392 [-1.337459	g Karl	-0.1790625] skipped: word 'g' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 287393 [-1.939519	g Kerne] skipped: word 'g' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 287394 [-1.939519	g Kiev] skipped: word 'g' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 287395 [-1.939519	g Konan] skipped: word 'g' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 287396 [-1.939519	g ar] skipped: word 'g' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 287397 [-1.939519	g atav] skipped: word 'g' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 287398 [-1.939519	g dirak] skipped: word 'g' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 287399 [-1.161368	g e	-0.08702329] skipped: word 'g' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 287400 [-1.462398	g eo	-0.1997866] skipped: word 'g' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 287401 [-1.337459	g gant	-0.1195545] skipped: word 'g' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 287402 [-1.939519	g gris] skipped: word 'g' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 287403 [-1.939519	g h] skipped: word 'g' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 287404 [-1.638489	g hag] skipped: word 'g' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 287405 [-1.638489	g he] skipped: word 'g' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 287406 [-1.939519	g hepmuiken] skipped: word 'g' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 287407 [-1.939519	g kafein] skipped: word 'g' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 287408 [-1.939519	g kaniri] skipped: word 'g' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 287409 [-1.939519	g kastell] skipped: word 'g' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 287410 [-1.939519	g kastren] skipped: word 'g' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 287411 [-1.939519	g kentañ] skipped: word 'g' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 287412 [-1.638489	g kerdiz] skipped: word 'g' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 287413 [-1.939519	g korn] skipped: word 'g' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 287414 [-1.939519	g kreiz] skipped: word 'g' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 287415 [-1.939519	g mol] skipped: word 'g' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 287416 [-1.939519	g o] skipped: word 'g' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 287417 [-1.939519	g ounit] skipped: word 'g' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 287418 [-1.939519	g pe] skipped: word 'g' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 287419 [-1.939519	g unanenn] skipped: word 'g' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 288514 [-2.915927	gallek l] skipped: word 'l' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 288720 [-3.114944	galloud d] skipped: word 'd' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 292055 [-4.607669	gant g] skipped: word 'g' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 292271 [-4.30664	gant h] skipped: word 'h' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 292890 [-4.607669	gant l] skipped: word 'l' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 293449 [-4.607669	gant p] skipped: word 'p' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 293873 [-4.607669	gant s] skipped: word 's' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 294170 [-4.607669	gant t] skipped: word 't' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 294437 [-4.607669	gant v] skipped: word 'v' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 294557 [-3.46746	gantañ d] skipped: word 'd' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 300535 [-2.217484	gensonenn g] skipped: word 'g' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 300537 [-1.916454	gensonenn h] skipped: word 'h' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 300556 [-2.217484	gensonenn p] skipped: word 'p' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 300562 [-1.916454	gensonenn s	-0.3873898] skipped: word 's' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 307024 [-2.501059	gloazet d] skipped: word 'd' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 311482 [-3.587487	goude s	-0.447158] skipped: word 's' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 313878 [-1.623249	gourc'hemennoù d] skipped: word 'd' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 325562 [-3.216166	gwir d] skipped: word 'd' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 327437 [-0.8166095	h </s>] skipped: word 'h' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 327438 [-1.469822	h I	-0.4721954] skipped: word 'h' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 327439 [-0.867762	h a	-0.06194792] skipped: word 'h' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 327440 [-1.770852	h anavezomp] skipped: word 'h' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 327441 [-1.469822	h d	-0.469822] skipped: word 'h' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 327442 [-1.770852	h d'he] skipped: word 'h' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 327443 [-0.9927008	h e	-0.2188017] skipped: word 'h' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 327444 [-1.469822	h en	-0.4694239] skipped: word 'h' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 327445 [-1.770852	h er] skipped: word 'h' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 327446 [-1.770852	h etre] skipped: word 'h' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 327447 [-1.469822	h g] skipped: word 'h' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 327448 [-1.770852	h gant] skipped: word 'h' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 327449 [-1.469822	h ha] skipped: word 'h' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 327450 [-1.770852	h mil] skipped: word 'h' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 327451 [-1.770852	h mut] skipped: word 'h' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 327452 [-1.770852	h se] skipped: word 'h' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 327453 [-1.770852	h zo] skipped: word 'h' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 328486 [-4.488156	ha d] skipped: word 'd' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 329709 [-4.789186	ha g] skipped: word 'g' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 330220 [-4.789186	ha h] skipped: word 'h' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 332495 [-4.488156	ha p	-0.3638893] skipped: word 'p' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 334105 [-4.488156	ha t] skipped: word 't' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 334585 [-4.789186	ha v] skipped: word 'v' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 336334 [-4.297016	hag s] skipped: word 's' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 337116 [-0.60206	hantervogalennoù j] skipped: word 'j' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 342805 [-3.443419	hep d] skipped: word 'd' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 342981 [-3.443419	hep h] skipped: word 'h' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 343277 [-3.443419	hep t] skipped: word 't' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 344575 [-3.11294	heul d] skipped: word 'd' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 346591 [-3.808751	hini d] skipped: word 'd' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 348163 [-2.906873	ho p] skipped: word 'p' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 358017 [-4.018991	ivez d] skipped: word 'd' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 358708 [-4.018991	ivez s] skipped: word 's' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 359622 [-0.8129134	j </s>] skipped: word 'j' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 359623 [-1.113943	j L	-0.4593925] skipped: word 'j' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 359624 [-1.414973	j a] skipped: word 'j' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 359625 [-1.414973	j bloavezh] skipped: word 'j' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 359626 [-1.414973	j en] skipped: word 'j' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 359627 [-1.113943	j gant] skipped: word 'j' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 359628 [-1.414973	j ha] skipped: word 'j' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 359629 [-1.113943	j hervez	-0.4719841] skipped: word 'j' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 359630 [-1.414973	j kensonenn] skipped: word 'j' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 359631 [-1.414973	j pe] skipped: word 'j' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 364693 [-3.082426	kant g	-0.5546353] skipped: word 'g' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 364889 [-3.082426	kant t] skipped: word 't' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 366137 [-2.747412	kar d] skipped: word 'd' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 368264 [-2.972666	katolik d] skipped: word 'd' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 378966 [-4.137512	ket t] skipped: word 't' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 381059 [-2.322219	kilometr h	-0.1499667] skipped: word 'h' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 381085 [-2.79934	kilometr s] skipped: word 's' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 396158 [-0.8952646	l </s>] skipped: word 'l' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 396159 [-1.439333	l an] skipped: word 'l' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 396160 [-1.740363	l barrennet] skipped: word 'l' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 396161 [-1.740363	l d'he] skipped: word 'l' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 396162 [-1.740363	l diwarnañ] skipped: word 'l' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 396163 [-1.263241	l e] skipped: word 'l' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 396164 [-1.740363	l ec'h] skipped: word 'l' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 396165 [-1.439333	l gant] skipped: word 'l' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 396166 [-1.740363	l hag] skipped: word 'l' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 396167 [-1.740363	l kensonenn] skipped: word 'l' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 396168 [-1.263241	l leur	-0.1025625] skipped: word 'l' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 396169 [-1.439333	l n	-0.4736469] skipped: word 'l' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 396170 [-1.740363	l rak] skipped: word 'l' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 396171 [-1.740363	l s] skipped: word 'l' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 396172 [-1.740363	l silabennel] skipped: word 'l' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 396173 [-1.740363	l simbol] skipped: word 'l' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 396174 [-1.740363	l staget] skipped: word 'l' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 396175 [-1.263241	l u	-0.5875822] skipped: word 'l' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 396176 [-1.740363	l vihan] skipped: word 'l' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 396177 [-1.740363	l war] skipped: word 'l' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 400525 [-3.099681	latin s] skipped: word 's' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 402586 [-3.666986	lec'h h] skipped: word 'h' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 412764 [-2.555094	lizherenn h] skipped: word 'h' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 412774 [-2.555094	lizherenn j] skipped: word 'j' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 412777 [-2.254065	lizherenn l] skipped: word 'l' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 412788 [-2.555094	lizherenn p] skipped: word 'p' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 412797 [-2.254065	lizherenn t	-0.3836996] skipped: word 't' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 415451 [-1.968483	lostger j] skipped: word 'j' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 415468 [-1.968483	lostger s] skipped: word 's' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 422772 [-2.399674	mar d	-0.469822] skipped: word 'd' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 431412 [-3.935809	met h] skipped: word 'h' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 433929 [-2.41162	mignon d] skipped: word 'd' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 434337 [-4.053348	mil l] skipped: word 'l' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 434437 [-3.150257	mil t	-0.09055953] skipped: word 't' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 435934 [-3.511616	miz h] skipped: word 'h' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 437462 [-3.447158	mont d] skipped: word 'd' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 441213 [-3.337659	n'eus p] skipped: word 'p' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 449451 [-2.296665	ni p] skipped: word 'p' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 455601 [-4.520077	oa d] skipped: word 'd' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 456700 [-4.520077	oa l] skipped: word 'l' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 465112 [-0.6392018	p </s>] skipped: word 'p' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 465113 [-1.4843	p S	-0.464284] skipped: word 'p' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 465114 [-1.4843	p a] skipped: word 'p' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 465115 [-1.78533	p da] skipped: word 'p' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 465116 [-1.78533	p daouzek] skipped: word 'p' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 465117 [-1.78533	p derc'hel] skipped: word 'p' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 465118 [-1.78533	p e] skipped: word 'p' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 465119 [-1.78533	p ebet] skipped: word 'p' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 465120 [-1.78533	p er] skipped: word 'p' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 465121 [-1.78533	p etre] skipped: word 'p' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 465122 [-1.4843	p g] skipped: word 'p' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 465123 [-1.78533	p hini] skipped: word 'p' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 465124 [-1.78533	p keltiek] skipped: word 'p' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 465125 [-1.78533	p kensonenn] skipped: word 'p' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 465126 [-1.78533	p o] skipped: word 'p' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 465127 [-1.78533	p pevarzek] skipped: word 'p' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 465128 [-1.78533	p po] skipped: word 'p' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 465129 [-1.78533	p t] skipped: word 'p' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 465130 [-1.78533	p trizek] skipped: word 'p' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 465131 [-1.78533	p tro] skipped: word 'p' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 465132 [-1.4843	p un] skipped: word 'p' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 465133 [-1.78533	p unnek] skipped: word 'p' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 468424 [-2.173186	paouezet d] skipped: word 'd' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 471001 [-4.242964	pe d] skipped: word 'd' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 471635 [-4.242964	pe g] skipped: word 'g' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 471971 [-4.242964	pe h] skipped: word 'h' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 473377 [-3.941934	pe s] skipped: word 's' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 473919 [-4.242964	pe v] skipped: word 'v' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 475955 [-3.234391	pemp p] skipped: word 'p' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 476266 [-3.018076	pemzek g] skipped: word 'g' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 482155 [-3.207634	pevarzek g] skipped: word 'g' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 487161 [-1.380211	poelladennoù p] skipped: word 'p' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 490602 [-1.361728	pradañ p] skipped: word 'p' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 490953 [-1.579784	predeneg h] skipped: word 'h' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 492984 [-2.857332	priz p] skipped: word 'p' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 500462 [-2.579784	rannyezh l] skipped: word 'l' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 502003 [-3.823279	re s] skipped: word 's' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 502097 [-3.823279	re v] skipped: word 'v' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 516671 [-0.7289332	s </s>] skipped: word 's' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 516672 [-1.574031	s T	-0.4650567] skipped: word 's' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 516673 [-1.39794	s a	-0.1761301] skipped: word 's' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 516674 [-1.875061	s abalamour] skipped: word 's' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 516675 [-1.875061	s alies] skipped: word 's' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 516676 [-1.875061	s avat] skipped: word 's' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 516677 [-1.875061	s berr] skipped: word 's' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 516678 [-1.875061	s bevan] skipped: word 's' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 516679 [-1.875061	s bihan] skipped: word 's' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 516680 [-1.875061	s da] skipped: word 's' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 516681 [-1.574031	s dibenn] skipped: word 's' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 516682 [-1.875061	s diwezhañ] skipped: word 's' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 516683 [-1.176091	s e] skipped: word 's' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 516684 [-1.875061	s evel] skipped: word 's' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 516685 [-1.39794	s evit] skipped: word 's' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 516686 [-1.273001	s gant	-0.1461066] skipped: word 's' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 516687 [-1.574031	s ha] skipped: word 's' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 516688 [-1.875061	s he] skipped: word 's' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 516689 [-1.39794	s hir	-0.2210794] skipped: word 's' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 516690 [-1.875061	s ivez] skipped: word 's' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 516691 [-1.875061	s pe] skipped: word 's' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 516692 [-1.875061	s perc'hennañ] skipped: word 's' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 516693 [-1.875061	s su] skipped: word 's' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 519128 [-2.827369	saoznek s] skipped: word 's' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 523022 [-3.494711	seizh p] skipped: word 'p' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 524775 [-2.123852	serriñ p] skipped: word 'p' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 524783 [-2.123852	serriñ t] skipped: word 't' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 527914 [-0.544068	sida </s>] skipped: word 'sida' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 527915 [-0.845098	sida e] skipped: word 'sida' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 527916 [-0.845098	sida mervel] skipped: word 'sida' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 534630 [-3.375115	skouer g] skipped: word 'g' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 534773 [-3.375115	skouer s] skipped: word 's' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 537133 [-3.268578	skrivet j] skipped: word 'j' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 537210 [-3.268578	skrivet s] skipped: word 's' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 538085 [-2.68842	son j] skipped: word 'j' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 538130 [-2.38739	son s] skipped: word 's' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 538174 [-2.071882	sonadeg h] skipped: word 'h' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 538512 [-1.986772	sonennoù g] skipped: word 'g' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 539168 [-1.342423	soniad l] skipped: word 'l' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 548491 [-3.547159	strollad p] skipped: word 'p' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 552317 [-0.7132105	t </s>] skipped: word 't' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 552318 [-1.491362	t a] skipped: word 't' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 552319 [-1.792392	t barrennet] skipped: word 't' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 552320 [-1.792392	t bennak] skipped: word 't' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 552321 [-1.792392	t bep] skipped: word 't' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 552322 [-1.792392	t bezañ] skipped: word 't' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 552323 [-1.792392	t c'hoarier] skipped: word 't' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 552324 [-1.491362	t d] skipped: word 't' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 552325 [-1.792392	t distaget] skipped: word 't' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 552326 [-1.491362	t e] skipped: word 't' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 552327 [-1.792392	t ebet] skipped: word 't' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 552328 [-1.792392	t en] skipped: word 't' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 552329 [-1.792392	t er] skipped: word 't' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 552330 [-1.491362	t gant] skipped: word 't' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 552331 [-1.792392	t hervez] skipped: word 't' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 552332 [-1.792392	t nav] skipped: word 't' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 552333 [-1.792392	t o] skipped: word 't' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 552334 [-1.792392	t pa] skipped: word 't' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 552335 [-1.31527	t pep	-0.5446615] skipped: word 't' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 552336 [-1.491362	t u	-0.4699427] skipped: word 't' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 552337 [-1.792392	t war] skipped: word 't' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 552338 [-1.792392	t zo] skipped: word 't' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 559415 [-2.627366	termen d] skipped: word 'd' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 562756 [-2.079181	timezas d] skipped: word 'd' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 566226 [-2.801404	tost d] skipped: word 'd' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 570030 [-2.686189	tregont g] skipped: word 'g' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 570080 [-3.288249	tregont l] skipped: word 'l' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 572596 [-3.836324	tri l] skipped: word 'l' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 573331 [-3.113275	trizek g] skipped: word 'g' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 576564 [-1.4843	u d	-0.6766936] skipped: word 'd' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 576884 [-4.055455	ugent h] skipped: word 'h' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 577154 [-4.055455	ugent s] skipped: word 's' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 577603 [-2.79934	uhelañ g] skipped: word 'g' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 578768 [-4.450249	un d] skipped: word 'd' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 579617 [-4.450249	un g] skipped: word 'g' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 579635 [-4.149219	un h] skipped: word 'h' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 579861 [-3.973128	un l] skipped: word 'l' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 580065 [-3.848189	un s	-0.1283993] skipped: word 's' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 580094 [-3.848189	un t] skipped: word 't' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 580925 [-1.869232	unander s] skipped: word 's' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 584455 [-4.351574	ur p] skipped: word 'p' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 585569 [-4.652604	ur v] skipped: word 'v' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 586743 [-1.153815	v </s>] skipped: word 'v' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 586744 [-1.755875	v Barcelona] skipped: word 'v' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 586745 [-1.755875	v Bernez] skipped: word 'v' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 586746 [-1.755875	v Brazil] skipped: word 'v' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 586747 [-1.755875	v Breizh] skipped: word 'v' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 586748 [-1.755875	v Bulgaria] skipped: word 'v' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 586749 [-1.755875	v Mari] skipped: word 'v' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 586750 [-1.755875	v Maria] skipped: word 'v' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 586751 [-1.755875	v Mec'hiko] skipped: word 'v' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 586752 [-1.755875	v Montargis] skipped: word 'v' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 586753 [-1.755875	v Z] skipped: word 'v' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 586754 [-1.755875	v alies] skipped: word 'v' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 586755 [-1.755875	v barr] skipped: word 'v' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 586756 [-1.755875	v beli] skipped: word 'v' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 586757 [-1.755875	v beltram] skipped: word 'v' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 586758 [-1.755875	v bommoù] skipped: word 'v' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 586759 [-1.454845	v bro] skipped: word 'v' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 586760 [-1.755875	v broadelouriezh] skipped: word 'v' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 586761 [-1.755875	v da] skipped: word 'v' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 586762 [-1.755875	v en] skipped: word 'v' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 586763 [-1.755875	v hag] skipped: word 'v' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 586764 [-1.755875	v he] skipped: word 'v' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 586765 [-1.755875	v macau] skipped: word 'v' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 586766 [-1.454845	v melilla] skipped: word 'v' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 586767 [-1.755875	v metz] skipped: word 'v' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 586768 [-1.755875	v meurded] skipped: word 'v' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 595449 [-3.903253	vez d] skipped: word 'd' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 595850 [-3.903253	vez g] skipped: word 'g' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 595973 [-4.204283	vez h] skipped: word 'h' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 596042 [-4.204283	vez j] skipped: word 'j' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 596246 [-4.204283	vez l] skipped: word 'l' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 596496 [-4.204283	vez p] skipped: word 'p' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 596691 [-4.204283	vez s] skipped: word 's' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 596844 [-4.204283	vez t] skipped: word 't' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 598181 [-3.748343	vezañ t] skipped: word 't' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 598906 [-3.699751	veze p] skipped: word 'p' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 600613 [-2.926342	vihan s] skipped: word 's' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 604374 [-4.297016	voe d] skipped: word 'd' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 612061 [-1.724276	vunut g] skipped: word 'g' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 613771 [-3.761439	war l	-0.2766706] skipped: word 'l' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 618497 [-1.863323	y j] skipped: word 'j' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 618498 [-1.863323	y l] skipped: word 'l' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 620208 [-3.614897	yezh p] skipped: word 'p' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 628532 [-4.480783	zo g] skipped: word 'g' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 628967 [-4.480783	zo l] skipped: word 'l' not in symbol table
+LOG (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:149) Reading \3-grams: section.
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 634182 [-0.1760913	a D d] skipped: word 'd' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 635224 [-0.1760913	e G g] skipped: word 'g' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 635779 [-0.1760913	g H h] skipped: word 'g' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 635945 [-0.1760913	h I i] skipped: word 'h' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 636476 [-0.1760913	i J j] skipped: word 'j' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 636919 [-0.30103	g Karl veur] skipped: word 'g' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 637430 [-0.1760913	j L l] skipped: word 'j' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 638510 [-0.1760913	o P p] skipped: word 'p' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 639419 [-0.1760913	p S s] skipped: word 'p' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 640878 [-0.1760913	s T t] skipped: word 's' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 641134 [-0.1760913	u V v] skipped: word 'v' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 646394 [-0.8750613	h a </s>] skipped: word 'h' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 649023 [-3.544936	meur a g] skipped: word 'g' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 651116 [-0.39794	s a zo] skipped: word 's' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 660232 [-0.69897	distaget an s] skipped: word 's' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 684253 [-0.544068	d avat gant] skipped: word 'd' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 690658 [-1.041393	<s> bezet d] skipped: word 'd' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 692211 [-0.544068	ar bloc'h p] skipped: word 'p' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 692213 [-0.6532125	er bloc'h p] skipped: word 'p' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 703016 [-0.8129134	<s> d l] skipped: word 'd' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 703017 [-0.1760913	D d e] skipped: word 'd' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 703018 [-0.39794	abalamour d e] skipped: word 'd' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 703019 [-0.1760913	bezet d diaz] skipped: word 'd' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 703020 [-0.1760913	h d h] skipped: word 'h' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 703021 [-0.1760913	mar d eo] skipped: word 'd' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 703022 [-0.09691001	u d l] skipped: word 'd' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 706103 [-1.556303	bihan da g] skipped: word 'g' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 706934 [-2.483587	eas da v] skipped: word 'v' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 708446 [-2.575957	oa da g] skipped: word 'g' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 730168 [-1.041393	d e e] skipped: word 'd' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 730169 [-1.041393	d e vro] skipped: word 'd' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 732672 [-0.7403627	g e bouez] skipped: word 'g' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 733709 [-0.69897	h e h] skipped: word 'h' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 733710 [-0.69897	h e lec'h] skipped: word 'h' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 745592 [-0.39794	d en em] skipped: word 'd' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 746405 [-0.1760913	h en he] skipped: word 'h' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 748920 [-2.903632	a enep d] skipped: word 'd' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 751501 [-0.39794	g eo e] skipped: word 'g' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 752275 [-2.49485	lâret eo g] skipped: word 'g' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 752291 [-2.49485	lâret eo s] skipped: word 's' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 764992 [-0.1760913	G g H] skipped: word 'g' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 764993 [-0.7781513	da g Karl] skipped: word 'g' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 764994 [-1.079181	da g kerdiz] skipped: word 'g' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 764995 [-0.1760913	eo g gant] skipped: word 'g' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 764996 [-0.1249387	kant g </s>] skipped: word 'g' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 767471 [-0.544068	g gant ur] skipped: word 'g' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 769005 [-0.544068	s gant virgulenn] skipped: word 's' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 771555 [-1.161368	ar gensonenn h] skipped: word 'h' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 779109 [-0.1760913	H h I] skipped: word 'h' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 779110 [-0.39794	a h d] skipped: word 'h' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 779111 [-0.1760913	d h e] skipped: word 'd' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 779112 [-0.1760913	e h g] skipped: word 'h' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 779113 [-0.39794	kilometr h </s>] skipped: word 'h' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 791011 [-0.1760913	j hervez reolennoù] skipped: word 'j' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 792125 [-0.39794	s hir skrivet] skipped: word 's' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 796771 [-0.1760913	J j L] skipped: word 'j' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 797996 [-2.047275	c'hwec'h kant t] skipped: word 't' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 798096 [-2.853394	hanter kant g] skipped: word 'g' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 803992 [-1.80956	kant kilometr h] skipped: word 'h' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 808176 [-0.1760913	L l n] skipped: word 'l' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 808177 [-0.6532125	d l e] skipped: word 'd' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 808178 [-0.4771213	d l u] skipped: word 'd' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 808179 [-0.30103	war l leur] skipped: word 'l' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 811789 [-0.39794	l leur </s>] skipped: word 'l' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 813615 [-1.866287	al lizherenn l] skipped: word 'l' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 813621 [-1.866287	al lizherenn t] skipped: word 't' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 820891 [-1.883661	c'hant mil t] skipped: word 't' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 821007 [-2.186108	kant mil t] skipped: word 't' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 821107 [-2.31492	ugent mil t] skipped: word 't' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 823323 [-0.1760913	l n n] skipped: word 'l' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 834105 [-0.1760913	P p S] skipped: word 'p' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 834106 [-0.3521825	bloc'h p </s>] skipped: word 'p' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 834107 [-0.1760913	ha p </s>] skipped: word 'p' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 837537 [-1.544068	ha pemzek g] skipped: word 'g' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 838664 [-0.1249387	t pep hini] skipped: word 't' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 850125 [-0.39794	S s T] skipped: word 's' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 850126 [-0.7403627	an s dibenn] skipped: word 's' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 850127 [-0.39794	eo s gant] skipped: word 's' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 850128 [-0.1760913	gensonenn s </s>] skipped: word 's' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 850129 [-0.1760913	goude s e] skipped: word 's' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 850130 [-0.544068	un s hir] skipped: word 's' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 857611 [-1.939519	ar son s] skipped: word 's' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 861975 [-0.1760913	T t u] skipped: word 't' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 861976 [-0.544068	distaget t </s>] skipped: word 't' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 861977 [-0.1760913	lizherenn t </s>] skipped: word 't' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 861978 [-0.8129134	mil t </s>] skipped: word 't' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 861979 [-0.6368221	mil t pep] skipped: word 't' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 868919 [-0.1249387	l u d] skipped: word 'l' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 868921 [-0.1760913	t u u] skipped: word 't' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 871125 [-1.905796	eo un t] skipped: word 't' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 877911 [-1.161368	da v melilla] skipped: word 'v' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 880664 [-3.649724	e vez d] skipped: word 'd' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 880779 [-3.649724	e vez g] skipped: word 'g' not in symbol table
+LOG (arpa2fst[5.5.1060~1-ae8cb]:RemoveRedundantStates():arpa-lm-compiler.cc:359) Reduced num-states from 611408 to 131820
+arpa-to-const-arpa --bos-symbol=43325 --eos-symbol=43326 --unk-symbol=4 'gunzip -c data/local/lm/lm_tglarge.arpa.gz | utils/map_arpa_lm.pl data/lang_nosp_test_tglarge/words.txt|' data/lang_nosp_test_tglarge/G.carpa 
+LOG (arpa-to-const-arpa[5.5.1060~1-ae8cb]:BuildConstArpaLm():const-arpa-lm.cc:1078) Reading gunzip -c data/local/lm/lm_tglarge.arpa.gz | utils/map_arpa_lm.pl data/lang_nosp_test_tglarge/words.txt|
+utils/map_arpa_lm.pl: Processing "\data\"
+utils/map_arpa_lm.pl: Processing "\1-grams:\"
+LOG (arpa-to-const-arpa[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:94) Reading \data\ section.
+LOG (arpa-to-const-arpa[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:149) Reading \1-grams: section.
+utils/map_arpa_lm.pl: Warning: OOV line -4.57671	d	-0.3206502
+utils/map_arpa_lm.pl: Warning: OOV line -4.739913	g	-0.3469693
+utils/map_arpa_lm.pl: Warning: OOV line -4.86232	h	-0.4294489
+utils/map_arpa_lm.pl: Warning: OOV line -5.265339	j	-0.3394354
+utils/map_arpa_lm.pl: Warning: OOV line -4.939486	l	-0.3555623
+utils/map_arpa_lm.pl: Warning: OOV line -4.893728	p	-0.3451632
+utils/map_arpa_lm.pl: Warning: OOV line -4.771512	s	-0.401821
+utils/map_arpa_lm.pl: Warning: OOV line -5.796818	sida	-0.3128306
+utils/map_arpa_lm.pl: Warning: OOV line -4.883004	t	-0.3405406
+utils/map_arpa_lm.pl: Warning: OOV line -4.990638	v	-0.284664
+utils/map_arpa_lm.pl: Processing "\2-grams:\"
+utils/map_arpa_lm.pl: Warning: OOV line -4.532754	<s> d	-0.05027428
+LOG (arpa-to-const-arpa[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:149) Reading \2-grams: section.
+utils/map_arpa_lm.pl: Warning: OOV line -5.377852	<s> g
+utils/map_arpa_lm.pl: Warning: OOV line -4.900731	<s> j
+utils/map_arpa_lm.pl: Warning: OOV line -5.377852	<s> l
+utils/map_arpa_lm.pl: Warning: OOV line -5.076822	<s> p
+utils/map_arpa_lm.pl: Warning: OOV line -5.076822	<s> s
+utils/map_arpa_lm.pl: Warning: OOV line -5.076822	<s> t
+utils/map_arpa_lm.pl: Warning: OOV line -1.462398	D d	-0.4313638
+utils/map_arpa_lm.pl: Warning: OOV line -1.78533	G d
+utils/map_arpa_lm.pl: Processing "\3-grams:\"
+LOG (arpa-to-const-arpa[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:149) Reading \3-grams: section.
+utils/map_arpa_lm.pl: 551 lines of the Arpa file contained OOVs and were not printed.
+filter_scps.pl: warning: some input lines were output to multiple files [OK if splitting per utt] 
+tree-info exp/mono/tree 
+tree-info exp/mono/tree 
+fstpushspecial 
+fstminimizeencoded 
+fstdeterminizestar --use-log=true 
+fsttablecompose data/lang_nosp/L_disambig.fst data/lang_nosp/G.fst 
+fstisstochastic data/lang_nosp/tmp/LG.fst 
+fstcomposecontext --context-size=1 --central-position=0 --read-disambig-syms=data/lang_nosp/phones/disambig.int --write-disambig-syms=data/lang_nosp/tmp/disambig_ilabels_1_0.int data/lang_nosp/tmp/ilabels_1_0.7713 data/lang_nosp/tmp/LG.fst 
+fstisstochastic data/lang_nosp/tmp/CLG_1_0.fst 
+make-h-transducer --disambig-syms-out=exp/mono/graph/disambig_tid.int --transition-scale=1.0 data/lang_nosp/tmp/ilabels_1_0 exp/mono/tree exp/mono/final.mdl 
+fsttablecompose exp/mono/graph/Ha.fst data/lang_nosp/tmp/CLG_1_0.fst 
+fstminimizeencoded 
+fstdeterminizestar --use-log=true 
+fstrmsymbols exp/mono/graph/disambig_tid.int 
+fstrmepslocal 
+fstisstochastic exp/mono/graph/HCLGa.fst 
+add-self-loops --self-loop-scale=0.1 --reorder=true exp/mono/final.mdl exp/mono/graph/HCLGa.fst 
+tree-info exp/tri1/tree 
+tree-info exp/tri1/tree 
+fstcomposecontext --context-size=3 --central-position=1 --read-disambig-syms=data/lang_nosp/phones/disambig.int --write-disambig-syms=data/lang_nosp/tmp/disambig_ilabels_3_1.int data/lang_nosp/tmp/ilabels_3_1.10937 data/lang_nosp/tmp/LG.fst 
+fstisstochastic data/lang_nosp/tmp/CLG_3_1.fst 
+make-h-transducer --disambig-syms-out=exp/tri1/graph/disambig_tid.int --transition-scale=1.0 data/lang_nosp/tmp/ilabels_3_1 exp/tri1/tree exp/tri1/final.mdl 
+fstrmepslocal 
+fsttablecompose exp/tri1/graph/Ha.fst data/lang_nosp/tmp/CLG_3_1.fst 
+fstminimizeencoded 
+fstrmsymbols exp/tri1/graph/disambig_tid.int 
+fstdeterminizestar --use-log=true 
+fstisstochastic exp/tri1/graph/HCLGa.fst 
+add-self-loops --self-loop-scale=0.1 --reorder=true exp/tri1/final.mdl exp/tri1/graph/HCLGa.fst 
+fstaddselfloops data/lang/phones/wdisambig_phones.int data/lang/phones/wdisambig_words.int 
+arpa2fst --disambig-symbol=#0 --read-symbol-table=data/lang_test_tgsmall/words.txt data/local/tmp/lm.arpa data/lang_test_tgsmall/G.fst 
+LOG (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:94) Reading \data\ section.
+LOG (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:149) Reading \1-grams: section.
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 8923 [-4.57671	d	-0.3206502] skipped: word 'd' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 16043 [-4.739913	g	-0.3469693] skipped: word 'g' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 19922 [-4.86232	h	-0.4294489] skipped: word 'h' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 21331 [-5.265339	j	-0.3394354] skipped: word 'j' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 24954 [-4.939486	l	-0.3555623] skipped: word 'l' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 29534 [-4.893728	p	-0.3451632] skipped: word 'p' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 33118 [-4.771512	s	-0.401821] skipped: word 's' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 33848 [-5.796818	sida	-0.3128306] skipped: word 'sida' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 35939 [-4.883004	t	-0.3405406] skipped: word 't' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 38646 [-4.990638	v	-0.284664] skipped: word 'v' not in symbol table
+LOG (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:149) Reading \2-grams: section.
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 45487 [-4.532754	<s> d	-0.05027428] skipped: word 'd' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 47539 [-5.377852	<s> g] skipped: word 'g' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 48769 [-4.900731	<s> j] skipped: word 'j' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 50181 [-5.377852	<s> l] skipped: word 'l' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 51910 [-5.076822	<s> p] skipped: word 'p' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 53224 [-5.076822	<s> s] skipped: word 's' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 54094 [-5.076822	<s> t] skipped: word 't' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 59686 [-1.462398	D d	-0.4313638] skipped: word 'd' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 62041 [-1.78533	G d] skipped: word 'd' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 62046 [-1.4843	G g	-0.4670209] skipped: word 'g' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 63325 [-1.511883	H h	-0.4621441] skipped: word 'h' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 64749 [-1.908485	J j	-0.4423591] skipped: word 'j' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 67042 [-1.39794	L l	-0.4610344] skipped: word 'l' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 70315 [-1.361728	P p	-0.4626434] skipped: word 'p' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 72629 [-1.535716	S s	-0.2101104] skipped: word 's' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 75121 [-1.562293	T t	-0.4628808] skipped: word 't' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 75997 [-2.305351	V v] skipped: word 'v' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 78589 [-5.115028	a d] skipped: word 'd' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 79432 [-4.512968	a g] skipped: word 'g' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 80210 [-4.637907	a h	-0.2068716] skipped: word 'h' not in symbol table
+LOG (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:149) Reading \3-grams: section.
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:259) Of 551 parse warnings, 30 were reported. Run program with --max-arpa-warnings=-1 to see all warnings
+LOG (arpa2fst[5.5.1060~1-ae8cb]:RemoveRedundantStates():arpa-lm-compiler.cc:359) Reduced num-states from 611408 to 131820
+arpa2fst --disambig-symbol=#0 --read-symbol-table=data/lang_test_tgmed/words.txt data/local/tmp/lm.arpa data/lang_test_tgmed/G.fst 
+LOG (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:94) Reading \data\ section.
+LOG (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:149) Reading \1-grams: section.
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 8923 [-4.57671	d	-0.3206502] skipped: word 'd' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 16043 [-4.739913	g	-0.3469693] skipped: word 'g' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 19922 [-4.86232	h	-0.4294489] skipped: word 'h' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 21331 [-5.265339	j	-0.3394354] skipped: word 'j' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 24954 [-4.939486	l	-0.3555623] skipped: word 'l' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 29534 [-4.893728	p	-0.3451632] skipped: word 'p' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 33118 [-4.771512	s	-0.401821] skipped: word 's' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 33848 [-5.796818	sida	-0.3128306] skipped: word 'sida' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 35939 [-4.883004	t	-0.3405406] skipped: word 't' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 38646 [-4.990638	v	-0.284664] skipped: word 'v' not in symbol table
+LOG (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:149) Reading \2-grams: section.
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 45487 [-4.532754	<s> d	-0.05027428] skipped: word 'd' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 47539 [-5.377852	<s> g] skipped: word 'g' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 48769 [-4.900731	<s> j] skipped: word 'j' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 50181 [-5.377852	<s> l] skipped: word 'l' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 51910 [-5.076822	<s> p] skipped: word 'p' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 53224 [-5.076822	<s> s] skipped: word 's' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 54094 [-5.076822	<s> t] skipped: word 't' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 59686 [-1.462398	D d	-0.4313638] skipped: word 'd' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 62041 [-1.78533	G d] skipped: word 'd' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 62046 [-1.4843	G g	-0.4670209] skipped: word 'g' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 63325 [-1.511883	H h	-0.4621441] skipped: word 'h' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 64749 [-1.908485	J j	-0.4423591] skipped: word 'j' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 67042 [-1.39794	L l	-0.4610344] skipped: word 'l' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 70315 [-1.361728	P p	-0.4626434] skipped: word 'p' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 72629 [-1.535716	S s	-0.2101104] skipped: word 's' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 75121 [-1.562293	T t	-0.4628808] skipped: word 't' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 75997 [-2.305351	V v] skipped: word 'v' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 78589 [-5.115028	a d] skipped: word 'd' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 79432 [-4.512968	a g] skipped: word 'g' not in symbol table
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:219) line 80210 [-4.637907	a h	-0.2068716] skipped: word 'h' not in symbol table
+LOG (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:149) Reading \3-grams: section.
+WARNING (arpa2fst[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:259) Of 551 parse warnings, 30 were reported. Run program with --max-arpa-warnings=-1 to see all warnings
+LOG (arpa2fst[5.5.1060~1-ae8cb]:RemoveRedundantStates():arpa-lm-compiler.cc:359) Reduced num-states from 611408 to 131820
+arpa-to-const-arpa --bos-symbol=43325 --eos-symbol=43326 --unk-symbol=4 'gunzip -c data/local/lm/lm_tglarge.arpa.gz | utils/map_arpa_lm.pl data/lang_test_tglarge/words.txt|' data/lang_test_tglarge/G.carpa 
+LOG (arpa-to-const-arpa[5.5.1060~1-ae8cb]:BuildConstArpaLm():const-arpa-lm.cc:1078) Reading gunzip -c data/local/lm/lm_tglarge.arpa.gz | utils/map_arpa_lm.pl data/lang_test_tglarge/words.txt|
+utils/map_arpa_lm.pl: Processing "\data\"
+utils/map_arpa_lm.pl: Processing "\1-grams:\"
+LOG (arpa-to-const-arpa[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:94) Reading \data\ section.
+LOG (arpa-to-const-arpa[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:149) Reading \1-grams: section.
+utils/map_arpa_lm.pl: Warning: OOV line -4.57671	d	-0.3206502
+utils/map_arpa_lm.pl: Warning: OOV line -4.739913	g	-0.3469693
+utils/map_arpa_lm.pl: Warning: OOV line -4.86232	h	-0.4294489
+utils/map_arpa_lm.pl: Warning: OOV line -5.265339	j	-0.3394354
+utils/map_arpa_lm.pl: Warning: OOV line -4.939486	l	-0.3555623
+utils/map_arpa_lm.pl: Warning: OOV line -4.893728	p	-0.3451632
+utils/map_arpa_lm.pl: Warning: OOV line -4.771512	s	-0.401821
+utils/map_arpa_lm.pl: Warning: OOV line -5.796818	sida	-0.3128306
+utils/map_arpa_lm.pl: Warning: OOV line -4.883004	t	-0.3405406
+utils/map_arpa_lm.pl: Warning: OOV line -4.990638	v	-0.284664
+utils/map_arpa_lm.pl: Processing "\2-grams:\"
+utils/map_arpa_lm.pl: Warning: OOV line -4.532754	<s> d	-0.05027428
+LOG (arpa-to-const-arpa[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:149) Reading \2-grams: section.
+utils/map_arpa_lm.pl: Warning: OOV line -5.377852	<s> g
+utils/map_arpa_lm.pl: Warning: OOV line -4.900731	<s> j
+utils/map_arpa_lm.pl: Warning: OOV line -5.377852	<s> l
+utils/map_arpa_lm.pl: Warning: OOV line -5.076822	<s> p
+utils/map_arpa_lm.pl: Warning: OOV line -5.076822	<s> s
+utils/map_arpa_lm.pl: Warning: OOV line -5.076822	<s> t
+utils/map_arpa_lm.pl: Warning: OOV line -1.462398	D d	-0.4313638
+utils/map_arpa_lm.pl: Warning: OOV line -1.78533	G d
+utils/map_arpa_lm.pl: Processing "\3-grams:\"
+LOG (arpa-to-const-arpa[5.5.1060~1-ae8cb]:Read():arpa-file-parser.cc:149) Reading \3-grams: section.
+utils/map_arpa_lm.pl: 551 lines of the Arpa file contained OOVs and were not printed.
+tree-info exp/tri3b/tree 
+tree-info exp/tri3b/tree 
+fstminimizeencoded 
+fsttablecompose data/lang_test_tgsmall/L_disambig.fst data/lang_test_tgsmall/G.fst 
+fstpushspecial 
+fstdeterminizestar --use-log=true 
+fstisstochastic data/lang_test_tgsmall/tmp/LG.fst 
+fstcomposecontext --context-size=3 --central-position=1 --read-disambig-syms=data/lang_test_tgsmall/phones/disambig.int --write-disambig-syms=data/lang_test_tgsmall/tmp/disambig_ilabels_3_1.int data/lang_test_tgsmall/tmp/ilabels_3_1.19609 data/lang_test_tgsmall/tmp/LG.fst 
+fstisstochastic data/lang_test_tgsmall/tmp/CLG_3_1.fst 
+make-h-transducer --disambig-syms-out=exp/tri3b/graph_tgsmall/disambig_tid.int --transition-scale=1.0 data/lang_test_tgsmall/tmp/ilabels_3_1 exp/tri3b/tree exp/tri3b/final.mdl 
+fstrmepslocal 
+fsttablecompose exp/tri3b/graph_tgsmall/Ha.fst data/lang_test_tgsmall/tmp/CLG_3_1.fst 
+fstrmsymbols exp/tri3b/graph_tgsmall/disambig_tid.int 
+fstminimizeencoded 
+fstdeterminizestar --use-log=true 
+fstisstochastic exp/tri3b/graph_tgsmall/HCLGa.fst 
+add-self-loops --self-loop-scale=0.1 --reorder=true exp/tri3b/final.mdl exp/tri3b/graph_tgsmall/HCLGa.fst 
+fstrmsymbols data/lang_test_tgmed/phones/disambig.int 
+fstdeterminizestar 
+filter_scps.pl: warning: some input lines were output to multiple files [OK if splitting per utt] 
+filter_scps.pl: warning: some input lines were output to multiple files [OK if splitting per utt] 
+tree-info exp/chain/tree_sp/tree 
+steps/nnet3/xconfig_to_configs.py --xconfig-file exp/chain/tdnn1j_sp/configs/network.xconfig --config-dir exp/chain/tdnn1j_sp/configs/
+nnet3-init exp/chain/tdnn1j_sp/configs//ref.config exp/chain/tdnn1j_sp/configs//ref.raw 
+LOG (nnet3-init[5.5.1060~1-ae8cb]:main():nnet3-init.cc:80) Initialized raw neural net and wrote it to exp/chain/tdnn1j_sp/configs//ref.raw
+nnet3-info exp/chain/tdnn1j_sp/configs//ref.raw 
+nnet3-init exp/chain/tdnn1j_sp/configs//ref.config exp/chain/tdnn1j_sp/configs//ref.raw 
+LOG (nnet3-init[5.5.1060~1-ae8cb]:main():nnet3-init.cc:80) Initialized raw neural net and wrote it to exp/chain/tdnn1j_sp/configs//ref.raw
+nnet3-info exp/chain/tdnn1j_sp/configs//ref.raw 
+2023-02-05 16:33:57,268 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:35 - <module> - INFO ] Starting chain model trainer (train.py)
+2023-02-05 16:33:57,272 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:284 - train - INFO ] Arguments for the experiment
+{'alignment_subsampling_factor': 3,
+ 'apply_deriv_weights': False,
+ 'backstitch_training_interval': 1,
+ 'backstitch_training_scale': 0.0,
+ 'chain_opts': '',
+ 'chunk_left_context': 0,
+ 'chunk_left_context_initial': -1,
+ 'chunk_right_context': 0,
+ 'chunk_right_context_final': -1,
+ 'chunk_width': '140,100,160',
+ 'cleanup': True,
+ 'cmvn_opts': '--norm-means=false --norm-vars=false',
+ 'combine_sum_to_one_penalty': 0.0,
+ 'command': 'run.pl --mem 4G',
+ 'compute_per_dim_accuracy': False,
+ 'deriv_truncate_margin': None,
+ 'dir': 'exp/chain/tdnn1j_sp',
+ 'do_final_combination': True,
+ 'dropout_schedule': None,
+ 'egs_command': None,
+ 'egs_dir': None,
+ 'egs_nj': 0,
+ 'egs_opts': '--frames-overlap-per-eg 0',
+ 'egs_stage': 0,
+ 'email': None,
+ 'exit_stage': None,
+ 'feat_dir': 'data/train_sp_hires',
+ 'final_effective_lrate': 0.0002,
+ 'frame_subsampling_factor': 3,
+ 'frames_per_iter': 3000000,
+ 'initial_effective_lrate': 0.002,
+ 'input_model': None,
+ 'l2_regularize': 0.0,
+ 'lat_dir': 'exp/chain/tri3b_train_sp_lats',
+ 'leaky_hmm_coefficient': 0.1,
+ 'left_deriv_truncate': None,
+ 'left_tolerance': 5,
+ 'lm_opts': '--num-extra-lm-states=2000',
+ 'max_lda_jobs': 10,
+ 'max_models_combine': 20,
+ 'max_objective_evaluations': 30,
+ 'max_param_change': 2.0,
+ 'momentum': 0.0,
+ 'num_chunk_per_minibatch': '128,64',
+ 'num_epochs': 20.0,
+ 'num_jobs_final': 2,
+ 'num_jobs_initial': 2,
+ 'num_jobs_step': 1,
+ 'online_ivector_dir': 'exp/nnet3/ivectors_train_sp_hires',
+ 'preserve_model_interval': 100,
+ 'presoftmax_prior_scale_power': -0.25,
+ 'proportional_shrink': 0.0,
+ 'rand_prune': 4.0,
+ 'remove_egs': True,
+ 'reporting_interval': 0.1,
+ 'right_tolerance': 5,
+ 'samples_per_iter': 400000,
+ 'shrink_saturation_threshold': 0.4,
+ 'shrink_value': 1.0,
+ 'shuffle_buffer_size': 5000,
+ 'srand': 0,
+ 'stage': -10,
+ 'train_opts': ['--optimization.memory-compression-level=2'],
+ 'tree_dir': 'exp/chain/tree_sp',
+ 'use_gpu': 'wait',
+ 'xent_regularize': 0.1}
+2023-02-05 16:33:57,906 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:341 - train - INFO ] Creating phone language-model
+2023-02-05 16:33:58,818 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:346 - train - INFO ] Creating denominator FST
+copy-transition-model exp/chain/tree_sp/final.mdl exp/chain/tdnn1j_sp/0.trans_mdl 
+LOG (copy-transition-model[5.5.1060~1-ae8cb]:main():copy-transition-model.cc:62) Copied transition model.
+2023-02-05 16:33:59,310 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:382 - train - INFO ] Generating egs
+filter_scps.pl: warning: some input lines were output to multiple files [OK if splitting per utt] 
+tree-info exp/chain/tdnn1j_sp/tree 
+feat-to-dim scp:exp/nnet3/ivectors_train_sp_hires/ivector_online.scp - 
+2023-02-05 16:34:51,103 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:431 - train - INFO ] Copying the properties from exp/chain/tdnn1j_sp/egs to exp/chain/tdnn1j_sp
+2023-02-05 16:34:51,104 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:454 - train - INFO ] Preparing the initial acoustic model.
+2023-02-05 16:34:51,432 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:487 - train - INFO ] Training will run for 20.0 epochs = 150 iterations
+2023-02-05 16:34:51,433 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 0/149   Jobs: 2   Epoch: 0.00/20.0 (0.0% complete)   lr: 0.004000   
+2023-02-05 16:37:14,845 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 1/149   Jobs: 2   Epoch: 0.13/20.0 (0.7% complete)   lr: 0.003939   
+2023-02-05 16:39:29,826 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 2/149   Jobs: 2   Epoch: 0.27/20.0 (1.3% complete)   lr: 0.003879   
+2023-02-05 16:41:45,175 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 3/149   Jobs: 2   Epoch: 0.40/20.0 (2.0% complete)   lr: 0.003820   
+2023-02-05 16:44:00,354 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 4/149   Jobs: 2   Epoch: 0.53/20.0 (2.7% complete)   lr: 0.003762   
+2023-02-05 16:46:16,060 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 5/149   Jobs: 2   Epoch: 0.67/20.0 (3.3% complete)   lr: 0.003704   
+2023-02-05 16:48:31,637 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 6/149   Jobs: 2   Epoch: 0.80/20.0 (4.0% complete)   lr: 0.003648   
+2023-02-05 16:50:47,288 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 7/149   Jobs: 2   Epoch: 0.93/20.0 (4.7% complete)   lr: 0.003592   
+2023-02-05 16:53:02,815 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 8/149   Jobs: 2   Epoch: 1.07/20.0 (5.3% complete)   lr: 0.003538   
+2023-02-05 16:55:17,881 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 9/149   Jobs: 2   Epoch: 1.20/20.0 (6.0% complete)   lr: 0.003484   
+2023-02-05 16:57:33,680 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 10/149   Jobs: 2   Epoch: 1.33/20.0 (6.7% complete)   lr: 0.003431   
+2023-02-05 16:59:49,272 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 11/149   Jobs: 2   Epoch: 1.47/20.0 (7.3% complete)   lr: 0.003379   
+2023-02-05 17:02:04,437 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 12/149   Jobs: 2   Epoch: 1.60/20.0 (8.0% complete)   lr: 0.003327   
+2023-02-05 17:04:19,727 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 13/149   Jobs: 2   Epoch: 1.73/20.0 (8.7% complete)   lr: 0.003276   
+2023-02-05 17:06:31,723 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 14/149   Jobs: 2   Epoch: 1.87/20.0 (9.3% complete)   lr: 0.003226   
+2023-02-05 17:08:47,655 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 15/149   Jobs: 2   Epoch: 2.00/20.0 (10.0% complete)   lr: 0.003177   
+2023-02-05 17:11:04,352 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 16/149   Jobs: 2   Epoch: 2.13/20.0 (10.7% complete)   lr: 0.003129   
+2023-02-05 17:13:19,758 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 17/149   Jobs: 2   Epoch: 2.27/20.0 (11.3% complete)   lr: 0.003081   
+2023-02-05 17:15:35,830 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 18/149   Jobs: 2   Epoch: 2.40/20.0 (12.0% complete)   lr: 0.003034   
+2023-02-05 17:17:47,779 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 19/149   Jobs: 2   Epoch: 2.53/20.0 (12.7% complete)   lr: 0.002988   
+2023-02-05 17:20:03,707 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 20/149   Jobs: 2   Epoch: 2.67/20.0 (13.3% complete)   lr: 0.002943   
+2023-02-05 17:22:31,381 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 21/149   Jobs: 2   Epoch: 2.80/20.0 (14.0% complete)   lr: 0.002898   
+2023-02-05 17:24:41,986 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 22/149   Jobs: 2   Epoch: 2.93/20.0 (14.7% complete)   lr: 0.002854   
+2023-02-05 17:26:58,199 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 23/149   Jobs: 2   Epoch: 3.07/20.0 (15.3% complete)   lr: 0.002810   
+2023-02-05 17:29:10,136 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 24/149   Jobs: 2   Epoch: 3.20/20.0 (16.0% complete)   lr: 0.002767   
+2023-02-05 17:31:25,985 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 25/149   Jobs: 2   Epoch: 3.33/20.0 (16.7% complete)   lr: 0.002725   
+2023-02-05 17:33:41,558 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 26/149   Jobs: 2   Epoch: 3.47/20.0 (17.3% complete)   lr: 0.002684   
+2023-02-05 17:35:57,043 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 27/149   Jobs: 2   Epoch: 3.60/20.0 (18.0% complete)   lr: 0.002643   
+2023-02-05 17:38:12,368 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 28/149   Jobs: 2   Epoch: 3.73/20.0 (18.7% complete)   lr: 0.002603   
+2023-02-05 17:40:24,287 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 29/149   Jobs: 2   Epoch: 3.87/20.0 (19.3% complete)   lr: 0.002563   
+2023-02-05 17:42:40,221 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 30/149   Jobs: 2   Epoch: 4.00/20.0 (20.0% complete)   lr: 0.002524   
+2023-02-05 17:44:55,808 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 31/149   Jobs: 2   Epoch: 4.13/20.0 (20.7% complete)   lr: 0.002485   
+2023-02-05 17:47:11,064 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 32/149   Jobs: 2   Epoch: 4.27/20.0 (21.3% complete)   lr: 0.002448   
+2023-02-05 17:49:26,397 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 33/149   Jobs: 2   Epoch: 4.40/20.0 (22.0% complete)   lr: 0.002410   
+2023-02-05 17:51:41,436 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 34/149   Jobs: 2   Epoch: 4.53/20.0 (22.7% complete)   lr: 0.002374   
+2023-02-05 17:53:57,371 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 35/149   Jobs: 2   Epoch: 4.67/20.0 (23.3% complete)   lr: 0.002337   
+2023-02-05 17:56:12,950 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 36/149   Jobs: 2   Epoch: 4.80/20.0 (24.0% complete)   lr: 0.002302   
+2023-02-05 17:58:28,199 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 37/149   Jobs: 2   Epoch: 4.93/20.0 (24.7% complete)   lr: 0.002267   
+2023-02-05 18:00:43,557 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 38/149   Jobs: 2   Epoch: 5.07/20.0 (25.3% complete)   lr: 0.002232   
+2023-02-05 18:02:58,616 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 39/149   Jobs: 2   Epoch: 5.20/20.0 (26.0% complete)   lr: 0.002198   
+2023-02-05 18:05:14,401 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 40/149   Jobs: 2   Epoch: 5.33/20.0 (26.7% complete)   lr: 0.002165   
+2023-02-05 18:07:40,764 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 41/149   Jobs: 2   Epoch: 5.47/20.0 (27.3% complete)   lr: 0.002132   
+2023-02-05 18:09:56,441 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 42/149   Jobs: 2   Epoch: 5.60/20.0 (28.0% complete)   lr: 0.002099   
+2023-02-05 18:12:12,478 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 43/149   Jobs: 2   Epoch: 5.73/20.0 (28.7% complete)   lr: 0.002067   
+2023-02-05 18:14:27,531 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 44/149   Jobs: 2   Epoch: 5.87/20.0 (29.3% complete)   lr: 0.002036   
+2023-02-05 18:16:43,576 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 45/149   Jobs: 2   Epoch: 6.00/20.0 (30.0% complete)   lr: 0.002005   
+2023-02-05 18:19:00,341 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 46/149   Jobs: 2   Epoch: 6.13/20.0 (30.7% complete)   lr: 0.001974   
+2023-02-05 18:21:15,863 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 47/149   Jobs: 2   Epoch: 6.27/20.0 (31.3% complete)   lr: 0.001944   
+2023-02-05 18:23:31,244 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 48/149   Jobs: 2   Epoch: 6.40/20.0 (32.0% complete)   lr: 0.001915   
+2023-02-05 18:25:46,230 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 49/149   Jobs: 2   Epoch: 6.53/20.0 (32.7% complete)   lr: 0.001885   
+2023-02-05 18:28:02,021 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 50/149   Jobs: 2   Epoch: 6.67/20.0 (33.3% complete)   lr: 0.001857   
+2023-02-05 18:30:18,726 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 51/149   Jobs: 2   Epoch: 6.80/20.0 (34.0% complete)   lr: 0.001828   
+2023-02-05 18:32:34,209 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 52/149   Jobs: 2   Epoch: 6.93/20.0 (34.7% complete)   lr: 0.001801   
+2023-02-05 18:34:49,511 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 53/149   Jobs: 2   Epoch: 7.07/20.0 (35.3% complete)   lr: 0.001773   
+2023-02-05 18:37:01,471 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 54/149   Jobs: 2   Epoch: 7.20/20.0 (36.0% complete)   lr: 0.001746   
+2023-02-05 18:39:17,218 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 55/149   Jobs: 2   Epoch: 7.33/20.0 (36.7% complete)   lr: 0.001719   
+2023-02-05 18:41:33,785 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 56/149   Jobs: 2   Epoch: 7.47/20.0 (37.3% complete)   lr: 0.001693   
+2023-02-05 18:43:49,137 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 57/149   Jobs: 2   Epoch: 7.60/20.0 (38.0% complete)   lr: 0.001667   
+2023-02-05 18:46:05,291 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 58/149   Jobs: 2   Epoch: 7.73/20.0 (38.7% complete)   lr: 0.001642   
+2023-02-05 18:48:17,231 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 59/149   Jobs: 2   Epoch: 7.87/20.0 (39.3% complete)   lr: 0.001617   
+2023-02-05 18:50:33,238 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 60/149   Jobs: 2   Epoch: 8.00/20.0 (40.0% complete)   lr: 0.001592   
+2023-02-05 18:53:00,826 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 61/149   Jobs: 2   Epoch: 8.13/20.0 (40.7% complete)   lr: 0.001568   
+2023-02-05 18:55:16,354 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 62/149   Jobs: 2   Epoch: 8.27/20.0 (41.3% complete)   lr: 0.001544   
+2023-02-05 18:57:27,479 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 63/149   Jobs: 2   Epoch: 8.40/20.0 (42.0% complete)   lr: 0.001521   
+2023-02-05 18:59:39,312 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 64/149   Jobs: 2   Epoch: 8.53/20.0 (42.7% complete)   lr: 0.001498   
+2023-02-05 19:01:55,054 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 65/149   Jobs: 2   Epoch: 8.67/20.0 (43.3% complete)   lr: 0.001475   
+2023-02-05 19:04:11,876 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 66/149   Jobs: 2   Epoch: 8.80/20.0 (44.0% complete)   lr: 0.001452   
+2023-02-05 19:06:27,003 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 67/149   Jobs: 2   Epoch: 8.93/20.0 (44.7% complete)   lr: 0.001430   
+2023-02-05 19:08:42,229 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 68/149   Jobs: 2   Epoch: 9.07/20.0 (45.3% complete)   lr: 0.001408   
+2023-02-05 19:10:57,300 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 69/149   Jobs: 2   Epoch: 9.20/20.0 (46.0% complete)   lr: 0.001387   
+2023-02-05 19:13:13,077 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 70/149   Jobs: 2   Epoch: 9.33/20.0 (46.7% complete)   lr: 0.001366   
+2023-02-05 19:15:28,642 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 71/149   Jobs: 2   Epoch: 9.47/20.0 (47.3% complete)   lr: 0.001345   
+2023-02-05 19:17:44,201 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 72/149   Jobs: 2   Epoch: 9.60/20.0 (48.0% complete)   lr: 0.001325   
+2023-02-05 19:19:59,564 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 73/149   Jobs: 2   Epoch: 9.73/20.0 (48.7% complete)   lr: 0.001304   
+2023-02-05 19:22:14,672 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 74/149   Jobs: 2   Epoch: 9.87/20.0 (49.3% complete)   lr: 0.001284   
+2023-02-05 19:24:30,395 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 75/149   Jobs: 2   Epoch: 10.00/20.0 (50.0% complete)   lr: 0.001265   
+2023-02-05 19:26:46,053 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 76/149   Jobs: 2   Epoch: 10.13/20.0 (50.7% complete)   lr: 0.001246   
+2023-02-05 19:29:01,426 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 77/149   Jobs: 2   Epoch: 10.27/20.0 (51.3% complete)   lr: 0.001227   
+2023-02-05 19:31:16,718 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 78/149   Jobs: 2   Epoch: 10.40/20.0 (52.0% complete)   lr: 0.001208   
+2023-02-05 19:33:28,523 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 79/149   Jobs: 2   Epoch: 10.53/20.0 (52.7% complete)   lr: 0.001190   
+2023-02-05 19:35:44,450 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 80/149   Jobs: 2   Epoch: 10.67/20.0 (53.3% complete)   lr: 0.001171   
+2023-02-05 19:38:10,789 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 81/149   Jobs: 2   Epoch: 10.80/20.0 (54.0% complete)   lr: 0.001154   
+2023-02-05 19:40:26,033 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 82/149   Jobs: 2   Epoch: 10.93/20.0 (54.7% complete)   lr: 0.001136   
+2023-02-05 19:42:41,370 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 83/149   Jobs: 2   Epoch: 11.07/20.0 (55.3% complete)   lr: 0.001119   
+2023-02-05 19:44:53,240 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 84/149   Jobs: 2   Epoch: 11.20/20.0 (56.0% complete)   lr: 0.001102   
+2023-02-05 19:47:08,998 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 85/149   Jobs: 2   Epoch: 11.33/20.0 (56.7% complete)   lr: 0.001085   
+2023-02-05 19:49:25,514 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 86/149   Jobs: 2   Epoch: 11.47/20.0 (57.3% complete)   lr: 0.001068   
+2023-02-05 19:51:41,077 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 87/149   Jobs: 2   Epoch: 11.60/20.0 (58.0% complete)   lr: 0.001052   
+2023-02-05 19:53:56,284 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 88/149   Jobs: 2   Epoch: 11.73/20.0 (58.7% complete)   lr: 0.001036   
+2023-02-05 19:56:11,268 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 89/149   Jobs: 2   Epoch: 11.87/20.0 (59.3% complete)   lr: 0.001020   
+2023-02-05 19:58:27,068 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 90/149   Jobs: 2   Epoch: 12.00/20.0 (60.0% complete)   lr: 0.001005   
+2023-02-05 20:00:43,710 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 91/149   Jobs: 2   Epoch: 12.13/20.0 (60.7% complete)   lr: 0.000989   
+2023-02-05 20:02:54,204 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 92/149   Jobs: 2   Epoch: 12.27/20.0 (61.3% complete)   lr: 0.000974   
+2023-02-05 20:05:10,464 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 93/149   Jobs: 2   Epoch: 12.40/20.0 (62.0% complete)   lr: 0.000960   
+2023-02-05 20:07:22,246 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 94/149   Jobs: 2   Epoch: 12.53/20.0 (62.7% complete)   lr: 0.000945   
+2023-02-05 20:09:37,994 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 95/149   Jobs: 2   Epoch: 12.67/20.0 (63.3% complete)   lr: 0.000931   
+2023-02-05 20:11:53,450 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 96/149   Jobs: 2   Epoch: 12.80/20.0 (64.0% complete)   lr: 0.000916   
+2023-02-05 20:14:08,601 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 97/149   Jobs: 2   Epoch: 12.93/20.0 (64.7% complete)   lr: 0.000902   
+2023-02-05 20:16:23,915 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 98/149   Jobs: 2   Epoch: 13.07/20.0 (65.3% complete)   lr: 0.000889   
+2023-02-05 20:18:39,036 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 99/149   Jobs: 2   Epoch: 13.20/20.0 (66.0% complete)   lr: 0.000875   
+2023-02-05 20:20:54,930 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 100/149   Jobs: 2   Epoch: 13.33/20.0 (66.7% complete)   lr: 0.000862   
+2023-02-05 20:23:21,319 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 101/149   Jobs: 2   Epoch: 13.47/20.0 (67.3% complete)   lr: 0.000849   
+2023-02-05 20:25:36,611 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 102/149   Jobs: 2   Epoch: 13.60/20.0 (68.0% complete)   lr: 0.000836   
+2023-02-05 20:27:51,861 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 103/149   Jobs: 2   Epoch: 13.73/20.0 (68.7% complete)   lr: 0.000823   
+2023-02-05 20:30:06,878 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 104/149   Jobs: 2   Epoch: 13.87/20.0 (69.3% complete)   lr: 0.000810   
+2023-02-05 20:32:22,621 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 105/149   Jobs: 2   Epoch: 14.00/20.0 (70.0% complete)   lr: 0.000798   
+2023-02-05 20:34:39,273 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 106/149   Jobs: 2   Epoch: 14.13/20.0 (70.7% complete)   lr: 0.000786   
+2023-02-05 20:36:49,919 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 107/149   Jobs: 2   Epoch: 14.27/20.0 (71.3% complete)   lr: 0.000774   
+2023-02-05 20:39:06,076 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 108/149   Jobs: 2   Epoch: 14.40/20.0 (72.0% complete)   lr: 0.000762   
+2023-02-05 20:41:21,101 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 109/149   Jobs: 2   Epoch: 14.53/20.0 (72.7% complete)   lr: 0.000751   
+2023-02-05 20:43:37,035 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 110/149   Jobs: 2   Epoch: 14.67/20.0 (73.3% complete)   lr: 0.000739   
+2023-02-05 20:45:53,680 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 111/149   Jobs: 2   Epoch: 14.80/20.0 (74.0% complete)   lr: 0.000728   
+2023-02-05 20:48:09,130 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 112/149   Jobs: 2   Epoch: 14.93/20.0 (74.7% complete)   lr: 0.000717   
+2023-02-05 20:50:24,505 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 113/149   Jobs: 2   Epoch: 15.07/20.0 (75.3% complete)   lr: 0.000706   
+2023-02-05 20:52:39,623 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 114/149   Jobs: 2   Epoch: 15.20/20.0 (76.0% complete)   lr: 0.000695   
+2023-02-05 20:54:55,452 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 115/149   Jobs: 2   Epoch: 15.33/20.0 (76.7% complete)   lr: 0.000685   
+2023-02-05 20:57:10,990 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 116/149   Jobs: 2   Epoch: 15.47/20.0 (77.3% complete)   lr: 0.000674   
+2023-02-05 20:59:21,581 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 117/149   Jobs: 2   Epoch: 15.60/20.0 (78.0% complete)   lr: 0.000664   
+2023-02-05 21:01:36,968 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 118/149   Jobs: 2   Epoch: 15.73/20.0 (78.7% complete)   lr: 0.000654   
+2023-02-05 21:03:48,795 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 119/149   Jobs: 2   Epoch: 15.87/20.0 (79.3% complete)   lr: 0.000644   
+2023-02-05 21:06:04,518 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 120/149   Jobs: 2   Epoch: 16.00/20.0 (80.0% complete)   lr: 0.000634   
+2023-02-05 21:08:32,193 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 121/149   Jobs: 2   Epoch: 16.13/20.0 (80.7% complete)   lr: 0.000624   
+2023-02-05 21:10:47,422 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 122/149   Jobs: 2   Epoch: 16.27/20.0 (81.3% complete)   lr: 0.000615   
+2023-02-05 21:13:03,584 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 123/149   Jobs: 2   Epoch: 16.40/20.0 (82.0% complete)   lr: 0.000605   
+2023-02-05 21:15:18,608 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 124/149   Jobs: 2   Epoch: 16.53/20.0 (82.7% complete)   lr: 0.000596   
+2023-02-05 21:17:34,378 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 125/149   Jobs: 2   Epoch: 16.67/20.0 (83.3% complete)   lr: 0.000587   
+2023-02-05 21:19:51,115 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 126/149   Jobs: 2   Epoch: 16.80/20.0 (84.0% complete)   lr: 0.000578   
+2023-02-05 21:22:06,411 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 127/149   Jobs: 2   Epoch: 16.93/20.0 (84.7% complete)   lr: 0.000569   
+2023-02-05 21:24:21,654 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 128/149   Jobs: 2   Epoch: 17.07/20.0 (85.3% complete)   lr: 0.000561   
+2023-02-05 21:26:33,524 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 129/149   Jobs: 2   Epoch: 17.20/20.0 (86.0% complete)   lr: 0.000552   
+2023-02-05 21:28:49,453 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 130/149   Jobs: 2   Epoch: 17.33/20.0 (86.7% complete)   lr: 0.000544   
+2023-02-05 21:31:06,035 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 131/149   Jobs: 2   Epoch: 17.47/20.0 (87.3% complete)   lr: 0.000535   
+2023-02-05 21:33:21,537 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 132/149   Jobs: 2   Epoch: 17.60/20.0 (88.0% complete)   lr: 0.000527   
+2023-02-05 21:35:36,887 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 133/149   Jobs: 2   Epoch: 17.73/20.0 (88.7% complete)   lr: 0.000519   
+2023-02-05 21:37:48,676 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 134/149   Jobs: 2   Epoch: 17.87/20.0 (89.3% complete)   lr: 0.000511   
+2023-02-05 21:40:04,567 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 135/149   Jobs: 2   Epoch: 18.00/20.0 (90.0% complete)   lr: 0.000504   
+2023-02-05 21:42:20,174 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 136/149   Jobs: 2   Epoch: 18.13/20.0 (90.7% complete)   lr: 0.000496   
+2023-02-05 21:44:35,696 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 137/149   Jobs: 2   Epoch: 18.27/20.0 (91.3% complete)   lr: 0.000488   
+2023-02-05 21:46:51,801 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 138/149   Jobs: 2   Epoch: 18.40/20.0 (92.0% complete)   lr: 0.000481   
+2023-02-05 21:49:03,666 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 139/149   Jobs: 2   Epoch: 18.53/20.0 (92.7% complete)   lr: 0.000474   
+2023-02-05 21:51:19,480 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 140/149   Jobs: 2   Epoch: 18.67/20.0 (93.3% complete)   lr: 0.000466   
+2023-02-05 21:53:45,912 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 141/149   Jobs: 2   Epoch: 18.80/20.0 (94.0% complete)   lr: 0.000459   
+2023-02-05 21:56:01,171 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 142/149   Jobs: 2   Epoch: 18.93/20.0 (94.7% complete)   lr: 0.000452   
+2023-02-05 21:58:12,192 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 143/149   Jobs: 2   Epoch: 19.07/20.0 (95.3% complete)   lr: 0.000445   
+2023-02-05 22:00:24,018 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 144/149   Jobs: 2   Epoch: 19.20/20.0 (96.0% complete)   lr: 0.000439   
+2023-02-05 22:02:39,790 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 145/149   Jobs: 2   Epoch: 19.33/20.0 (96.7% complete)   lr: 0.000432   
+2023-02-05 22:04:55,272 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 146/149   Jobs: 2   Epoch: 19.47/20.0 (97.3% complete)   lr: 0.000425   
+2023-02-05 22:07:05,772 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 147/149   Jobs: 2   Epoch: 19.60/20.0 (98.0% complete)   lr: 0.000419   
+2023-02-05 22:09:16,856 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 148/149   Jobs: 2   Epoch: 19.73/20.0 (98.7% complete)   lr: 0.000412   
+2023-02-05 22:11:28,694 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 149/149   Jobs: 2   Epoch: 19.87/20.0 (99.3% complete)   lr: 0.000400   
+2023-02-05 22:13:44,375 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:592 - train - INFO ] Doing final combination to produce final.mdl
+2023-02-05 22:13:44,375 [/home/gweltaz/STT/kaldi/egs/bzg/steps/libs/nnet3/train/chain_objf/acoustic_model.py:571 - combine_models - INFO ] Combining {131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150} models.
+2023-02-05 22:14:06,273 [/home/gweltaz/STT/kaldi/egs/bzg/steps/nnet3/chain/train.py:620 - train - INFO ] Cleaning up the experiment directory exp/chain/tdnn1j_sp
+tree-info exp/chain/tree_sp/tree 
+tree-info exp/chain/tree_sp/tree 
+fstcomposecontext --context-size=2 --central-position=1 --read-disambig-syms=data/lang_test_tgsmall/phones/disambig.int --write-disambig-syms=data/lang_test_tgsmall/tmp/disambig_ilabels_2_1.int data/lang_test_tgsmall/tmp/ilabels_2_1.406545 data/lang_test_tgsmall/tmp/LG.fst 
+fstisstochastic data/lang_test_tgsmall/tmp/CLG_2_1.fst 
+make-h-transducer --disambig-syms-out=exp/chain/tree_sp/graph_tgsmall/disambig_tid.int --transition-scale=1.0 data/lang_test_tgsmall/tmp/ilabels_2_1 exp/chain/tree_sp/tree exp/chain/tree_sp/final.mdl 
+fstrmsymbols exp/chain/tree_sp/graph_tgsmall/disambig_tid.int 
+fstminimizeencoded 
+fstdeterminizestar --use-log=true 
+fsttablecompose exp/chain/tree_sp/graph_tgsmall/Ha.fst data/lang_test_tgsmall/tmp/CLG_2_1.fst 
+fstrmepslocal 
+fstisstochastic exp/chain/tree_sp/graph_tgsmall/HCLGa.fst 
+add-self-loops --self-loop-scale=1.0 --reorder=true exp/chain/tree_sp/final.mdl exp/chain/tree_sp/graph_tgsmall/HCLGa.fst 
+fstisstochastic exp/chain/tree_sp/graph_tgsmall/HCLG.fst 

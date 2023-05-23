@@ -1,4 +1,4 @@
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](./LICENSE)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](./LICENSE) [![pypi version](https://img.shields.io/pypi/v/anaouder)](https://pypi.org/project/anaouder/)
 
 # Anaouder mouezh e brezhoneg gant Vosk
 
@@ -46,6 +46,14 @@ Gant an urzh `adskrivan` en un terminal, e vo adskrivet ar pezh e vez komprenet 
 adskrivan RESTR_SON_PE_VIDEO
 ```
 
+Dre ziouer, adskrivet e vo pep tra e diabarzh an terminal. Gallout a rit ivez implij an opsion `-o` evit resisaat anv ur restr, e lec'h ma vo skrivet an titouroù. Tu zo implij an option-se gant an holl urzhioù eus ar meziant.
+
+```bash
+adskrivan RESTR_SON_PE_VIDEO -o DISOC'H.txt
+```
+
+Evit kaout listennad an opsionoù, implijit an opsion `-h`.
+
 ## Implijout gant ur mikro
 
 Dre an an urzh `mikro` e c'heller implij an anaouder gant ho vouezh e amzer real.
@@ -70,18 +78,12 @@ M'ho peus un teul skrid adskrivet dre dorn (e stumm `.txt`) e c'heller linennañ
 linennan RESTR_SON_PE_VIDEO RESTR_SKRID
 ```
 
-Gant an option `-o` ez eus tu reiñ anv ur restr e lerc'h ma vo skrivet an istitloù, da skouer :
-
-```bash
-linennan son.mp3 skrid.txt -o istitloù.srt
-```
-
 ## Adskrivañ istitloù evit ur video
 
 Gallout a rit adskrivañ istitloù diouzh teuliadoù son pe video, e stumm `srt` (Subrip).
 
 ```bash
-istitlan RESTR_SON_PE_VIDEO
+istitlan RESTR_SON_PE_VIDEO -o istitloù.srt
 ```
 
 An oberiadur-se a gemero kalzig a amzer (hervez padelezh an teuliad son). Klaskit gant un teul film berr da gentañ !

@@ -106,6 +106,6 @@ Ar mod-implij a c'heller kavout [amañ](https://docs.kdenlive.org/en/effects_and
 
 ## Trugarez
 
-Ar meziant-se zo bet diorroet o kemer harp war meziantoù dieub all : Kaldi, Vosk ha difazier Hunspell an Drouizig (evit naetaat an testennoù a-raok ar pleustr).\
+Ar meziant-se zo bet diorroet o kemer harp war meziantoù dieub all : Kaldi, Vosk ha difazier [Hunspell](https://github.com/Drouizig/hunspell-br) an Drouizig (evit naetaat an testennoù a-raok ar pleustr).\
 Lakaat da bleustriñ ar model a zo bet posubl a-drugarez d'an danvez prizius, krouet ha rannet gant ur bern tud all : ar raktres Mozilla Common Voice, enrolladennoù Dizale, Brezhoweb, RKB, Kaouen.net, Ya!, Becedia, abadennoù France3 ha Dastum.\
 Trugarez da Elen Cariou, Jean-Mari Ollivier, Karen Treguier ha Mélanie Jouitteau evit o sikour hag o souten.

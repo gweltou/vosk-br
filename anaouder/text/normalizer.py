@@ -1,10 +1,9 @@
 #! /usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-
-# import random
-import re
 from typing import Iterator, List, Any
+import re
+
 from .definitions import SI_UNITS
 from .tokenizer import match_time
 from .tokenizer import ORDINALS, match_ordinal, is_ordinal

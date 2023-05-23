@@ -1,7 +1,7 @@
 from typing import List, Iterator, Any, Tuple
 import re
-from .definitions import LETTERS, PUNCTUATION
 
+from .definitions import LETTERS, PUNCTUATION
 
 
 
@@ -68,33 +68,6 @@ def pre_process(text: str) -> str:
     text = text.replace('ň', 'ñ')
     text = text.replace('ù', 'ù') # Another sneaky one (found in Ya! webpages)
     return text
-
-
-
-def fix_clitic(text: str) -> str:
-    """ Do not use ! """
-    
-    text = text.replace("d' ", "d'")
-    # text = text.replace("n' ", "n'")
-
-    text = text.replace("n'eus ", "'n eus ")
-    text = text.replace("n'int ", "n' int ")
-    text = text.replace("n'eo ", "n' eo ")
-    text = text.replace("n'hon ", "n' hon ")
-    text = text.replace("n'ez ", "n' ez ")
-    text = text.replace("n'em ", "n' em ")
-    text = text.replace("n'am ", "n' am ")
-    text = text.replace("n'en ", "n' en ")
-    text = text.replace("n'o ", "n' o ")
-    text = text.replace("n'on ", "n' on ")
-    text = text.replace("n'he ", "n' he ")
-    text = text.replace("n'edo ", "n' edo ")
-    text = text.replace("n'emañ ", "n' emañ ")
-    text = text.replace("n'anavezan ", "n' anavezan ")
-    text = text.replace("n'ouzer ", "n' ouzer ")
-    text = text.replace("n'ouzon ", "n' ouzon ")
-    # n'oc'h
-    # n'omp
 
 
 

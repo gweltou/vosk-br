@@ -1,3 +1,4 @@
+[![pypi version](https://img.shields.io/pypi/v/anaouder)](https://pypi.org/project/anaouder/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](./LICENSE)
 
 # Anaouder
@@ -9,21 +10,21 @@ Reconnaissance vocale pour le breton avec Vosk.
 ## Présentation
 
 Modèle de reconnaissance vocale (*speech-to-text*) entraîné avec le framework [Kaldi](https://www.kaldi-asr.org/), au format [Vosk](https://github.com/alphacep/vosk-api).\
-Il est accompagné de scripts permettant la retranscription automatique de fichiers audio et video, l'alignement texte/son pour la création de sous-titres, ou encore l'inférence en temps réel à l'aide d'un microphone.\
+Il est accompagné de scripts permettant la retranscription automatique de fichiers audio et video, l'alignement texte/son pour la création de sous-titres, ou encore l'inférence en temps réel à l'aide d'un microphone.
 
 Principaux avantages :
 
- * **Léger**. Les modèles Vosk pèsent moins de 100 Mo et peuvent tourner sur une large gamme d'appareils : ordinateurs **sans GPU**, RaspberryPi, smartphone Android...
- * **Rapide**. L'inférence se fait en **temps réel**, même sur une machine un peu datée.
- * **Local**. Fonctionne sans connexion internet. Vos données restent donc sur votre appareil.
- * **Libre et gratuit**. La licence MIT vous permet de modifier le logiciel et de l'intégrer dans d'autres applications.
+* **Léger**. Les modèles Vosk pèsent moins de 100 Mo et peuvent tourner sur une large gamme d'appareils : ordinateurs **sans GPU**, RaspberryPi, smartphone Android...
+* **Rapide**. L'inférence se fait en **temps réel**, même sur une machine un peu datée.
+* **Local**. Fonctionne sans connexion internet. Vos données restent donc sur votre appareil.
+* **Libre et gratuit**. La licence MIT vous permet de modifier le logiciel et de l'intégrer dans d'autres applications.
 
 Il y a toutefois des inconvénients :
 
- * Sensible au bruit ambiant.
- * Certains accents régionaux sont encore mal reconnus.
- * Nécessite de parler lentement et distinctement.
- * Absence de ponctuation.
+* Sensible au bruit ambiant.
+* Certains accents régionaux sont encore mal reconnus.
+* Nécessite de parler lentement et distinctement.
+* Absence de ponctuation.
 
 Le nombre d'heures d'enregistrement audio utilisé pour entraîner le modèle est relativement faible mais progresse peu à peu.
 En dehors du projet [Common Voice](https://commonvoice.mozilla.org/br) de Mozilla, les enregistrements retranscrits [libres de droit](https://creativecommons.org/licenses/) sont rares pour le breton. Toute aide sur ce terrain sera la bienvenue !
@@ -45,6 +46,12 @@ Une fois le module installé, la commande `adskrivan` permet de retranscrire un 
 
 ```bash
 adskrivan NOM_DU_FICHIER
+```
+
+Le résultat de la transcription s'affichera dans le terminal par défaut. Vous pouvez toutefois préciser le nom d'un fichier dans lequel écrire, avec l'option `-o`
+
+```bash
+adskrivan NOM_DU_FICHIER -o SORTIE.txt
 ```
 
 ## Utilisation avec un microphone
@@ -69,20 +76,14 @@ Il est possible d'aligner un texte d'après un fichier audio ou video à l'aide 
 Le fichier texte doit être un texte brut (extension `.txt`) où chaque ligne correspondra à une ligne de sous-titre.
 
 ```bash
-linennan FICHIER_SON_OU_VIDEO FICHIER_TEXTE
-```
-
-Avec l'option `-o` vous pourrez préciser le nom d'un fichier d'export, par exemple :
-
-```bash
-linennan video.mp4 texte.txt -o sous-titres.srt
+linennan FICHIER_SON_OU_VIDEO FICHIER_TEXTE -o sous-titres.srt
 ```
 
 (export au format `eaf`, pour le logiciel ELAN, à venir...)
 
 ## Création automatique de sous-titres
 
-Vous pouvez `srt` (Subrip).
+Vous pouvez également laisser le modèle de reconnaissance vocale retranscrire les paroles pour la création de sous-titres, au format `srt` (Subrip).
 
 ```bash
 istitlan FICHIER_SON_OU_VIDEO
@@ -92,7 +93,7 @@ istitlan FICHIER_SON_OU_VIDEO
 
 *L'utilisation du modèle brut dans d'autres logiciel est possible mais n'est pas conseillé, puisque qu'elle omettra le post-traitement proposé par le module `anaouder` : le replacement des tirets de liaison et la normalisation-inverse des nombres notamment.*
 
-Le modèle brut est accessible sous le dossier `anaouder/models` ou par le lien "[releases](https://github.com/gweltou/vosk-br/releases)".
+Le modèle brut est accessible sous le dossier `anaouder/models` ou par le lien [releases](https://github.com/gweltou/vosk-br/releases).
 
 ### Kdenlive
 

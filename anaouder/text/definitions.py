@@ -12,7 +12,6 @@ CLOSING_QUOTES = "»”"
 
 
 # Acronyms
-
 PATTERN_DOTTED_ACRONYM = re.compile(r"([A-Z]\.)+([A-Z])?")
 
 

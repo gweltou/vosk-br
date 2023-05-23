@@ -3,13 +3,16 @@
 import subprocess
 import sys
 import argparse
-import srt
 import json
 import datetime
-import static_ffmpeg
 import os.path
+
+import static_ffmpeg
+import srt
 from vosk import Model, KaldiRecognizer, SetLogLevel
-from .ostilhou.asr.post_processing import post_process_vosk
+
+from anaouder.asr.post_processing import post_process_vosk
+from anaouder.text import tokenize, detokenize, load_translation_dict, translate
 
 
 
@@ -35,8 +38,12 @@ def SrtResult(rec, stream, words_per_line = 7, normalize=False):
 		
 		for j in range(0, len(words), words_per_line):
 			line = words[j : j + words_per_line]
+			text = ' '.join([ w["word"] for w in line ])
+			for td in translation_dicts:
+				text = detokenize( translate(tokenize(text), td) )
+
 			s = srt.Subtitle(index=len(subs),
-					content=" ".join([l["word"] for l in line]),
+					content=text,
 					start=datetime.timedelta(seconds=line[0]["start"]),
 					end=datetime.timedelta(seconds=line[-1]["end"]))
 			subs.append(s)
@@ -46,6 +53,10 @@ def SrtResult(rec, stream, words_per_line = 7, normalize=False):
 
 
 def main_istitlan() -> None:
+	""" istitlan cli entry point """
+
+	global translation_dicts
+
 	DEFAULT_MODEL = os.path.join(
 		os.path.dirname(os.path.realpath(__file__)),
 		"models",
@@ -59,6 +70,9 @@ def main_istitlan() -> None:
 		help="Vosk model to use for decoding", metavar='MODEL_PATH')
 	parser.add_argument("-n", "--normalize", action="store_true",
 		help="Normalize numbers")
+	parser.add_argument("-d", "--translate", nargs='+',
+		help="Use additional translation dictionaries")
+	parser.add_argument("-o", "--output", help="write to a file")
 	args = parser.parse_args()
 	
 	# Use static_ffmpeg instead of ffmpeg
@@ -70,12 +84,21 @@ def main_istitlan() -> None:
 	rec = KaldiRecognizer(model, SAMPLE_RATE)
 	rec.SetWords(True)
 
+	translation_dicts = []
+	if args.translate:
+		translation_dicts = [ load_translation_dict(path) for path in args.translate ]
+
+	fout = open(args.output, 'w') if args.output else sys.stdout
+
 	with subprocess.Popen(["ffmpeg", "-loglevel", "quiet", "-i",
 								args.filename,
 								"-ar", str(SAMPLE_RATE) , "-ac", "1", "-f", "s16le", "-"],
 								stdout=subprocess.PIPE).stdout as stream:
 
-		print(SrtResult(rec, stream, normalize=args.normalize))
+		print(SrtResult(rec, stream, normalize=args.normalize), file=fout)
+	
+	if args.output:
+		fout.close()
 
 
 if __name__ == "__main__":

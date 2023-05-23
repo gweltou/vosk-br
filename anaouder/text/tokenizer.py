@@ -5,9 +5,9 @@
     Programming pattern inspired by https://github.com/mideind/Tokenizer
 """
 
-
 from typing import Iterator, Iterable, List, Any, Union, Set
 import re
+
 from .definitions import (
     is_noun, is_noun_f, is_noun_m, is_proper_noun,
     is_time, match_time,

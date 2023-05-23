@@ -19,21 +19,22 @@ import argparse
 import srt
 import jiwer
 import static_ffmpeg
-from .ostilhou.asr.recognizer import load_vosk, transcribe_file_timecode
-from .ostilhou.text import (
+from anaouder.asr.recognizer import load_vosk, transcribe_file_timecode
+from anaouder.text import (
 	pre_process, filter_out,
 	sentence_stats,
 	tokenize, detokenize, normalize_sentence, split_sentences,
 	PUNCTUATION
 )
-from .ostilhou.utils import read_file_drop_comments
-
+from anaouder.utils import read_file_drop_comments
 
 
 autocorrect = False
 
 
 def main_linennan() -> None:
+	""" linennan cli entry point """
+
 	DEFAULT_MODEL = os.path.join(
 		os.path.dirname(os.path.realpath(__file__)),
 		"models",
@@ -264,12 +265,15 @@ def main_linennan() -> None:
 	
 
 	if args.type == "split":
-		utts = []
+		# utts = []
 		for i, line in enumerate(lines):
 			span = sentence_matches[i]["span"]
 			start = int(hyp[span[0]]["start"] * 1000)
 			end = int(hyp[span[1]-1]["end"] * 1000)
 			print(f"{start} {end}", file=fout)
+	
+	if args.output:
+		fout.close()
 
 
 

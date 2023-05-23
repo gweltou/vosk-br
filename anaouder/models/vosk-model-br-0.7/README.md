@@ -5,8 +5,8 @@
 lexicon: **43 468 words** with phonemes \
 corpus: **2 862 007 words**
 
-Test "Bali Breizh er Poc'hêr : Karaez 1" : **WER 44.6%, CER 24.4%** (fastwer) \ XXX
-Test Mozilla Common Voice 11 : **WER 38.1%** \ XXX
+Test "Bali Breizh er Poc'hêr : Karaez 1" : **WER 42.5%, CER 23.7%** (fastwer) \
+Test Mozilla Common Voice 11 : **WER 36.4%** \
 Test Baleadenn1.wav :
 > "Gant ar sorserezh oa ur <del>c'harr</del> \
 > Hag un <del>tammig</del> uhel ha bras"
@@ -90,7 +90,6 @@ Test Baleadenn1.wav :
  * aligned/kaouenn/filip_neri_dc978d84b913c8d87c80b4da19a3c30b
  * aligned/kaouenn/noz_kalana_997e41c2016afe4338977389ba65c6a9
  * aligned/YBD/rann1
-
 
 
 # Test Dataset

@@ -99,3 +99,9 @@ Le modèle brut est accessible sous le dossier `anaouder/models` ou par le lien 
 
 Le logiciel de montage video [Kdenlive](https://kdenlive.org/) permet l'utilisation de modèles Vosk pour la retranscription automatique de sous-titres.\
 Voir la [documentation](https://docs.kdenlive.org/en/effects_and_compositions/speech_to_text.html).
+
+## Remerciements
+
+Le développement de cet outil a été possible grâce aux logiciels libres sur lesquels il se base : Kaldi, Vosk et le correcteur automatique Hunspell de An Drouizig.\
+Le modèle de reconnaissance vocale n'aurait jamais pu être entraîne sans les voix et les textes de nombreux contributeurs, issus de : Mozilla Common Voice, Dizale, Brezhoweb, RKB, Kaouen.net, Ya!, Becedia, France3 et Dastum.\
+Je remercie enfin Elen Cariou, Jean-Mari Ollivier, Karen Treguier et Mélanie Jouitteau pour leur aide et leur soutien.

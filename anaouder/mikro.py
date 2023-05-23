@@ -7,8 +7,8 @@ import sounddevice as sd
 import sys
 import static_ffmpeg
 from vosk import Model, KaldiRecognizer, SetLogLevel
-from .ostilhou.asr.post_processing import post_process_text
-from .ostilhou.text import tokenize, detokenize, load_translation_dict, translate
+from anaouder.asr.post_processing import post_process_text
+from anaouder.text import tokenize, detokenize, load_translation_dict, translate
 
 
 
@@ -36,6 +36,8 @@ def format_output(result, normalize=False):
 
 
 def main_mikro() -> None:
+	""" mikro cli entry point """
+
 	global q
 	global translation_dicts
 
@@ -56,7 +58,7 @@ def main_mikro() -> None:
 		description=__doc__,
 		formatter_class=argparse.RawDescriptionHelpFormatter,
 		parents=[parser])
-	parser.add_argument('-f', '--filename', type=str, metavar='FILENAME',
+	parser.add_argument("-o", "--output", type=str, metavar='FILENAME',
 		help='text file to store transcriptions')
 	parser.add_argument('-m', '--model', type=str, metavar='MODEL_PATH', default=DEFAULT_MODEL,
 		help='Path to the model')
@@ -66,7 +68,7 @@ def main_mikro() -> None:
 		help='sampling rate')
 	parser.add_argument('-n', '--normalize', action="store_true",
 		help="Normalize numbers")
-	parser.add_argument("-t", "--translate", nargs='+',
+	parser.add_argument("-d", "--translate", nargs='+',
 		help="Use additional translation dictionaries")
 	args = parser.parse_args(remaining)
 
@@ -92,8 +94,8 @@ def main_mikro() -> None:
 		if args.translate:
 			translation_dicts = [ load_translation_dict(path) for path in args.translate ]
 
-		if args.filename:
-			dump_fn = open(args.filename, "a")
+		if args.output:
+			dump_fn = open(args.output, "a")
 		else:
 			dump_fn = None
 

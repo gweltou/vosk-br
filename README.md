@@ -1,4 +1,5 @@
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](./LICENSE) [![pypi version](https://img.shields.io/pypi/v/anaouder)](https://pypi.org/project/anaouder/)
+[![pypi version](https://img.shields.io/pypi/v/anaouder)](https://pypi.org/project/anaouder/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](./LICENSE)
 
 # Anaouder mouezh e brezhoneg gant Vosk
 
@@ -12,17 +13,17 @@ Pleustret eo bet gant un dek eurvezh bennak a deulioù son ha skrid linennet.
 
 Un nebeut perzhioù dedennus :
 
- * **Skañv**. Pouezh ar model a zo dindan 100 Mo ha treiñ a ra war ur bern mekanikoù : urzhiataerioù **hep GPU**, RaspberryPi, hezoug Android...
- * **Prim**. Gallout a reer adskrivañ ar son e **amzer real**, memes gant un urzhiataer kozh, pe primoc'h c'hoazh gant dafar nevesoc'h.
- * **Lec'hel**. Ezhomm ebet eus an Internet. Ho mouezh hag **ho data a chomo war ho penveg**, ha tretet e vint gant ho penveg nemetken. Kudenn surentez ebet liammet d'an treuzkas dre rouedad ha gwelloc'h a-fed ekologel.
- * **Digoust ha dieub**. Gellout a reoc'h azasaat ar meziant d'hoc'h ezhommoù pe enframmañ anezhañ e meziantoù all.
+* **Skañv**. Pouezh ar model a zo dindan 100 Mo ha treiñ a ra war ur bern mekanikoù : urzhiataerioù **hep GPU**, RaspberryPi, hezoug Android...
+* **Prim**. Gallout a reer adskrivañ ar son e **amzer real**, memes gant un urzhiataer kozh, pe primoc'h c'hoazh gant dafar nevesoc'h.
+* **Lec'hel**. Ezhomm ebet eus an Internet. Ho mouezh hag **ho data a chomo war ho penveg**, ha tretet e vint gant ho penveg nemetken. Kudenn surentez ebet liammet d'an treuzkas dre rouedad ha gwelloc'h a-fed ekologel.
+* **Digoust ha dieub**. Gellout a reoc'h azasaat ar meziant d'hoc'h ezhommoù pe enframmañ anezhañ e meziantoù all.
 
 Dalc'hoù 'zo siwazh :
 
- * Poentadur ebet.
- * Kizidig d'an trouzioù endro.
- * Fall war ur bern pouezioù-mouezh c'hoazh.
- * Ret eo komz sklaer ha goustadik.
+* Poentadur ebet.
+* Kizidig d'an trouzioù endro.
+* Fall war ur bern pouezioù-mouezh c'hoazh.
+* Ret eo komz sklaer ha goustadik.
 
 Emichañs e vo gwellaet efedusted an anaouder tamm-ha-tamm, gant ma vo kavet roadennoù mouezh adskrivet.\
 Ul lisañs dieub (doare [Creative Commons](https://creativecommons.org/licenses/)) a aotrefe eskemm ar roadennoù-se en un doare aes.

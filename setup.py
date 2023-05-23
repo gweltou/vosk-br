@@ -7,7 +7,7 @@ DESCRIPTION = "Breton language speech-to-text tools"
 URL = "https://github.com/gweltou/vosk-br"
 AUTHOR = "Gweltaz Duval-Guennoc"
 EMAIL = "gweltou@hotmail.com"
-VERSION = "0.7.8"
+VERSION = "0.7.9"
 REQUIRES_PYTHON = ">=3.6.0"
 
 
@@ -57,6 +57,7 @@ setup(
             "ostilhou/dicts/proper_nouns_phon.tsv",
         ]
     },
+    data_files=[('', ["README-fr.md", "CHANGELOG.txt"])],
     entry_points={
         "console_scripts": [
             "adskrivan = anaouder:main_adskrivan",

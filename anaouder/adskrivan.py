@@ -41,7 +41,7 @@ def main_adskrivan() -> None:
 		help="Vosk model to use for decoding", metavar='MODEL_PATH')
 	parser.add_argument("-n", "--normalize", action="store_true",
 		help="Normalize numbers")
-	parser.add_argument("-d", "--translate", nargs='+',
+	parser.add_argument("--translate", nargs='+',
 		help="Use additional translation dictionaries")
 	parser.add_argument("-t", "--type", choices=["txt", "srt", "eaf", "split"],
 		help="file output type (not implemented)")

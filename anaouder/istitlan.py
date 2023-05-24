@@ -70,7 +70,7 @@ def main_istitlan() -> None:
 		help="Vosk model to use for decoding", metavar='MODEL_PATH')
 	parser.add_argument("-n", "--normalize", action="store_true",
 		help="Normalize numbers")
-	parser.add_argument("-d", "--translate", nargs='+',
+	parser.add_argument("--translate", nargs='+',
 		help="Use additional translation dictionaries")
 	parser.add_argument("-o", "--output", help="write to a file")
 	args = parser.parse_args()

@@ -68,7 +68,7 @@ def main_mikro() -> None:
 		help='sampling rate')
 	parser.add_argument('-n', '--normalize', action="store_true",
 		help="Normalize numbers")
-	parser.add_argument("-d", "--translate", nargs='+',
+	parser.add_argument("--translate", nargs='+',
 		help="Use additional translation dictionaries")
 	args = parser.parse_args(remaining)
 

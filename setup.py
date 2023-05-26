@@ -7,7 +7,7 @@ DESCRIPTION = "Breton language speech-to-text tools"
 URL = "https://github.com/gweltou/vosk-br"
 AUTHOR = "Gweltaz Duval-Guennoc"
 EMAIL = "gweltou@hotmail.com"
-VERSION = "0.7.9"
+VERSION = "0.7.11"
 REQUIRES_PYTHON = ">=3.6.0"
 
 
@@ -47,14 +47,14 @@ setup(
         "anaouder": [
             "models/vosk-model-br-0.7/*",
             "models/vosk-model-br-0.7/ivector/*",
-            "ostilhou/asr/inorm_units.tsv",
-            "ostilhou/asr/postproc_sub.tsv",
-            "ostilhou/dicts/acronyms.tsv",
-            "ostilhou/dicts/corrected_tokens.tsv",
-            "ostilhou/dicts/named_entities.tsv",
-            "ostilhou/dicts/noun_f.tsv",
-            "ostilhou/dicts/noun_m.tsv",
-            "ostilhou/dicts/proper_nouns_phon.tsv",
+            "asr/inorm_units.tsv",
+            "asr/postproc_sub.tsv",
+            "dicts/acronyms.tsv",
+            "dicts/corrected_tokens.tsv",
+            "dicts/named_entities.tsv",
+            "dicts/noun_f.tsv",
+            "dicts/noun_m.tsv",
+            "dicts/proper_nouns_phon.tsv",
         ]
     },
     data_files=[('', ["README-fr.md", "CHANGELOG.txt"])],

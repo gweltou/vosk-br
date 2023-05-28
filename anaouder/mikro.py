@@ -5,8 +5,11 @@ import os.path
 import queue
 import sounddevice as sd
 import sys
+import json
+
 import static_ffmpeg
 from vosk import Model, KaldiRecognizer, SetLogLevel
+
 from anaouder.asr.post_processing import post_process_text
 from anaouder.text import tokenize, detokenize, load_translation_dict, translate
 
@@ -27,8 +30,7 @@ def callback(indata, frames, time, status):
 	q.put(bytes(indata))
 
 
-def format_output(result, normalize=False):
-	sentence = eval(result)["text"]
+def format_output(sentence, normalize=False):
 	sentence = post_process_text(sentence, normalize)
 	for td in translation_dicts:
 		sentence = detokenize( translate(tokenize(sentence), td) )
@@ -95,7 +97,7 @@ def main_mikro() -> None:
 			translation_dicts = [ load_translation_dict(path) for path in args.translate ]
 
 		if args.output:
-			dump_fn = open(args.output, "a")
+			dump_fn = open(args.output, "w")
 		else:
 			dump_fn = None
 
@@ -110,9 +112,11 @@ def main_mikro() -> None:
 				while True:
 					data = q.get()
 					if rec.AcceptWaveform(data):
-						print(format_output(rec.Result(), normalize=args.normalize))
-						if dump_fn is not None and len(t) > 5:
-							dump_fn.write(format_output(t)+'\n')
+						result = eval(rec.Result())["text"]
+						if len(result) > 0:
+							print(format_output(result, normalize=args.normalize))
+							if dump_fn:
+								dump_fn.write(format_output(result, normalize=args.normalize)+'\n')
 
 	except KeyboardInterrupt:
 		print('\nDone')

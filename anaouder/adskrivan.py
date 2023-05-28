@@ -12,7 +12,7 @@ from anaouder.text import tokenize, detokenize, load_translation_dict, translate
 
 
 
-def format_output(result, normalize=False):
+def format_output(result, normalize=False, keep_fillers=False):
 	sentence = eval(result)["text"]
 	sentence = post_process_text(sentence, normalize)
 	for td in translation_dicts:
@@ -41,12 +41,15 @@ def main_adskrivan() -> None:
 		help="Vosk model to use for decoding", metavar='MODEL_PATH')
 	parser.add_argument("-n", "--normalize", action="store_true",
 		help="Normalize numbers")
-	parser.add_argument("--translate", nargs='+',
+	parser.add_argument("--translate", nargs='+', metavar="TRANSLATION_DICT",
 		help="Use additional translation dictionaries")
+	parser.add_argument("--keep-fillers", action="store_true",
+		help="Keep verbal fillers ('euh', 'beñ', 'alors', 'kwa'...)")
 	parser.add_argument("-t", "--type", choices=["txt", "srt", "eaf", "split"],
 		help="file output type (not implemented)")
 	parser.add_argument("-o", "--output", help="write to a file")
 	args = parser.parse_args()
+
 
 	SAMPLE_RATE = 16000
 	SetLogLevel(-1)
@@ -69,8 +72,18 @@ def main_adskrivan() -> None:
 			if len(data) == 0:
 				break
 			if rec.AcceptWaveform(data):
-				print(format_output(rec.Result(), normalize=args.normalize), file=fout)
-		print(format_output(rec.FinalResult(), normalize=args.normalize), file=fout)
+				print(
+					format_output(
+						rec.Result(),
+						normalize=args.normalize,
+						keep_fillers=args.keep_fillers),
+					file=fout)
+		print(
+			format_output(
+				rec.FinalResult(),
+				normalize=args.normalize,
+				keep_fillers=args.keep_fillers),
+			file=fout)
 	
 	if args.output:
 		fout.close()

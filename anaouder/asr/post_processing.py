@@ -12,6 +12,7 @@ verbal_fillers = {
     'euh'   :   'OE',
     'euhm'  :   'OE M',
     'beñ'   :   'B EN',
+    'beh'   :   'B E',
     'eba'   :   'E B A',
     'ebeñ'  :   'E B EN',
     'kwa'   :   'K W A',
@@ -26,6 +27,7 @@ verbal_fillers = {
     'allez' :   'A L E',
     'voilà' :   'V O A L A',
     'pff'   :   'P F F',
+    'mais'  :   'M EH'
     #'oh'    :   'O',
     #'ah'    :   'A',
 }

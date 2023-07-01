@@ -14,7 +14,7 @@ from anaouder.text import tokenize, detokenize, load_translation_dict, translate
 
 def format_output(result, normalize=False, keep_fillers=False):
 	sentence = eval(result)["text"]
-	sentence = post_process_text(sentence, normalize)
+	sentence = post_process_text(sentence, normalize, keep_fillers)
 	for td in translation_dicts:
 		sentence = detokenize( translate(tokenize(sentence), td) )
 	return sentence
@@ -28,7 +28,7 @@ def main_adskrivan() -> None:
 	DEFAULT_MODEL = os.path.join(
 		os.path.dirname(os.path.realpath(__file__)),
 		"models",
-		"vosk-model-br-0.7"
+		"vosk-model-br-0.8"
 	)
 	
 	# Use static_ffmpeg instead of ffmpeg

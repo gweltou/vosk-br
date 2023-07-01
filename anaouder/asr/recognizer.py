@@ -1,8 +1,11 @@
 from typing import List
 import os
+import sys
 import subprocess
 import json
+
 from vosk import Model, KaldiRecognizer, SetLogLevel
+
 from .post_processing import apply_post_process_dict_text, post_process_text, post_process_vosk
 from ..text.inverse_normalizer import inverse_normalize_vosk
 
@@ -21,12 +24,13 @@ def load_vosk(path: str = DEFAULT_MODEL) -> None:
     global _vosk_loaded
 
     SetLogLevel(-1)
-    model_path = os.path.normpath(path)
-    # print("Loading model", model_path)
+    model_path = os.path.normpath(path or DEFAULT_MODEL)
+    print("Loading vosk model", model_path, file=sys.stderr)
     model = Model(model_path)
     recognizer = KaldiRecognizer(model, 16000)
     recognizer.SetWords(True)
     _vosk_loaded = True
+
 
 
 
@@ -63,7 +67,7 @@ def transcribe_file(filepath: str, normalize=False) -> List[str]:
 
 
 
-def transcribe_file_timecode(filepath: str, normalize=False) -> List[str]:
+def transcribe_file_timecode(filepath: str, normalize=False) -> List[dict]:
     """ Return list of infered words with associated timecodes (vosk format)
 
         Parameters
@@ -96,3 +100,4 @@ def transcribe_file_timecode(filepath: str, normalize=False) -> List[str]:
         tokens.extend(format_output(recognizer.FinalResult(), normalize))
     
     return tokens
+

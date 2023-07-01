@@ -90,3 +90,17 @@ with open(_corrected_tokens_path, 'r') as f:
         k, v = l.split('\t')
         v = v.split()
         corrected_tokens[k] = v
+
+
+# Standardization tokens
+
+standard_tokens = dict()
+_standard_tokens_path = __file__.replace("__init__.py", "standard_tokens.tsv")
+
+with open(_standard_tokens_path, 'r') as f:
+    for l in f.readlines():
+        l = l.strip()
+        if l.startswith('#') or not l: continue
+        k, v = l.split('\t')
+        v = v.split()
+        standard_tokens[k] = v

@@ -5,6 +5,7 @@
     Programming pattern inspired by https://github.com/mideind/Tokenizer
 """
 
+
 from typing import Iterator, Iterable, List, Any, Union, Set
 import re
 
@@ -16,7 +17,7 @@ from .definitions import (
     OPENING_QUOTES, CLOSING_QUOTES,
 )
 from .utils import capitalize
-from ..dicts import acronyms, corrected_tokens
+from ..dicts import acronyms, corrected_tokens, standard_tokens
 
 
 
@@ -122,7 +123,7 @@ class Token:
         UNKNOWN: "UNKNOWN",
     }
 
-    def __init__(self, data: str, kind: int, *flags):
+    def __init__(self, data: str, kind: int=RAW, *flags):
         self.data = data
         self.norm = []
         self.kind = kind
@@ -171,31 +172,36 @@ def parse_punctuation(token_stream: Iterator[Token], **options: Any) -> Iterator
 
     punct_stack = []
 
-    re_ellipsis = re.compile(r"\.\.+")
-
     for tok in token_stream:
         if tok.kind == Token.RAW:
             data = tok.data
             remainder = ""
             while data:
                 tokens = []
-                match_ellipsis = re_ellipsis.search(data)
-                if match_ellipsis:
-                    if match_ellipsis.start() == 0:
+                if re.search(r"\.\.+", data):
+                    match = re.search(r"\.\.+", data)
+                    if match.start() == 0:
                         # Ellipsis is at the beginning of the word
-                        tokens.append(Token(match_ellipsis.group(), Token.PUNCTUATION))
-                        data = data[match_ellipsis.end():]
+                        tokens.append(Token(match.group(), Token.PUNCTUATION))
+                        data = data[match.end():]
                     else:
-                        # Ellipsis in the middle  or end of the word
-                        left_part = data[:match_ellipsis.start()]
-                        remainder = data[match_ellipsis.start():]
+                        # Ellipsis in the middle or end of the word
+                        left_part = data[:match.start()]
+                        remainder = data[match.start():]
                         data = left_part
-                elif tok.data in PUNCTUATION:
+                elif data in PUNCTUATION:
                     # A single punctuation
-                    tokens.append(Token(tok.data, Token.PUNCTUATION))
+                    tokens.append(Token(data, Token.PUNCTUATION))
                     # All data is consumed
                     data = remainder
                     remainder = ""
+                elif re.match(r"([A-Z]\.)+", data):
+                    # Single initial or group of initials (i.e: I.E.)
+                    match = re.match(r"([A-Z]\.)+", data)
+                    tokens.append(Token(data))
+                    data = data[match.end():]
+                    #data = remainder
+                    #remainder = ""
                 else:
                     # Parse left punctuation
                     while data and data[0] in PUNCTUATION:
@@ -221,7 +227,7 @@ def parse_punctuation(token_stream: Iterator[Token], **options: Any) -> Iterator
                         if norm_punct:
                             if t.data == '‚':   # dirty comma
                                 t.norm.append(',')
-                            if re_ellipsis.match(t.data):
+                            if re.match(r"\.\.+", t.data):
                                 t.norm.append('…')
                         
                         if t.data == '"':
@@ -288,6 +294,9 @@ def parse_numerals(token_stream: Iterator[Token]) -> Iterator[Token]:
             * €/miz
             * +40 %
             * d'ar Sul 10/10
+            * ½
+            * 02.98.00.00.00
+            * 2003-2004
     """
 
     # prev_token = None
@@ -295,7 +304,17 @@ def parse_numerals(token_stream: Iterator[Token]) -> Iterator[Token]:
     for tok in token_stream:
         if tok.kind == Token.RAW:
             if tok.data.isdecimal():
-                num_concat += tok.data
+                if not num_concat and len(tok.data) < 4:
+                    num_concat += tok.data
+                elif num_concat and len(tok.data) == 3:
+                    num_concat += tok.data                    
+                else:
+                    # An full number
+                    tok.kind = Token.NUMBER
+            elif re.fullmatch(r"\d{1,3}(\.\d\d\d)+", tok.data):
+                # A big number with dotted thousands (i.e: 12.000.000)
+                tok.data = tok.data.replace('.', '')
+                tok.kind = Token.NUMBER
             else:
                 if is_roman_number(tok.data):
                     tok.kind = Token.ROMAN_NUMBER
@@ -309,6 +328,7 @@ def parse_numerals(token_stream: Iterator[Token]) -> Iterator[Token]:
                 elif is_unit_number(tok.data):
                     # ex: "10m2"
                     number, unit = match_unit_number(tok.data).groups()
+                    number = number.replace('.', '')
                     tok.kind = Token.QUANTITY
                     tok.data = f"{num_concat}{number}{unit}"
                     tok.number = num_concat + number
@@ -325,7 +345,6 @@ def parse_numerals(token_stream: Iterator[Token]) -> Iterator[Token]:
                         num_concat = ""
                     elif tok.data not in ('l', 'm', 't', 'g'):
                         tok.kind = Token.UNIT
-                # elif num_concat and tok.data.lower() in nouns:
                 elif num_concat and is_noun(tok.data):
                     # ex: "32 bloaz"
                     tok.kind = Token.QUANTITY
@@ -351,7 +370,6 @@ def parse_numerals(token_stream: Iterator[Token]) -> Iterator[Token]:
 
         if not num_concat:
             yield tok
-            # prev_token = tok
     
     if num_concat:
         yield(Token(num_concat, Token.NUMBER))
@@ -363,19 +381,24 @@ def correct_tokens(token_stream: Iterator[Token]) -> Iterator[Token]:
 
     def get_susbitution(word: str) -> List[str]:
         lowered = word.lower()
+        
         if lowered in corrected_tokens:
-            # Check if the first letter is capitalized
-            i = 0
-            while lowered[i] not in LETTERS: i += 1
-            iscap = word[i].isupper()
             substitutes = corrected_tokens[lowered]
-            first = substitutes[0]
-            if iscap:
-                # Should we capitalize the whole "C'H" character ?
-                first = capitalize(first)
-            return [first] + substitutes[1:]
+        elif lowered in standard_tokens:
+            substitutes = standard_tokens[lowered]
         else:
             return []
+        
+        # Keep capitalization
+        i = 0
+        while lowered[i] not in LETTERS: i += 1
+        if word[i].isupper():
+            first = capitalize(substitutes[0])
+            return [first] + substitutes[1:]
+        else:
+            return substitutes
+
+        
 
 
     for tok in token_stream:
@@ -410,6 +433,7 @@ def tokenize(text_or_gen: Union[str, Iterable[str]], **options: Any) -> Iterator
 
     # Arg options
     autocorrect = options.pop('autocorrect', False)
+    #standardize = options.pop('standardize', False)
     
     token_stream = generate_raw_tokens(text_or_gen)
     token_stream = parse_punctuation(token_stream, **options)
@@ -499,7 +523,7 @@ def detokenize(token_stream: Iterator[Token], **options: Any) -> str:
 
 
 def split_sentences(text_or_gen: Union[str, Iterable[str]], **options: Any) -> Iterator[str]:
-    """ Split a text (or list of text) according to its punctuation
+    """ Split a line (or list of lines) according to its punctuation
         This function can be used independently
 
         Options:

@@ -1,9 +1,10 @@
 #! /usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-from typing import Iterator, List, Any
-import re
 
+# import random
+import re
+from typing import Iterator, List, Any
 from .definitions import SI_UNITS
 from .tokenizer import match_time
 from .tokenizer import ORDINALS, match_ordinal, is_ordinal
@@ -109,8 +110,6 @@ def solve_mutation_article(article: str, noun: str) -> List[str]:
 
 
 
-# replace_words = {"bloaz", "bloavezh", "den", "metr", "metrad", "dregant", "lisead"}
-
 def norm_number_noun(number: int, noun: str) -> str:
     """ (75, bloaz) -> "pemp bloaz ha tri-ugent"
         TODO:
@@ -149,7 +148,7 @@ def norm_number_noun(number: int, noun: str) -> str:
 
 num_units = ["", "unan", "daou", "tri", "pevar", "pemp", "c'hwec'h", "seizh", "eizh", "nav",
              "dek", "unnek", "daouzek", "trizek", "pevarzek", "pemzek", "c'hwezek", "seitek", "triwec'h", "naontek", "ugent"]
-num_units_f = ["", "un", "div", "teir", "peder"]
+num_units_f = ["", "unan", "div", "teir", "peder"]
 num_tens = ["", "", "ugent", "tregont", "daou-ugent", "hanter-kant", "tri-ugent", "dek ha tri-ugent", "pevar-ugent", "dek ha pevar-ugent"]
 
 
@@ -200,15 +199,28 @@ def num2txt(num: int, feminine=False) -> str:
         return num2txt(m) + " mil" + unit_str
     
     if num < 1_000_000_000:
+        # Millions
         m, u = divmod(num, 1_000_000)
         if u == 0: unit_str = ""
         else: unit_str = " " + num2txt(u)
 
         if m == 1:
-            return "ur milion " + unit_str
+            return "ur milion" + unit_str
         if m == 2:
             return num2txt(m) + " vilion" + unit_str
         return num2txt(m) + " milion" + unit_str
+    
+    else:
+        # Billions
+        mrd, u = divmod(num, 1_000_000_000)
+        if u == 0: unit_str = ""
+        else: unit_str = " " + num2txt(u)
+
+        if mrd == 1:
+            return "ur miliard" + unit_str
+        if mrd == 2:
+            return num2txt(mrd) + " viliard" + unit_str
+        return num2txt(mrd) + " miliard" + unit_str 
 
 
 # Time (hours and minutes)
@@ -267,6 +279,7 @@ roman2br = {
     'I'    : "unan",
     "II"   : "daou",
     "III"  : "tri",
+    "IIII" : "pevar",
     "IV"   : "pevar",
     "V"    : "pemp",
     "VI"   : "c'hwec'h",
@@ -283,9 +296,23 @@ roman2br = {
     "XVII" : "seitek",
     "XVIII": "triwec'h",
     "XIX"  : "naontek",
+    "IXX"  : "naontek",
     "XX"   : "ugent",
     "XXI"  : "un warn-ugent",
-    "IXX"  : "naontek",
+    "XXII" : "daou warn-ugent",
+    "XXIII": "tri warn-ugent",
+    "XXIV" : "pevar warn-ugent",
+    "XXV"  : "pemp warn-ugent",
+    "XXVI" : "c'hwec'h warn-ugent",
+    "XXVII": "seizh warn-ugent",
+    "XXVIII": "eizh warn-ugent",
+    "XXIX" : "nav warn-ugent",
+    "XXX"  : "tregont",
+    "XXXI" : "un ha tregont",
+    "XXXII": "daou ha tregont",
+    "XXXIII": "tri ha tregont",
+    "XXXIV": "pevar ha tregont",
+    "XXXV" : "pemp ha tregont"
 }
 
 norm_roman_ordinal = lambda s: ROMAN_ORDINALS[s] if s in ROMAN_ORDINALS else roman2br[match_roman_ordinal(s).group(1)] + "vet"

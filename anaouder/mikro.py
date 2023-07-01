@@ -30,8 +30,8 @@ def callback(indata, frames, time, status):
 	q.put(bytes(indata))
 
 
-def format_output(sentence, normalize=False):
-	sentence = post_process_text(sentence, normalize)
+def format_output(sentence, normalize=False, keep_fillers=False):
+	sentence = post_process_text(sentence, normalize, keep_fillers)
 	for td in translation_dicts:
 		sentence = detokenize( translate(tokenize(sentence), td) )
 	return sentence
@@ -46,7 +46,7 @@ def main_mikro() -> None:
 	DEFAULT_MODEL = os.path.join(
 		os.path.dirname(os.path.realpath(__file__)),
 		"models",
-		"vosk-model-br-0.7"
+		"vosk-model-br-0.8"
 	)
 
 	parser = argparse.ArgumentParser(add_help=False)
@@ -72,6 +72,8 @@ def main_mikro() -> None:
 		help="Normalize numbers")
 	parser.add_argument("--translate", nargs='+',
 		help="Use additional translation dictionaries")
+	parser.add_argument("--keep-fillers", action="store_true",
+		help="Keep verbal fillers ('euh', 'beñ', 'alors', 'kwa'...)")
 	args = parser.parse_args(remaining)
 
 	# Use static_ffmpeg instead of ffmpeg
@@ -114,9 +116,9 @@ def main_mikro() -> None:
 					if rec.AcceptWaveform(data):
 						result = eval(rec.Result())["text"]
 						if len(result) > 0:
-							print(format_output(result, normalize=args.normalize))
+							print(format_output(result, normalize=args.normalize, keep_fillers=args.keep_fillers))
 							if dump_fn:
-								dump_fn.write(format_output(result, normalize=args.normalize)+'\n')
+								dump_fn.write(format_output(result, normalize=args.normalize, keep_fillers=args.keep_fillers)+'\n')
 
 	except KeyboardInterrupt:
 		print('\nDone')

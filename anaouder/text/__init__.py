@@ -1,9 +1,15 @@
 from typing import Iterator, Any
+
 from .tokenizer import Token, tokenize, detokenize, split_sentences
 from .normalizer import normalize, normalize_sentence
 from .inverse_normalizer import inverse_normalize_sentence, inverse_normalize_vosk
-from .utils import *
+from .utils import (
+    strip_punct, filter_out, capitalize, pre_process,
+    extract_parenthesis_content, sentence_stats,
+)
+from .definitions import PUNCTUATION
 from ..utils import read_file_drop_comments
+
 
 
 def load_translation_dict(path: str) -> dict:
@@ -36,6 +42,11 @@ def reverse_translation_dict(path: str, newpath: str) -> None:
     with open(newpath, 'w') as f:
         for k in sorted(reversed):
             f.write(f"{k}\t{reversed[k]}\n")
+
+
+
+def correct_sentence(sentence: str) -> str:
+    return detokenize(tokenize(sentence, autocorrect=True))
 
 
 

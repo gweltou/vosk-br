@@ -60,7 +60,7 @@ def main_istitlan() -> None:
 	DEFAULT_MODEL = os.path.join(
 		os.path.dirname(os.path.realpath(__file__)),
 		"models",
-		"vosk-model-br-0.7"
+		"vosk-model-br-0.8"
 	)
 
 	desc = f"Generate subtitles in srt format"

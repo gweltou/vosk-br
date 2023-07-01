@@ -7,7 +7,7 @@ DESCRIPTION = "Breton language speech-to-text tools"
 URL = "https://github.com/gweltou/vosk-br"
 AUTHOR = "Gweltaz Duval-Guennoc"
 EMAIL = "gweltou@hotmail.com"
-VERSION = "0.7.11"
+VERSION = "0.8.0"
 REQUIRES_PYTHON = ">=3.6.0"
 
 
@@ -45,12 +45,13 @@ setup(
     # package_dir={"anaouder": "anaouder", "ostilhou": "anaouder/ostilhou"},
     package_data={
         "anaouder": [
-            "models/vosk-model-br-0.7/*",
-            "models/vosk-model-br-0.7/ivector/*",
+            "models/vosk-model-br-0.8/*",
+            "models/vosk-model-br-0.8/ivector/*",
             "asr/inorm_units.tsv",
             "asr/postproc_sub.tsv",
             "dicts/acronyms.tsv",
             "dicts/corrected_tokens.tsv",
+            "dicts/standard_tokens.tsv",
             "dicts/named_entities.tsv",
             "dicts/noun_f.tsv",
             "dicts/noun_m.tsv",
@@ -64,6 +65,7 @@ setup(
             "linennan = anaouder:main_linennan",
             "istitlan = anaouder:main_istitlan",
             "mikro = anaouder:main_mikro",
+            "normalizan = anaouder:main_normalizan",
         ],
     },
 )

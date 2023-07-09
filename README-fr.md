@@ -40,6 +40,13 @@ Les scripts nécessitent l'installation de [Python3](https://www.python.org/down
 pip install anaouder
 ```
 
+Une fois installé, et à mesure que de nouvelles versions du modèle de reconnaissance vocale seront proposées, vous pourrez mettre à jour le logiciel avec :
+
+```bash
+pip install --upgrade anaouder
+```
+
+
 ## Retranscrire un fichier audio ou video
 
 Une fois le module installé, la commande `adskrivan` permet de retranscrire un fichier audio ou video depuis le terminal. A la première exécution de la commande, il vous faudra patienter le temps de l'installation du module `static_ffmpeg` (programme de conversion pour les fichiers audio/video). Cette installation ne se fera qu'une seule fois.

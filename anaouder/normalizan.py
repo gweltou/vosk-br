@@ -5,7 +5,7 @@
 import sys
 import argparse
 
-from ostilhou.text import normalize_sentence
+from anaouder.text import normalize_sentence
 
 
 

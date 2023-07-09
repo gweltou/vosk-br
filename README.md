@@ -39,6 +39,12 @@ Goude bezañ bet staliet [Python3](https://www.python.org/downloads/) e c'heller
 pip install anaouder
 ```
 
+Ur wech staliet ha pa vo kinniget modeloù efedusoc'h, e c'hellit nevesaat ar meziant gant :
+
+```bash
+pip install --upgrade anaouder
+```
+
 ## Adskrivañ ur restr son
 
 Gant an urzh `adskrivan` en un terminal, e vo adskrivet ar pezh e vez komprenet gant an anaouder diouzh ur restr son. Ar wech kentañ ma vo peurgaset an urzh-se e vo ret deoc'h gortoz ur pennadig ma vefe pellkarget ha staliet ar modul `static_ffmpeg` (evit amdreiñ restroù son ha video).

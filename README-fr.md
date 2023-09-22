@@ -111,4 +111,4 @@ Voir la [documentation](https://docs.kdenlive.org/en/effects_and_compositions/sp
 
 Le développement de cet outil a été possible grâce aux logiciels libres sur lesquels il se base : Kaldi, Vosk et le correcteur automatique [Hunspell](https://github.com/Drouizig/hunspell-br) de An Drouizig.\
 Le modèle de reconnaissance vocale n'aurait jamais pu être entraîne sans les voix et les textes de nombreux contributeurs, issus de : Mozilla Common Voice, Dizale, Brezhoweb, RKB, Kaouen.net, Ya!, Becedia, France3 et Dastum.\
-Je remercie enfin Elen Cariou, Jean-Mari Ollivier, Karen Treguier et Mélanie Jouitteau pour leur aide et leur soutien.
+Je remercie enfin Elen Cariou, Jean-Mari Ollivier, Karen Treguier, Mélanie Jouitteau et Pêr Morvan pour leur aide et leur soutien.

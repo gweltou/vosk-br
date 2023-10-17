@@ -7,7 +7,7 @@ DESCRIPTION = "Breton language speech-to-text tools"
 URL = "https://github.com/gweltou/vosk-br"
 AUTHOR = "Gweltaz Duval-Guennoc"
 EMAIL = "gweltou@hotmail.com"
-VERSION = "0.8.1"
+VERSION = "0.8.2"
 REQUIRES_PYTHON = ">=3.6.0"
 
 

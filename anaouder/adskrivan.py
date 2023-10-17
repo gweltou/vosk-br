@@ -30,9 +30,6 @@ def main_adskrivan() -> None:
 		"models",
 		"vosk-model-br-0.8"
 	)
-	
-	# Use static_ffmpeg instead of ffmpeg
-	static_ffmpeg.add_paths()
 
 	desc = f"Decode an audio file in any format, with the help of ffmpeg"
 	parser = argparse.ArgumentParser(description=desc)
@@ -48,7 +45,17 @@ def main_adskrivan() -> None:
 	parser.add_argument("-t", "--type", choices=["txt", "srt", "eaf", "split"],
 		help="file output type (not implemented)")
 	parser.add_argument("-o", "--output", help="write to a file")
+	parser.add_argument("--set-ffmpeg-path", type=str,
+		help="Set ffmpeg path (will not use static_ffmpeg in that case)")
 	args = parser.parse_args()
+	print(args)
+
+	# Use static_ffmpeg instead of ffmpeg
+	ffmpeg_path = "ffmpeg"
+	if args.set_ffmpeg_path:
+		ffmpeg_path = args.set_ffmpeg_path
+	else:
+		static_ffmpeg.add_paths()
 
 
 	SAMPLE_RATE = 16000
@@ -63,7 +70,7 @@ def main_adskrivan() -> None:
 
 	fout = open(args.output, 'w') if args.output else sys.stdout
 
-	with subprocess.Popen(["ffmpeg", "-loglevel", "quiet", "-i",
+	with subprocess.Popen([ffmpeg_path, "-loglevel", "quiet", "-i",
 								args.filename,
 								"-ar", str(SAMPLE_RATE) , "-ac", "1", "-f", "s16le", "-"],
 								stdout=subprocess.PIPE) as process:

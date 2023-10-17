@@ -22,7 +22,7 @@ import srt
 import jiwer
 import static_ffmpeg
 
-from anaouder.asr.recognizer import load_vosk, transcribe_file_timecode
+from anaouder.asr.recognizer import load_vosk, transcribe_file_timecoded
 from anaouder.asr.post_processing import verbal_fillers
 from anaouder.text import (
     pre_process, filter_out,
@@ -99,7 +99,7 @@ def main_linennan() -> None:
     cleaned_lines = [ " ".join(line.lower().replace('-', ' ').split()) for line in cleaned_lines ]
     # print(cleaned_lines, file=sys.stderr)
 
-    hyp = transcribe_file_timecode(args.audio_file)
+    hyp = transcribe_file_timecoded(args.audio_file)
     if not args.keep_fillers:
         print("removing verbal fillers", file=sys.stderr)
         hyp = [ tok for tok in hyp if tok["word"] not in verbal_fillers ]

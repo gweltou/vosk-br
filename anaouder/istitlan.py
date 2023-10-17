@@ -11,7 +11,7 @@ import static_ffmpeg
 import srt
 from vosk import Model, KaldiRecognizer, SetLogLevel
 
-from anaouder.asr.post_processing import post_process_vosk
+from anaouder.asr.post_processing import post_process_timecoded
 from anaouder.text import tokenize, detokenize, load_translation_dict, translate
 
 
@@ -34,7 +34,7 @@ def SrtResult(rec, stream, words_per_line = 7, normalize=False):
 			continue
 		words = jres["result"]
 		# We need to apply text post-processing here
-		words = post_process_vosk(words, normalize)
+		words = post_process_timecoded(words, normalize)
 		
 		for j in range(0, len(words), words_per_line):
 			line = words[j : j + words_per_line]

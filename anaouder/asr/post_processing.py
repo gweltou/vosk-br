@@ -1,6 +1,6 @@
 import os
 from typing import List, Optional
-from ..text.inverse_normalizer import inverse_normalize_sentence, inverse_normalize_vosk
+from ..text.inverse_normalizer import inverse_normalize_sentence, inverse_normalize_timecoded
 from ..text.definitions import is_noun
 from ..utils import read_file_drop_comments
 
@@ -68,6 +68,17 @@ _inorm_units_dict = load_postproc_dict(_inorm_units_dict_path)
 
 
 def post_process_text(sentence: str, normalize=False, keep_fillers=False) -> str:
+    """ Apply post-processing on raw text """
+
+    # Verbal fillers removal
+    if not keep_fillers:
+        sentence = sentence.split()
+        parsed = []
+        for word in sentence:
+            if not word.lower() in verbal_fillers:
+                parsed.append(word)
+        sentence = ' '.join(parsed)
+
     sentence = apply_post_process_dict_text(sentence, _postproc_dict)
     
     # Add hyphens for "-se" and "-mañ"
@@ -75,8 +86,6 @@ def post_process_text(sentence: str, normalize=False, keep_fillers=False) -> str
     parsed = []
     prev_word = ''
     for word in sentence:
-        if not keep_fillers and word.lower() in verbal_fillers:
-            continue
         if word in ("se", "mañ") and is_noun(prev_word):
             parsed.append('-'.join([parsed.pop(), word]))
             prev_word = parsed[-1]
@@ -92,19 +101,26 @@ def post_process_text(sentence: str, normalize=False, keep_fillers=False) -> str
 
 
 
-def post_process_vosk(
+def post_process_timecoded(
         tokens: List[dict],
         normalize=False,
         keep_fillers=True) -> List[dict]:
+    """ Apply post-processing on Vosk formatted result (keeping timecodes) """
     
-    tokens = apply_post_process_dict_vosk(tokens, _postproc_dict)
+    # Verbal fillers removal
+    if not keep_fillers:
+        parsed = []
+        for idx, tok in enumerate(tokens):
+            if not tok["word"].lower() in verbal_fillers:
+                parsed.append(tok)
+        tokens = parsed
+
+    tokens = apply_post_process_dict_timecoded(tokens, _postproc_dict)
 
     # Add hyphens for "-se" and "-mañ"
     parsed = []
     prev_word = ''
     for idx, tok in enumerate(tokens):
-        if not keep_fillers and tok["word"].lower() in verbal_fillers:
-            continue
         if tok["word"] in ("se", "mañ") and is_noun(prev_word):
             word = prev_word + '-' + tok["word"]
             new_token = {
@@ -120,8 +136,8 @@ def post_process_vosk(
     tokens = parsed
 
     if normalize:
-        tokens = apply_post_process_dict_vosk(tokens, _inorm_units_dict)
-        tokens = inverse_normalize_vosk(tokens)
+        tokens = apply_post_process_dict_timecoded(tokens, _inorm_units_dict)
+        tokens = inverse_normalize_timecoded(tokens)
     return tokens
 
 
@@ -158,7 +174,7 @@ def apply_post_process_dict_text(sentence: str, ngram_dicts: List[dict]=_postpro
 
 
 
-def apply_post_process_dict_vosk(tokens: List[dict], ngram_dicts: List[dict]=_postproc_dict) -> List[dict]:
+def apply_post_process_dict_timecoded(tokens: List[dict], ngram_dicts: List[dict]=_postproc_dict) -> List[dict]:
 
     def check_ngram(n: int):
         ngram = tuple( [ t["word"].lower() for t in tokens[idx:idx+n] ] )

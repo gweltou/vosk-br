@@ -21,15 +21,13 @@ DEFAULT_MODEL = os.path.join(MODEL_DIR, "current")
 
 
 def load_vosk(path: str = DEFAULT_MODEL) -> None:
-    global recognizer
     global _vosk_loaded
+    global model
 
     SetLogLevel(-1)
     model_path = os.path.normpath(path or DEFAULT_MODEL)
     print("Loading vosk model", model_path, file=sys.stderr)
     model = Model(model_path)
-    recognizer = KaldiRecognizer(model, 16000)
-    recognizer.SetWords(True)
     _vosk_loaded = True
 
 
@@ -38,6 +36,8 @@ def transcribe_segment(segment: AudioSegment) -> str:
     """ Transcribe a short AudioSegment """
     if not _vosk_loaded:
         load_vosk()
+    recognizer = KaldiRecognizer(model, 16000)
+    recognizer.SetWords(True)
     
     data = segment.raw_data
     text = []
@@ -54,8 +54,18 @@ def transcribe_segment(segment: AudioSegment) -> str:
 
 
 def transcribe_segment_timecoded(segment: AudioSegment) -> List[dict]:
+    """ Transcribe a short AudioSegment, keeping the timecodes
+
+        The resulting transcription is a list of Vosk tokens
+        Each Vosk token is a dictionary of the form:
+            {'word': str, 'start': float, 'end': float, 'conf': float}
+        'start' and 'end' keys are in seconds
+        'conf' is a normalized confidence score
+    """
     if not _vosk_loaded:
         load_vosk()
+    recognizer = KaldiRecognizer(model, 16000)
+    recognizer.SetWords(True)
     
     data = segment.get_array_of_samples().tobytes()
     timecoded_text = []
@@ -84,6 +94,8 @@ def transcribe_file(filepath: str, normalize=False) -> List[str]:
 
     if not _vosk_loaded:
         load_vosk()
+    recognizer = KaldiRecognizer(model, 16000)
+    recognizer.SetWords(True)
     
     text = []
 
@@ -115,6 +127,12 @@ def transcribe_file_timecoded(filepath: str, normalize=False) -> List[dict]:
 
         Parameters
             normalized (boolean): inverse-normalize sentences
+        
+        The resulting transcription is a list of Vosk tokens
+        Each Vosk token is a dictionary of the form:
+            {'word': str, 'start': float, 'end': float, 'conf': float}
+        'start' and 'end' keys are in seconds
+        'conf' is a normalized confidence score
     """
 
     def format_output(result, normalize=False) -> List[dict]:
@@ -127,6 +145,8 @@ def transcribe_file_timecoded(filepath: str, normalize=False) -> List[dict]:
 
     if not _vosk_loaded:
         load_vosk()
+    recognizer = KaldiRecognizer(model, 16000)
+    recognizer.SetWords(True)
 
     tokens = []
     with subprocess.Popen(["ffmpeg", "-loglevel", "quiet", "-i",

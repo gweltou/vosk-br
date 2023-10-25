@@ -1,10 +1,11 @@
-#!/usr/bin/env python3
+#! /usr/bin/env python3
 
 import subprocess
 import argparse
 import sys
 import os.path
 import datetime
+from math import floor, ceil
 
 import static_ffmpeg
 import json
@@ -13,11 +14,14 @@ from vosk import Model, KaldiRecognizer, SetLogLevel
 from pydub import AudioSegment
 
 from anaouder.asr.recognizer import (
-	transcribe_file, transcribe_segment, transcribe_segment_timecoded, load_vosk
+	transcribe_file, transcribe_segment,
+	transcribe_file_timecoded, transcribe_segment_timecoded,
+	load_vosk
 	)
 from anaouder.asr.post_processing import post_process_text, post_process_timecoded
 from anaouder.text import tokenize, detokenize, load_translation_dict, translate
 from anaouder.audio import split_to_segments
+from anaouder.utils import write_eaf
 
 
 
@@ -28,110 +32,42 @@ def format_output(sentence, normalize=False, keep_fillers=False):
 	return sentence
 
 
+def split_vosk_tokens(tokens, min_silence=0.5):
+	subsegments = []
+	current_segment = [tokens[0]]
+	# last_token = tokens[0]
+	for tok in tokens[1:]:
+		if tok['start'] - current_segment[-1]['end'] > min_silence:
+			# We shall split here
+			subsegments.append(current_segment)
+			current_segment = []
+		current_segment.append(tok)
+	subsegments.append(current_segment)
+	return subsegments
 
-def export_to_eaf(segments, sentences, audiofile, type="wav"):
-    """ Export to eaf (Elan) file """
 
-    record_id = os.path.splitext(os.path.abspath(audiofile))[0]
-    print(f"{record_id=}")
-    audio_filename = os.path.extsep.join((record_id, 'wav'))
-    if type == "mp3":
-        mp3_file = os.path.extsep.join((record_id, 'mp3'))
-        if not os.path.exists(mp3_file):
-            convert_to_mp3(audio_filename, mp3_file)
-        audio_filename = mp3_file
+def split_vosk_tokens_until(tokens, max_length=15):
+	segments = [tokens]
+	silence_length = 1.0
 
-    text_filename = os.path.extsep.join((record_id, 'txt'))
-    eaf_filename = os.path.extsep.join((record_id, 'eaf'))
-
-    doc = minidom.Document()
-
-    root = doc.createElement('ANNOTATION_DOCUMENT')
-    root.setAttribute('AUTHOR', 'anaouder (Gweltaz DG)')
-    root.setAttribute('DATE', datetime.datetime.now(pytz.timezone('Europe/Paris')).isoformat(timespec='seconds'))
-    root.setAttribute('FORMAT', '3.0')
-    root.setAttribute('VERSION', '3.0')
-    root.setAttribute('xmlns:xsi', 'http://www.w3.org/2001/XMLSchema-instance')
-    root.setAttribute('xsi:noNamespaceSchemaLocation', 'http://www.mpi.nl/tools/elan/EAFv3.0.xsd')
-    doc.appendChild(root)
-
-    header = doc.createElement('HEADER')
-    header.setAttribute('MEDIA_FILE', '')
-    header.setAttribute('TIME_UNITS', 'milliseconds')
-    root.appendChild(header)
-
-    media_descriptor = doc.createElement('MEDIA_DESCRIPTOR')
-    media_descriptor.setAttribute('MEDIA_URL', 'file://' + os.path.abspath(audio_filename))
-    if type == "mp3":
-        media_descriptor.setAttribute('MIME_TYPE', 'audio/mpeg')
-    else:
-        media_descriptor.setAttribute('MIME_TYPE', 'audio/x-wav')
-    media_descriptor.setAttribute('RELATIVE_MEDIA_URL', './' + os.path.basename(audio_filename))
-    header.appendChild(media_descriptor)
-
-    time_order = doc.createElement('TIME_ORDER')
-    last_t = 0
-    for i, (s, e) in enumerate(segments):
-        if s < last_t:
-            s = last_t
-        last_t = s
-        time_slot = doc.createElement('TIME_SLOT')
-        time_slot.setAttribute('TIME_SLOT_ID', f'ts{2*i+1}')
-        time_slot.setAttribute('TIME_VALUE', str(s))
-        time_order.appendChild(time_slot)
-        time_slot = doc.createElement('TIME_SLOT')
-        time_slot.setAttribute('TIME_SLOT_ID', f'ts{2*i+2}')
-        time_slot.setAttribute('TIME_VALUE', str(e))
-        time_order.appendChild(time_slot)
-    root.appendChild(time_order)
-
-    tier_trans = doc.createElement('TIER')
-    tier_trans.setAttribute('LINGUISTIC_TYPE_REF', 'transcript')
-    tier_trans.setAttribute('TIER_ID', 'Transcription')
-
-    for i, (sentence, _) in enumerate(sentences):
-        annotation = doc.createElement('ANNOTATION')
-        alignable_annotation = doc.createElement('ALIGNABLE_ANNOTATION')
-        alignable_annotation.setAttribute('ANNOTATION_ID', f'a{i+1}')
-        alignable_annotation.setAttribute('TIME_SLOT_REF1', f'ts{2*i+1}')
-        alignable_annotation.setAttribute('TIME_SLOT_REF2', f'ts{2*i+2}')
-        annotation_value = doc.createElement('ANNOTATION_VALUE')
-        #text = doc.createTextNode(get_cleaned_sentence(sentence, rm_bl=True, keep_dash=True, keep_punct=True)[0])
-        text = doc.createTextNode(sentence.replace('*', ''))
-        annotation_value.appendChild(text)
-        alignable_annotation.appendChild(annotation_value)
-        annotation.appendChild(alignable_annotation)
-        tier_trans.appendChild(annotation)
-    root.appendChild(tier_trans)
-
-    linguistic_type = doc.createElement('LINGUISTIC_TYPE')
-    linguistic_type.setAttribute('GRAPHIC_REFERENCES', 'false')
-    linguistic_type.setAttribute('LINGUISTIC_TYPE_ID', 'transcript')
-    linguistic_type.setAttribute('TIME_ALIGNABLE', 'true')
-    root.appendChild(linguistic_type)
-
-    language = doc.createElement('LANGUAGE')
-    language.setAttribute("LANG_ID", "bre")
-    language.setAttribute("LANG_LABEL", "Breton (bre)")
-    root.appendChild(language)
-
-    constraint_list = [
-        ("Time_Subdivision", "Time subdivision of parent annotation's time interval, no time gaps allowed within this interval"),
-        ("Symbolic_Subdivision", "Symbolic subdivision of a parent annotation. Annotations refering to the same parent are ordered"),
-        ("Symbolic_Association", "1-1 association with a parent annotation"),
-        ("Included_In", "Time alignable annotations within the parent annotation's time interval, gaps are allowed")
-    ]
-    for stereotype, description in constraint_list:
-        constraint = doc.createElement('CONSTRAINT')
-        constraint.setAttribute('DESCRIPTION', description)
-        constraint.setAttribute('STEREOTYPE', stereotype)
-        root.appendChild(constraint)
-
-    xml_str = doc.toprettyxml(indent ="\t", encoding="UTF-8")
-
-    with open(eaf_filename, "w") as f:
-        f.write(xml_str.decode("utf-8"))
-
+	while True:
+		n = 0
+		parsed = []
+		for sent in segments:
+			dur = sent[-1]['end'] - sent[0]['start']
+			if dur > max_length:
+				# Split this segment deeper
+				sub = split_vosk_tokens(sent, silence_length)
+				parsed.extend(sub)
+				n += 1
+			else:
+				parsed.append(sent)
+		segments = parsed
+		silence_length -= 0.1
+		if n == 0 or silence_length < 0.3:
+			break
+	
+	return segments
 
 
 def main_adskrivan() -> None:
@@ -162,15 +98,27 @@ def main_adskrivan() -> None:
 	parser.add_argument("-t", "--type", choices=["txt", "srt", "eaf", "split"],
 		help="file output type")
 	parser.add_argument("-o", "--output", help="write to a file")
+	parser.add_argument("--autosplit", action="store_true",
+		help="Automatically split audio at silences (used with 'srt', 'eaf' or 'split' type only)")
 	parser.add_argument("--segment-min-length",
 		help="Try not to go under this length when segmenting audio file",
-		type=int, default=2)
+		type=float, default=2)
 	parser.add_argument("--segment-max-length",
 		help="Try not to go above this length when segmenting audio file",
-		type=int, default=15)
+		type=float, default=15)
+	parser.add_argument("--set-ffmpeg-path", type=str,
+		help="Set ffmpeg path (will not use static_ffmpeg in that case)")
 	args = parser.parse_args()
-	print(args)
-
+	
+	
+	# Use static_ffmpeg instead of ffmpeg
+	ffmpeg_path = "ffmpeg"
+	if args.set_ffmpeg_path:
+		ffmpeg_path = args.set_ffmpeg_path
+	else:
+		static_ffmpeg.add_paths()
+    
+    
 	translation_dicts = []
 	if args.translate:
 		translation_dicts = [ load_translation_dict(path) for path in args.translate ]
@@ -194,7 +142,7 @@ def main_adskrivan() -> None:
 		rec = KaldiRecognizer(model, 16000)
 		rec.SetWords(True)
 
-		with subprocess.Popen(["ffmpeg", "-loglevel", "quiet", "-i",
+		with subprocess.Popen([ffmpeg_path, "-loglevel", "quiet", "-i",
 								args.filename,
 								"-ar", "16000" , "-ac", "1", "-f", "s16le", "-"],
 								stdout=subprocess.PIPE).stdout as stream:
@@ -204,68 +152,63 @@ def main_adskrivan() -> None:
 					break
 				if rec.AcceptWaveform(data):
 					sentence = json.loads(rec.Result())["text"]
-					print(
-						format_output(
-							sentence,
-							normalize=args.normalize,
-							keep_fillers=args.keep_fillers),
-						file=fout)
+					sentence = format_output(sentence, normalize=args.normalize, keep_fillers=args.keep_fillers)
+					if sentence: print(sentence, file=fout)
 			sentence = json.loads(rec.FinalResult())["text"]
-			print(
-				format_output(
-					sentence,
-					normalize=args.normalize,
-					keep_fillers=args.keep_fillers),
-				file=fout)
+			sentence = format_output(sentence, normalize=args.normalize, keep_fillers=args.keep_fillers)
+			if sentence: print(sentence, file=fout)
 
 
 	elif args.type in ("srt", "split", "eaf"):
 		if args.model:
 			load_vosk(args.model)
-
-		song = AudioSegment.from_file(args.filename)
-		song = song.set_channels(1)
-		if song.frame_rate != 16000:
-			song = song.set_frame_rate(16000)
-		if song.sample_width != 2:
-			song = song.set_sample_width(2)
 		
-		# Audio need to be segmented first
-		print("Segmenting audio file...")
-		segments = split_to_segments(
-			song,
-			max_length=args.segment_max_length,
-			min_length=args.segment_min_length)
-		segments = [[0, len(song)]]
-		print(f"{len(segments)} segment{'s' if len(segments)>1 else ''} found")
+		if args.autosplit:
+			song = AudioSegment.from_file(args.filename)
+			song = song.set_channels(1)
+			if song.frame_rate != 16000:
+				song = song.set_frame_rate(16000)
+			if song.sample_width != 2:
+				song = song.set_sample_width(2)
+			
+			# Audio need to be segmented first
+			print("Segmenting audio file...", end=' ', flush=True)
+			segments = split_to_segments(
+				song,
+				max_length=args.segment_max_length,
+				min_length=args.segment_min_length)
+			print(f"{len(segments)} segment{'s' if len(segments)>1 else ''} found")
 
-		t_min, t_max = 0, segments[-1][1]
-		sentences = [
-			# transcribe_segment_timecoded(seg[max(t_min, seg[0]-200):min(t_max, seg[1]+200)])
-			transcribe_segment_timecoded(song[max(t_min, seg[0]-200):min(t_max, seg[1]+200)])
-			for seg in segments
-		]
-		# sentences = []
-		# for start, end in segments:
-		# 	sentences.append(transcribe_segment_timecoded(song[start:end]))
+			t_min, t_max = 0, segments[-1][1]
+			sentences = [
+				transcribe_segment_timecoded(song[max(t_min, seg[0]-200):min(t_max, seg[1]+200)])
+				for seg in segments
+			]
+			
+			# Remove empty sentences and associated segments
+			new_segments = []
+			new_sentences = []
+			for i, sentence in enumerate(sentences):
+				if not sentence:
+					continue
+				new_sentences.append(sentence)
+				new_segments.append(segments[i])
+			segments = new_segments
+			sentences = new_sentences
+
+			assert len(sentences) == len(segments)
 		
-		# We need to apply text post-processing here
+		else:
+			tokens = transcribe_file_timecoded(args.filename)
+			sentences = split_vosk_tokens_until(tokens, max_length=args.segment_max_length)
+			segments = [ [floor(sent[0]['start']*1000), ceil(sent[-1]['end']*1000)]
+			   				for sent in sentences ]
+
+		# Apply text post-processing
 		sentences = [
 			post_process_timecoded(sent, args.normalize, args.keep_fillers)
 			for sent in sentences
 		]
-
-		# Remove empty sentences and associated segments
-		new_segments = []
-		new_sentences = []
-		for i, sentence in enumerate(sentences):
-			if not sentence:
-				continue
-			new_sentences.append(sentence)
-			new_segments.append(segments[i])
-		segments = new_segments
-		sentences = new_sentences
-
 
 		if args.type == 'split':
 			for start, end in segments:
@@ -286,33 +229,45 @@ def main_adskrivan() -> None:
 					sentence = ' '.join([token['word'] for token in s])
 					fw.write(sentence + '\n')
 		
+		
 		elif args.type == 'srt':
 			words_per_line = 7
 			subs = []
 			for i, sentence in enumerate(sentences):
-				if sentence:
-					print("sent", sentence[0]["start"], sentence[-1]["end"])
-					print("seg", segments[i][0]/1000, segments[i][1]/1000)
-				else:
-					print("none")
 				for j in range(0, len(sentence), words_per_line):
 					line = sentence[j : j + words_per_line]
 					text = ' '.join([ w["word"] for w in line ])
 					for td in translation_dicts:
 						text = detokenize( translate(tokenize(text), td) )
 
-					s = srt.Subtitle(index=len(subs),
-							content=text,
-							start=datetime.timedelta(seconds=line[0]["start"] + segments[i][0]/1000),
-							end=datetime.timedelta(seconds=line[-1]["end"] + segments[i][0]/1000))
+					if args.autosplit:
+						offset = segments[i][0]/1000
+						s = srt.Subtitle(index=len(subs),
+								content=text,
+								start=datetime.timedelta(seconds=line[0]["start"]+offset),
+								end=datetime.timedelta(seconds=line[-1]["end"]+offset))
+					else:
+						s = srt.Subtitle(index=len(subs),
+								content=text,
+								start=datetime.timedelta(seconds=line[0]["start"]),
+								end=datetime.timedelta(seconds=line[-1]["end"]))
 					subs.append(s)
 
 			print(srt.compose(subs), file=fout)
 		
+		
 		elif args.type == 'eaf':
-			export_to_eaf(segments, sentences, args.filename)
+			text_sentences = []
+			for sentence in sentences:
+				sentence = ' '.join([ t['word'] for t in sentence ])
+				text_sentences.append(sentence)
+			print(text_sentences)
+			data = write_eaf(segments, text_sentences, args.filename)
 
-			
+			print(data, file=fout)
+			if args.output:
+				print("EAF file written to", os.path.abspath(args.output))
+
 		
 	if args.output:
 		fout.close()

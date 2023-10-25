@@ -1,14 +1,8 @@
 
-# from os import listdir
-# import os.path
-# from random import choice
+from math import inf, ceil
 from pydub import AudioSegment
 from pydub.utils import get_player_name
-# from pydub.generators import WhiteNoise
 from pydub.silence import detect_nonsilent
-# from tempfile import NamedTemporaryFile
-# import json
-from math import inf, ceil
 
     
 
@@ -95,6 +89,12 @@ def _recursive_split(song: AudioSegment, segment: list, max_length=15, min_silen
 
 
 def split_to_segments(song: AudioSegment, max_length=15, min_length=5):
+    """
+        Return a list of sub-segments from a pydub AudioSegment
+        Sub-segments are represented as 2-elements lists:
+            [start, end]
+        Where 'start' and 'end' are in milliseconds
+    """
     segments: list = _recursive_split(song, [0, len(song)], max_length=max_length)
 
     # Extend segments length

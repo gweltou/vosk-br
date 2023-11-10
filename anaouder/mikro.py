@@ -5,13 +5,11 @@ import os.path
 import queue
 import sounddevice as sd
 import sys
-import json
-
 import static_ffmpeg
 from vosk import Model, KaldiRecognizer, SetLogLevel
-
 from anaouder.asr.post_processing import post_process_text
 from anaouder.text import tokenize, detokenize, load_translation_dict, translate
+from anaouder.version import VERSION
 
 
 
@@ -74,6 +72,7 @@ def main_mikro() -> None:
 		help="Use additional translation dictionaries")
 	parser.add_argument("--keep-fillers", action="store_true",
 		help="Keep verbal fillers ('euh', 'beñ', 'alors', 'kwa'...)")
+	parser.add_argument("-v", "--version", action="version", version=f"%(prog)s v{VERSION}")
 	args = parser.parse_args(remaining)
 
 	# Use static_ffmpeg instead of ffmpeg

@@ -102,6 +102,10 @@ istitlan FICHIER_SON_OU_VIDEO
 
 Le modèle brut est accessible sous le dossier `anaouder/models` ou par le lien [releases](https://github.com/gweltou/vosk-br/releases).
 
+### Audapolis
+
+Il est possible d'utiliser le modèle avec le logiciel [Audapolis](https://github.com/bugbakery/audapolis), qui offre également le confort d'une interface graphique.
+
 ### Kdenlive
 
 Le logiciel de montage video [Kdenlive](https://kdenlive.org/) permet l'utilisation de modèles Vosk pour la retranscription automatique de sous-titres.\

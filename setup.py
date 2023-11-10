@@ -1,5 +1,6 @@
 from os import path
 from setuptools import setup, find_packages
+from anaouder.version import VERSION
 
 
 NAME = "anaouder"
@@ -7,7 +8,7 @@ DESCRIPTION = "Breton language speech-to-text tools"
 URL = "https://github.com/gweltou/vosk-br"
 AUTHOR = "Gweltaz Duval-Guennoc"
 EMAIL = "gweltou@hotmail.com"
-VERSION = "0.8.2"
+#VERSION = "0.8.2"
 REQUIRES_PYTHON = ">=3.6.0"
 
 
@@ -51,11 +52,11 @@ setup(
             "asr/postproc_sub.tsv",
             "dicts/acronyms.tsv",
             "dicts/corrected_tokens.tsv",
-            "dicts/standard_tokens.tsv",
             "dicts/named_entities.tsv",
             "dicts/noun_f.tsv",
             "dicts/noun_m.tsv",
             "dicts/proper_nouns_phon.tsv",
+            "dicts/standard_tokens.tsv",
         ]
     },
     data_files=[('', ["README-fr.md", "CHANGELOG.txt"])],

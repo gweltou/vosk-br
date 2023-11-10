@@ -14,7 +14,6 @@ from vosk import Model, KaldiRecognizer, SetLogLevel
 from pydub import AudioSegment
 
 from anaouder.asr.recognizer import (
-	transcribe_file, transcribe_segment,
 	transcribe_file_timecoded, transcribe_segment_timecoded,
 	load_vosk
 	)
@@ -22,6 +21,7 @@ from anaouder.asr.post_processing import post_process_text, post_process_timecod
 from anaouder.text import tokenize, detokenize, load_translation_dict, translate
 from anaouder.audio import split_to_segments
 from anaouder.utils import write_eaf
+from anaouder.version import VERSION
 
 
 
@@ -35,7 +35,6 @@ def format_output(sentence, normalize=False, keep_fillers=False):
 def split_vosk_tokens(tokens, min_silence=0.5):
 	subsegments = []
 	current_segment = [tokens[0]]
-	# last_token = tokens[0]
 	for tok in tokens[1:]:
 		if tok['start'] - current_segment[-1]['end'] > min_silence:
 			# We shall split here
@@ -70,7 +69,7 @@ def split_vosk_tokens_until(tokens, max_length=15):
 	return segments
 
 
-def main_adskrivan() -> None:
+def main_adskrivan(*args, **kwargs) -> None:
 	""" adskrivan cli entry point """
 
 	global translation_dicts
@@ -85,7 +84,7 @@ def main_adskrivan() -> None:
 	static_ffmpeg.add_paths()
 
 	desc = f"Decode an audio file in any format, with the help of ffmpeg"
-	parser = argparse.ArgumentParser(description=desc)
+	parser = argparse.ArgumentParser(description=desc, prog="adskrivan")
 	parser.add_argument('filename')
 	parser.add_argument("-m", "--model", default=DEFAULT_MODEL,
 		help="Vosk model to use for decoding", metavar='MODEL_PATH')
@@ -108,8 +107,13 @@ def main_adskrivan() -> None:
 		type=float, default=15)
 	parser.add_argument("--set-ffmpeg-path", type=str,
 		help="Set ffmpeg path (will not use static_ffmpeg in that case)")
-	args = parser.parse_args()
-	
+	parser.add_argument("-v", "--version", action="version", version=f"%(prog)s v{VERSION}")
+
+	if args:
+		args = parser.parse_args(args)
+	else:
+		args = parser.parse_args()
+		
 	
 	# Use static_ffmpeg instead of ffmpeg
 	ffmpeg_path = "ffmpeg"
@@ -183,20 +187,7 @@ def main_adskrivan() -> None:
 			sentences = [
 				transcribe_segment_timecoded(song[max(t_min, seg[0]-200):min(t_max, seg[1]+200)])
 				for seg in segments
-			]
-			
-			# Remove empty sentences and associated segments
-			new_segments = []
-			new_sentences = []
-			for i, sentence in enumerate(sentences):
-				if not sentence:
-					continue
-				new_sentences.append(sentence)
-				new_segments.append(segments[i])
-			segments = new_segments
-			sentences = new_sentences
-
-			assert len(sentences) == len(segments)
+			]	
 		
 		else:
 			tokens = transcribe_file_timecoded(args.filename)
@@ -209,6 +200,20 @@ def main_adskrivan() -> None:
 			post_process_timecoded(sent, args.normalize, args.keep_fillers)
 			for sent in sentences
 		]
+		
+		# Remove empty sentences and associated segments
+		new_segments = []
+		new_sentences = []
+		for i, sentence in enumerate(sentences):
+			if not sentence:
+				continue
+			new_sentences.append(sentence)
+			new_segments.append(segments[i])
+		segments = new_segments
+		sentences = new_sentences
+
+		assert len(sentences) == len(segments)
+
 
 		if args.type == 'split':
 			for start, end in segments:
@@ -261,8 +266,11 @@ def main_adskrivan() -> None:
 			for sentence in sentences:
 				sentence = ' '.join([ t['word'] for t in sentence ])
 				text_sentences.append(sentence)
-			print(text_sentences)
-			data = write_eaf(segments, text_sentences, args.filename)
+			ext = os.path.splitext(args.output)[1][1:].lower()
+			if ext not in ('mp3', 'wav'):
+				data = write_eaf(segments, text_sentences, args.filename, type="mp3")
+			else:
+				data = write_eaf(segments, text_sentences, args.filename)
 
 			print(data, file=fout)
 			if args.output:

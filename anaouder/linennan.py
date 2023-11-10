@@ -11,17 +11,14 @@ Usage: ./linennan.py audio_file text_file
 
 """
 
-
 import sys
 import os.path
 import datetime
 import argparse
 import re
-
 import srt
 import jiwer
 import static_ffmpeg
-
 from anaouder.asr.recognizer import load_vosk, transcribe_file_timecoded
 from anaouder.asr.post_processing import verbal_fillers
 from anaouder.text import (
@@ -31,6 +28,8 @@ from anaouder.text import (
     PUNCTUATION
 )
 from anaouder.utils import read_file_drop_comments
+from anaouder.version import VERSION
+
 
 
 autocorrect = False
@@ -61,6 +60,7 @@ def main_linennan() -> None:
     parser.add_argument("-o", "--output", help="write to a file")
     parser.add_argument("-d", "--debug", action="store_true",
         help="display debug information")
+    parser.add_argument("-v", "--version", action="version", version=f"%(prog)s v{VERSION}")
     args = parser.parse_args()
     
     # Use static_ffmpeg instead of ffmpeg

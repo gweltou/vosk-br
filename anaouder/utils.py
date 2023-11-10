@@ -4,6 +4,7 @@ import os
 # For eaf (Elan) file conversion
 import datetime, pytz
 from xml.dom import minidom
+from anaouder.audio import convert_to_mp3
 
 
 
@@ -35,15 +36,13 @@ def write_eaf(segments, sentences, audiofile, type="wav"):
     """ Export to eaf (Elan) file """
 
     record_id = os.path.splitext(os.path.abspath(audiofile))[0]
-    audio_filename = os.path.extsep.join((record_id, 'wav'))
+    #audio_filename = os.path.extsep.join((record_id, 'wav'))
+    # audio_filename = audiofile
     if type == "mp3":
         mp3_file = os.path.extsep.join((record_id, 'mp3'))
         if not os.path.exists(mp3_file):
-            convert_to_mp3(audio_filename, mp3_file)
-        audio_filename = mp3_file
-
-    text_filename = os.path.extsep.join((record_id, 'txt'))
-    eaf_filename = os.path.extsep.join((record_id, 'eaf'))
+            convert_to_mp3(audiofile, mp3_file)
+        audiofile = mp3_file
 
     doc = minidom.Document()
 
@@ -62,12 +61,12 @@ def write_eaf(segments, sentences, audiofile, type="wav"):
     root.appendChild(header)
 
     media_descriptor = doc.createElement('MEDIA_DESCRIPTOR')
-    media_descriptor.setAttribute('MEDIA_URL', 'file://' + os.path.abspath(audio_filename))
+    media_descriptor.setAttribute('MEDIA_URL', 'file://' + os.path.abspath(audiofile))
     if type == "mp3":
         media_descriptor.setAttribute('MIME_TYPE', 'audio/mpeg')
     else:
         media_descriptor.setAttribute('MIME_TYPE', 'audio/x-wav')
-    media_descriptor.setAttribute('RELATIVE_MEDIA_URL', './' + os.path.basename(audio_filename))
+    media_descriptor.setAttribute('RELATIVE_MEDIA_URL', './' + os.path.basename(audiofile))
     header.appendChild(media_descriptor)
 
     time_order = doc.createElement('TIME_ORDER')
@@ -131,6 +130,3 @@ def write_eaf(segments, sentences, audiofile, type="wav"):
     xml_str = doc.toprettyxml(indent ="\t", encoding="UTF-8")
 
     return xml_str.decode("utf-8")
-    # with open(eaf_filename, "w") as f:
-    #     print("Writing", eaf_filename)
-    #     f.write(xml_str.decode("utf-8"))

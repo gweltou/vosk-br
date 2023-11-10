@@ -1,26 +1,69 @@
 
+import os.path
+import subprocess
 from math import inf, ceil
 from pydub import AudioSegment
-from pydub.utils import get_player_name
+# from pydub.utils import get_player_name
 from pydub.silence import detect_nonsilent
 
-    
 
-# def get_min_max_energy(segment: AudioSegment, chunk_size=100, overlap=50):
-#     """ Return the minimum dBFS of the segment, wich is above -inf.
-#         chunk_size and overlap in milliseconds
-#     """
-#     min_energy = 0
-#     max_energy = -999
 
-#     for i in range(0, len(segment), chunk_size-overlap):
-#         chunk = segment[i: i+chunk_size]  # Pydub will take care of overflow
-#         energy = chunk.dBFS
-#         if energy > -inf:
-#             min_energy = min(min_energy, energy)
-#         max_energy = max(max_energy, energy)
+def convert_to_wav(src, dst, verbose=True, keep_orig=True):
+    """
+        Convert to 16kHz mono pcm
+        Validate filename
 
-#     return min_energy, max_energy
+        Parameters
+        ----------
+            verbose (bool):
+                Info text to stdout
+            keep_orig (bool):
+                keep  original file (or rename if src and dst are the same)
+    """
+    src = os.path.abspath(src)
+    dst = os.path.abspath(dst)
+    if src == dst:
+        # Rename existing audio file
+        rep, filename = os.path.split(src)
+        basename, ext = os.path.splitext(filename)
+        new_name = basename + "_orig" + ext
+        new_src = os.path.join(rep, new_name)
+        if verbose: print(f"AUDIO_CONV: renaming {filename} to {new_name}")
+        os.rename(src, new_src)
+        src = new_src
+
+    if verbose:
+        print(f"AUDIO_CONV: converting {src} to {dst}...")
+    rep, filename = os.path.split(dst)
+    dst = os.path.join(rep, filename)
+    subprocess.call(['ffmpeg', '-v', 'panic',
+                     '-i', src, '-acodec', 'pcm_s16le',
+                     '-ac', '1', '-ar', '16000', dst])
+
+    if not keep_orig:
+        if verbose:
+            print(f"AUDIO_CONV: Removing {src}")
+        os.remove(src)
+
+
+
+def convert_to_mp3(src, dst, verbose=True):
+    """
+        Convert to mp3
+        Validate filename
+    """
+    if verbose:
+        print(f"converting {src} to {dst}...")
+    if os.path.abspath(src) == os.path.abspath(dst):
+        print("ERROR: source and destination are the same, skipping")
+        return -1
+    rep, filename = os.path.split(dst)
+    dst = os.path.join(rep, filename)
+    subprocess.call(['ffmpeg', '-v', 'panic',
+                     '-i', src,
+                     '-ac', '1', dst])
+
+
 
 def get_min_max_energy(segment: AudioSegment, chunk_size=100, overlap=50):
     """ Return the minimum dBFS of the segment, wich is above -inf.

@@ -79,9 +79,6 @@ def main_adskrivan(*args, **kwargs) -> None:
 		"models",
 		"vosk-model-br-0.8"
 	)
-	
-	# Use static_ffmpeg instead of ffmpeg
-	static_ffmpeg.add_paths()
 
 	desc = f"Decode an audio file in any format, with the help of ffmpeg"
 	parser = argparse.ArgumentParser(description=desc, prog="adskrivan")

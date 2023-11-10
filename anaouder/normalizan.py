@@ -1,15 +1,14 @@
 #! /usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-
 import sys
 import argparse
-
 from anaouder.text import normalize_sentence
+from anaouder.version import VERSION
 
 
 
-def main_normalizan():
+def main_normalizan(*args, **kwargs):
     """ normalizan cli entry point """
     
     parser = argparse.ArgumentParser(
@@ -19,6 +18,7 @@ def main_normalizan():
     parser.add_argument("-o", "--output", help="write to a file")
     parser.add_argument("-r", "--reformat", action="store_true",
         help="reformat text file using punctuation, to put one sentence per line")
+    parser.add_argument("-v", "--version", action="version", version=f"%(prog)s v{VERSION}")
     args = parser.parse_args()
     
     input = open(args.input, 'r') if args.input else sys.stdin

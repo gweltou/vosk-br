@@ -99,11 +99,15 @@ https://user-images.githubusercontent.com/10166907/213805292-63becbe2-ffb5-492f-
 
 *Setu disoc'h an istitloù emgefre, hep cheñch netra. Kollet eo buan pa vez sonnerez...*
 
-## Implijout e diabarzh meziantoù all
+## Implijout gant meziantoù all
 
 *N'eo ket aliet dre ma vez kollet un nebeut perzhioù e-keñver ar pezh vez graet gant ar modul `anaouder` : adlakaat ar varennigoù-stag hag amdreiñ an niverennoù da skouer.*
 
 Ar model noazh a c'hellit kavout en dosser `anaouder/models` pe dre al liamm [releases](https://github.com/gweltou/vosk-br/releases).
+
+### Audapolis
+
+M'ho peus c'hoant implijout ar model gant ur etrefas grafikel e c'hellit mont da sellet ar raktres [Audapolis](https://github.com/bugbakery/audapolis).
 
 ### Kdenlive
 

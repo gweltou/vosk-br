@@ -223,10 +223,10 @@ def inverse_normalize_sentence(sentence: str, min_num=5) -> str:
 
 
 
-def inverse_normalize_vosk(tokens: List[dict], min_num=5) -> List[dict]:
+def inverse_normalize_timecoded(tokens: List[dict], min_num=5) -> List[dict]:
     """ Translate spelled numbers to more readable numbers
         Same functionality as the function `inverse_normalise_sentence` but
-        works with vosk token (embedding timecodes and confidence values)
+        works with vosk tokens (embedding timecodes and confidence values)
 
         Parameter
         ---------

@@ -97,11 +97,13 @@ def main_adskrivan(*args, **kwargs) -> None:
 	parser.add_argument("--autosplit", action="store_true",
 		help="Automatically split audio at silences (used with 'srt', 'eaf' or 'split' type only)")
 	parser.add_argument("--segment-min-length",
-		help="Try not to go under this length when segmenting audio file",
+		help="Will try not to go under this length when segmenting audio files",
 		type=float, default=2)
 	parser.add_argument("--segment-max-length",
-		help="Try not to go above this length when segmenting audio file",
+		help="Will try not to go above this length when segmenting audio files",
 		type=float, default=15)
+	parser.add_argument("--max_words_per_line", type=int, default=7,
+		help="Number of words per line for subtitle files")
 	parser.add_argument("--set-ffmpeg-path", type=str,
 		help="Set ffmpeg path (will not use static_ffmpeg in that case)")
 	parser.add_argument("-v", "--version", action="version", version=f"%(prog)s v{VERSION}")
@@ -233,7 +235,8 @@ def main_adskrivan(*args, **kwargs) -> None:
 		
 		
 		elif args.type == 'srt':
-			words_per_line = 7
+			words_per_line = args.max_words_per_line
+			if words_per_line == 0: words_per_line = 999
 			subs = []
 			for i, sentence in enumerate(sentences):
 				for j in range(0, len(sentence), words_per_line):

@@ -8,7 +8,7 @@ from pydub.silence import detect_nonsilent
 
 
 
-def convert_to_wav(src, dst, verbose=True, keep_orig=True):
+def convert_to_wav(src: str, dst: str, verbose=True, keep_orig=True):
     """
         Convert to 16kHz mono pcm
         Validate filename

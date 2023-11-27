@@ -19,7 +19,7 @@ from anaouder.asr.recognizer import (
 	)
 from anaouder.asr.post_processing import post_process_text, post_process_timecoded
 from anaouder.text import tokenize, detokenize, load_translation_dict, translate
-from anaouder.audio import split_to_segments
+from anaouder.audio import split_to_segments, convert_to_wav
 from anaouder.utils import write_eaf
 from anaouder.version import VERSION
 
@@ -32,7 +32,7 @@ def format_output(sentence, normalize=False, keep_fillers=False):
 	return sentence
 
 
-def split_vosk_tokens(tokens, min_silence=0.5):
+def _split_vosk_tokens(tokens, min_silence=0.5):
 	subsegments = []
 	current_segment = [tokens[0]]
 	for tok in tokens[1:]:
@@ -45,7 +45,7 @@ def split_vosk_tokens(tokens, min_silence=0.5):
 	return subsegments
 
 
-def split_vosk_tokens_until(tokens, max_length=15):
+def split_vosk_tokens(tokens, max_length=15):
 	segments = [tokens]
 	silence_length = 1.0
 
@@ -56,7 +56,7 @@ def split_vosk_tokens_until(tokens, max_length=15):
 			dur = sent[-1]['end'] - sent[0]['start']
 			if dur > max_length:
 				# Split this segment deeper
-				sub = split_vosk_tokens(sent, silence_length)
+				sub = _split_vosk_tokens(sent, silence_length)
 				parsed.extend(sub)
 				n += 1
 			else:
@@ -190,11 +190,13 @@ def main_adskrivan(*args, **kwargs) -> None:
 		
 		else:
 			tokens = transcribe_file_timecoded(args.filename)
-			sentences = split_vosk_tokens_until(tokens, max_length=args.segment_max_length)
+			sentences = split_vosk_tokens(tokens, max_length=args.segment_max_length)
 			segments = [ [floor(sent[0]['start']*1000), ceil(sent[-1]['end']*1000)]
 			   				for sent in sentences ]
 
 		# Apply text post-processing
+		if args.type == "split":
+			args.keep_fillers = True
 		sentences = [
 			post_process_timecoded(sent, args.normalize, args.keep_fillers)
 			for sent in sentences
@@ -232,6 +234,9 @@ def main_adskrivan(*args, **kwargs) -> None:
 				for s in sentences:
 					sentence = ' '.join([token['word'] for token in s])
 					fw.write(sentence + '\n')
+			
+			wav_filename = os.path.extsep.join([basename, 'wav'])
+			convert_to_wav(args.filename, wav_filename)
 		
 		
 		elif args.type == 'srt':

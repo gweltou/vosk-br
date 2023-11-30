@@ -1,6 +1,8 @@
 **/__pycache__/
-/*.txt
-/*.srt
+*.txt
+*.srt
+*.split
+*.eaf
 build/
 dist/
 dev/

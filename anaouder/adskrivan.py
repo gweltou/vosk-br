@@ -112,6 +112,10 @@ def main_adskrivan(*args, **kwargs) -> None:
 		args = parser.parse_args(args)
 	else:
 		args = parser.parse_args()
+	
+	if not os.path.exists(args.filename):
+		print("Couldn't find file '{}'".format(args.filename))
+		sys.exit(1)
 		
 	
 	# Use static_ffmpeg instead of ffmpeg

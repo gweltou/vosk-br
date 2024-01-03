@@ -7,7 +7,7 @@
 
 Reconnaissance vocale pour le breton avec Vosk.
 
-Soutenir le projet :
+Ce projet est développé bénévolement. Vous pouvez le soutenir par un don :
 [![Liberapay](https://liberapay.com/assets/widgets/donate.svg)](https://liberapay.com/gweltou/donate)
 
 Une [version en ligne](https://abp.fritzsch.net/), développée par Philippe Argouarch, est également disponible.

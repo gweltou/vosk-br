@@ -13,7 +13,7 @@ Gallout a reer ivez implij ar meziant dre ur [c'hetal Web](https://abp.fritzsch.
 ## Petra eo ?
 
 Un anaouder mouezh emgefre, diazezet war [Vosk](https://github.com/alphacep/vosk-api).\
-Gantañ e c'heller adskrivañ komzoù e brezhoneg (**Son -> Skrid**) dre ur mikro e amzer real pe diouzh restroù son.\
+Gantañ e c'heller adskrivañ komzoù e brezhoneg (**Son -> Skrid**) dre ur mikro e amzer real pe diouzh restroù son.
 
 Un nebeut perzhioù dedennus :
 

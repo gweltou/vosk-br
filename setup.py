@@ -52,7 +52,6 @@ setup(
             "asr/postproc_sub.tsv",
             "dicts/acronyms.tsv",
             "dicts/corrected_tokens.tsv",
-            "dicts/named_entities.tsv",
             "dicts/noun_f.tsv",
             "dicts/noun_m.tsv",
             "dicts/proper_nouns_phon.tsv",

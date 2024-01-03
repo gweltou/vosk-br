@@ -19,6 +19,7 @@ import re
 import srt
 import jiwer
 import static_ffmpeg
+
 from anaouder.asr.recognizer import load_vosk, transcribe_file_timecoded
 from anaouder.asr.post_processing import verbal_fillers
 from anaouder.text import (
@@ -51,7 +52,7 @@ def main_linennan() -> None:
     parser.add_argument("text_file")
     parser.add_argument("-m", "--model", default=DEFAULT_MODEL,
         help="Vosk model to use for decoding", metavar='MODEL_PATH')
-    parser.add_argument("-t", "--type", choices=["srt", "split"],
+    parser.add_argument("-t", "--type", choices=["srt", "seg"],
         help="file output type")
     parser.add_argument("-r", "--reformat", action="store_true",
         help="reformat text file using punctuation, to put one sentence per line")
@@ -101,7 +102,7 @@ def main_linennan() -> None:
 
     hyp = transcribe_file_timecoded(args.audio_file)
     if not args.keep_fillers:
-        print("removing verbal fillers", file=sys.stderr)
+        print("Removing verbal fillers", file=sys.stderr)
         hyp = [ tok for tok in hyp if tok["word"] not in verbal_fillers ]
     print("Alignment...")
 
@@ -276,7 +277,7 @@ def main_linennan() -> None:
         split_ext = args.output.rsplit('.', maxsplit=1)
         if len(split_ext) == 2:
             ext = split_ext[1].lower()
-            if ext in ("srt", "split"):
+            if ext in ("srt", "seg"):
                 args.type = ext
             else:
                 print("Unrecognized extension, using default type (`srt`)", file=sys.stderr)
@@ -313,7 +314,7 @@ def main_linennan() -> None:
         print(srt.compose(subs), file=fout)
     
 
-    if args.type == "split":
+    if args.type == "seg":
         # utts = []
         for i, line in enumerate(lines):
             span = sentence_matches[i]["span"]

@@ -7,6 +7,11 @@
 
 Reconnaissance vocale pour le breton avec Vosk.
 
+Soutenir le projet :
+[![Liberapay](https://liberapay.com/assets/widgets/donate.svg)](https://liberapay.com/gweltou/donate)
+
+Une [version en ligne](https://abp.fritzsch.net/), développée par Philippe Argouarch, est également disponible.
+
 ## Présentation
 
 Modèle de reconnaissance vocale (*speech-to-text*) entraîné avec le framework [Kaldi](https://www.kaldi-asr.org/), au format [Vosk](https://github.com/alphacep/vosk-api).\
@@ -28,9 +33,6 @@ Il y a toutefois des inconvénients :
 
 Le nombre d'heures d'enregistrement audio utilisé pour entraîner le modèle est relativement faible mais progresse peu à peu.
 En dehors du projet [Common Voice](https://commonvoice.mozilla.org/br) de Mozilla, les enregistrements retranscrits [libres de droit](https://creativecommons.org/licenses/) sont rares pour le breton. Toute aide sur ce terrain sera la bienvenue !
-
-Vous pouvez également soutenir ce projet par un don financier :
-[![Liberapay](https://liberapay.com/assets/widgets/donate.svg)](https://liberapay.com/gweltou/donate)
 
 ## Installation
 

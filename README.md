@@ -5,11 +5,15 @@
 
 [Version française](https://github.com/gweltou/vosk-br/blob/main/README-fr.md)
 
+Sikour ar raktres gant un donezon :
+[![Liberapay](https://liberapay.com/assets/widgets/donate.svg)](https://liberapay.com/gweltou/donate)
+
+Gallout a reer ivez implij ar meziant dre ur [c'hetal Web](https://abp.fritzsch.net/), savet gant Philippe Argouarch.
+
 ## Petra eo ?
 
-Un anaouder mouezh emgefre, graet gant ar meziantoù [Kaldi](https://www.kaldi-asr.org/) ha [Vosk](https://github.com/alphacep/vosk-api).\
-Gantañ e c'heller adskrivañ komzoù e brezhoneg (**Son -> Skrid**) en un doare emgefre, dre ur mikro e amzer real pe diouzh restroù son.\
-Pleustret eo bet gant un dek eurvezh bennak a deulioù son ha skrid linennet.
+Un anaouder mouezh emgefre, diazezet war [Vosk](https://github.com/alphacep/vosk-api).\
+Gantañ e c'heller adskrivañ komzoù e brezhoneg (**Son -> Skrid**) dre ur mikro e amzer real pe diouzh restroù son.\
 
 Un nebeut perzhioù dedennus :
 
@@ -25,11 +29,8 @@ Dalc'hoù 'zo siwazh :
 * Fall war ur bern pouezioù-mouezh c'hoazh.
 * Ret eo komz sklaer ha goustadik.
 
-Emichañs e vo gwellaet efedusted an anaouder tamm-ha-tamm, gant ma vo kavet roadennoù mouezh adskrivet.\
+Gwellaet e vo efedusted an anaouder tamm-ha-tamm, gant ma vo kavet roadennoù mouezh adskrivet.\
 Ul lisañs dieub (doare [Creative Commons](https://creativecommons.org/licenses/)) a aotrefe eskemm ar roadennoù-se en un doare aes.
-
-Sikour ar raktres gant un donezon :
-[![Liberapay](https://liberapay.com/assets/widgets/donate.svg)](https://liberapay.com/gweltou/donate)
 
 ## Staliañ
 

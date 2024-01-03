@@ -5,7 +5,7 @@
 
 [Version française](https://github.com/gweltou/vosk-br/blob/main/README-fr.md)
 
-Diorroet eo ar raktres-se a youl vat. Gallout a rit rein o souten amañ :
+Diorroet eo ar raktres-se a youl vat. Gallout a rit souten ar raktres gant un donezon :
 [![Liberapay](https://liberapay.com/assets/widgets/donate.svg)](https://liberapay.com/gweltou/donate)
 
 Gallout a reer ivez implij ar meziant dre ur [c'hetal Web](https://abp.fritzsch.net/), savet gant Philippe Argouarch.

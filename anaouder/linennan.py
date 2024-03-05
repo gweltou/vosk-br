@@ -40,7 +40,7 @@ autocorrect = False
 DEFAULT_MODEL = os.path.join(
     os.path.dirname(os.path.realpath(__file__)),
     "models",
-    "vosk-model-br-0.8"
+    "vosk-model-br-0.9"
 )
 
 

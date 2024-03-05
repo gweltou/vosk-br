@@ -1,10 +1,27 @@
 
 import os.path
+import json
 import subprocess
 from math import inf, ceil
 from pydub import AudioSegment
 # from pydub.utils import get_player_name
 from pydub.silence import detect_nonsilent
+
+
+
+
+def get_audiofile_info(filename):
+    r = subprocess.check_output(['ffprobe', '-hide_banner', '-v', 'panic', '-show_streams', '-of', 'json', filename])
+    r = json.loads(r)
+    return r['streams'][0]
+
+
+
+def get_audiofile_length(filename):
+    """
+        Get audio file length in seconds
+    """
+    return float(get_audiofile_info(filename)['duration'])
 
 
 

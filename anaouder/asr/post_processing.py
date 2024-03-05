@@ -27,7 +27,8 @@ verbal_fillers = {
     'allez' :   'A L E',
     'voilà' :   'V O A L A',
     'pff'   :   'P F F',
-    'mais'  :   'M EH'
+    'mais'  :   'M EH',
+    'hmm'   :   'M M',
     #'oh'    :   'O',
     #'ah'    :   'A',
 }
@@ -67,7 +68,7 @@ _inorm_units_dict = load_postproc_dict(_inorm_units_dict_path)
 
 
 
-def post_process_text(sentence: str, normalize=False, keep_fillers=False) -> str:
+def post_process_text(sentence: str, normalize=False, keep_fillers=True) -> str:
     """ Apply post-processing on raw text """
 
     # Verbal fillers removal

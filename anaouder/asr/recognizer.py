@@ -6,9 +6,11 @@ import json
 
 from vosk import Model, KaldiRecognizer, SetLogLevel
 from pydub import AudioSegment
+from tqdm import tqdm
+from math import ceil
 
-from .post_processing import apply_post_process_dict_text, post_process_text, post_process_timecoded
-from ..text.inverse_normalizer import inverse_normalize_timecoded
+from .post_processing import post_process_text, post_process_timecoded
+from ..audio import get_audiofile_length
 
 
 
@@ -147,19 +149,29 @@ def transcribe_file_timecoded(filepath: str, normalize=False) -> List[dict]:
         load_vosk()
     recognizer = KaldiRecognizer(model, 16000)
     recognizer.SetWords(True)
-
+    
+    total_duration = get_audiofile_length(filepath)
+    #print(f"Audio file duration: {round(total_duration)} seconds")
+    progress_bar = tqdm(total=ceil(total_duration))
+    i = 0
+    cumul_frames = 0
     tokens = []
     with subprocess.Popen(["ffmpeg", "-loglevel", "quiet", "-i",
                                 filepath,
                                 "-ar", "16000" , "-ac", "1", "-f", "s16le", "-"],
                                 stdout=subprocess.PIPE) as process:
-
         while True:
             data = process.stdout.read(4000)
             if len(data) == 0:
                 break
             if recognizer.AcceptWaveform(data):
                 tokens.extend(format_output(recognizer.Result(), normalize))
+            cumul_frames += len(data) // 2
+            if i%10 == 0:
+                progress_bar.update(cumul_frames / 16000)
+                cumul_frames = 0
+            i += 1
         tokens.extend(format_output(recognizer.FinalResult(), normalize))
+    progress_bar.close()
     
     return tokens

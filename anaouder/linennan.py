@@ -15,10 +15,12 @@ import sys
 import os.path
 import datetime
 import argparse
+
 import re
 import srt
 import jiwer
 import static_ffmpeg
+from tqdm import tqdm
 
 from anaouder.asr.recognizer import load_vosk, transcribe_file_timecoded
 from anaouder.asr.post_processing import verbal_fillers

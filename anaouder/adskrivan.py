@@ -1,17 +1,18 @@
 #! /usr/bin/env python3
 
-import subprocess
-import argparse
 import sys
 import os.path
 import datetime
 from math import floor, ceil
+import argparse
+import subprocess
 
 import static_ffmpeg
 import json
 import srt
 from vosk import Model, KaldiRecognizer, SetLogLevel
 from pydub import AudioSegment
+from tqdm import tqdm
 
 from anaouder.asr.recognizer import (
 	transcribe_file_timecoded, transcribe_segment_timecoded,
@@ -77,7 +78,7 @@ def main_adskrivan(*args, **kwargs) -> None:
 	DEFAULT_MODEL = os.path.join(
 		os.path.dirname(os.path.realpath(__file__)),
 		"models",
-		"vosk-model-br-0.8"
+		"vosk-model-br-0.9"
 	)
 
 	desc = f"Decode an audio file in any format, with the help of ffmpeg"
@@ -91,11 +92,11 @@ def main_adskrivan(*args, **kwargs) -> None:
 		help="Use additional translation dictionaries")
 	parser.add_argument("--keep-fillers", action="store_true",
 		help="Keep verbal fillers ('euh', 'beñ', 'alors', 'kwa'...)")
-	parser.add_argument("-t", "--type", choices=["txt", "srt", "eaf", "split"],
+	parser.add_argument("-t", "--type", choices=["txt", "srt", "eaf", "seg"],
 		help="file output type")
 	parser.add_argument("-o", "--output", help="write to a file")
 	parser.add_argument("--autosplit", action="store_true",
-		help="Automatically split audio at silences (used with 'srt', 'eaf' or 'split' type only)")
+		help="Automatically split audio at silences (used with 'srt', 'eaf' or 'seg' type only)")
 	parser.add_argument("--segment-min-length",
 		help="Will try not to go under this length when segmenting audio files",
 		type=float, default=2)
@@ -130,13 +131,21 @@ def main_adskrivan(*args, **kwargs) -> None:
 	if args.translate:
 		translation_dicts = [ load_translation_dict(path) for path in args.translate ]
 
+	if args.type == "seg":
+		if args.output:
+			args.output = args.output.replace(' ', '_')
+		else:
+			args.output = args.filename.replace(' ', '_')
+			ext = os.path.splitext(args.output)[1]
+			args.output = args.output.replace(ext, ".seg")
+	
 	fout = open(args.output, 'w') if args.output else sys.stdout
 
 	if not args.type:
 		if args.output:
 			# No explicit type was given to we'll try to infer it from output file extension
 			ext = os.path.splitext(args.output)[1][1:]
-			if ext.lower() in ("srt", "split", "eaf"):
+			if ext.lower() in ("srt", "seg", "eaf"):
 				args.type = ext.lower()
 			else:
 				args.type = "txt"	# Default type
@@ -148,7 +157,7 @@ def main_adskrivan(*args, **kwargs) -> None:
 		model = Model(args.model)
 		rec = KaldiRecognizer(model, 16000)
 		rec.SetWords(True)
-
+    
 		with subprocess.Popen([ffmpeg_path, "-loglevel", "quiet", "-i",
 								args.filename,
 								"-ar", "16000" , "-ac", "1", "-f", "s16le", "-"],
@@ -161,12 +170,13 @@ def main_adskrivan(*args, **kwargs) -> None:
 					sentence = json.loads(rec.Result())["text"]
 					sentence = format_output(sentence, normalize=args.normalize, keep_fillers=args.keep_fillers)
 					if sentence: print(sentence, file=fout)
+
 			sentence = json.loads(rec.FinalResult())["text"]
 			sentence = format_output(sentence, normalize=args.normalize, keep_fillers=args.keep_fillers)
 			if sentence: print(sentence, file=fout)
 
 
-	elif args.type in ("srt", "split", "eaf"):
+	elif args.type in ("srt", "seg", "eaf"):
 		if args.model:
 			load_vosk(args.model)
 		
@@ -187,19 +197,20 @@ def main_adskrivan(*args, **kwargs) -> None:
 			print(f"{len(segments)} segment{'s' if len(segments)>1 else ''} found")
 
 			t_min, t_max = 0, segments[-1][1]
-			sentences = [
-				transcribe_segment_timecoded(song[max(t_min, seg[0]-200):min(t_max, seg[1]+200)])
-				for seg in segments
-			]	
-		
+			sentences = []
+			for seg in segments:
+				tr = transcribe_segment_timecoded(song[max(t_min, seg[0]-200):min(t_max, seg[1]+200)])
+				sentences.append(tr)
+			
 		else:
+			print("Transcribing audio file...", flush=True)
 			tokens = transcribe_file_timecoded(args.filename)
 			sentences = split_vosk_tokens(tokens, max_length=args.segment_max_length)
 			segments = [ [floor(sent[0]['start']*1000), ceil(sent[-1]['end']*1000)]
 			   				for sent in sentences ]
 
 		# Apply text post-processing
-		if args.type == "split":
+		if args.type == "seg":
 			args.keep_fillers = True
 		sentences = [
 			post_process_timecoded(sent, args.normalize, args.keep_fillers)
@@ -220,7 +231,7 @@ def main_adskrivan(*args, **kwargs) -> None:
 		assert len(sentences) == len(segments)
 
 
-		if args.type == 'split':
+		if args.type == 'seg':
 			for start, end in segments:
 				print(f"{start} {end}", file=fout)
 			
@@ -240,6 +251,7 @@ def main_adskrivan(*args, **kwargs) -> None:
 					fw.write(sentence + '\n')
 			
 			wav_filename = os.path.extsep.join([basename, 'wav'])
+			print(args.filename, wav_filename)
 			convert_to_wav(args.filename, wav_filename)
 		
 		
@@ -266,6 +278,11 @@ def main_adskrivan(*args, **kwargs) -> None:
 								start=datetime.timedelta(seconds=line[0]["start"]),
 								end=datetime.timedelta(seconds=line[-1]["end"]))
 					subs.append(s)
+			
+			# Write to a srt file with the same name as input file by default
+			if not args.output:
+				srt_path = os.path.splitext(args.filename)[0] + ".srt"
+				fout = open(srt_path, 'w')
 
 			print(srt.compose(subs), file=fout)
 		
@@ -285,7 +302,7 @@ def main_adskrivan(*args, **kwargs) -> None:
 			if args.output:
 				print("EAF file written to", os.path.abspath(args.output))
 
-		
+  
 	if args.output:
 		fout.close()
 	

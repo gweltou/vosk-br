@@ -1,2 +1,4 @@
 anaouder/models/vosk-model-br-0.8 filter=lfs diff=lfs merge=lfs -text
 anaouder/models/vosk-model-br-0.8/* filter=lfs diff=lfs merge=lfs -text
+*.fst filter=lfs diff=lfs merge=lfs -text
+anaouder/models/vosk-model-br-0.9/HCLG.fst filter=lfs diff=lfs merge=lfs -text

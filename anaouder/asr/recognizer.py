@@ -155,6 +155,7 @@ def transcribe_file_timecoded(filepath: str, normalize=False) -> List[dict]:
     progress_bar = tqdm(total=ceil(total_duration))
     i = 0
     cumul_frames = 0
+
     tokens = []
     with subprocess.Popen(["ffmpeg", "-loglevel", "quiet", "-i",
                                 filepath,

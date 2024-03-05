@@ -157,8 +157,7 @@ def main_adskrivan(*args, **kwargs) -> None:
 		model = Model(args.model)
 		rec = KaldiRecognizer(model, 16000)
 		rec.SetWords(True)
-		
-		#progress_bar = tqdm(100)
+    
 		with subprocess.Popen([ffmpeg_path, "-loglevel", "quiet", "-i",
 								args.filename,
 								"-ar", "16000" , "-ac", "1", "-f", "s16le", "-"],
@@ -171,7 +170,7 @@ def main_adskrivan(*args, **kwargs) -> None:
 					sentence = json.loads(rec.Result())["text"]
 					sentence = format_output(sentence, normalize=args.normalize, keep_fillers=args.keep_fillers)
 					if sentence: print(sentence, file=fout)
-				#progress_bar.update(1)
+
 			sentence = json.loads(rec.FinalResult())["text"]
 			sentence = format_output(sentence, normalize=args.normalize, keep_fillers=args.keep_fillers)
 			if sentence: print(sentence, file=fout)
@@ -284,6 +283,7 @@ def main_adskrivan(*args, **kwargs) -> None:
 			if not args.output:
 				srt_path = os.path.splitext(args.filename)[0] + ".srt"
 				fout = open(srt_path, 'w')
+
 			print(srt.compose(subs), file=fout)
 		
 		
@@ -302,7 +302,7 @@ def main_adskrivan(*args, **kwargs) -> None:
 			if args.output:
 				print("EAF file written to", os.path.abspath(args.output))
 
-	
+  
 	if args.output:
 		fout.close()
 	

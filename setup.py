@@ -45,8 +45,6 @@ setup(
     # package_dir={"anaouder": "anaouder", "ostilhou": "anaouder/ostilhou"},
     package_data={
         "anaouder": [
-            "models/vosk-model-br-0.9/*",
-            "models/vosk-model-br-0.9/ivector/*",
             "asr/inorm_units.tsv",
             "asr/postproc_sub.tsv",
             "dicts/acronyms.tsv",

@@ -12,7 +12,6 @@ Usage: ./linennan.py audio_file text_file
 """
 
 import sys
-import os.path
 import datetime
 import argparse
 
@@ -22,7 +21,8 @@ import jiwer
 import static_ffmpeg
 from tqdm import tqdm
 
-from anaouder.asr.recognizer import load_vosk, transcribe_file_timecoded
+from anaouder.asr.models import load_model, DEFAULT_MODEL
+from anaouder.asr.recognizer import transcribe_file_timecoded
 from anaouder.asr.post_processing import verbal_fillers
 from anaouder.text import (
     pre_process, filter_out,
@@ -36,12 +36,6 @@ from anaouder.version import VERSION
 
 
 autocorrect = False
-
-DEFAULT_MODEL = os.path.join(
-    os.path.dirname(os.path.realpath(__file__)),
-    "models",
-    "vosk-model-br-0.9"
-)
 
 
 def main_linennan() -> None:
@@ -69,7 +63,7 @@ def main_linennan() -> None:
     # Use static_ffmpeg instead of ffmpeg
     static_ffmpeg.add_paths()
 
-    load_vosk(args.model)
+    load_model(args.model)
 
     lines = read_file_drop_comments(args.text_file)
     

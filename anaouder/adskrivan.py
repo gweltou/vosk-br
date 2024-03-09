@@ -14,10 +14,8 @@ from vosk import Model, KaldiRecognizer, SetLogLevel
 from pydub import AudioSegment
 from tqdm import tqdm
 
-from anaouder.asr.recognizer import (
-	transcribe_file_timecoded, transcribe_segment_timecoded,
-	load_vosk
-	)
+from anaouder.asr.models import load_model, DEFAULT_MODEL
+from anaouder.asr.recognizer import transcribe_file_timecoded, transcribe_segment_timecoded
 from anaouder.asr.post_processing import post_process_text, post_process_timecoded
 from anaouder.text import tokenize, detokenize, load_translation_dict, translate
 from anaouder.audio import split_to_segments, convert_to_wav
@@ -74,12 +72,6 @@ def main_adskrivan(*args, **kwargs) -> None:
 	""" adskrivan cli entry point """
 
 	global translation_dicts
-
-	DEFAULT_MODEL = os.path.join(
-		os.path.dirname(os.path.realpath(__file__)),
-		"models",
-		"vosk-model-br-0.9"
-	)
 
 	desc = f"Decode an audio file in any format, with the help of ffmpeg"
 	parser = argparse.ArgumentParser(description=desc, prog="adskrivan")
@@ -153,8 +145,7 @@ def main_adskrivan(*args, **kwargs) -> None:
 			args.type = "txt"
 
 	if args.type == "txt":
-		SetLogLevel(-1)
-		model = Model(args.model)
+		model = load_model(args.model)
 		rec = KaldiRecognizer(model, 16000)
 		rec.SetWords(True)
     
@@ -178,7 +169,7 @@ def main_adskrivan(*args, **kwargs) -> None:
 
 	elif args.type in ("srt", "seg", "eaf"):
 		if args.model:
-			load_vosk(args.model)
+			load_model(args.model)
 		
 		if args.autosplit:
 			song = AudioSegment.from_file(args.filename)

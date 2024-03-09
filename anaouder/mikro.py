@@ -1,12 +1,14 @@
 #!/usr/bin/env python3
 
+import sys
 import argparse
-import os.path
 import queue
 import sounddevice as sd
-import sys
+
 import static_ffmpeg
-from vosk import Model, KaldiRecognizer, SetLogLevel
+from vosk import KaldiRecognizer
+
+from anaouder.asr.models import load_model, DEFAULT_MODEL
 from anaouder.asr.post_processing import post_process_text
 from anaouder.text import tokenize, detokenize, load_translation_dict, translate
 from anaouder.version import VERSION
@@ -40,12 +42,6 @@ def main_mikro() -> None:
 
 	global q
 	global translation_dicts
-
-	DEFAULT_MODEL = os.path.join(
-		os.path.dirname(os.path.realpath(__file__)),
-		"models",
-		"vosk-model-br-0.8"
-	)
 
 	parser = argparse.ArgumentParser(add_help=False)
 	parser.add_argument('-l', '--list-devices', action='store_true',
@@ -81,17 +77,12 @@ def main_mikro() -> None:
 	q = queue.Queue()
 
 	try:
-		if not os.path.exists(args.model):
-			print ("Please download a model for your language from https://alphacephei.com/vosk/models")
-			print ("and unpack as 'model' in the current folder.")
-			parser.exit(0)
 		if args.samplerate is None:
 			device_info = sd.query_devices(args.device, 'input')
 			# soundfile expects an int, sounddevice provides a float:
 			args.samplerate = int(device_info['default_samplerate'])
 
-		SetLogLevel(-1)
-		model = Model(args.model)
+		model = load_model(args.model)
 
 		translation_dicts = []
 		if args.translate:

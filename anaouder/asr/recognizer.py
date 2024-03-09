@@ -4,40 +4,20 @@ import sys
 import subprocess
 import json
 
-from vosk import Model, KaldiRecognizer, SetLogLevel
+from vosk import KaldiRecognizer
 from pydub import AudioSegment
 from tqdm import tqdm
 from math import ceil
 
+from .models import load_model
 from .post_processing import post_process_text, post_process_timecoded
 from ..audio import get_audiofile_length
 
 
 
-_vosk_loaded = False
-MODEL_DIR = os.path.abspath(os.path.join(
-    os.path.dirname(os.path.realpath(__file__)),
-    '..', '..', '..', 'models'))
-DEFAULT_MODEL = os.path.join(MODEL_DIR, "current")
-
-
-
-def load_vosk(path: str = DEFAULT_MODEL) -> None:
-    global _vosk_loaded
-    global model
-
-    SetLogLevel(-1)
-    model_path = os.path.normpath(path or DEFAULT_MODEL)
-    print("Loading vosk model", model_path, file=sys.stderr)
-    model = Model(model_path)
-    _vosk_loaded = True
-
-
-
 def transcribe_segment(segment: AudioSegment) -> str:
     """ Transcribe a short AudioSegment """
-    if not _vosk_loaded:
-        load_vosk()
+    model = load_model()
     recognizer = KaldiRecognizer(model, 16000)
     recognizer.SetWords(True)
     
@@ -64,8 +44,7 @@ def transcribe_segment_timecoded(segment: AudioSegment) -> List[dict]:
         'start' and 'end' keys are in seconds
         'conf' is a normalized confidence score
     """
-    if not _vosk_loaded:
-        load_vosk()
+    model = load_model()
     recognizer = KaldiRecognizer(model, 16000)
     recognizer.SetWords(True)
     
@@ -94,8 +73,7 @@ def transcribe_file(filepath: str, normalize=False) -> List[str]:
     if not os.path.exists(filepath):
         print("Couldn't find {}".format(filepath), file=sys.stderr)
 
-    if not _vosk_loaded:
-        load_vosk()
+    model = load_model()
     recognizer = KaldiRecognizer(model, 16000)
     recognizer.SetWords(True)
     
@@ -145,8 +123,7 @@ def transcribe_file_timecoded(filepath: str, normalize=False) -> List[dict]:
         words = post_process_timecoded(words, normalize)
         return words
 
-    if not _vosk_loaded:
-        load_vosk()
+    model = load_model()
     recognizer = KaldiRecognizer(model, 16000)
     recognizer.SetWords(True)
     

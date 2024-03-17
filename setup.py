@@ -55,7 +55,7 @@ setup(
             "dicts/standard_tokens.tsv",
         ]
     },
-    data_files=[('', ["README-fr.md", "CHANGELOG.txt"])],
+    data_files=[('', ["README.md", "README-fr.md", "CHANGELOG.md"])],
     entry_points={
         "console_scripts": [
             "adskrivan = anaouder:main_adskrivan",

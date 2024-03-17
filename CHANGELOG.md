@@ -4,7 +4,7 @@
 
 ## [0.9.0]
 
-- Updated vosk STT model to v0.9.
+- Updated Vosk STT model to v0.9.
 - Auto-downloading of models online if not available locally.
 - Progress bars with `tqdm`.
 

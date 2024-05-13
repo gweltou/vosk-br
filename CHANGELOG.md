@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.9.1] - 2024-05-13
+
 - Better segmentation when decoding to a text file with `-o/--output` option.
 - Shows a progress bar when decoding to a text file with `-o/--output` option.
 - Included Anaouder version in EAF headers.

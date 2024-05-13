@@ -22,15 +22,10 @@ Un nebeut perzhioù dedennus :
 * **Lec'hel**. Ezhomm ebet eus an Internet. Ho mouezh hag **ho data a chomo war ho penveg**, ha tretet e vint gant ho penveg nemetken. Kudenn surentez ebet liammet d'an treuzkas dre rouedad ha gwelloc'h a-fed ekologel.
 * **Digoust ha dieub**. Gellout a reoc'h azasaat ar meziant d'hoc'h ezhommoù pe enframmañ anezhañ e meziantoù all.
 
-Dalc'hoù 'zo siwazh :
-
-* Poentadur ebet.
-* Kizidig d'an trouzioù endro.
-* Fall war ur bern pouezioù-mouezh c'hoazh.
-* Ret eo komz sklaer ha goustadik.
-
 Gwellaet e vo efedusted an anaouder tamm-ha-tamm, gant ma vo kavet roadennoù mouezh adskrivet.\
 Ul lisañs dieub (doare [Creative Commons](https://creativecommons.org/licenses/)) a aotrefe eskemm ar roadennoù-se en un doare aes.
+
+Deuit e darempred ganin m'ho peus c'hoant kemer perzh !
 
 ## Staliañ
 
@@ -97,8 +92,6 @@ istitlan RESTR_SON_PE_VIDEO -o istitloù.srt
 An oberiadur-se a gemero kalzig a amzer (hervez padelezh an teuliad son). Klaskit gant un teul film berr da gentañ !
 
 https://user-images.githubusercontent.com/10166907/213805292-63becbe2-ffb5-492f-9bac-1330c4b2d07d.mp4
-
-*Setu disoc'h an istitloù emgefre, hep cheñch netra. Kollet eo buan pa vez sonnerez...*
 
 ## Implijout gant meziantoù all
 

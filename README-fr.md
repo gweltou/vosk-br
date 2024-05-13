@@ -24,13 +24,6 @@ Principaux avantages :
 * **Local**. Fonctionne sans connexion internet. Vos données restent donc sur votre appareil.
 * **Libre et gratuit**. La licence MIT vous permet de modifier le logiciel et de l'intégrer dans d'autres applications.
 
-Il y a toutefois des inconvénients :
-
-* Sensible au bruit ambiant.
-* Certains accents régionaux sont encore mal reconnus.
-* Nécessite de parler lentement et distinctement.
-* Absence de ponctuation.
-
 Le nombre d'heures d'enregistrement audio utilisé pour entraîner le modèle est relativement faible mais progresse peu à peu.
 En dehors du projet [Common Voice](https://commonvoice.mozilla.org/br) de Mozilla, les enregistrements retranscrits [libres de droit](https://creativecommons.org/licenses/) sont rares pour le breton. Toute aide sur ce terrain sera la bienvenue !
 

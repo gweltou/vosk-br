@@ -106,7 +106,12 @@ def post_process_timecoded(
         tokens: List[dict],
         normalize=False,
         keep_fillers=True) -> List[dict]:
-    """ Apply post-processing on Vosk formatted result (keeping timecodes) """
+    """ Apply post-processing on Vosk formatted result (keeping timecodes)
+
+        Add hypens (-se, -mañ)
+        Common words substitution  (optional)
+        Inverse-normalization      (optional)
+    """
     
     # Verbal fillers removal
     if not keep_fillers:

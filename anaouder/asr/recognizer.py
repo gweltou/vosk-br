@@ -61,6 +61,7 @@ def transcribe_segment_timecoded(segment: AudioSegment) -> List[dict]:
     result = json.loads(recognizer.FinalResult())
     if "result" in result:
         timecoded_text.extend(result["result"])
+    
     return timecoded_text
 
 
@@ -117,18 +118,16 @@ def transcribe_file_timecoded(filepath: str, normalize=False) -> List[dict]:
 
     def format_output(result, normalize=False) -> List[dict]:
         jres = json.loads(result)
+        return jres.get("result", [])
         if not "result" in jres:
             return []
-        words = jres["result"]
-        words = post_process_timecoded(words, normalize)
-        return words
+        return jres["result"]
 
     model = load_model()
     recognizer = KaldiRecognizer(model, 16000)
     recognizer.SetWords(True)
     
     total_duration = get_audiofile_length(filepath)
-    #print(f"Audio file duration: {round(total_duration)} seconds")
     progress_bar = tqdm(total=ceil(total_duration))
     i = 0
     cumul_frames = 0

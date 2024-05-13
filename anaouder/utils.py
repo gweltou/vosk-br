@@ -4,7 +4,9 @@ import os
 # For eaf (Elan) file conversion
 import datetime, pytz
 from xml.dom import minidom
+
 from anaouder.audio import convert_to_mp3
+from anaouder.version import VERSION
 
 
 
@@ -36,8 +38,6 @@ def write_eaf(segments, sentences, audiofile, type="wav"):
     """ Export to eaf (Elan) file """
 
     record_id = os.path.splitext(os.path.abspath(audiofile))[0]
-    #audio_filename = os.path.extsep.join((record_id, 'wav'))
-    # audio_filename = audiofile
     if type == "mp3":
         mp3_file = os.path.extsep.join((record_id, 'mp3'))
         if not os.path.exists(mp3_file):
@@ -47,7 +47,7 @@ def write_eaf(segments, sentences, audiofile, type="wav"):
     doc = minidom.Document()
 
     root = doc.createElement('ANNOTATION_DOCUMENT')
-    root.setAttribute('AUTHOR', 'anaouder (Gweltaz DG)')
+    root.setAttribute('AUTHOR', f'Anaouder {VERSION} (Gweltaz DG)')
     root.setAttribute('DATE', datetime.datetime.now(pytz.timezone('Europe/Paris')).isoformat(timespec='seconds'))
     root.setAttribute('FORMAT', '3.0')
     root.setAttribute('VERSION', '3.0')

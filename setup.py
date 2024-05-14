@@ -26,7 +26,7 @@ setup(
     licence="MIT",
     author_email=EMAIL,
     description=DESCRIPTION,
-    long_description=open("README.md", encoding="utf-8").read(),
+    long_description=open("README-fr.md", encoding="utf-8").read(),
     long_description_content_type="text/markdown",
     python_requires=REQUIRES_PYTHON,
     install_requires=REQUIREMENTS,

@@ -116,12 +116,9 @@ def transcribe_file_timecoded(filepath: str, normalize=False) -> List[dict]:
         'conf' is a normalized confidence score
     """
 
-    def format_output(result, normalize=False) -> List[dict]:
+    def format_output(result) -> List[dict]:
         jres = json.loads(result)
         return jres.get("result", [])
-        if not "result" in jres:
-            return []
-        return jres["result"]
 
     model = load_model()
     recognizer = KaldiRecognizer(model, 16000)
@@ -142,13 +139,13 @@ def transcribe_file_timecoded(filepath: str, normalize=False) -> List[dict]:
             if len(data) == 0:
                 break
             if recognizer.AcceptWaveform(data):
-                tokens.extend(format_output(recognizer.Result(), normalize))
+                tokens.extend(format_output(recognizer.Result()))
             cumul_frames += len(data) // 2
             if i%10 == 0:
                 progress_bar.update(cumul_frames / 16000)
                 cumul_frames = 0
             i += 1
-        tokens.extend(format_output(recognizer.FinalResult(), normalize))
+        tokens.extend(format_output(recognizer.FinalResult()))
     progress_bar.close()
     
     return tokens

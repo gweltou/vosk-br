@@ -128,6 +128,8 @@ def main_adskrivan(*args, **kwargs) -> None:
         else:
             args.type = "txt"
 
+    model = load_model(args.model)
+
     if args.type == "txt":
         # No need of timecodes
 
@@ -148,7 +150,6 @@ def main_adskrivan(*args, **kwargs) -> None:
         else:
             # Online decoding
             # Print decoded sentences one-by-one
-            model = load_model(args.model)
             rec = KaldiRecognizer(model, 16000)
             rec.SetWords(True)
         
@@ -172,9 +173,6 @@ def main_adskrivan(*args, **kwargs) -> None:
 
     elif args.type in ("srt", "seg", "eaf"):
         # Transcribe with timecodes
-
-        if args.model:
-            load_model(args.model)
         
         if args.autosplit:
             song = AudioSegment.from_file(args.filename)

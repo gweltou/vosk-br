@@ -55,7 +55,15 @@ Dre ziouer, adskrivet e vo pep tra e diabarzh an terminal. Gallout a rit ivez im
 adskrivan RESTR_SON_PE_VIDEO -o DISOC'H.txt
 ```
 
-Evit kaout listennad an opsionoù, implijit an opsion `-h`.
+Evit kaout listennad an opsionoù, implijit an opsioñ `-h`.
+
+## Adskrivañ istitloù evit ur video
+
+Gallout a rit adskrivañ istitloù diouzh teuliadoù son pe video, e stumm `srt` (Subrip).
+
+```bash
+istitlan RESTR_SON_PE_VIDEO -o istitloù.srt
+```
 
 ## Implijout gant ur mikro
 
@@ -81,18 +89,6 @@ M'ho peus un teul skrid adskrivet dre dorn (e stumm `.txt`) e c'heller linennañ
 linennan RESTR_SON_PE_VIDEO RESTR_SKRID
 ```
 
-## Adskrivañ istitloù evit ur video
-
-Gallout a rit adskrivañ istitloù diouzh teuliadoù son pe video, e stumm `srt` (Subrip).
-
-```bash
-istitlan RESTR_SON_PE_VIDEO -o istitloù.srt
-```
-
-An oberiadur-se a gemero kalzig a amzer (hervez padelezh an teuliad son). Klaskit gant un teul film berr da gentañ !
-
-https://user-images.githubusercontent.com/10166907/213805292-63becbe2-ffb5-492f-9bac-1330c4b2d07d.mp4
-
 ## Implijout gant meziantoù all
 
 *N'eo ket aliet, dre ma vez kollet un nebeut perzhioù e-keñver ar pezh vez graet gant ar modul `anaouder` : adlakaat ar varennigoù-stag hag amdreiñ an niverennoù da skouer.*
@@ -113,3 +109,5 @@ Ar mod-implij a c'heller kavout [amañ](https://docs.kdenlive.org/en/effects_and
 Ar meziant-se zo bet diorroet o kemer harp war meziantoù dieub all : Kaldi, Vosk ha difazier [Hunspell](https://github.com/Drouizig/hunspell-br) an Drouizig (evit naetaat an testennoù a-raok ar pleustr).\
 Lakaat da bleustriñ ar model a zo bet posubl a-drugarez d'an danvez prizius, krouet ha rannet gant ur bern tud all : ar raktres Mozilla Common Voice, enrolladennoù Dizale, Brezhoweb, RKB, Kaouen.net, Ya!, Becedia, abadennoù France3 ha Dastum.\
 Trugarez da Elen Cariou, Jean-Mari Ollivier, Karen Treguier, Mélanie Jouitteau ha Pêr Morvan evit o sikour hag o souten.
+
+https://user-images.githubusercontent.com/10166907/213805292-63becbe2-ffb5-492f-9bac-1330c4b2d07d.mp4

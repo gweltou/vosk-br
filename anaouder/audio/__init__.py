@@ -21,7 +21,13 @@ def get_audiofile_length(filename):
     """
         Get audio file length in seconds
     """
-    return float(get_audiofile_info(filename)['duration'])
+    info = get_audiofile_info(filename)
+    if "duration" in info:
+        return float(info["duration"])
+    elif "tags" in info:
+        # For MKV files
+        h, m, s = info["tags"]["DURATION"].split(':')
+        return float(h) * 3600 + float(m) * 60 + float(s)
 
 
 

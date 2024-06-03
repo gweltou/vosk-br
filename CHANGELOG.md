@@ -7,7 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## [0.9.3] - 2024-06-02
+## [0.9.5] - 2024-06-03
 
 - Fixed model selection when outputing to a txt file.
 - Fixed inference with progress bar for MKV files.

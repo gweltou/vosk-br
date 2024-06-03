@@ -23,7 +23,7 @@ setup(
     url=URL,
     version=VERSION,
     author=AUTHOR,
-    licence="MIT",
+    license="MIT",
     author_email=EMAIL,
     description=DESCRIPTION,
     long_description=open("README-fr.md", encoding="utf-8").read(),

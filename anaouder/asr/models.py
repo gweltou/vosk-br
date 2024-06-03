@@ -2,6 +2,8 @@ from typing import List
 
 import os
 import platform
+import ssl
+import certifi
 import urllib
 import zipfile
 from tqdm import tqdm
@@ -101,7 +103,8 @@ def _download(model_name: str, root: str) -> str:
 
     print("Downloading model from", url)
 
-    with urllib.request.urlopen(url) as source, open(download_target, "wb") as output:
+    certifi_context = ssl.create_default_context(cafile=certifi.where())
+    with urllib.request.urlopen(url, context=certifi_context) as source, open(download_target, "wb") as output:
         with tqdm(
             total=int(source.info().get("Content-Length")),
             ncols=80,

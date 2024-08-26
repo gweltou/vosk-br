@@ -32,13 +32,13 @@ Deuit e darempred ganin m'ho peus c'hoant kemer perzh !
 Goude bezañ bet staliet [Python3](https://www.python.org/downloads/) e c'heller staliañ an anaouder dre an terminal :
 
 ```bash
-pip install anaouder
+pip3 install anaouder
 ```
 
 Ur wech staliet ha pa vo kinniget modeloù efedusoc'h, e c'hellit nevesaat ar meziant gant :
 
 ```bash
-pip install --upgrade anaouder
+pip3 install --upgrade anaouder
 ```
 
 ## Adskrivañ ur restr son

@@ -32,13 +32,13 @@ En dehors du projet [Common Voice](https://commonvoice.mozilla.org/br) de Mozill
 Les scripts nécessitent l'installation de [Python3](https://www.python.org/downloads/). L'installation du module de reconnaissance vocale se fera ensuite dans un terminal, en exécutant la commande suivante :
 
 ```bash
-pip install anaouder
+pip3 install anaouder
 ```
 
 Une fois installé, et à mesure que de nouvelles versions du modèle de reconnaissance vocale seront proposées, vous pourrez mettre à jour le logiciel avec :
 
 ```bash
-pip install --upgrade anaouder
+pip3 install --upgrade anaouder
 ```
 
 

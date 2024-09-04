@@ -106,9 +106,10 @@ def main_mikro() -> None:
 					if rec.AcceptWaveform(data):
 						result = eval(rec.Result())["text"]
 						if len(result) > 0:
-							print(format_output(result, normalize=args.normalize, keep_fillers=args.keep_fillers))
+							formatted = format_output(result, normalize=args.normalize, keep_fillers=args.keep_fillers)
+							print(formatted)
 							if dump_fn:
-								dump_fn.write(format_output(result, normalize=args.normalize, keep_fillers=args.keep_fillers)+'\n')
+								dump_fn.write(formatted+'\n')
 
 	except KeyboardInterrupt:
 		print('\nDone')

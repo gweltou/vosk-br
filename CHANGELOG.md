@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.9.6]
+
+- Improved alignment algorithm in `linennan`.
+- `ali` file format compatibility with `adskrivan` and `linennan`.
+
 ## [0.9.5] - 2024-06-03
 
 - Fixed model selection when outputing to a txt file.
@@ -37,7 +42,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [0.8.2]
 
-- Export to EAF (Elan) files.
+- Export to `EAF` (Elan) files.
 - Option `--autosplit` (adaptative splitting of audio file at silences).
 - Option `--set-ffmpeg-path` to define the path to ffmpeg explicitely.
 - Option `-v/--version` to show the version of the module.

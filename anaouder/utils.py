@@ -33,6 +33,12 @@ def read_file_drop_comments(path: str) -> List[str]:
     return lines
 
 
+def format_timecode(timecode):
+    if isinstance(timecode, int):
+        return str(timecode)
+    return "{:.3f}".format(timecode).rstrip('0').rstrip('.')
+
+
 
 def write_eaf(segments, sentences, audiofile, type="wav"):
     """ Export to eaf (Elan) file """

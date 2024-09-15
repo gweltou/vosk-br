@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ANNOTATION_DOCUMENT AUTHOR="split2eaf (Gweltaz DG)" DATE="2023-03-01T11:27:10+01:00" FORMAT="3.0" VERSION="3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.mpi.nl/tools/elan/EAFv3.0.xsd">
+<ANNOTATION_DOCUMENT AUTHOR="split2eaf (Gweltaz DG)" DATE="2024-09-15T19:26:13+02:00" FORMAT="3.0" VERSION="3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.mpi.nl/tools/elan/EAFv3.0.xsd">
 	<HEADER MEDIA_FILE="" TIME_UNITS="milliseconds">
-		<MEDIA_DESCRIPTOR MEDIA_URL="file:///home/gweltaz/Documents/STT/todo/YBD/rann3.wav" MIME_TYPE="audio/x-wav" RELATIVE_MEDIA_URL="./rann3.wav"/>
+		<MEDIA_DESCRIPTOR MEDIA_URL="file:///home/gweltaz/STT/todo/YBD/rann3.wav" MIME_TYPE="audio/x-wav" RELATIVE_MEDIA_URL="./rann3.wav"/>
 	</HEADER>
 	<TIME_ORDER>
 		<TIME_SLOT TIME_SLOT_ID="ts1" TIME_VALUE="2089743"/>
@@ -74,12 +74,12 @@
 	<TIER LINGUISTIC_TYPE_REF="transcript" TIER_ID="Transcription">
 		<ANNOTATION>
 			<ALIGNABLE_ANNOTATION ANNOTATION_ID="a1" TIME_SLOT_REF1="ts1" TIME_SLOT_REF2="ts2">
-				<ANNOTATION_VALUE>Sonit sonit e-giz-se meum bro, hag {?}gueulé ma c'hanton ha geulé ma c'hanton</ANNOTATION_VALUE>
+				<ANNOTATION_VALUE>Sonit sonit e-giz-se meum bro, hag gueulé ma c'hanton ha geulé ma c'hanton</ANNOTATION_VALUE>
 			</ALIGNABLE_ANNOTATION>
 		</ANNOTATION>
 		<ANNOTATION>
 			<ALIGNABLE_ANNOTATION ANNOTATION_ID="a2" TIME_SLOT_REF1="ts3" TIME_SLOT_REF2="ts4">
-				<ANNOTATION_VALUE>Kar ma-se mod {?} kavet boneur</ANNOTATION_VALUE>
+				<ANNOTATION_VALUE>Kar ma-se mod  kavet boneur</ANNOTATION_VALUE>
 			</ALIGNABLE_ANNOTATION>
 		</ANNOTATION>
 		<ANNOTATION>
@@ -89,7 +89,7 @@
 		</ANNOTATION>
 		<ANNOTATION>
 			<ALIGNABLE_ANNOTATION ANNOTATION_ID="a4" TIME_SLOT_REF1="ts7" TIME_SLOT_REF2="ts8">
-				<ANNOTATION_VALUE>Me oa de oa de Sant-Inan {?}, me y'aet e oa de Sant-Inan {?}</ANNOTATION_VALUE>
+				<ANNOTATION_VALUE>Me oa de oa de Sant-Inan , me y'aet e oa de Sant-Inan</ANNOTATION_VALUE>
 			</ALIGNABLE_ANNOTATION>
 		</ANNOTATION>
 		<ANNOTATION>
@@ -99,17 +99,17 @@
 		</ANNOTATION>
 		<ANNOTATION>
 			<ALIGNABLE_ANNOTATION ANNOTATION_ID="a6" TIME_SLOT_REF1="ts11" TIME_SLOT_REF2="ts12">
-				<ANNOTATION_VALUE>Ma'z an me d'ho barez c'hwi da bout kure bout person, me yae me d'ur bed bennak euh da glask ar {?}bareson. He he he he he he</ANNOTATION_VALUE>
+				<ANNOTATION_VALUE>Ma'z an me d'ho barez c'hwi da bout kure bout person, me yae me d'ur bed bennak euh da glask ar bareson. He he he he he he</ANNOTATION_VALUE>
 			</ALIGNABLE_ANNOTATION>
 		</ANNOTATION>
 		<ANNOTATION>
 			<ALIGNABLE_ANNOTATION ANNOTATION_ID="a7" TIME_SLOT_REF1="ts13" TIME_SLOT_REF2="ts14">
-				<ANNOTATION_VALUE>Ma'z an me d'ho barez c'hwi da bout kure bout person, me yae me d'ur bed bennak euh da glask ar {?}bareson</ANNOTATION_VALUE>
+				<ANNOTATION_VALUE>Ma'z an me d'ho barez c'hwi da bout kure bout person, me yae me d'ur bed bennak euh da glask ar bareson</ANNOTATION_VALUE>
 			</ALIGNABLE_ANNOTATION>
 		</ANNOTATION>
 		<ANNOTATION>
 			<ALIGNABLE_ANNOTATION ANNOTATION_ID="a8" TIME_SLOT_REF1="ts15" TIME_SLOT_REF2="ts16">
-				<ANNOTATION_VALUE>Ha pa oan me bihanik, bihanik ha dimezet, me oa mat ar c'hoadoù {?} maget mat. He he he he.</ANNOTATION_VALUE>
+				<ANNOTATION_VALUE>Ha pa oan me bihanik, bihanik ha dimezet, me oa mat ar c'hoadoù  maget mat. He he he he.</ANNOTATION_VALUE>
 			</ALIGNABLE_ANNOTATION>
 		</ANNOTATION>
 		<ANNOTATION>

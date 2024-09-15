@@ -1,4 +1,3 @@
-
 # Reiñ sikour da treuzskrivañ
  
 Amañ e kavit tennadoù son diaes din da gompren e teuliadoù emaon o treuzskrivañ er mare-mañ.
@@ -6,7 +5,7 @@ Amañ e kavit tennadoù son diaes din da gompren e teuliadoù emaon o treuzskriv
 M'ho peus c'hoant reiñ un taol sikour, kasit ur [postel din](mailto:gweltou@hotmail.com) gant ar frazenn klok ha difaziet, hervez ar pezh a gomprenoc'h.
 Na zisoñjit ket da skrivañ niverenn ar frazenn (da skouer: `YBD/rann4, 192`).
 
-Gallout a rit implij ar skritur a glot ar muiañ d'ar yezh komzet evel-just.
+An disoc'h a vo embannet [amañ](https://github.com/gweltou/roadennou), gant ul lisañs dieub (Creative Commons).
 
 
 ## YBD/boulanjer_a_laniscat

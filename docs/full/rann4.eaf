@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ANNOTATION_DOCUMENT AUTHOR="split2eaf (Gweltaz DG)" DATE="2024-09-15T19:26:16+02:00" FORMAT="3.0" VERSION="3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.mpi.nl/tools/elan/EAFv3.0.xsd">
+<ANNOTATION_DOCUMENT AUTHOR="split2eaf (Gweltaz DG)" DATE="2024-09-15T20:02:37+02:00" FORMAT="3.0" VERSION="3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.mpi.nl/tools/elan/EAFv3.0.xsd">
 	<HEADER MEDIA_FILE="" TIME_UNITS="milliseconds">
 		<MEDIA_DESCRIPTOR MEDIA_URL="file:///home/gweltaz/STT/todo/YBD/rann4.wav" MIME_TYPE="audio/x-wav" RELATIVE_MEDIA_URL="./rann4.wav"/>
 	</HEADER>
@@ -728,7 +728,7 @@
 		</ANNOTATION>
 		<ANNOTATION>
 			<ALIGNABLE_ANNOTATION ANNOTATION_ID="a33" TIME_SLOT_REF1="ts65" TIME_SLOT_REF2="ts66">
-				<ANNOTATION_VALUE>Dei oas un, anv Filip...  ganet a Sant-Nikolaz, n'eo ket... Ah ya ? N'eo deus ar vro kennebeut ? Nann. N'eo ket deus euh Bourc'h-Kintin ? Nann.</ANNOTATION_VALUE>
+				<ANNOTATION_VALUE>Dei oas un, anv Filip... {?} ganet a Sant-Nikolaz, n'eo ket... Ah ya ? N'eo deus ar vro kennebeut ? Nann. N'eo ket deus euh Bourc'h-Kintin ? Nann.</ANNOTATION_VALUE>
 			</ALIGNABLE_ANNOTATION>
 		</ANNOTATION>
 		<ANNOTATION>
@@ -958,12 +958,12 @@
 		</ANNOTATION>
 		<ANNOTATION>
 			<ALIGNABLE_ANNOTATION ANNOTATION_ID="a79" TIME_SLOT_REF1="ts157" TIME_SLOT_REF2="ts158">
-				<ANNOTATION_VALUE>Goaran ket me met just ac'hanon   Nann, n'ouzont ket ar brezhoneg ? Hmm nann. Met ganet int bet ba Koleder koulzkoude ? Oh n'int ket n'int ketañ ! N'int ket n'int ket.</ANNOTATION_VALUE>
+				<ANNOTATION_VALUE>Goaran ket me met just ac'hanon {?} {?} Nann, n'ouzont ket ar brezhoneg ? Hmm nann. Met ganet int bet ba Koleder koulzkoude ? Oh n'int ket n'int ketañ ! N'int ket n'int ket.</ANNOTATION_VALUE>
 			</ALIGNABLE_ANNOTATION>
 		</ANNOTATION>
 		<ANNOTATION>
 			<ALIGNABLE_ANNOTATION ANNOTATION_ID="a80" TIME_SLOT_REF1="ts159" TIME_SLOT_REF2="ts160">
-				<ANNOTATION_VALUE>Nann, n'eus ket ivez. N'eus ket ivez memes. N'eus ket brezhoneg ? Nann. Deus pelec'h e int teu int deuet ? Hmm  met n'eus ket bet brezhoneg james, Gallaoued int. Ah ya, Gallaoued int ? Patoa zo ganto ? Patoa, ya. Koulskoude e vez kaozeet brezhoneg tro-war-dro heñ. Ya.</ANNOTATION_VALUE>
+				<ANNOTATION_VALUE>{?} Nann, n'eus ket ivez. N'eus ket ivez memes. N'eus ket brezhoneg ? Nann. Deus pelec'h e int teu int deuet ? Hmm {?} met n'eus ket bet brezhoneg james, Gallaoued int. Ah ya, Gallaoued int ? Patoa zo ganto ? Patoa, ya. Koulskoude e vez kaozeet brezhoneg tro-war-dro heñ. Ya.</ANNOTATION_VALUE>
 			</ALIGNABLE_ANNOTATION>
 		</ANNOTATION>
 		<ANNOTATION>
@@ -983,7 +983,7 @@
 		</ANNOTATION>
 		<ANNOTATION>
 			<ALIGNABLE_ANNOTATION ANNOTATION_ID="a84" TIME_SLOT_REF1="ts167" TIME_SLOT_REF2="ts168">
-				<ANNOTATION_VALUE>... bennaket re yaouank... Ya met se zo partout forz penaos heñ. Hmm. Partout eo... ba Rostronen, ba Karaez eo memes mod heñ.</ANNOTATION_VALUE>
+				<ANNOTATION_VALUE>{?} ... bennaket re yaouank... Ya met se zo partout forz penaos heñ. Hmm. Partout eo... ba Rostronen, ba Karaez eo memes mod heñ.</ANNOTATION_VALUE>
 			</ALIGNABLE_ANNOTATION>
 		</ANNOTATION>
 		<ANNOTATION>
@@ -1013,7 +1013,7 @@
 		</ANNOTATION>
 		<ANNOTATION>
 			<ALIGNABLE_ANNOTATION ANNOTATION_ID="a90" TIME_SLOT_REF1="ts179" TIME_SLOT_REF2="ts180">
-				<ANNOTATION_VALUE>Kêr Hamon, ya. Kêr Hamon zo daou breton met euh dei pe Sant-Jili araves. Ah ya ? Hag a re all zo Gallaoued ?</ANNOTATION_VALUE>
+				<ANNOTATION_VALUE>Kêr Hamon, ya. Kêr Hamon zo daou breton met euh {?}dei pe Sant-Jili araves{?}. Ah ya ? Hag a re all zo Gallaoued ?</ANNOTATION_VALUE>
 			</ALIGNABLE_ANNOTATION>
 		</ANNOTATION>
 		<ANNOTATION>
@@ -1098,7 +1098,7 @@
 		</ANNOTATION>
 		<ANNOTATION>
 			<ALIGNABLE_ANNOTATION ANNOTATION_ID="a107" TIME_SLOT_REF1="ts213" TIME_SLOT_REF2="ts214">
-				<ANNOTATION_VALUE>Oh ya, yaouankoc'h evitañ bout oaran ket ped... ah ya ? Ped vloaz oa, tost ...</ANNOTATION_VALUE>
+				<ANNOTATION_VALUE>Oh ya, yaouankoc'h evitañ bout oaran ket ped... ah ya ? Ped vloaz oa, tost ... {?}</ANNOTATION_VALUE>
 			</ALIGNABLE_ANNOTATION>
 		</ANNOTATION>
 		<ANNOTATION>
@@ -1213,7 +1213,7 @@
 		</ANNOTATION>
 		<ANNOTATION>
 			<ALIGNABLE_ANNOTATION ANNOTATION_ID="a130" TIME_SLOT_REF1="ts259" TIME_SLOT_REF2="ts260">
-				<ANNOTATION_VALUE>He zad ? Ya. N'eus , amañ soñj din, b'an ti mañ</ANNOTATION_VALUE>
+				<ANNOTATION_VALUE>He zad ? Ya. N'eus {?}, amañ soñj din, ba'n ti mañ</ANNOTATION_VALUE>
 			</ALIGNABLE_ANNOTATION>
 		</ANNOTATION>
 		<ANNOTATION>
@@ -1273,7 +1273,7 @@
 		</ANNOTATION>
 		<ANNOTATION>
 			<ALIGNABLE_ANNOTATION ANNOTATION_ID="a142" TIME_SLOT_REF1="ts283" TIME_SLOT_REF2="ts284">
-				<ANNOTATION_VALUE>Sant-Jili, Sant Konan, Kanuhel, Korle...</ANNOTATION_VALUE>
+				<ANNOTATION_VALUE>{?} Sant-Jili, Sant Konan, Kanuhel, Korle...</ANNOTATION_VALUE>
 			</ALIGNABLE_ANNOTATION>
 		</ANNOTATION>
 		<ANNOTATION>
@@ -1353,7 +1353,7 @@
 		</ANNOTATION>
 		<ANNOTATION>
 			<ALIGNABLE_ANNOTATION ANNOTATION_ID="a158" TIME_SLOT_REF1="ts315" TIME_SLOT_REF2="ts316">
-				<ANNOTATION_VALUE>ar martolod voe ur paotr fin, ha han arev un doare, na aet da gaout e voereb kozh oh barzh ur gambr a-gostez</ANNOTATION_VALUE>
+				<ANNOTATION_VALUE>ar martolod voe ur paotr fin, ha han arev{?} un doare, na aet da gaout e voereb kozh oh barzh ur gambr a-gostez</ANNOTATION_VALUE>
 			</ALIGNABLE_ANNOTATION>
 		</ANNOTATION>
 		<ANNOTATION>
@@ -1383,7 +1383,7 @@
 		</ANNOTATION>
 		<ANNOTATION>
 			<ALIGNABLE_ANNOTATION ANNOTATION_ID="a164" TIME_SLOT_REF1="ts327" TIME_SLOT_REF2="ts328">
-				<ANNOTATION_VALUE>Kerent hi oa parlanti na he ne parlante ket kar  me soñj din deus i gouel an eured</ANNOTATION_VALUE>
+				<ANNOTATION_VALUE>Kerent hi oa parlanti na he ne parlante ket kar {?} me soñj din deus i gouel an eured</ANNOTATION_VALUE>
 			</ALIGNABLE_ANNOTATION>
 		</ANNOTATION>
 		<ANNOTATION>
@@ -1418,7 +1418,7 @@
 		</ANNOTATION>
 		<ANNOTATION>
 			<ALIGNABLE_ANNOTATION ANNOTATION_ID="a171" TIME_SLOT_REF1="ts341" TIME_SLOT_REF2="ts342">
-				<ANNOTATION_VALUE>Dont a rez c'hwi kamalad c'heomp hon daou d'an hent pras  piv o varioneta</ANNOTATION_VALUE>
+				<ANNOTATION_VALUE>Dont a rez c'hwi kamalad c'heomp hon daou d'an hent pras {?} piv o varioneta</ANNOTATION_VALUE>
 			</ALIGNABLE_ANNOTATION>
 		</ANNOTATION>
 		<ANNOTATION>
@@ -1443,7 +1443,7 @@
 		</ANNOTATION>
 		<ANNOTATION>
 			<ALIGNABLE_ANNOTATION ANNOTATION_ID="a176" TIME_SLOT_REF1="ts351" TIME_SLOT_REF2="ts352">
-				<ANNOTATION_VALUE>Per be m'uzemp an droas e kanemp dalc'h mat da dañsal aze kwa, hmm</ANNOTATION_VALUE>
+				<ANNOTATION_VALUE>{?}Per be m'uzemp an droas e kanemp dalc'h mat da dañsal aze kwa, hmm</ANNOTATION_VALUE>
 			</ALIGNABLE_ANNOTATION>
 		</ANNOTATION>
 		<ANNOTATION>
@@ -1483,7 +1483,7 @@
 		</ANNOTATION>
 		<ANNOTATION>
 			<ALIGNABLE_ANNOTATION ANNOTATION_ID="a184" TIME_SLOT_REF1="ts367" TIME_SLOT_REF2="ts368">
-				<ANNOTATION_VALUE>bet ken met unan ba Korle. Ah ya, un zo ba Korle ? Unan zo ba Korle c'hoazh. Ya pe peseurt anv n'eus ?</ANNOTATION_VALUE>
+				<ANNOTATION_VALUE>{?} bet ken met unan ba Korle. Ah ya, un zo ba Korle ? Unan zo ba Korle c'hoazh. Ya pe peseurt anv n'eus ?</ANNOTATION_VALUE>
 			</ALIGNABLE_ANNOTATION>
 		</ANNOTATION>
 		<ANNOTATION>
@@ -1493,7 +1493,7 @@
 		</ANNOTATION>
 		<ANNOTATION>
 			<ALIGNABLE_ANNOTATION ANNOTATION_ID="a186" TIME_SLOT_REF1="ts371" TIME_SLOT_REF2="ts372">
-				<ANNOTATION_VALUE></ANNOTATION_VALUE>
+				<ANNOTATION_VALUE>{?} {?}</ANNOTATION_VALUE>
 			</ALIGNABLE_ANNOTATION>
 		</ANNOTATION>
 		<ANNOTATION>
@@ -1543,12 +1543,12 @@
 		</ANNOTATION>
 		<ANNOTATION>
 			<ALIGNABLE_ANNOTATION ANNOTATION_ID="a196" TIME_SLOT_REF1="ts391" TIME_SLOT_REF2="ts392">
-				<ANNOTATION_VALUE>Met, c'hwi ouie brezhoneg... galleg euh pa oc'h bet bar skol evit euh... oac'h</ANNOTATION_VALUE>
+				<ANNOTATION_VALUE>Met, c'hwi ouie brezhoneg... galleg euh pa oc'h bet bar skol evit euh... oac'h {?}</ANNOTATION_VALUE>
 			</ALIGNABLE_ANNOTATION>
 		</ANNOTATION>
 		<ANNOTATION>
 			<ALIGNABLE_ANNOTATION ANNOTATION_ID="a197" TIME_SLOT_REF1="ts393" TIME_SLOT_REF2="ts394">
-				<ANNOTATION_VALUE>Pa oan  oaren ket ur mot a vije galleg.</ANNOTATION_VALUE>
+				<ANNOTATION_VALUE>Pa oan {?} oaren ket ur mot a vije galleg.</ANNOTATION_VALUE>
 			</ALIGNABLE_ANNOTATION>
 		</ANNOTATION>
 		<ANNOTATION>
@@ -1563,7 +1563,7 @@
 		</ANNOTATION>
 		<ANNOTATION>
 			<ALIGNABLE_ANNOTATION ANNOTATION_ID="a200" TIME_SLOT_REF1="ts399" TIME_SLOT_REF2="ts400">
-				<ANNOTATION_VALUE>mestrez skol . Ah ya ? Hi oa deus ar vro ?</ANNOTATION_VALUE>
+				<ANNOTATION_VALUE>{?} mestrez skol {?}. Ah ya ? Hi oa deus ar vro ?</ANNOTATION_VALUE>
 			</ALIGNABLE_ANNOTATION>
 		</ANNOTATION>
 		<ANNOTATION>
@@ -1573,12 +1573,12 @@
 		</ANNOTATION>
 		<ANNOTATION>
 			<ALIGNABLE_ANNOTATION ANNOTATION_ID="a202" TIME_SLOT_REF1="ts403" TIME_SLOT_REF2="ts404">
-				<ANNOTATION_VALUE>Ah ya ? Ha gout a ouie brezhoneg neuze ? Oh vije marved</ANNOTATION_VALUE>
+				<ANNOTATION_VALUE>Ah ya ? Ha gout a ouie brezhoneg neuze ? Oh vije marved {?}</ANNOTATION_VALUE>
 			</ALIGNABLE_ANNOTATION>
 		</ANNOTATION>
 		<ANNOTATION>
 			<ALIGNABLE_ANNOTATION ANNOTATION_ID="a203" TIME_SLOT_REF1="ts405" TIME_SLOT_REF2="ts406">
-				<ANNOTATION_VALUE>An div goarent ket petra oa baraiñ. Ya ?</ANNOTATION_VALUE>
+				<ANNOTATION_VALUE>An div goarent ket petra oa baraiñ{?}. Ya ?</ANNOTATION_VALUE>
 			</ALIGNABLE_ANNOTATION>
 		</ANNOTATION>
 		<ANNOTATION>
@@ -1593,12 +1593,12 @@
 		</ANNOTATION>
 		<ANNOTATION>
 			<ALIGNABLE_ANNOTATION ANNOTATION_ID="a206" TIME_SLOT_REF1="ts411" TIME_SLOT_REF2="ts412">
-				<ANNOTATION_VALUE>dalc'h mat  etre an daou skol. Ah ya ?</ANNOTATION_VALUE>
+				<ANNOTATION_VALUE>{?} dalc'h mat {?} etre an daou skol. Ah ya ?</ANNOTATION_VALUE>
 			</ALIGNABLE_ANNOTATION>
 		</ANNOTATION>
 		<ANNOTATION>
 			<ALIGNABLE_ANNOTATION ANNOTATION_ID="a207" TIME_SLOT_REF1="ts413" TIME_SLOT_REF2="ts414">
-				<ANNOTATION_VALUE>N'imp oa kalz, n'imp oa kalz eus tu... deus ar restoù berr a zo ba Kanuhel euh... ya... Kervoular  Kerstefan ouere toud an dud brezhoneg</ANNOTATION_VALUE>
+				<ANNOTATION_VALUE>N'imp oa kalz, n'imp oa kalz eus tu... deus ar restoù berr a zo ba Kanuhel euh... ya... Kervoular {?} Kerstefan ouere toud an dud brezhoneg</ANNOTATION_VALUE>
 			</ALIGNABLE_ANNOTATION>
 		</ANNOTATION>
 		<ANNOTATION>
@@ -1608,7 +1608,7 @@
 		</ANNOTATION>
 		<ANNOTATION>
 			<ALIGNABLE_ANNOTATION ANNOTATION_ID="a209" TIME_SLOT_REF1="ts417" TIME_SLOT_REF2="ts418">
-				<ANNOTATION_VALUE>Peogwir  oa re bell mont d'ar skol</ANNOTATION_VALUE>
+				<ANNOTATION_VALUE>Peogwir {?} oa re bell mont d'ar skol</ANNOTATION_VALUE>
 			</ALIGNABLE_ANNOTATION>
 		</ANNOTATION>
 		<ANNOTATION>
@@ -1653,7 +1653,7 @@
 		</ANNOTATION>
 		<ANNOTATION>
 			<ALIGNABLE_ANNOTATION ANNOTATION_ID="a218" TIME_SLOT_REF1="ts435" TIME_SLOT_REF2="ts436">
-				<ANNOTATION_VALUE>Un tamm penn anoñ c'hoazh.</ANNOTATION_VALUE>
+				<ANNOTATION_VALUE>Un tamm penn anoñ{?} c'hoazh.</ANNOTATION_VALUE>
 			</ALIGNABLE_ANNOTATION>
 		</ANNOTATION>
 		<ANNOTATION>
@@ -1663,7 +1663,7 @@
 		</ANNOTATION>
 		<ANNOTATION>
 			<ALIGNABLE_ANNOTATION ANNOTATION_ID="a220" TIME_SLOT_REF1="ts439" TIME_SLOT_REF2="ts440">
-				<ANNOTATION_VALUE>Pozioù. Emaon da gan d'am non c'hoazh</ANNOTATION_VALUE>
+				<ANNOTATION_VALUE>Pozioù. Emaon da gan d'am non{?} c'hoazh</ANNOTATION_VALUE>
 			</ALIGNABLE_ANNOTATION>
 		</ANNOTATION>
 		<ANNOTATION>
@@ -1798,7 +1798,7 @@
 		</ANNOTATION>
 		<ANNOTATION>
 			<ALIGNABLE_ANNOTATION ANNOTATION_ID="a247" TIME_SLOT_REF1="ts493" TIME_SLOT_REF2="ts494">
-				<ANNOTATION_VALUE>Nann . Ya met euh...</ANNOTATION_VALUE>
+				<ANNOTATION_VALUE>Nann {?}. Ya met euh...</ANNOTATION_VALUE>
 			</ALIGNABLE_ANNOTATION>
 		</ANNOTATION>
 		<ANNOTATION>
@@ -1823,7 +1823,7 @@
 		</ANNOTATION>
 		<ANNOTATION>
 			<ALIGNABLE_ANNOTATION ANNOTATION_ID="a252" TIME_SLOT_REF1="ts503" TIME_SLOT_REF2="ts504">
-				<ANNOTATION_VALUE>kamalad.</ANNOTATION_VALUE>
+				<ANNOTATION_VALUE>{?} kamalad.</ANNOTATION_VALUE>
 			</ALIGNABLE_ANNOTATION>
 		</ANNOTATION>
 		<ANNOTATION>
@@ -1833,12 +1833,12 @@
 		</ANNOTATION>
 		<ANNOTATION>
 			<ALIGNABLE_ANNOTATION ANNOTATION_ID="a254" TIME_SLOT_REF1="ts507" TIME_SLOT_REF2="ts508">
-				<ANNOTATION_VALUE>a gomañse un dañs ha neuze teuent tout an dud barzh.</ANNOTATION_VALUE>
+				<ANNOTATION_VALUE>{?} a gomañse un dañs ha neuze teuent tout an dud barzh.</ANNOTATION_VALUE>
 			</ALIGNABLE_ANNOTATION>
 		</ANNOTATION>
 		<ANNOTATION>
 			<ALIGNABLE_ANNOTATION ANNOTATION_ID="a255" TIME_SLOT_REF1="ts509" TIME_SLOT_REF2="ts510">
-				<ANNOTATION_VALUE>Dañs-dro memes tra. Ya ya. Dañs-dro  Ya.</ANNOTATION_VALUE>
+				<ANNOTATION_VALUE>Dañs-dro memes tra. Ya ya. Dañs-dro {?} Ya.</ANNOTATION_VALUE>
 			</ALIGNABLE_ANNOTATION>
 		</ANNOTATION>
 		<ANNOTATION>
@@ -1873,7 +1873,7 @@
 		</ANNOTATION>
 		<ANNOTATION>
 			<ALIGNABLE_ANNOTATION ANNOTATION_ID="a262" TIME_SLOT_REF1="ts523" TIME_SLOT_REF2="ts524">
-				<ANNOTATION_VALUE>Oh ya ya ya ya, ya ya ya vije ket an noz aze  komañse un all.</ANNOTATION_VALUE>
+				<ANNOTATION_VALUE>Oh ya ya ya ya, ya ya ya vije ket an noz aze {?} komañse un all.</ANNOTATION_VALUE>
 			</ALIGNABLE_ANNOTATION>
 		</ANNOTATION>
 		<ANNOTATION>
@@ -1883,17 +1883,17 @@
 		</ANNOTATION>
 		<ANNOTATION>
 			<ALIGNABLE_ANNOTATION ANNOTATION_ID="a264" TIME_SLOT_REF1="ts527" TIME_SLOT_REF2="ts528">
-				<ANNOTATION_VALUE>munut kwa. Ya ? Met...</ANNOTATION_VALUE>
+				<ANNOTATION_VALUE>{?} munut kwa. Ya ? Met...</ANNOTATION_VALUE>
 			</ALIGNABLE_ANNOTATION>
 		</ANNOTATION>
 		<ANNOTATION>
 			<ALIGNABLE_ANNOTATION ANNOTATION_ID="a265" TIME_SLOT_REF1="ts529" TIME_SLOT_REF2="ts530">
-				<ANNOTATION_VALUE>Pez a rae ar</ANNOTATION_VALUE>
+				<ANNOTATION_VALUE>Pez a rae ar {?}</ANNOTATION_VALUE>
 			</ALIGNABLE_ANNOTATION>
 		</ANNOTATION>
 		<ANNOTATION>
 			<ALIGNABLE_ANNOTATION ANNOTATION_ID="a266" TIME_SLOT_REF1="ts531" TIME_SLOT_REF2="ts532">
-				<ANNOTATION_VALUE>. Ya. Pa vezemp  da gano.</ANNOTATION_VALUE>
+				<ANNOTATION_VALUE>{?}. Ya. Pa vezemp {?} da gano.</ANNOTATION_VALUE>
 			</ALIGNABLE_ANNOTATION>
 		</ANNOTATION>
 		<ANNOTATION>
@@ -1903,12 +1903,12 @@
 		</ANNOTATION>
 		<ANNOTATION>
 			<ALIGNABLE_ANNOTATION ANNOTATION_ID="a268" TIME_SLOT_REF1="ts535" TIME_SLOT_REF2="ts536">
-				<ANNOTATION_VALUE>Prest da gomañs, da da gemer ho lec'h ? Ya. Ya ya  kar a-wechoù veze un tamm jalouzi. Ah ya ? Evel just euh... heñ ? Evel just evit diskouez e oant aet da ganañ. Ma'z afemp... ma'z azemp ni da ganañ ba Sant Konan. Ya ?</ANNOTATION_VALUE>
+				<ANNOTATION_VALUE>Prest da gomañs, da da gemer ho lec'h ? Ya. Ya ya {?} kar a-wechoù veze un tamm jalouzi. Ah ya ? Evel just euh... heñ ? Evel just evit diskouez e oant aet da ganañ. Ma'z afemp... ma'z azemp ni da ganañ ba Sant Konan. Ya ?</ANNOTATION_VALUE>
 			</ALIGNABLE_ANNOTATION>
 		</ANNOTATION>
 		<ANNOTATION>
 			<ALIGNABLE_ANNOTATION ANNOTATION_ID="a269" TIME_SLOT_REF1="ts537" TIME_SLOT_REF2="ts538">
-				<ANNOTATION_VALUE>tre Sant Konan vezent ket kontant  ma ganemp kaeroc'h eget re Sant Konan er marc'had... Amañ emañ an dalc'h kwa. Gwarizi, jalouzi etre...</ANNOTATION_VALUE>
+				<ANNOTATION_VALUE>tre Sant Konan vezent ket kontant {?} ma ganemp kaeroc'h eget re Sant Konan er marc'had... Amañ emañ an dalc'h kwa. Gwarizi, jalouzi etre...</ANNOTATION_VALUE>
 			</ALIGNABLE_ANNOTATION>
 		</ANNOTATION>
 		<ANNOTATION>
@@ -1948,7 +1948,7 @@
 		</ANNOTATION>
 		<ANNOTATION>
 			<ALIGNABLE_ANNOTATION ANNOTATION_ID="a277" TIME_SLOT_REF1="ts553" TIME_SLOT_REF2="ts554">
-				<ANNOTATION_VALUE>ket ur bern, nann.</ANNOTATION_VALUE>
+				<ANNOTATION_VALUE>{?} ket ur bern, nann. {?}</ANNOTATION_VALUE>
 			</ALIGNABLE_ANNOTATION>
 		</ANNOTATION>
 		<ANNOTATION>
@@ -1958,7 +1958,7 @@
 		</ANNOTATION>
 		<ANNOTATION>
 			<ALIGNABLE_ANNOTATION ANNOTATION_ID="a279" TIME_SLOT_REF1="ts557" TIME_SLOT_REF2="ts558">
-				<ANNOTATION_VALUE>Ah ya, ba' . Ya, pas pas er memes  bez e oa festoù-noz gwechall euh be euh  ?  ya.</ANNOTATION_VALUE>
+				<ANNOTATION_VALUE>Ah ya, ba' {?}. Ya, pas pas er memes {?} bez e oa festoù-noz gwechall euh be euh {?} ? {?} ya.</ANNOTATION_VALUE>
 			</ALIGNABLE_ANNOTATION>
 		</ANNOTATION>
 		<ANNOTATION>

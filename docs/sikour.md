@@ -1,4 +1,4 @@
-# Reiñ sikour da treuzskrivañ
+# Reiñ sikour da dreuzskrivañ
  
 Amañ e kavit tennadoù son diaes din da gompren e teuliadoù emaon o treuzskrivañ er mare-mañ.
 

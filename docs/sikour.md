@@ -220,10 +220,6 @@ Restroù klok : [WAV](full/rann4.wav) \| [TXT](full/rann4.txt) \| [EAF](full/ran
 
 > {?}. Ya. Pa vezemp {?} da gano.
 
-{% include embed-audio.html name="268" src="utts/rann4_seg268.mp3" %}
-
-> Prest da gomañs, da da gemer ho lec'h ? Ya. Ya ya {?} kar a-wechoù veze un tamm jalouzi. Ah ya ? Evel just euh... heñ ? Evel just evit diskouez e oant aet da ganañ. Ma'z afemp... ma'z azemp ni da ganañ ba Sant Konan. Ya ?
-
 {% include embed-audio.html name="269" src="utts/rann4_seg269.mp3" %}
 
 > tre Sant Konan vezent ket kontant {?} ma ganemp kaeroc'h eget re Sant Konan er marc'had... Amañ emañ an dalc'h kwa. Gwarizi, jalouzi etre...

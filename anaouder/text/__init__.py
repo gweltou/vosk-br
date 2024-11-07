@@ -4,7 +4,7 @@ from .tokenizer import Token, tokenize, detokenize, split_sentences
 from .normalizer import normalize, normalize_sentence
 from .inverse_normalizer import inverse_normalize_sentence, inverse_normalize_timecoded
 from .utils import (
-    strip_punct, filter_out, capitalize, pre_process,
+    strip_punct, filter_out_chars, capitalize, pre_process,
     extract_parenthesis_content, sentence_stats,
 )
 from .definitions import PUNCTUATION

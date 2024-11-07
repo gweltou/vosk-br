@@ -16,7 +16,7 @@ def strip_punct(word: str) -> str:
 
 
 
-def filter_out(text: str, chars: str) -> str:
+def filter_out_chars(text: str, chars: str) -> str:
     """ Remove characters from a string """
 
     filtered_text = ""
@@ -122,7 +122,7 @@ def sentence_stats(sentence: str) -> dict:
         else:
             other += 1
         
-        sentence = filter_out(sentence, PUNCTUATION)
+        sentence = filter_out_chars(sentence, PUNCTUATION)
     
     return {"letter": letter, "decimal": decimal, "upper": upper, "punct": punct,
             "blank": blank, "other": other, "words": len(sentence.split())}

@@ -8,7 +8,7 @@ import typing
 proper_nouns = dict()
 _proper_nouns_phon_path = __file__.replace("__init__.py", "proper_nouns_phon.tsv")
 
-with open(_proper_nouns_phon_path, 'r') as f:
+with open(_proper_nouns_phon_path, 'r', encoding='utf-8') as f:
     for l in f.readlines():
         l = l.strip()
         if l.startswith('#') or not l: continue
@@ -28,7 +28,7 @@ with open(_proper_nouns_phon_path, 'r') as f:
 nouns_f = set()
 _nouns_f_path = __file__.replace("__init__.py", "noun_f.tsv")
 
-with open(_nouns_f_path, 'r') as f:
+with open(_nouns_f_path, 'r', encoding='utf-8') as f:
     for l in f.readlines():
         l = l.strip()
         if l.startswith('#') or not l: continue
@@ -38,7 +38,7 @@ with open(_nouns_f_path, 'r') as f:
 nouns_m = set()
 _nouns_m_path = __file__.replace("__init__.py", "noun_m.tsv")
 
-with open(_nouns_m_path, 'r') as f:
+with open(_nouns_m_path, 'r', encoding='utf-8') as f:
     for l in f.readlines():
         l = l.strip()
         if l.startswith('#') or not l: continue
@@ -60,7 +60,7 @@ def get_acronyms_dict():
     #     acronyms[l] = [acr2f[l]]
     
     if os.path.exists(_acronyms_path):
-        with open(_acronyms_path, 'r') as f:
+        with open(_acronyms_path, 'r', encoding='utf-8') as f:
             for l in f.readlines():
                 l = l.strip()
                 if l.startswith('#') or not l: continue
@@ -71,7 +71,7 @@ def get_acronyms_dict():
                     acronyms[acr] = [pron]
     else:
         print("Acronym dictionary not found... creating file")
-        open(_acronyms_path, 'a').close()
+        open(_acronyms_path, 'a', encoding='utf-8').close()
     return acronyms
 
 acronyms = get_acronyms_dict()
@@ -83,7 +83,7 @@ acronyms = get_acronyms_dict()
 corrected_tokens = dict()
 _corrected_tokens_path = __file__.replace("__init__.py", "corrected_tokens.tsv")
 
-with open(_corrected_tokens_path, 'r') as f:
+with open(_corrected_tokens_path, 'r', encoding='utf-8') as f:
     for l in f.readlines():
         l = l.strip()
         if l.startswith('#') or not l: continue
@@ -97,7 +97,7 @@ with open(_corrected_tokens_path, 'r') as f:
 standard_tokens = dict()
 _standard_tokens_path = __file__.replace("__init__.py", "standard_tokens.tsv")
 
-with open(_standard_tokens_path, 'r') as f:
+with open(_standard_tokens_path, 'r', encoding='utf-8') as f:
     for l in f.readlines():
         l = l.strip()
         if l.startswith('#') or not l: continue

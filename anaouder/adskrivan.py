@@ -83,7 +83,7 @@ def main_adskrivan(*args, **kwargs) -> None:
     parser.add_argument("--segment-max-length",
         help="Will try not to go above this length when segmenting audio files (seconds)",
         type=float, default=8)
-    parser.add_argument("--max_words_per_line", type=int, default=7,
+    parser.add_argument("--max-words-per-line", type=int, default=7,
         help="Number of words per line for subtitle files")
     parser.add_argument("--set-ffmpeg-path", type=str,
         help="Set ffmpeg path (will not use static_ffmpeg in that case)")
@@ -148,7 +148,7 @@ def main_adskrivan(*args, **kwargs) -> None:
                 for seg in token_segments
             ]
             sentences = [ ' '.join([token['word'] for token in seg]) for seg in token_segments ]
-
+            
             fout.write('\n'.join(sentences))
         else:
             # Online decoding
@@ -207,7 +207,7 @@ def main_adskrivan(*args, **kwargs) -> None:
                                for sent in sentences ]
         
 
-        # Remove empty sentences
+        # Post-process and remove empty sentences
         utterances = []
         for sentence, segment in zip(sentences, segments):
             if sentence: utterances.append(

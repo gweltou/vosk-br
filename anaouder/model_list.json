@@ -2,21 +2,21 @@
 	{
 		"name": "vosk-model-br-0.6",
 		"type": "vosk",
-		"url": "https://github.com/gweltou/vosk-br/releases/download/v0.6/vosk-model-br-0.6.zip",
+		"url": "https://github.com/gweltou/vosk-br/releases/download/v0.6/vosk-model-br-0.6.zip"
 	},
 	{
 		"name": "vosk-model-br-0.7",
 		"type": "vosk",
-		"url": "https://github.com/gweltou/vosk-br/releases/download/v0.7/vosk-model-br-0.7.zip",
+		"url": "https://github.com/gweltou/vosk-br/releases/download/v0.7/vosk-model-br-0.7.zip"
 	},
 	{
 		"name": "vosk-model-br-0.8",
 		"type": "vosk",
-		"url": "https://github.com/gweltou/vosk-br/releases/download/v0.8/vosk-model-br-0.8.zip",
+		"url": "https://github.com/gweltou/vosk-br/releases/download/v0.8/vosk-model-br-0.8.zip"
 	},
 	{
 		"name": "vosk-model-br-0.9",
 		"type": "vosk",
-		"url": "https://github.com/gweltou/vosk-br/releases/download/v0.9/vosk-model-br-0.9.zip",
-	},
+		"url": "https://github.com/gweltou/vosk-br/releases/download/v0.9/vosk-model-br-0.9.zip"
+	}
 ]

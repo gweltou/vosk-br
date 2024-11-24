@@ -210,7 +210,8 @@ def main_adskrivan(*args, **kwargs) -> None:
         # Post-process and remove empty sentences
         utterances = []
         for sentence, segment in zip(sentences, segments):
-            if sentence: utterances.append(
+            if sentence:
+                utterances.append(
                     (post_process_timecoded(sentence, args.normalize, args.keep_fillers),
                     segment)
                 )
@@ -244,13 +245,13 @@ def main_adskrivan(*args, **kwargs) -> None:
             words_per_line = args.max_words_per_line
             if words_per_line == 0: words_per_line = 999
             subs = []
-            for i, sentence in enumerate(sentences):
+            for sentence, segment in utterances:
                 for j in range(0, len(sentence), words_per_line):
                     line = sentence[j : j + words_per_line]
                     text = ' '.join([ w["word"] for w in line ])
 
                     if args.autosplit:
-                        offset = segments[i][0]/1000
+                        offset = segment[0]/1000
                         s = srt.Subtitle(index=len(subs),
                                 content=text,
                                 start=datetime.timedelta(seconds=line[0]["start"]+offset),
@@ -271,11 +272,12 @@ def main_adskrivan(*args, **kwargs) -> None:
         
         
         elif args.type == 'eaf':
+            sentences, segments = zip(*utterances)
             text_sentences = []
             for sentence in sentences:
                 sentence = ' '.join([ t['word'] for t in sentence ])
                 text_sentences.append(sentence)
-            ext = os.path.splitext(args.output)[1][1:].lower()
+            ext = os.path.splitext(args.filename)[1][1:].lower()
             if ext not in ('mp3', 'wav'):
                 data = write_eaf(segments, text_sentences, args.filename, type="mp3")
             else:
@@ -298,7 +300,6 @@ def main_adskrivan(*args, **kwargs) -> None:
                 print(f"{sentence} {{start: {start}; end: {end}}}", file=fout)
 
 
-  
     if args.output:
         fout.close()
     

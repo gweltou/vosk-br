@@ -2,8 +2,8 @@
 # -*- coding: utf-8 -*-
 
 """
-Create subtitles (a `srt` file) from an audio file
-and a text file, using a vosk model
+Align a text file with an audio file, using a vosk model.
+Can export to a subtitle file `srt` or `ali`.
 
 Author:  Gweltaz Duval-Guennoc
 
@@ -22,16 +22,16 @@ import srt
 import jiwer
 import static_ffmpeg
 import os.path
-from tqdm import tqdm
 from time import perf_counter
 
 from anaouder.asr.models import load_model, DEFAULT_MODEL
 from anaouder.asr.recognizer import transcribe_file_timecoded
 from anaouder.asr.post_processing import verbal_fillers
+# from anaouder.asr.dataset import create_ali_file
 from anaouder.text import (
-    pre_process, filter_out,
+    pre_process, filter_out_chars,
     sentence_stats,
-    tokenize, detokenize, normalize_sentence, split_sentences,
+    normalize_sentence, split_sentences,
     PUNCTUATION
 )
 from anaouder.utils import read_file_drop_comments, format_timecode
@@ -48,7 +48,6 @@ def align(sentences:list, hyp:List[dict], left_boundary:int, right_boundary:int)
     """
     matches = []
     for sentence in sentences:
-        #sentence_len = len(sentence.split())
         match = []
         for i in range(left_boundary, right_boundary):
             # Try to find a minima for the CER by adding one word at a time
@@ -57,8 +56,8 @@ def align(sentences:list, hyp:List[dict], left_boundary:int, right_boundary:int)
                 hyp_window = hyp[i: i+offset]
                 hyp_sentence = ' '.join( [t["word"].lower().replace('-', ' ') for t in hyp_window] )
                 score = jiwer.cer(
-                    filter_out(sentence, ' '),
-                    filter_out(hyp_sentence, ' ')
+                    filter_out_chars(sentence, ' '),
+                    filter_out_chars(hyp_sentence, ' ')
                     )
                 if score <= best_score:
                     best_score = score
@@ -70,6 +69,7 @@ def align(sentences:list, hyp:List[dict], left_boundary:int, right_boundary:int)
             match.append( {"hyp": best_hyp, "score": best_score, "span": best_span} )
         
         match.sort(key=lambda x: x["score"])
+        
         # Keep only best match location for each sentence
         try:
             matches.append(match[0])
@@ -94,7 +94,7 @@ def get_next_word_idx(matches, idx, hyp):
 
 
 def score_reliability(matches, hyp):
-    # Infer the reliability of each location by checking its adjacent neighbours
+    """ Infer the reliability of each location by checking its adjacent neighbours """
     
     last_reliable_wi = 0
     for i, match in enumerate(matches):
@@ -105,14 +105,14 @@ def score_reliability(matches, hyp):
         is_pdn = abs(prev_dist) <= 2 # is prev a direct-ish neighbour ?
         is_ndn = abs(next_dist) <= 2 # is next a direct-ish neighbour ?
         if is_pdn or is_ndn and (span[1] > last_reliable_wi):
-            r = 'o' # Semi-reliable
+            r = 'o' # Semi-reliable alignment
             if is_pdn and is_ndn and (abs(prev_dist) + abs(next_dist)) <= 2:
-                r = 'O' # Reliable
+                r = 'O' # Reliable alignment
                 last_reliable_wi = span[1]
         elif span[1] > last_reliable_wi:
             r = '?' # Not sure...
         else:
-            r = 'X' # Obviously wrong
+            r = 'X' # Obviously wrong alignment
         matches[i]["reliability"] = r
         
         if args.debug:
@@ -147,6 +147,7 @@ def count_aligned_utterances(matches):
     return n
     
 
+
 def calculate_cer(matches: list):
     total_cer = 0
     total_num_char = 0
@@ -165,7 +166,7 @@ def main_linennan() -> None:
 
     parser = argparse.ArgumentParser(
         prog = "Linennan",
-        description = "Create a timecoded file (`srt` or `split` file) from a text and an audio file")
+        description = "Create a timecoded file (`srt`, `seg` or `ali` file) from an audio file and a text file")
     parser.add_argument("audio_file")
     parser.add_argument("text_file")
     parser.add_argument("-m", "--model", default=DEFAULT_MODEL,
@@ -200,7 +201,7 @@ def main_linennan() -> None:
     # Remove special labels <C'HOARZH>, <UNK>...
     sentences = [ re.sub(r"<[A-Z\']+?>", '', line) for line in lines ]
     # Remove punctuation
-    sentences = [ filter_out(pre_process(line), PUNCTUATION + "><*").strip() for line in lines ]
+    sentences = [ filter_out_chars(pre_process(line), PUNCTUATION + "><*").strip() for line in lines ]
     
     # Look for numbers in text file, normalize in that case
     normalize = False
@@ -212,7 +213,6 @@ def main_linennan() -> None:
         sentences = [ normalize_sentence(line, autocorrect=autocorrect) for line in sentences ]
     
     sentences = [ " ".join(line.lower().replace('-', ' ').split()) for line in sentences ]
-    # print(cleaned_lines, file=sys.stderr)
 
     hyp = transcribe_file_timecoded(args.audio_file)
     if not args.keep_fillers:
@@ -374,8 +374,8 @@ def main_linennan() -> None:
             hyp_window = hyp[new_span[0]: new_span[1]]
             hyp_sentence = ' '.join( [t["word"].lower().replace('-', ' ') for t in hyp_window] )
             score = jiwer.cer(
-                filter_out(sentences[start_range+i], ' '),
-                filter_out(hyp_sentence, ' ')
+                filter_out_chars(sentences[start_range+i], ' '),
+                filter_out_chars(hyp_sentence, ' ')
                 )
             sentence_matches[start_range+i] = {"hyp": hyp_sentence, "score": score, "span": new_span}
             sentence_matches[start_range+i]["reliability"] = '/'
@@ -392,16 +392,10 @@ def main_linennan() -> None:
     for i, l in enumerate(sentences):
         if sentence_matches[i]["reliability"] in ('X', '/', '?'):
             n += 1
-            hyp_sentence = sentence_matches[i]["hyp"]
-            # if args.debug:
-            #     print(f"{i} {sentence_matches[i]['span']}\t{l}\t{hyp_sentence}\t", file=sys.stderr)
     print(f"{n} ill-aligned segment{'s' if n>1 else ''}", file=sys.stderr)
 
 
-
-
     # Resolve file output type
-
     if args.output and not args.type:
         # No type explicitely defined, use output file extension
         split_ext = args.output.rsplit('.', maxsplit=1)

@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.9.8] - 2024-11-7
+
+- Changed option `--max_words_per_line` to `--max-words-per-line`
+- Fixed utf-8 decoding of dictionaries on macOS
+
 ## [0.9.6]
 
 - Improved alignment algorithm in `linennan`.

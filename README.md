@@ -5,17 +5,17 @@
 
 [Version française](https://github.com/gweltou/vosk-br/blob/main/README-fr.md)
 
-Diorroet eo ar raktres-se a youl vat. Gallout a rit souten ar raktres gant ur roadenn :
+Diorroet eo ar raktres-se a youl vat. Gallout a rit reiñ ho souten gant ur roadenn :
 [![Liberapay](https://liberapay.com/assets/widgets/donate.svg)](https://liberapay.com/gweltou/donate)
 
-Gallout a reer ivez implij ar meziant dre ur [c'hetal Web](https://translate.bzh/), savet gant Philippe Argouarch.
+Gallout a reer ivez implijout ar meziant dre ur [c'hetal Web](https://translate.bzh/), savet gant Philippe Argouarch.
 
 ## Petra eo ?
 
 Un anaouder mouezh emgefre, diazezet war [Vosk](https://github.com/alphacep/vosk-api).\
-Gantañ e c'heller adskrivañ komzoù e brezhoneg (**Son -> Skrid**) dre ur mikro e amzer real pe diouzh restroù son.
+Gantañ e c'heller adskrivañ komzoù e brezhoneg (**Son -> Skrid**) dre ur mikro, e amzer real, pe diouzh restroù son.
 
-Un nebeut perzhioù dedennus :
+Perzhioù dedennus :
 
 * **Skañv**. Pouezh ar model a zo dindan 100 Mo ha treiñ a ra war ur bern mekanikoù : urzhiataerioù **hep GPU**, RaspberryPi, hezoug Android...
 * **Prim**. Gallout a reer adskrivañ ar son e **amzer real**, memes gant un urzhiataer kozh, pe primoc'h c'hoazh gant dafar nevesoc'h.

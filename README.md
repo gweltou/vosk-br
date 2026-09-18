@@ -77,7 +77,7 @@ Ma n'ez eus skrid ebet o tont, klaskit niverenn an etrefas son gant :
 mikro -l
 ```
 
-Ha gant an niverenn-se :
+Ha gant an niverenn-se pe un anv :
 
 ```bash
 mikro -d NIVERENN_ETREFAS
